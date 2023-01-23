@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/winter.dir/winter/log.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/log.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/log.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/winter.dir/winter/util.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/util.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/util.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/winter.dir/winter/config.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/config.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/config.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++  -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/tests/test.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++  -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_config.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/tests/test_config.cc"
+}
+]
