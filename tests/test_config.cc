@@ -54,7 +54,7 @@ void print_yaml(const YAML::Node& node, int level) {
 }
 
 void test_yaml() {
-    YAML::Node root = YAML::LoadFile("/home/ghx/MyProjects/cpp/winter/bin/conf/log.yml");
+    YAML::Node root = YAML::LoadFile("/home/ubuntu/MyProjects/cpp/Winter/bin/conf/log.yml");
     print_yaml(root, 0);
 
     WINTER_LOG_INFO(WINTER_LOG_ROOT()) << root.Scalar();
@@ -89,7 +89,7 @@ void test_config() {
     XX_M(g_str_int_map_value_config, str_int_map, before);
     XX_M(g_str_int_umap_value_config, str_int_umap, before);
 
-    YAML::Node root = YAML::LoadFile("/home/ghx/MyProjects/cpp/winter/bin/conf/log.yml");
+    YAML::Node root = YAML::LoadFile("/home/ubuntu/MyProjects/cpp/Winter/bin/conf/log.yml");
     winter::Config::LoadFromYaml(root);
 
     WINTER_LOG_INFO(WINTER_LOG_ROOT()) << "after: " << g_int_value_config->getValue();
@@ -191,7 +191,7 @@ void test_class(){
     XX_PM(g_person_map, "class.map before");
     WINTER_LOG_INFO(WINTER_LOG_ROOT()) << "before: " << g_person_vec_map->toString();
 
-    YAML::Node root = YAML::LoadFile("/home/ghx/MyProjects/cpp/winter/bin/conf/log.yml");
+    YAML::Node root = YAML::LoadFile("/home/ubuntu/MyProjects/cpp/Winter/bin/conf/log.yml");
     winter::Config::LoadFromYaml(root);
 
     WINTER_LOG_INFO(WINTER_LOG_ROOT()) << "after: " << g_person->getValue().toString()
