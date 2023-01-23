@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -shared -Wl,-soname,libwinter.so -o ../lib/libwinter.so CMakeFiles/winter.dir/winter/log.cc.o CMakeFiles/winter.dir/winter/util.cc.o CMakeFiles/winter.dir/winter/config.cc.o 
