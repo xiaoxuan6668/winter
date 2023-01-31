@@ -1,8 +1,7 @@
 CMakeFiles/winter.dir/winter/util.cc.o: \
- /home/ghx/MyProjects/cpp/winter/winter/util.cc \
- /usr/include/stdc-predef.h /home/ghx/MyProjects/cpp/winter/winter/util.h \
- /usr/include/pthread.h /usr/include/features.h \
- /usr/include/features-time64.h \
+ /home/ubuntu/Projects/Winter/winter/util.cc /usr/include/stdc-predef.h \
+ /home/ubuntu/Projects/Winter/winter/util.h /usr/include/pthread.h \
+ /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \

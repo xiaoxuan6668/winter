@@ -1,5 +1,5 @@
 CMakeFiles/test.dir/tests/test.cc.o: \
- /home/ghx/MyProjects/cpp/winter/tests/test.cc /usr/include/stdc-predef.h \
+ /home/ubuntu/Projects/Winter/tests/test.cc /usr/include/stdc-predef.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -149,7 +149,7 @@ CMakeFiles/test.dir/tests/test.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/log.h \
+ /home/ubuntu/Projects/Winter/tests/../winter/log.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -180,7 +180,7 @@ CMakeFiles/test.dir/tests/test.cc.o: \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/util.h \
+ /home/ubuntu/Projects/Winter/tests/../winter/util.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -193,5 +193,5 @@ CMakeFiles/test.dir/tests/test.cc.o: \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/singleton.h \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/util.h
+ /home/ubuntu/Projects/Winter/tests/../winter/singleton.h \
+ /home/ubuntu/Projects/Winter/tests/../winter/util.h

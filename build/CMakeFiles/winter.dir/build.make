@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ghx/MyProjects/cpp/winter
+CMAKE_SOURCE_DIR = /home/ubuntu/Projects/Winter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ghx/MyProjects/cpp/winter/build
+CMAKE_BINARY_DIR = /home/ubuntu/Projects/Winter/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/winter.dir/depend.make
@@ -75,44 +75,44 @@ include CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/log.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/log.cc.o: ../winter/log.cc
 CMakeFiles/winter.dir/winter/log.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/winter.dir/winter/log.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/log.cc.o -MF CMakeFiles/winter.dir/winter/log.cc.o.d -o CMakeFiles/winter.dir/winter/log.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/log.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Projects/Winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/winter.dir/winter/log.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/log.cc.o -MF CMakeFiles/winter.dir/winter/log.cc.o.d -o CMakeFiles/winter.dir/winter/log.cc.o -c /home/ubuntu/Projects/Winter/winter/log.cc
 
 CMakeFiles/winter.dir/winter/log.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/winter.dir/winter/log.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghx/MyProjects/cpp/winter/winter/log.cc > CMakeFiles/winter.dir/winter/log.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Projects/Winter/winter/log.cc > CMakeFiles/winter.dir/winter/log.cc.i
 
 CMakeFiles/winter.dir/winter/log.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/winter.dir/winter/log.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghx/MyProjects/cpp/winter/winter/log.cc -o CMakeFiles/winter.dir/winter/log.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Projects/Winter/winter/log.cc -o CMakeFiles/winter.dir/winter/log.cc.s
 
 CMakeFiles/winter.dir/winter/util.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/util.cc.o: ../winter/util.cc
 CMakeFiles/winter.dir/winter/util.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/winter.dir/winter/util.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/util.cc.o -MF CMakeFiles/winter.dir/winter/util.cc.o.d -o CMakeFiles/winter.dir/winter/util.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Projects/Winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/winter.dir/winter/util.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/util.cc.o -MF CMakeFiles/winter.dir/winter/util.cc.o.d -o CMakeFiles/winter.dir/winter/util.cc.o -c /home/ubuntu/Projects/Winter/winter/util.cc
 
 CMakeFiles/winter.dir/winter/util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/winter.dir/winter/util.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghx/MyProjects/cpp/winter/winter/util.cc > CMakeFiles/winter.dir/winter/util.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Projects/Winter/winter/util.cc > CMakeFiles/winter.dir/winter/util.cc.i
 
 CMakeFiles/winter.dir/winter/util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/winter.dir/winter/util.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghx/MyProjects/cpp/winter/winter/util.cc -o CMakeFiles/winter.dir/winter/util.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Projects/Winter/winter/util.cc -o CMakeFiles/winter.dir/winter/util.cc.s
 
 CMakeFiles/winter.dir/winter/config.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/config.cc.o: ../winter/config.cc
 CMakeFiles/winter.dir/winter/config.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/winter.dir/winter/config.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/config.cc.o -MF CMakeFiles/winter.dir/winter/config.cc.o.d -o CMakeFiles/winter.dir/winter/config.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/config.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Projects/Winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/winter.dir/winter/config.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/config.cc.o -MF CMakeFiles/winter.dir/winter/config.cc.o.d -o CMakeFiles/winter.dir/winter/config.cc.o -c /home/ubuntu/Projects/Winter/winter/config.cc
 
 CMakeFiles/winter.dir/winter/config.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/winter.dir/winter/config.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghx/MyProjects/cpp/winter/winter/config.cc > CMakeFiles/winter.dir/winter/config.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Projects/Winter/winter/config.cc > CMakeFiles/winter.dir/winter/config.cc.i
 
 CMakeFiles/winter.dir/winter/config.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/winter.dir/winter/config.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghx/MyProjects/cpp/winter/winter/config.cc -o CMakeFiles/winter.dir/winter/config.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Projects/Winter/winter/config.cc -o CMakeFiles/winter.dir/winter/config.cc.s
 
 # Object files for target winter
 winter_OBJECTS = \
@@ -128,7 +128,7 @@ winter_EXTERNAL_OBJECTS =
 ../lib/libwinter.so: CMakeFiles/winter.dir/winter/config.cc.o
 ../lib/libwinter.so: CMakeFiles/winter.dir/build.make
 ../lib/libwinter.so: CMakeFiles/winter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../lib/libwinter.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Projects/Winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../lib/libwinter.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/winter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +140,6 @@ CMakeFiles/winter.dir/clean:
 .PHONY : CMakeFiles/winter.dir/clean
 
 CMakeFiles/winter.dir/depend:
-	cd /home/ghx/MyProjects/cpp/winter/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ghx/MyProjects/cpp/winter /home/ghx/MyProjects/cpp/winter /home/ghx/MyProjects/cpp/winter/build /home/ghx/MyProjects/cpp/winter/build /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/winter.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/Projects/Winter/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Projects/Winter /home/ubuntu/Projects/Winter /home/ubuntu/Projects/Winter/build /home/ubuntu/Projects/Winter/build /home/ubuntu/Projects/Winter/build/CMakeFiles/winter.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/winter.dir/depend
 

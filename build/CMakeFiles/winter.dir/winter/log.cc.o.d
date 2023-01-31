@@ -1,6 +1,6 @@
 CMakeFiles/winter.dir/winter/log.cc.o: \
- /home/ghx/MyProjects/cpp/winter/winter/log.cc /usr/include/stdc-predef.h \
- /home/ghx/MyProjects/cpp/winter/winter/log.h /usr/include/c++/11/string \
+ /home/ubuntu/Projects/Winter/winter/log.cc /usr/include/stdc-predef.h \
+ /home/ubuntu/Projects/Winter/winter/log.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -181,7 +181,7 @@ CMakeFiles/winter.dir/winter/log.cc.o: \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/ghx/MyProjects/cpp/winter/winter/util.h /usr/include/unistd.h \
+ /home/ubuntu/Projects/Winter/winter/util.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -194,6 +194,6 @@ CMakeFiles/winter.dir/winter/log.cc.o: \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/ghx/MyProjects/cpp/winter/winter/singleton.h \
+ /home/ubuntu/Projects/Winter/winter/singleton.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/functional \
  /usr/include/c++/11/bits/std_function.h

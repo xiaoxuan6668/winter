@@ -1,7 +1,7 @@
 CMakeFiles/test_config.dir/tests/test_config.cc.o: \
- /home/ghx/MyProjects/cpp/winter/tests/test_config.cc \
+ /home/ubuntu/Projects/Winter/tests/test_config.cc \
  /usr/include/stdc-predef.h \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/config.h \
+ /home/ubuntu/Projects/Winter/tests/../winter/config.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -769,17 +769,17 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /usr/local/include/yaml-cpp/node/detail/impl.h \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/log.h \
+ /home/ubuntu/Projects/Winter/tests/../winter/log.h \
  /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/util.h \
+ /home/ubuntu/Projects/Winter/tests/../winter/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/singleton.h \
+ /home/ubuntu/Projects/Winter/tests/../winter/singleton.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/ghx/MyProjects/cpp/winter/tests/../winter/log.h
+ /home/ubuntu/Projects/Winter/tests/../winter/log.h

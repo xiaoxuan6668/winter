@@ -2,6 +2,7 @@
 #include <iostream>
 #include <map>
 #include <functional>
+#include "config.h"
 
 namespace winter{
 
@@ -79,7 +80,7 @@ class NameFormatItem : public LogFormatter::FormatItem{
     public:
         NameFormatItem(const std::string& str = ""){}
         void format(std::ostream& os, Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event) override{
-            os << logger->getName();;
+            os << event->getLogger()->getName();;
         }
 };
 
@@ -203,10 +204,14 @@ void Logger::deleteAppender(LogAppender::ptr appender){
 void Logger::log(LogLevel::Level level, LogEvent::ptr event){
     if(level >= m_level){
         auto self = shared_from_this();
-        for(auto& i : m_appenders){
-            i->log(self, level, event);
-        }
-    }
+		if(!m_appenders.empty()){
+			for(auto& i : m_appenders){
+				i->log(self, level, event);
+			}
+		} else if(m_root){
+			m_root->log(level,event);
+		}
+	}
 }
 
 void Logger::debug(LogEvent::ptr event){
@@ -382,17 +387,59 @@ void LogFormatter::init(){
 LoggerManager::LoggerManager(){
     m_root.reset(new Logger);
     m_root->addAppender(LogAppender::ptr(new StdoutLogAppender));
+
+	init();
 }
 
 Logger::ptr LoggerManager::getLogger(const std::string& name){
     auto it = m_loggers.find(name);
-    return it == m_loggers.end()? m_root : it->second;
+    if(it != m_loggers.end()){
+    	return it->second;
+    }
+    Logger::ptr logger(new Logger(name));
+    Logger->m_root = m_root;
+    m_loggers[name] = logger;
+    return logger;
 }
+
+struct LogAppenderDefine{
+	int type = 0; //1 File 2 std
+	LogLevel::Level level = LogLevel::UNKNOW;
+	std::string formatter;
+	std::string file;
+
+	bool operator==(const LogAppenderDefine& oth) const{
+		return type == oth.type
+			&& level == oth.level;
+			&& formatter == oth.formatter
+			&& file == oth.file;
+	}
+	
+};
+
+struct LogDefine{
+	std::string name;
+	LogLevel::Level level = LogLevel::UNKNOW;
+	std::string formatter;
+	std::vector<LogAppenderDefines> appenders;
+	
+	bool operator==(const LogDefine& oth)const {
+		return name == oth.name
+			&&level ==oth.level
+			&& formatter == oth.formatter
+			&& appenders == appenders;
+	}
+
+	bool operator<(const LogDefine& oth) const{
+		return name < oth.name;
+	}
+};
+
+winter::ConfigVar<std::set<LogDefine> > g_log_define=
+	winter::Config::Lookup("logs",std::setLogDefine>(),"logs config");
 
 void LoggerManager::init(){
 
 }
-
-
 
 }

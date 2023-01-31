@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ghx/MyProjects/cpp/winter/tests/test.cc" "CMakeFiles/test.dir/tests/test.cc.o" "gcc" "CMakeFiles/test.dir/tests/test.cc.o.d"
+  "/home/ubuntu/Projects/Winter/tests/test.cc" "CMakeFiles/test.dir/tests/test.cc.o" "gcc" "CMakeFiles/test.dir/tests/test.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/winter.dir/DependInfo.cmake"
+  "/home/ubuntu/Projects/Winter/build/CMakeFiles/winter.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

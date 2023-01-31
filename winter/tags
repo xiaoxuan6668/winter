@@ -1,0 +1,219 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Config	config.h	/^class Config{$/;"	c	namespace:winter
+ConfigVar	config.h	/^    ConfigVar(const std::string& name$/;"	f	class:winter::ConfigVar
+ConfigVar	config.h	/^class ConfigVar : public ConfigVarBase {$/;"	c	namespace:winter
+ConfigVarBase	config.h	/^    ConfigVarBase(const std::string& name, const std::string& description = "")$/;"	f	class:winter::ConfigVarBase
+ConfigVarBase	config.h	/^class ConfigVarBase {$/;"	c	namespace:winter
+ConfigVarMap	config.h	/^    typedef std::map<std::string, ConfigVarBase::ptr> ConfigVarMap;$/;"	t	class:winter::Config
+DEBUG	log.h	/^            DEBUG = 1,$/;"	e	enum:winter::LogLevel::Level
+DateTimeFormatItem	log.cc	/^        DateTimeFormatItem(const std::string& format = "%Y-%m-%d %H:%M:%S")$/;"	f	class:winter::DateTimeFormatItem
+DateTimeFormatItem	log.cc	/^class DateTimeFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+ERROR	log.h	/^            ERROR = 4,$/;"	e	enum:winter::LogLevel::Level
+ElapseFormatItem	log.cc	/^        ElapseFormatItem(const std::string& str = ""){}$/;"	f	class:winter::ElapseFormatItem
+ElapseFormatItem	log.cc	/^class ElapseFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+FATAL	log.h	/^            FATAL = 5$/;"	e	enum:winter::LogLevel::Level
+FiberIdFormatItem	log.cc	/^        FiberIdFormatItem(const std::string& str = ""){}$/;"	f	class:winter::FiberIdFormatItem
+FiberIdFormatItem	log.cc	/^class FiberIdFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+FileLogAppender	log.cc	/^FileLogAppender::FileLogAppender(const std::string& filename)$/;"	f	class:winter::FileLogAppender
+FileLogAppender	log.h	/^class FileLogAppender : public LogAppender{$/;"	c	namespace:winter
+FileNameFormatItem	log.cc	/^        FileNameFormatItem(const std::string& str = ""){}$/;"	f	class:winter::FileNameFormatItem
+FileNameFormatItem	log.cc	/^class FileNameFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+FormatItem	log.h	/^        class FormatItem{$/;"	c	class:winter::LogFormatter
+GetFiberId	util.cc	/^    uint32_t GetFiberId() {$/;"	f	namespace:winter
+GetInstance	singleton.h	/^    static T* GetInstance() {$/;"	f	class:winter::Singleton
+GetInstance	singleton.h	/^    static std::shared_ptr<T> GetInstance() {$/;"	f	class:winter::SingletonPtr
+GetThreadId	util.cc	/^    pid_t GetThreadId() {$/;"	f	namespace:winter
+INFO	log.h	/^            INFO = 2,$/;"	e	enum:winter::LogLevel::Level
+Level	log.h	/^        enum Level{$/;"	g	class:winter::LogLevel
+LevelFormatItem	log.cc	/^        LevelFormatItem(const std::string& str = ""){}$/;"	f	class:winter::LevelFormatItem
+LevelFormatItem	log.cc	/^class LevelFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+LexicalCast	config.h	/^class LexicalCast {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::list<T>, std::string> {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::map<std::string, T>, std::string> {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::set<T>, std::string> {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::string, std::list<T> > {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::string, std::map<std::string, T> > {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::string, std::set<T> > {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::string, std::unordered_map<std::string, T> > {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::string, std::unordered_set<T> > {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::string, std::vector<T> > {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::unordered_map<std::string, T>, std::string> {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::unordered_set<T>, std::string> {$/;"	c	namespace:winter
+LexicalCast	config.h	/^class LexicalCast<std::vector<T>, std::string> {$/;"	c	namespace:winter
+LineFormatItem	log.cc	/^        LineFormatItem(const std::string& str = ""){}$/;"	f	class:winter::LineFormatItem
+LineFormatItem	log.cc	/^class LineFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+ListAllMember	config.cc	/^static void ListAllMember(const std::string& prefix,$/;"	f	namespace:winter
+LoadFromYaml	config.cc	/^void Config::LoadFromYaml(const YAML::Node& root) {$/;"	f	class:winter::Config
+LogAppender	log.h	/^class LogAppender{$/;"	c	namespace:winter
+LogEvent	log.cc	/^LogEvent::LogEvent(std::shared_ptr<Logger> logger, LogLevel::Level level, $/;"	f	class:winter::LogEvent
+LogEvent	log.h	/^class LogEvent{$/;"	c	namespace:winter
+LogEventWrap	log.cc	/^LogEventWrap::LogEventWrap(LogEvent::ptr e)$/;"	f	class:winter::LogEventWrap
+LogEventWrap	log.h	/^class LogEventWrap{$/;"	c	namespace:winter
+LogFormatter	log.cc	/^LogFormatter::LogFormatter(const std::string& pattern)$/;"	f	class:winter::LogFormatter
+LogFormatter	log.h	/^class LogFormatter{$/;"	c	namespace:winter
+LogLevel	log.h	/^class LogLevel{$/;"	c	namespace:winter
+Logger	log.cc	/^Logger::Logger(const std::string& name)$/;"	f	class:winter::Logger
+Logger	log.h	/^class Logger : public std::enable_shared_from_this<Logger>{$/;"	c	namespace:winter
+LoggerManager	log.cc	/^LoggerManager::LoggerManager(){$/;"	f	class:winter::LoggerManager
+LoggerManager	log.h	/^class LoggerManager{$/;"	c	namespace:winter
+LoggerMgr	log.h	/^typedef winter::Singleton<LoggerManager> LoggerMgr;$/;"	t	namespace:winter
+Lookup	config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string& name) {$/;"	f	class:winter::Config
+Lookup	config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string& name,$/;"	f	class:winter::Config
+LookupBase	config.cc	/^ConfigVarBase::ptr Config::LookupBase(const std::string& name) {$/;"	f	class:winter::Config
+MessageFormatItem	log.cc	/^        MessageFormatItem(const std::string& str = ""){}$/;"	f	class:winter::MessageFormatItem
+MessageFormatItem	log.cc	/^class MessageFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+NameFormatItem	log.cc	/^        NameFormatItem(const std::string& str = ""){}$/;"	f	class:winter::NameFormatItem
+NameFormatItem	log.cc	/^class NameFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+NewLineFormatItem	log.cc	/^        NewLineFormatItem(const std::string& str = ""){}$/;"	f	class:winter::NewLineFormatItem
+NewLineFormatItem	log.cc	/^class NewLineFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+Singleton	singleton.h	/^class Singleton {$/;"	c	namespace:winter
+SingletonPtr	singleton.h	/^class SingletonPtr {$/;"	c	namespace:winter
+StdoutLogAppender	log.h	/^class StdoutLogAppender : public LogAppender{$/;"	c	namespace:winter
+StringFormatItem	log.cc	/^        StringFormatItem(const std::string& str)$/;"	f	class:winter::StringFormatItem
+StringFormatItem	log.cc	/^class StringFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+TabFormatItem	log.cc	/^        TabFormatItem(const std::string& str)$/;"	f	class:winter::TabFormatItem
+TabFormatItem	log.cc	/^class TabFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+ThreadIdFormatItem	log.cc	/^        ThreadIdFormatItem(const std::string& str = ""){}$/;"	f	class:winter::ThreadIdFormatItem
+ThreadIdFormatItem	log.cc	/^class ThreadIdFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:winter	file:
+ToString	log.cc	/^const char* LogLevel::ToString(LogLevel::Level level){$/;"	f	class:winter::LogLevel
+UNKNOW	log.h	/^            UNKNOW = 0,$/;"	e	enum:winter::LogLevel::Level
+WARN	log.h	/^            WARN = 3,$/;"	e	enum:winter::LogLevel::Level
+WINTER_LOGNAME	log.h	41;"	d
+WINTER_LOG_DEBUG	log.h	22;"	d
+WINTER_LOG_ERROR	log.h	25;"	d
+WINTER_LOG_FATAL	log.h	26;"	d
+WINTER_LOG_FMT_DEBUG	log.h	34;"	d
+WINTER_LOG_FMT_ERROR	log.h	37;"	d
+WINTER_LOG_FMT_FATAL	log.h	38;"	d
+WINTER_LOG_FMT_INFO	log.h	35;"	d
+WINTER_LOG_FMT_LEVEL	log.h	28;"	d
+WINTER_LOG_FMT_WARN	log.h	36;"	d
+WINTER_LOG_INFO	log.h	23;"	d
+WINTER_LOG_LEVEL	log.h	17;"	d
+WINTER_LOG_ROOT	log.h	40;"	d
+WINTER_LOG_WARN	log.h	24;"	d
+XX	log.cc	10;"	d	file:
+XX	log.cc	19;"	d	file:
+XX	log.cc	339;"	d	file:
+XX	log.cc	353;"	d	file:
+__WINTER_CONFIG_H__	config.h	2;"	d
+__WINTER_LOG_H__	log.h	2;"	d
+__WINTER_SINGLETON_H__	singleton.h	2;"	d
+__WINTER_UTIL_H__	util.h	2;"	d
+addAppender	log.cc	/^void Logger::addAppender(LogAppender::ptr appender){$/;"	f	class:winter::Logger
+addListener	config.h	/^    void addListener(uint64_t key, on_change_cb cb){$/;"	f	class:winter::ConfigVar
+clearListener	config.h	/^    void clearListener(){$/;"	f	class:winter::ConfigVar
+debug	log.cc	/^void Logger::debug(LogEvent::ptr event){$/;"	f	class:winter::Logger
+delListener	config.h	/^    void delListener(uint64_t key){$/;"	f	class:winter::ConfigVar
+deleteAppender	log.cc	/^void Logger::deleteAppender(LogAppender::ptr appender){$/;"	f	class:winter::Logger
+error	log.cc	/^void Logger::error(LogEvent::ptr event){$/;"	f	class:winter::Logger
+fatal	log.cc	/^void Logger::fatal(LogEvent::ptr event){$/;"	f	class:winter::Logger
+format	log.cc	/^std::string LogFormatter::format(Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event){$/;"	f	class:winter::LogFormatter
+format	log.cc	/^void LogEvent::format(const char* fmt, ...) {$/;"	f	class:winter::LogEvent
+format	log.cc	/^void LogEvent::format(const char* fmt, va_list al) {$/;"	f	class:winter::LogEvent
+getContent	log.h	/^        std::string getContent() const{return m_ss.str();}$/;"	f	class:winter::LogEvent
+getDescription	config.h	/^    const std::string& getDescription() const { return m_description;}$/;"	f	class:winter::ConfigVarBase
+getElapse	log.h	/^        uint32_t getElapse() const {return m_elapse;}$/;"	f	class:winter::LogEvent
+getEvent	log.h	/^        LogEvent::ptr getEvent() const { return m_event;}$/;"	f	class:winter::LogEventWrap
+getFiberId	log.h	/^        uint32_t getFiberId() const {return m_fiberId;}$/;"	f	class:winter::LogEvent
+getFile	log.h	/^        const char* getFile() const {return m_file;}$/;"	f	class:winter::LogEvent
+getFormatter	log.h	/^        LogFormatter::ptr getFormatter() const {return m_formatter;}$/;"	f	class:winter::LogAppender
+getLevel	log.h	/^        LogLevel::Level getLevel() const { return m_level;}$/;"	f	class:winter::LogAppender
+getLevel	log.h	/^        LogLevel::Level getLevel() const {return m_level;}$/;"	f	class:winter::LogEvent
+getLevel	log.h	/^        LogLevel::Level getLevel() const {return m_level;}$/;"	f	class:winter::Logger
+getLine	log.h	/^        int32_t getLine() const {return m_line;}$/;"	f	class:winter::LogEvent
+getListener	config.h	/^    on_change_cb getListener(uint64_t key){$/;"	f	class:winter::ConfigVar
+getLogger	log.cc	/^Logger::ptr LoggerManager::getLogger(const std::string& name){$/;"	f	class:winter::LoggerManager
+getLogger	log.h	/^        std::shared_ptr<Logger> getLogger() const {return m_logger;}$/;"	f	class:winter::LogEvent
+getName	config.h	/^    const std::string& getName() const { return m_name;}$/;"	f	class:winter::ConfigVarBase
+getName	log.h	/^        const std::string& getName() const { return m_name;}$/;"	f	class:winter::Logger
+getRoot	log.h	/^    Logger::ptr getRoot() const { return m_root;}$/;"	f	class:winter::LoggerManager
+getSS	log.cc	/^std::stringstream& LogEventWrap::getSS(){$/;"	f	class:winter::LogEventWrap
+getSS	log.h	/^        std::stringstream& getSS() {return m_ss;}$/;"	f	class:winter::LogEvent
+getThreadId	log.h	/^        uint32_t getThreadId() const {return m_threadId;}$/;"	f	class:winter::LogEvent
+getTime	log.h	/^        uint64_t getTime() const {return m_time;}$/;"	f	class:winter::LogEvent
+getValue	config.h	/^    const T getValue() const { return m_val;}$/;"	f	class:winter::ConfigVar
+info	log.cc	/^void Logger::info(LogEvent::ptr event){$/;"	f	class:winter::Logger
+init	log.cc	/^void LogFormatter::init(){$/;"	f	class:winter::LogFormatter
+init	log.cc	/^void LoggerManager::init(){$/;"	f	class:winter::LoggerManager
+log	log.cc	/^void FileLogAppender::log(Logger::ptr logger,LogLevel::Level level, LogEvent::ptr event){$/;"	f	class:winter::FileLogAppender
+log	log.cc	/^void Logger::log(LogLevel::Level level, LogEvent::ptr event){$/;"	f	class:winter::Logger
+log	log.cc	/^void StdoutLogAppender::log(Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event){$/;"	f	class:winter::StdoutLogAppender
+m_appenders	log.h	/^        std::list<LogAppender::ptr> m_appenders;    \/\/Appender集合$/;"	m	class:winter::Logger
+m_cbs	config.h	/^    std::map<uint64_t, on_change_cb> m_cbs;$/;"	m	class:winter::ConfigVar
+m_description	config.h	/^    std::string m_description;$/;"	m	class:winter::ConfigVarBase
+m_elapse	log.h	/^        uint32_t m_elapse = 0;          \/\/程序启动开始到现在的毫秒数$/;"	m	class:winter::LogEvent
+m_event	log.h	/^        LogEvent::ptr m_event;$/;"	m	class:winter::LogEventWrap
+m_fiberId	log.h	/^        uint32_t m_fiberId = 0;         \/\/协程id$/;"	m	class:winter::LogEvent
+m_file	log.h	/^        const char* m_file = nullptr;   \/\/文件名$/;"	m	class:winter::LogEvent
+m_filename	log.h	/^        std::string m_filename;$/;"	m	class:winter::FileLogAppender
+m_filestream	log.h	/^        std::ofstream m_filestream;$/;"	m	class:winter::FileLogAppender
+m_format	log.cc	/^        std::string m_format;$/;"	m	class:winter::DateTimeFormatItem	file:
+m_formatter	log.h	/^        LogFormatter::ptr m_formatter;$/;"	m	class:winter::LogAppender
+m_formatter	log.h	/^        LogFormatter::ptr m_formatter;$/;"	m	class:winter::Logger
+m_items	log.h	/^        std::vector<FormatItem::ptr> m_items;$/;"	m	class:winter::LogFormatter
+m_level	log.h	/^        LogLevel::Level m_level = LogLevel::DEBUG;$/;"	m	class:winter::LogAppender
+m_level	log.h	/^        LogLevel::Level m_level;                    \/\/日志级别$/;"	m	class:winter::Logger
+m_level	log.h	/^        LogLevel::Level m_level;$/;"	m	class:winter::LogEvent
+m_line	log.h	/^        int32_t m_line = 0;             \/\/行号$/;"	m	class:winter::LogEvent
+m_logger	log.h	/^        std::shared_ptr<Logger> m_logger;$/;"	m	class:winter::LogEvent
+m_loggers	log.h	/^    std::map<std::string, Logger::ptr> m_loggers;$/;"	m	class:winter::LoggerManager
+m_name	config.h	/^    std::string m_name;$/;"	m	class:winter::ConfigVarBase
+m_name	log.h	/^        std::string m_name;                         \/\/日志名称$/;"	m	class:winter::Logger
+m_pattern	log.h	/^        std::string m_pattern;$/;"	m	class:winter::LogFormatter
+m_root	log.h	/^    Logger::ptr m_root;$/;"	m	class:winter::LoggerManager
+m_ss	log.h	/^        std::stringstream m_ss;$/;"	m	class:winter::LogEvent
+m_string	log.cc	/^        std::string m_string;$/;"	m	class:winter::StringFormatItem	file:
+m_string	log.cc	/^        std::string m_string;$/;"	m	class:winter::TabFormatItem	file:
+m_threadId	log.h	/^        uint32_t m_threadId = 0;        \/\/线程id$/;"	m	class:winter::LogEvent
+m_time	log.h	/^        uint64_t m_time;                \/\/时间戳$/;"	m	class:winter::LogEvent
+m_val	config.h	/^    T m_val;$/;"	m	class:winter::ConfigVar
+on_change_cb	config.h	/^    typedef std::function<void (const T& old_value, const T& new_value)> on_change_cb;$/;"	t	class:winter::ConfigVar
+operator ()	config.h	/^    T operator()(const F& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::list<T> operator()(const std::string& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::map<std::string, T> operator()(const std::string& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::set<T> operator()(const std::string& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::list<T>& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::map<std::string, T>& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::set<T>& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::unordered_map<std::string, T>& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::unordered_set<T>& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::vector<T>& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::unordered_map<std::string, T> operator()(const std::string& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::unordered_set<T> operator()(const std::string& v) {$/;"	f	class:winter::LexicalCast
+operator ()	config.h	/^    std::vector<T> operator()(const std::string& v) {$/;"	f	class:winter::LexicalCast
+override	log.h	/^        void log(Logger::ptr logger, LogLevel::Level, LogEvent::ptr event) override;$/;"	m	class:winter::FileLogAppender
+override	log.h	/^        void log(Logger::ptr logger, LogLevel::Level, LogEvent::ptr event) override;$/;"	m	class:winter::StdoutLogAppender
+ptr	config.h	/^    typedef std::shared_ptr<ConfigVar> ptr;$/;"	t	class:winter::ConfigVar
+ptr	config.h	/^    typedef std::shared_ptr<ConfigVarBase> ptr;$/;"	t	class:winter::ConfigVarBase
+ptr	log.h	/^            typedef std::shared_ptr<FormatItem> ptr;$/;"	t	class:winter::LogFormatter::FormatItem
+ptr	log.h	/^        typedef std::shared_ptr<FileLogAppender> ptr;$/;"	t	class:winter::FileLogAppender
+ptr	log.h	/^        typedef std::shared_ptr<LogAppender> ptr;$/;"	t	class:winter::LogAppender
+ptr	log.h	/^        typedef std::shared_ptr<LogEvent> ptr;$/;"	t	class:winter::LogEvent
+ptr	log.h	/^        typedef std::shared_ptr<LogFormatter> ptr;$/;"	t	class:winter::LogFormatter
+ptr	log.h	/^        typedef std::shared_ptr<Logger> ptr;$/;"	t	class:winter::Logger
+ptr	log.h	/^        typedef std::shared_ptr<StdoutLogAppender> ptr;$/;"	t	class:winter::StdoutLogAppender
+reopen	log.cc	/^bool FileLogAppender::reopen(){$/;"	f	class:winter::FileLogAppender
+s_datas	config.cc	/^Config::ConfigVarMap Config::s_datas;$/;"	m	class:winter::Config	file:
+s_datas	config.h	/^    static ConfigVarMap s_datas;$/;"	m	class:winter::Config
+setFormatter	log.h	/^        void setFormatter(LogFormatter::ptr val){m_formatter = val;}$/;"	f	class:winter::LogAppender
+setLevel	log.h	/^        void setLevel(LogLevel::Level val) { m_level = val;}$/;"	f	class:winter::LogAppender
+setLevel	log.h	/^        void setLevel(LogLevel::Level val) {m_level = val;}$/;"	f	class:winter::Logger
+setValue	config.h	/^    void setValue(const T& v) {$/;"	f	class:winter::ConfigVar
+warn	log.cc	/^void Logger::warn(LogEvent::ptr event){$/;"	f	class:winter::Logger
+winter	config.cc	/^namespace winter{$/;"	n	file:
+winter	config.h	/^namespace winter {$/;"	n
+winter	log.cc	/^namespace winter{$/;"	n	file:
+winter	log.h	/^namespace winter{$/;"	n
+winter	singleton.h	/^namespace winter {$/;"	n
+winter	util.cc	/^namespace winter {$/;"	n	file:
+winter	util.h	/^namespace winter {$/;"	n
+~ConfigVarBase	config.h	/^    virtual ~ConfigVarBase() {}$/;"	f	class:winter::ConfigVarBase
+~FormatItem	log.h	/^            virtual ~FormatItem(){}$/;"	f	class:winter::LogFormatter::FormatItem
+~LogAppender	log.h	/^        virtual ~LogAppender(){}$/;"	f	class:winter::LogAppender
+~LogEventWrap	log.cc	/^LogEventWrap::~LogEventWrap(){$/;"	f	class:winter::LogEventWrap

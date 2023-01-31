@@ -1,8 +1,7 @@
 CMakeFiles/winter.dir/winter/config.cc.o: \
- /home/ghx/MyProjects/cpp/winter/winter/config.cc \
- /usr/include/stdc-predef.h \
- /home/ghx/MyProjects/cpp/winter/winter/config.h \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
+ /home/ubuntu/Projects/Winter/winter/config.cc /usr/include/stdc-predef.h \
+ /home/ubuntu/Projects/Winter/winter/config.h /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -769,15 +768,15 @@ CMakeFiles/winter.dir/winter/config.cc.o: \
  /usr/local/include/yaml-cpp/node/detail/impl.h \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
- /home/ghx/MyProjects/cpp/winter/winter/log.h /usr/include/c++/11/fstream \
+ /home/ubuntu/Projects/Winter/winter/log.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/ghx/MyProjects/cpp/winter/winter/util.h \
+ /home/ubuntu/Projects/Winter/winter/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/ghx/MyProjects/cpp/winter/winter/singleton.h \
+ /home/ubuntu/Projects/Winter/winter/singleton.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h

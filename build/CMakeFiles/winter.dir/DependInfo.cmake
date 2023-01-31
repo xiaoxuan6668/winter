@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ghx/MyProjects/cpp/winter/winter/config.cc" "CMakeFiles/winter.dir/winter/config.cc.o" "gcc" "CMakeFiles/winter.dir/winter/config.cc.o.d"
-  "/home/ghx/MyProjects/cpp/winter/winter/log.cc" "CMakeFiles/winter.dir/winter/log.cc.o" "gcc" "CMakeFiles/winter.dir/winter/log.cc.o.d"
-  "/home/ghx/MyProjects/cpp/winter/winter/util.cc" "CMakeFiles/winter.dir/winter/util.cc.o" "gcc" "CMakeFiles/winter.dir/winter/util.cc.o.d"
+  "/home/ubuntu/Projects/Winter/winter/config.cc" "CMakeFiles/winter.dir/winter/config.cc.o" "gcc" "CMakeFiles/winter.dir/winter/config.cc.o.d"
+  "/home/ubuntu/Projects/Winter/winter/log.cc" "CMakeFiles/winter.dir/winter/log.cc.o" "gcc" "CMakeFiles/winter.dir/winter/log.cc.o.d"
+  "/home/ubuntu/Projects/Winter/winter/util.cc" "CMakeFiles/winter.dir/winter/util.cc.o" "gcc" "CMakeFiles/winter.dir/winter/util.cc.o.d"
   )
 
 # Targets to which this target links.
