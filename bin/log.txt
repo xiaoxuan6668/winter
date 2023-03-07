@@ -1,8 +1,0 @@
-2022-12-02 23:16:52	ERROR	test macro error
-2022-12-02 23:16:52	ERROR	test macro fmt error aa
-2022-12-02 23:17:12	ERROR	test macro error
-2022-12-02 23:17:12	ERROR	test macro fmt error aa
-2022-12-02 23:17:32	ERROR	test macro error
-2022-12-02 23:17:32	ERROR	test macro fmt error aa
-2022-12-03 02:13:30	ERROR	test macro error
-2022-12-03 02:13:30	ERROR	test macro fmt error aa

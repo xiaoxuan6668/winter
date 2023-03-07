@@ -6,7 +6,7 @@ int main(int argc, char** argv){
     winter::Logger::ptr logger(new winter::Logger);
     logger->addAppender(winter::LogAppender::ptr(new winter::StdoutLogAppender));
     
-    winter::FileLogAppender::ptr file_appender(new winter::FileLogAppender("./log.txt"));
+    winter::FileLogAppender::ptr file_appender(new winter::FileLogAppender("./test.txt"));
     winter::LogFormatter::ptr fmt(new winter::LogFormatter("%d%T%p%T%m%n"));
     file_appender->setFormatter(fmt);
     file_appender->setLevel(winter::LogLevel::ERROR);

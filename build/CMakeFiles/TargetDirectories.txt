@@ -1,5 +1,10 @@
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/winter.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_config.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_thread.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_util.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_fiber.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_scheduler.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_iomanager.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/edit_cache.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/rebuild_cache.dir
