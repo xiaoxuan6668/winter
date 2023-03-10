@@ -80,6 +80,8 @@
         "valarray": "cpp",
         "version": "cpp",
         "unordered_set": "cpp",
-        "__mutex_base": "cpp"
+        "__mutex_base": "cpp",
+        "__threading_support": "cpp",
+        "climits": "cpp"
     }
 }

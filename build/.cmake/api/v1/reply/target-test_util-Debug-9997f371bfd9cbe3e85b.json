@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/ghx/MyProjects/cpp/winter/bin/test_fiber"
+			"path" : "/home/ghx/MyProjects/cpp/winter/bin/test_util"
 		}
 	],
 	"backtrace" : 1,
@@ -78,7 +78,7 @@
 			[
 				{
 					"backtrace" : 6,
-					"define" : "__FILE__=\"tests/test_fiber.cc\""
+					"define" : "__FILE__=\"tests/test_util.cc\""
 				}
 			],
 			"includes" : 
@@ -102,7 +102,7 @@
 			"id" : "winter::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "test_fiber::@6890427a1f51a3e7e1df",
+	"id" : "test_util::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -131,14 +131,19 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "-lyaml-cpp",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_fiber",
-	"nameOnDisk" : "test_fiber",
+	"name" : "test_util",
+	"nameOnDisk" : "test_util",
 	"paths" : 
 	{
 		"build" : ".",
@@ -159,7 +164,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/test_fiber.cc",
+			"path" : "tests/test_util.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

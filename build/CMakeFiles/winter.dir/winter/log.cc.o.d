@@ -202,7 +202,9 @@ CMakeFiles/winter.dir/winter/log.cc.o: \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /usr/include/c++/11/iostream \
+ /usr/include/c++/11/atomic \
+ /home/ghx/MyProjects/cpp/winter/winter/noncopyable.h \
+ /usr/include/c++/11/iostream \
  /home/ghx/MyProjects/cpp/winter/winter/config.h \
  /usr/include/boost/lexical_cast.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \

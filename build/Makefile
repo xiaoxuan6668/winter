@@ -223,6 +223,32 @@ test_iomanager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
 .PHONY : test_iomanager/fast
 
+#=============================================================================
+# Target rules for targets named test_hook
+
+# Build rule for target.
+test_hook: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_hook
+.PHONY : test_hook
+
+# fast build rule for target.
+test_hook/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
+.PHONY : test_hook/fast
+
+#=============================================================================
+# Target rules for targets named test_address
+
+# Build rule for target.
+test_address: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_address
+.PHONY : test_address
+
+# fast build rule for target.
+test_address/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
+.PHONY : test_address/fast
+
 tests/test.o: tests/test.cc.o
 .PHONY : tests/test.o
 
@@ -246,6 +272,30 @@ tests/test.s: tests/test.cc.s
 tests/test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cc.s
 .PHONY : tests/test.cc.s
+
+tests/test_address.o: tests/test_address.cc.o
+.PHONY : tests/test_address.o
+
+# target to build an object file
+tests/test_address.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.o
+.PHONY : tests/test_address.cc.o
+
+tests/test_address.i: tests/test_address.cc.i
+.PHONY : tests/test_address.i
+
+# target to preprocess a source file
+tests/test_address.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.i
+.PHONY : tests/test_address.cc.i
+
+tests/test_address.s: tests/test_address.cc.s
+.PHONY : tests/test_address.s
+
+# target to generate assembly for a file
+tests/test_address.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.s
+.PHONY : tests/test_address.cc.s
 
 tests/test_config.o: tests/test_config.cc.o
 .PHONY : tests/test_config.o
@@ -294,6 +344,30 @@ tests/test_fiber.s: tests/test_fiber.cc.s
 tests/test_fiber.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.s
 .PHONY : tests/test_fiber.cc.s
+
+tests/test_hook.o: tests/test_hook.cc.o
+.PHONY : tests/test_hook.o
+
+# target to build an object file
+tests/test_hook.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.o
+.PHONY : tests/test_hook.cc.o
+
+tests/test_hook.i: tests/test_hook.cc.i
+.PHONY : tests/test_hook.i
+
+# target to preprocess a source file
+tests/test_hook.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.i
+.PHONY : tests/test_hook.cc.i
+
+tests/test_hook.s: tests/test_hook.cc.s
+.PHONY : tests/test_hook.s
+
+# target to generate assembly for a file
+tests/test_hook.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.s
+.PHONY : tests/test_hook.cc.s
 
 tests/test_iomanager.o: tests/test_iomanager.cc.o
 .PHONY : tests/test_iomanager.o
@@ -391,6 +465,30 @@ tests/test_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cc.s
 .PHONY : tests/test_util.cc.s
 
+winter/address.o: winter/address.cc.o
+.PHONY : winter/address.o
+
+# target to build an object file
+winter/address.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/address.cc.o
+.PHONY : winter/address.cc.o
+
+winter/address.i: winter/address.cc.i
+.PHONY : winter/address.i
+
+# target to preprocess a source file
+winter/address.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/address.cc.i
+.PHONY : winter/address.cc.i
+
+winter/address.s: winter/address.cc.s
+.PHONY : winter/address.s
+
+# target to generate assembly for a file
+winter/address.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/address.cc.s
+.PHONY : winter/address.cc.s
+
 winter/config.o: winter/config.cc.o
 .PHONY : winter/config.o
 
@@ -415,6 +513,30 @@ winter/config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/config.cc.s
 .PHONY : winter/config.cc.s
 
+winter/fd_manager.o: winter/fd_manager.cc.o
+.PHONY : winter/fd_manager.o
+
+# target to build an object file
+winter/fd_manager.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/fd_manager.cc.o
+.PHONY : winter/fd_manager.cc.o
+
+winter/fd_manager.i: winter/fd_manager.cc.i
+.PHONY : winter/fd_manager.i
+
+# target to preprocess a source file
+winter/fd_manager.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/fd_manager.cc.i
+.PHONY : winter/fd_manager.cc.i
+
+winter/fd_manager.s: winter/fd_manager.cc.s
+.PHONY : winter/fd_manager.s
+
+# target to generate assembly for a file
+winter/fd_manager.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/fd_manager.cc.s
+.PHONY : winter/fd_manager.cc.s
+
 winter/fiber.o: winter/fiber.cc.o
 .PHONY : winter/fiber.o
 
@@ -438,6 +560,30 @@ winter/fiber.s: winter/fiber.cc.s
 winter/fiber.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/fiber.cc.s
 .PHONY : winter/fiber.cc.s
+
+winter/hook.o: winter/hook.cc.o
+.PHONY : winter/hook.o
+
+# target to build an object file
+winter/hook.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/hook.cc.o
+.PHONY : winter/hook.cc.o
+
+winter/hook.i: winter/hook.cc.i
+.PHONY : winter/hook.i
+
+# target to preprocess a source file
+winter/hook.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/hook.cc.i
+.PHONY : winter/hook.cc.i
+
+winter/hook.s: winter/hook.cc.s
+.PHONY : winter/hook.s
+
+# target to generate assembly for a file
+winter/hook.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/hook.cc.s
+.PHONY : winter/hook.cc.s
 
 winter/iomanager.o: winter/iomanager.cc.o
 .PHONY : winter/iomanager.o
@@ -535,6 +681,30 @@ winter/thread.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/thread.cc.s
 .PHONY : winter/thread.cc.s
 
+winter/timer.o: winter/timer.cc.o
+.PHONY : winter/timer.o
+
+# target to build an object file
+winter/timer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/timer.cc.o
+.PHONY : winter/timer.cc.o
+
+winter/timer.i: winter/timer.cc.i
+.PHONY : winter/timer.i
+
+# target to preprocess a source file
+winter/timer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/timer.cc.i
+.PHONY : winter/timer.cc.i
+
+winter/timer.s: winter/timer.cc.s
+.PHONY : winter/timer.s
+
+# target to generate assembly for a file
+winter/timer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/timer.cc.s
+.PHONY : winter/timer.cc.s
+
 winter/util.o: winter/util.cc.o
 .PHONY : winter/util.o
 
@@ -568,8 +738,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test_address"
 	@echo "... test_config"
 	@echo "... test_fiber"
+	@echo "... test_hook"
 	@echo "... test_iomanager"
 	@echo "... test_scheduler"
 	@echo "... test_thread"
@@ -578,12 +750,18 @@ help:
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"
+	@echo "... tests/test_address.o"
+	@echo "... tests/test_address.i"
+	@echo "... tests/test_address.s"
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
+	@echo "... tests/test_hook.o"
+	@echo "... tests/test_hook.i"
+	@echo "... tests/test_hook.s"
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"
@@ -596,12 +774,21 @@ help:
 	@echo "... tests/test_util.o"
 	@echo "... tests/test_util.i"
 	@echo "... tests/test_util.s"
+	@echo "... winter/address.o"
+	@echo "... winter/address.i"
+	@echo "... winter/address.s"
 	@echo "... winter/config.o"
 	@echo "... winter/config.i"
 	@echo "... winter/config.s"
+	@echo "... winter/fd_manager.o"
+	@echo "... winter/fd_manager.i"
+	@echo "... winter/fd_manager.s"
 	@echo "... winter/fiber.o"
 	@echo "... winter/fiber.i"
 	@echo "... winter/fiber.s"
+	@echo "... winter/hook.o"
+	@echo "... winter/hook.i"
+	@echo "... winter/hook.s"
 	@echo "... winter/iomanager.o"
 	@echo "... winter/iomanager.i"
 	@echo "... winter/iomanager.s"
@@ -614,6 +801,9 @@ help:
 	@echo "... winter/thread.o"
 	@echo "... winter/thread.i"
 	@echo "... winter/thread.s"
+	@echo "... winter/timer.o"
+	@echo "... winter/timer.i"
+	@echo "... winter/timer.s"
 	@echo "... winter/util.o"
 	@echo "... winter/util.i"
 	@echo "... winter/util.s"

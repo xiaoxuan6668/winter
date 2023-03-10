@@ -788,6 +788,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /home/ghx/MyProjects/cpp/winter/tests/../winter/noncopyable.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/fiber.h \
  /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
@@ -796,6 +797,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/macro.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/scheduler.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/iomanager.h \
+ /home/ghx/MyProjects/cpp/winter/tests/../winter/timer.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \

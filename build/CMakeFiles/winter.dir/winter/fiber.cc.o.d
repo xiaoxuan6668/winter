@@ -162,6 +162,7 @@ CMakeFiles/winter.dir/winter/fiber.cc.o: \
  /usr/include/c++/11/bits/basic_string.tcc /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/c++/11/atomic \
+ /home/ghx/MyProjects/cpp/winter/winter/noncopyable.h \
  /home/ghx/MyProjects/cpp/winter/winter/config.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \

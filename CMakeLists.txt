@@ -16,13 +16,17 @@ include_directories(.)
 # message("***", ${YAMLCPP})
 
 set(LIB_SRC
+    winter/address.cc
     winter/log.cc
     winter/util.cc
     winter/config.cc
+    winter/fd_manager.cc
     winter/fiber.cc
+    winter/hook.cc
     winter/scheduler.cc
     winter/iomanager.cc
     winter/thread.cc
+    winter/timer.cc
     )
 
 add_library(winter SHARED ${LIB_SRC})
@@ -33,6 +37,7 @@ force_redefine_file_macro_for_sources(winter) #__FILE__
 set(LIBS
     winter
     pthread
+    dl
     yaml-cpp)
 
 add_executable(test tests/test.cc)
@@ -69,6 +74,16 @@ add_executable(test_iomanager tests/test_iomanager.cc)
 add_dependencies(test_iomanager winter)
 force_redefine_file_macro_for_sources(test_iomanager) #__FILE__
 target_link_libraries(test_iomanager ${LIBS})
+
+add_executable(test_hook tests/test_hook.cc)
+add_dependencies(test_hook winter)
+force_redefine_file_macro_for_sources(test_hook) #__FILE__
+target_link_libraries(test_hook ${LIBS})
+
+add_executable(test_address tests/test_address.cc)
+add_dependencies(test_address winter)
+force_redefine_file_macro_for_sources(test_address) #__FILE__
+target_link_libraries(test_address ${LIBS})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

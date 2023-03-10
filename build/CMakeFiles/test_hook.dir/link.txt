@@ -1,0 +1,1 @@
+/usr/bin/g++  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g CMakeFiles/test_hook.dir/tests/test_hook.cc.o -o ../bin/test_hook  -Wl,-rpath,/home/ghx/MyProjects/cpp/winter/lib ../lib/libwinter.so -lpthread -ldl -lyaml-cpp 

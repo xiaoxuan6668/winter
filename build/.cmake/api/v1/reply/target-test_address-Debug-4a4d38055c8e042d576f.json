@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/ghx/MyProjects/cpp/winter/bin/test_config"
+			"path" : "/home/ghx/MyProjects/cpp/winter/bin/test_address"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 43,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 46,
+				"line" : 86,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 44,
+				"line" : 84,
 				"parent" : 0
 			},
 			{
@@ -54,7 +54,7 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 45,
+				"line" : 85,
 				"parent" : 0
 			},
 			{
@@ -78,7 +78,7 @@
 			[
 				{
 					"backtrace" : 6,
-					"define" : "__FILE__=\"tests/test_config.cc\""
+					"define" : "__FILE__=\"tests/test_address.cc\""
 				}
 			],
 			"includes" : 
@@ -102,7 +102,7 @@
 			"id" : "winter::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "test_config::@6890427a1f51a3e7e1df",
+	"id" : "test_address::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -131,14 +131,19 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "-lyaml-cpp",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_config",
-	"nameOnDisk" : "test_config",
+	"name" : "test_address",
+	"nameOnDisk" : "test_address",
 	"paths" : 
 	{
 		"build" : ".",
@@ -159,7 +164,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/test_config.cc",
+			"path" : "tests/test_address.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

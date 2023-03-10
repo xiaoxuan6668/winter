@@ -1,6 +1,7 @@
 #include "scheduler.h"
 #include "log.h"
 #include "macro.h"
+#include "hook.h"
 
 namespace winter {
 
@@ -135,6 +136,7 @@ void Scheduler::setThis() {
 
 void Scheduler::run() {
     WINTER_LOG_INFO(g_logger) << "run";
+    set_hook_enable(true);
     setThis();
     if(winter::GetThreadId() != m_rootThread) {
         t_fiber = Fiber::GetThis().get();

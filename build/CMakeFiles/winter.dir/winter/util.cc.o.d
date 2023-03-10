@@ -146,6 +146,7 @@ CMakeFiles/winter.dir/winter/util.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc /usr/include/execinfo.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
  /home/ghx/MyProjects/cpp/winter/winter/log.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -203,6 +204,7 @@ CMakeFiles/winter.dir/winter/util.cc.o: \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/c++/11/atomic \
+ /home/ghx/MyProjects/cpp/winter/winter/noncopyable.h \
  /home/ghx/MyProjects/cpp/winter/winter/fiber.h /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \

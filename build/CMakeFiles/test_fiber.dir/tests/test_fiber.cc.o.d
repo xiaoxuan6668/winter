@@ -788,6 +788,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /home/ghx/MyProjects/cpp/winter/tests/../winter/noncopyable.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/fiber.h \
  /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
