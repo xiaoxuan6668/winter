@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+71e28909cf55425a04134f094a26a03e ../winter/http/http11_parser.rl.cc
+95733f499ce481d928eb0d29dd54f3c7 ../winter/http/httpclient_parser.rl.cc
+22b76fcec9de7561efc19cf60d9b074a ../winter/uri.rl.cc

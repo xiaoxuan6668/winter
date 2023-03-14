@@ -7,7 +7,7 @@ void test() {
     std::vector<winter::Address::ptr> addrs;
 
     WINTER_LOG_INFO(g_logger) << "begin";
-    bool v = winter::Address::Lookup(addrs, "www.goole.com");
+    bool v = winter::Address::Lookup(addrs, "www.baidu.com", AF_INET);
     WINTER_LOG_INFO(g_logger) << "end";
     if(!v) {
         WINTER_LOG_ERROR(g_logger) << "lookup fail";

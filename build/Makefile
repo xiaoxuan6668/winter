@@ -133,17 +133,17 @@ winter/fast:
 .PHONY : winter/fast
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named test1
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
+test1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1
+.PHONY : test1
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+test1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
+.PHONY : test1/fast
 
 #=============================================================================
 # Target rules for targets named test_config
@@ -249,12 +249,179 @@ test_address/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
 .PHONY : test_address/fast
 
+#=============================================================================
+# Target rules for targets named test_socket
+
+# Build rule for target.
+test_socket: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_socket
+.PHONY : test_socket
+
+# fast build rule for target.
+test_socket/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+.PHONY : test_socket/fast
+
+#=============================================================================
+# Target rules for targets named test_bytearray
+
+# Build rule for target.
+test_bytearray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_bytearray
+.PHONY : test_bytearray
+
+# fast build rule for target.
+test_bytearray/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
+.PHONY : test_bytearray/fast
+
+#=============================================================================
+# Target rules for targets named test_http
+
+# Build rule for target.
+test_http: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http
+.PHONY : test_http
+
+# fast build rule for target.
+test_http/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/build
+.PHONY : test_http/fast
+
+#=============================================================================
+# Target rules for targets named test_http_parser
+
+# Build rule for target.
+test_http_parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_parser
+.PHONY : test_http_parser
+
+# fast build rule for target.
+test_http_parser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
+.PHONY : test_http_parser/fast
+
+#=============================================================================
+# Target rules for targets named test_tcp_server
+
+# Build rule for target.
+test_tcp_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_tcp_server
+.PHONY : test_tcp_server
+
+# fast build rule for target.
+test_tcp_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/build
+.PHONY : test_tcp_server/fast
+
+#=============================================================================
+# Target rules for targets named echo_server
+
+# Build rule for target.
+echo_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 echo_server
+.PHONY : echo_server
+
+# fast build rule for target.
+echo_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+.PHONY : echo_server/fast
+
+#=============================================================================
+# Target rules for targets named test_http_server
+
+# Build rule for target.
+test_http_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_server
+.PHONY : test_http_server
+
+# fast build rule for target.
+test_http_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
+.PHONY : test_http_server/fast
+
+#=============================================================================
+# Target rules for targets named test_http_connection
+
+# Build rule for target.
+test_http_connection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_connection
+.PHONY : test_http_connection
+
+# fast build rule for target.
+test_http_connection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
+.PHONY : test_http_connection/fast
+
+#=============================================================================
+# Target rules for targets named test_uri
+
+# Build rule for target.
+test_uri: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_uri
+.PHONY : test_uri
+
+# fast build rule for target.
+test_uri/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/build
+.PHONY : test_uri/fast
+
+#=============================================================================
+# Target rules for targets named test_daemon
+
+# Build rule for target.
+test_daemon: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_daemon
+.PHONY : test_daemon
+
+# fast build rule for target.
+test_daemon/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
+.PHONY : test_daemon/fast
+
+#=============================================================================
+# Target rules for targets named test_env
+
+# Build rule for target.
+test_env: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_env
+.PHONY : test_env
+
+# fast build rule for target.
+test_env/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
+.PHONY : test_env/fast
+
+examples/echo_server.o: examples/echo_server.cc.o
+.PHONY : examples/echo_server.o
+
+# target to build an object file
+examples/echo_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cc.o
+.PHONY : examples/echo_server.cc.o
+
+examples/echo_server.i: examples/echo_server.cc.i
+.PHONY : examples/echo_server.i
+
+# target to preprocess a source file
+examples/echo_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cc.i
+.PHONY : examples/echo_server.cc.i
+
+examples/echo_server.s: examples/echo_server.cc.s
+.PHONY : examples/echo_server.s
+
+# target to generate assembly for a file
+examples/echo_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cc.s
+.PHONY : examples/echo_server.cc.s
+
 tests/test.o: tests/test.cc.o
 .PHONY : tests/test.o
 
 # target to build an object file
 tests/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/tests/test.cc.o
 .PHONY : tests/test.cc.o
 
 tests/test.i: tests/test.cc.i
@@ -262,7 +429,7 @@ tests/test.i: tests/test.cc.i
 
 # target to preprocess a source file
 tests/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/tests/test.cc.i
 .PHONY : tests/test.cc.i
 
 tests/test.s: tests/test.cc.s
@@ -270,7 +437,7 @@ tests/test.s: tests/test.cc.s
 
 # target to generate assembly for a file
 tests/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/tests/test.cc.s
 .PHONY : tests/test.cc.s
 
 tests/test_address.o: tests/test_address.cc.o
@@ -297,6 +464,30 @@ tests/test_address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.s
 .PHONY : tests/test_address.cc.s
 
+tests/test_bytearray.o: tests/test_bytearray.cc.o
+.PHONY : tests/test_bytearray.o
+
+# target to build an object file
+tests/test_bytearray.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o
+.PHONY : tests/test_bytearray.cc.o
+
+tests/test_bytearray.i: tests/test_bytearray.cc.i
+.PHONY : tests/test_bytearray.i
+
+# target to preprocess a source file
+tests/test_bytearray.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.i
+.PHONY : tests/test_bytearray.cc.i
+
+tests/test_bytearray.s: tests/test_bytearray.cc.s
+.PHONY : tests/test_bytearray.s
+
+# target to generate assembly for a file
+tests/test_bytearray.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.s
+.PHONY : tests/test_bytearray.cc.s
+
 tests/test_config.o: tests/test_config.cc.o
 .PHONY : tests/test_config.o
 
@@ -320,6 +511,54 @@ tests/test_config.s: tests/test_config.cc.s
 tests/test_config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
+
+tests/test_daemon.o: tests/test_daemon.cc.o
+.PHONY : tests/test_daemon.o
+
+# target to build an object file
+tests/test_daemon.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o
+.PHONY : tests/test_daemon.cc.o
+
+tests/test_daemon.i: tests/test_daemon.cc.i
+.PHONY : tests/test_daemon.i
+
+# target to preprocess a source file
+tests/test_daemon.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.i
+.PHONY : tests/test_daemon.cc.i
+
+tests/test_daemon.s: tests/test_daemon.cc.s
+.PHONY : tests/test_daemon.s
+
+# target to generate assembly for a file
+tests/test_daemon.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s
+.PHONY : tests/test_daemon.cc.s
+
+tests/test_env.o: tests/test_env.cc.o
+.PHONY : tests/test_env.o
+
+# target to build an object file
+tests/test_env.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.o
+.PHONY : tests/test_env.cc.o
+
+tests/test_env.i: tests/test_env.cc.i
+.PHONY : tests/test_env.i
+
+# target to preprocess a source file
+tests/test_env.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.i
+.PHONY : tests/test_env.cc.i
+
+tests/test_env.s: tests/test_env.cc.s
+.PHONY : tests/test_env.s
+
+# target to generate assembly for a file
+tests/test_env.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.s
+.PHONY : tests/test_env.cc.s
 
 tests/test_fiber.o: tests/test_fiber.cc.o
 .PHONY : tests/test_fiber.o
@@ -369,6 +608,102 @@ tests/test_hook.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.s
 .PHONY : tests/test_hook.cc.s
 
+tests/test_http.o: tests/test_http.cc.o
+.PHONY : tests/test_http.o
+
+# target to build an object file
+tests/test_http.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.o
+.PHONY : tests/test_http.cc.o
+
+tests/test_http.i: tests/test_http.cc.i
+.PHONY : tests/test_http.i
+
+# target to preprocess a source file
+tests/test_http.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.i
+.PHONY : tests/test_http.cc.i
+
+tests/test_http.s: tests/test_http.cc.s
+.PHONY : tests/test_http.s
+
+# target to generate assembly for a file
+tests/test_http.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.s
+.PHONY : tests/test_http.cc.s
+
+tests/test_http_connection.o: tests/test_http_connection.cc.o
+.PHONY : tests/test_http_connection.o
+
+# target to build an object file
+tests/test_http_connection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o
+.PHONY : tests/test_http_connection.cc.o
+
+tests/test_http_connection.i: tests/test_http_connection.cc.i
+.PHONY : tests/test_http_connection.i
+
+# target to preprocess a source file
+tests/test_http_connection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.i
+.PHONY : tests/test_http_connection.cc.i
+
+tests/test_http_connection.s: tests/test_http_connection.cc.s
+.PHONY : tests/test_http_connection.s
+
+# target to generate assembly for a file
+tests/test_http_connection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.s
+.PHONY : tests/test_http_connection.cc.s
+
+tests/test_http_parser.o: tests/test_http_parser.cc.o
+.PHONY : tests/test_http_parser.o
+
+# target to build an object file
+tests/test_http_parser.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o
+.PHONY : tests/test_http_parser.cc.o
+
+tests/test_http_parser.i: tests/test_http_parser.cc.i
+.PHONY : tests/test_http_parser.i
+
+# target to preprocess a source file
+tests/test_http_parser.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.i
+.PHONY : tests/test_http_parser.cc.i
+
+tests/test_http_parser.s: tests/test_http_parser.cc.s
+.PHONY : tests/test_http_parser.s
+
+# target to generate assembly for a file
+tests/test_http_parser.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.s
+.PHONY : tests/test_http_parser.cc.s
+
+tests/test_http_server.o: tests/test_http_server.cc.o
+.PHONY : tests/test_http_server.o
+
+# target to build an object file
+tests/test_http_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o
+.PHONY : tests/test_http_server.cc.o
+
+tests/test_http_server.i: tests/test_http_server.cc.i
+.PHONY : tests/test_http_server.i
+
+# target to preprocess a source file
+tests/test_http_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.i
+.PHONY : tests/test_http_server.cc.i
+
+tests/test_http_server.s: tests/test_http_server.cc.s
+.PHONY : tests/test_http_server.s
+
+# target to generate assembly for a file
+tests/test_http_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.s
+.PHONY : tests/test_http_server.cc.s
+
 tests/test_iomanager.o: tests/test_iomanager.cc.o
 .PHONY : tests/test_iomanager.o
 
@@ -417,6 +752,54 @@ tests/test_scheduler.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.s
 .PHONY : tests/test_scheduler.cc.s
 
+tests/test_socket.o: tests/test_socket.cc.o
+.PHONY : tests/test_socket.o
+
+# target to build an object file
+tests/test_socket.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.o
+.PHONY : tests/test_socket.cc.o
+
+tests/test_socket.i: tests/test_socket.cc.i
+.PHONY : tests/test_socket.i
+
+# target to preprocess a source file
+tests/test_socket.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.i
+.PHONY : tests/test_socket.cc.i
+
+tests/test_socket.s: tests/test_socket.cc.s
+.PHONY : tests/test_socket.s
+
+# target to generate assembly for a file
+tests/test_socket.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.s
+.PHONY : tests/test_socket.cc.s
+
+tests/test_tcp_server.o: tests/test_tcp_server.cc.o
+.PHONY : tests/test_tcp_server.o
+
+# target to build an object file
+tests/test_tcp_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o
+.PHONY : tests/test_tcp_server.cc.o
+
+tests/test_tcp_server.i: tests/test_tcp_server.cc.i
+.PHONY : tests/test_tcp_server.i
+
+# target to preprocess a source file
+tests/test_tcp_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.i
+.PHONY : tests/test_tcp_server.cc.i
+
+tests/test_tcp_server.s: tests/test_tcp_server.cc.s
+.PHONY : tests/test_tcp_server.s
+
+# target to generate assembly for a file
+tests/test_tcp_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.s
+.PHONY : tests/test_tcp_server.cc.s
+
 tests/test_thread.o: tests/test_thread.cc.o
 .PHONY : tests/test_thread.o
 
@@ -440,6 +823,30 @@ tests/test_thread.s: tests/test_thread.cc.s
 tests/test_thread.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.s
 .PHONY : tests/test_thread.cc.s
+
+tests/test_uri.o: tests/test_uri.cc.o
+.PHONY : tests/test_uri.o
+
+# target to build an object file
+tests/test_uri.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cc.o
+.PHONY : tests/test_uri.cc.o
+
+tests/test_uri.i: tests/test_uri.cc.i
+.PHONY : tests/test_uri.i
+
+# target to preprocess a source file
+tests/test_uri.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cc.i
+.PHONY : tests/test_uri.cc.i
+
+tests/test_uri.s: tests/test_uri.cc.s
+.PHONY : tests/test_uri.s
+
+# target to generate assembly for a file
+tests/test_uri.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cc.s
+.PHONY : tests/test_uri.cc.s
 
 tests/test_util.o: tests/test_util.cc.o
 .PHONY : tests/test_util.o
@@ -489,6 +896,30 @@ winter/address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/address.cc.s
 .PHONY : winter/address.cc.s
 
+winter/bytearray.o: winter/bytearray.cc.o
+.PHONY : winter/bytearray.o
+
+# target to build an object file
+winter/bytearray.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/bytearray.cc.o
+.PHONY : winter/bytearray.cc.o
+
+winter/bytearray.i: winter/bytearray.cc.i
+.PHONY : winter/bytearray.i
+
+# target to preprocess a source file
+winter/bytearray.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/bytearray.cc.i
+.PHONY : winter/bytearray.cc.i
+
+winter/bytearray.s: winter/bytearray.cc.s
+.PHONY : winter/bytearray.s
+
+# target to generate assembly for a file
+winter/bytearray.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/bytearray.cc.s
+.PHONY : winter/bytearray.cc.s
+
 winter/config.o: winter/config.cc.o
 .PHONY : winter/config.o
 
@@ -512,6 +943,54 @@ winter/config.s: winter/config.cc.s
 winter/config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/config.cc.s
 .PHONY : winter/config.cc.s
+
+winter/daemon.o: winter/daemon.cc.o
+.PHONY : winter/daemon.o
+
+# target to build an object file
+winter/daemon.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/daemon.cc.o
+.PHONY : winter/daemon.cc.o
+
+winter/daemon.i: winter/daemon.cc.i
+.PHONY : winter/daemon.i
+
+# target to preprocess a source file
+winter/daemon.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/daemon.cc.i
+.PHONY : winter/daemon.cc.i
+
+winter/daemon.s: winter/daemon.cc.s
+.PHONY : winter/daemon.s
+
+# target to generate assembly for a file
+winter/daemon.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/daemon.cc.s
+.PHONY : winter/daemon.cc.s
+
+winter/env.o: winter/env.cc.o
+.PHONY : winter/env.o
+
+# target to build an object file
+winter/env.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/env.cc.o
+.PHONY : winter/env.cc.o
+
+winter/env.i: winter/env.cc.i
+.PHONY : winter/env.i
+
+# target to preprocess a source file
+winter/env.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/env.cc.i
+.PHONY : winter/env.cc.i
+
+winter/env.s: winter/env.cc.s
+.PHONY : winter/env.s
+
+# target to generate assembly for a file
+winter/env.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/env.cc.s
+.PHONY : winter/env.cc.s
 
 winter/fd_manager.o: winter/fd_manager.cc.o
 .PHONY : winter/fd_manager.o
@@ -585,6 +1064,198 @@ winter/hook.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/hook.cc.s
 .PHONY : winter/hook.cc.s
 
+winter/http/http.o: winter/http/http.cc.o
+.PHONY : winter/http/http.o
+
+# target to build an object file
+winter/http/http.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http.cc.o
+.PHONY : winter/http/http.cc.o
+
+winter/http/http.i: winter/http/http.cc.i
+.PHONY : winter/http/http.i
+
+# target to preprocess a source file
+winter/http/http.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http.cc.i
+.PHONY : winter/http/http.cc.i
+
+winter/http/http.s: winter/http/http.cc.s
+.PHONY : winter/http/http.s
+
+# target to generate assembly for a file
+winter/http/http.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http.cc.s
+.PHONY : winter/http/http.cc.s
+
+winter/http/http11_parser.rl.o: winter/http/http11_parser.rl.cc.o
+.PHONY : winter/http/http11_parser.rl.o
+
+# target to build an object file
+winter/http/http11_parser.rl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o
+.PHONY : winter/http/http11_parser.rl.cc.o
+
+winter/http/http11_parser.rl.i: winter/http/http11_parser.rl.cc.i
+.PHONY : winter/http/http11_parser.rl.i
+
+# target to preprocess a source file
+winter/http/http11_parser.rl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.i
+.PHONY : winter/http/http11_parser.rl.cc.i
+
+winter/http/http11_parser.rl.s: winter/http/http11_parser.rl.cc.s
+.PHONY : winter/http/http11_parser.rl.s
+
+# target to generate assembly for a file
+winter/http/http11_parser.rl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.s
+.PHONY : winter/http/http11_parser.rl.cc.s
+
+winter/http/http_connection.o: winter/http/http_connection.cc.o
+.PHONY : winter/http/http_connection.o
+
+# target to build an object file
+winter/http/http_connection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_connection.cc.o
+.PHONY : winter/http/http_connection.cc.o
+
+winter/http/http_connection.i: winter/http/http_connection.cc.i
+.PHONY : winter/http/http_connection.i
+
+# target to preprocess a source file
+winter/http/http_connection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_connection.cc.i
+.PHONY : winter/http/http_connection.cc.i
+
+winter/http/http_connection.s: winter/http/http_connection.cc.s
+.PHONY : winter/http/http_connection.s
+
+# target to generate assembly for a file
+winter/http/http_connection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_connection.cc.s
+.PHONY : winter/http/http_connection.cc.s
+
+winter/http/http_parser.o: winter/http/http_parser.cc.o
+.PHONY : winter/http/http_parser.o
+
+# target to build an object file
+winter/http/http_parser.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_parser.cc.o
+.PHONY : winter/http/http_parser.cc.o
+
+winter/http/http_parser.i: winter/http/http_parser.cc.i
+.PHONY : winter/http/http_parser.i
+
+# target to preprocess a source file
+winter/http/http_parser.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_parser.cc.i
+.PHONY : winter/http/http_parser.cc.i
+
+winter/http/http_parser.s: winter/http/http_parser.cc.s
+.PHONY : winter/http/http_parser.s
+
+# target to generate assembly for a file
+winter/http/http_parser.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_parser.cc.s
+.PHONY : winter/http/http_parser.cc.s
+
+winter/http/http_server.o: winter/http/http_server.cc.o
+.PHONY : winter/http/http_server.o
+
+# target to build an object file
+winter/http/http_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_server.cc.o
+.PHONY : winter/http/http_server.cc.o
+
+winter/http/http_server.i: winter/http/http_server.cc.i
+.PHONY : winter/http/http_server.i
+
+# target to preprocess a source file
+winter/http/http_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_server.cc.i
+.PHONY : winter/http/http_server.cc.i
+
+winter/http/http_server.s: winter/http/http_server.cc.s
+.PHONY : winter/http/http_server.s
+
+# target to generate assembly for a file
+winter/http/http_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_server.cc.s
+.PHONY : winter/http/http_server.cc.s
+
+winter/http/http_session.o: winter/http/http_session.cc.o
+.PHONY : winter/http/http_session.o
+
+# target to build an object file
+winter/http/http_session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_session.cc.o
+.PHONY : winter/http/http_session.cc.o
+
+winter/http/http_session.i: winter/http/http_session.cc.i
+.PHONY : winter/http/http_session.i
+
+# target to preprocess a source file
+winter/http/http_session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_session.cc.i
+.PHONY : winter/http/http_session.cc.i
+
+winter/http/http_session.s: winter/http/http_session.cc.s
+.PHONY : winter/http/http_session.s
+
+# target to generate assembly for a file
+winter/http/http_session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/http_session.cc.s
+.PHONY : winter/http/http_session.cc.s
+
+winter/http/httpclient_parser.rl.o: winter/http/httpclient_parser.rl.cc.o
+.PHONY : winter/http/httpclient_parser.rl.o
+
+# target to build an object file
+winter/http/httpclient_parser.rl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o
+.PHONY : winter/http/httpclient_parser.rl.cc.o
+
+winter/http/httpclient_parser.rl.i: winter/http/httpclient_parser.rl.cc.i
+.PHONY : winter/http/httpclient_parser.rl.i
+
+# target to preprocess a source file
+winter/http/httpclient_parser.rl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.i
+.PHONY : winter/http/httpclient_parser.rl.cc.i
+
+winter/http/httpclient_parser.rl.s: winter/http/httpclient_parser.rl.cc.s
+.PHONY : winter/http/httpclient_parser.rl.s
+
+# target to generate assembly for a file
+winter/http/httpclient_parser.rl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.s
+.PHONY : winter/http/httpclient_parser.rl.cc.s
+
+winter/http/servlet.o: winter/http/servlet.cc.o
+.PHONY : winter/http/servlet.o
+
+# target to build an object file
+winter/http/servlet.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/servlet.cc.o
+.PHONY : winter/http/servlet.cc.o
+
+winter/http/servlet.i: winter/http/servlet.cc.i
+.PHONY : winter/http/servlet.i
+
+# target to preprocess a source file
+winter/http/servlet.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/servlet.cc.i
+.PHONY : winter/http/servlet.cc.i
+
+winter/http/servlet.s: winter/http/servlet.cc.s
+.PHONY : winter/http/servlet.s
+
+# target to generate assembly for a file
+winter/http/servlet.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/servlet.cc.s
+.PHONY : winter/http/servlet.cc.s
+
 winter/iomanager.o: winter/iomanager.cc.o
 .PHONY : winter/iomanager.o
 
@@ -657,6 +1328,102 @@ winter/scheduler.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/scheduler.cc.s
 .PHONY : winter/scheduler.cc.s
 
+winter/socket.o: winter/socket.cc.o
+.PHONY : winter/socket.o
+
+# target to build an object file
+winter/socket.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/socket.cc.o
+.PHONY : winter/socket.cc.o
+
+winter/socket.i: winter/socket.cc.i
+.PHONY : winter/socket.i
+
+# target to preprocess a source file
+winter/socket.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/socket.cc.i
+.PHONY : winter/socket.cc.i
+
+winter/socket.s: winter/socket.cc.s
+.PHONY : winter/socket.s
+
+# target to generate assembly for a file
+winter/socket.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/socket.cc.s
+.PHONY : winter/socket.cc.s
+
+winter/socket_stream.o: winter/socket_stream.cc.o
+.PHONY : winter/socket_stream.o
+
+# target to build an object file
+winter/socket_stream.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/socket_stream.cc.o
+.PHONY : winter/socket_stream.cc.o
+
+winter/socket_stream.i: winter/socket_stream.cc.i
+.PHONY : winter/socket_stream.i
+
+# target to preprocess a source file
+winter/socket_stream.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/socket_stream.cc.i
+.PHONY : winter/socket_stream.cc.i
+
+winter/socket_stream.s: winter/socket_stream.cc.s
+.PHONY : winter/socket_stream.s
+
+# target to generate assembly for a file
+winter/socket_stream.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/socket_stream.cc.s
+.PHONY : winter/socket_stream.cc.s
+
+winter/stream.o: winter/stream.cc.o
+.PHONY : winter/stream.o
+
+# target to build an object file
+winter/stream.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/stream.cc.o
+.PHONY : winter/stream.cc.o
+
+winter/stream.i: winter/stream.cc.i
+.PHONY : winter/stream.i
+
+# target to preprocess a source file
+winter/stream.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/stream.cc.i
+.PHONY : winter/stream.cc.i
+
+winter/stream.s: winter/stream.cc.s
+.PHONY : winter/stream.s
+
+# target to generate assembly for a file
+winter/stream.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/stream.cc.s
+.PHONY : winter/stream.cc.s
+
+winter/tcp_server.o: winter/tcp_server.cc.o
+.PHONY : winter/tcp_server.o
+
+# target to build an object file
+winter/tcp_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/tcp_server.cc.o
+.PHONY : winter/tcp_server.cc.o
+
+winter/tcp_server.i: winter/tcp_server.cc.i
+.PHONY : winter/tcp_server.i
+
+# target to preprocess a source file
+winter/tcp_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/tcp_server.cc.i
+.PHONY : winter/tcp_server.cc.i
+
+winter/tcp_server.s: winter/tcp_server.cc.s
+.PHONY : winter/tcp_server.s
+
+# target to generate assembly for a file
+winter/tcp_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/tcp_server.cc.s
+.PHONY : winter/tcp_server.cc.s
+
 winter/thread.o: winter/thread.cc.o
 .PHONY : winter/thread.o
 
@@ -705,6 +1472,30 @@ winter/timer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/timer.cc.s
 .PHONY : winter/timer.cc.s
 
+winter/uri.rl.o: winter/uri.rl.cc.o
+.PHONY : winter/uri.rl.o
+
+# target to build an object file
+winter/uri.rl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/uri.rl.cc.o
+.PHONY : winter/uri.rl.cc.o
+
+winter/uri.rl.i: winter/uri.rl.cc.i
+.PHONY : winter/uri.rl.i
+
+# target to preprocess a source file
+winter/uri.rl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/uri.rl.cc.i
+.PHONY : winter/uri.rl.cc.i
+
+winter/uri.rl.s: winter/uri.rl.cc.s
+.PHONY : winter/uri.rl.s
+
+# target to generate assembly for a file
+winter/uri.rl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/uri.rl.cc.s
+.PHONY : winter/uri.rl.cc.s
+
 winter/util.o: winter/util.cc.o
 .PHONY : winter/util.o
 
@@ -737,49 +1528,102 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... echo_server"
+	@echo "... test1"
 	@echo "... test_address"
+	@echo "... test_bytearray"
 	@echo "... test_config"
+	@echo "... test_daemon"
+	@echo "... test_env"
 	@echo "... test_fiber"
 	@echo "... test_hook"
+	@echo "... test_http"
+	@echo "... test_http_connection"
+	@echo "... test_http_parser"
+	@echo "... test_http_server"
 	@echo "... test_iomanager"
 	@echo "... test_scheduler"
+	@echo "... test_socket"
+	@echo "... test_tcp_server"
 	@echo "... test_thread"
+	@echo "... test_uri"
 	@echo "... test_util"
 	@echo "... winter"
+	@echo "... examples/echo_server.o"
+	@echo "... examples/echo_server.i"
+	@echo "... examples/echo_server.s"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"
 	@echo "... tests/test_address.o"
 	@echo "... tests/test_address.i"
 	@echo "... tests/test_address.s"
+	@echo "... tests/test_bytearray.o"
+	@echo "... tests/test_bytearray.i"
+	@echo "... tests/test_bytearray.s"
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_daemon.o"
+	@echo "... tests/test_daemon.i"
+	@echo "... tests/test_daemon.s"
+	@echo "... tests/test_env.o"
+	@echo "... tests/test_env.i"
+	@echo "... tests/test_env.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
 	@echo "... tests/test_hook.o"
 	@echo "... tests/test_hook.i"
 	@echo "... tests/test_hook.s"
+	@echo "... tests/test_http.o"
+	@echo "... tests/test_http.i"
+	@echo "... tests/test_http.s"
+	@echo "... tests/test_http_connection.o"
+	@echo "... tests/test_http_connection.i"
+	@echo "... tests/test_http_connection.s"
+	@echo "... tests/test_http_parser.o"
+	@echo "... tests/test_http_parser.i"
+	@echo "... tests/test_http_parser.s"
+	@echo "... tests/test_http_server.o"
+	@echo "... tests/test_http_server.i"
+	@echo "... tests/test_http_server.s"
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"
+	@echo "... tests/test_socket.o"
+	@echo "... tests/test_socket.i"
+	@echo "... tests/test_socket.s"
+	@echo "... tests/test_tcp_server.o"
+	@echo "... tests/test_tcp_server.i"
+	@echo "... tests/test_tcp_server.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"
+	@echo "... tests/test_uri.o"
+	@echo "... tests/test_uri.i"
+	@echo "... tests/test_uri.s"
 	@echo "... tests/test_util.o"
 	@echo "... tests/test_util.i"
 	@echo "... tests/test_util.s"
 	@echo "... winter/address.o"
 	@echo "... winter/address.i"
 	@echo "... winter/address.s"
+	@echo "... winter/bytearray.o"
+	@echo "... winter/bytearray.i"
+	@echo "... winter/bytearray.s"
 	@echo "... winter/config.o"
 	@echo "... winter/config.i"
 	@echo "... winter/config.s"
+	@echo "... winter/daemon.o"
+	@echo "... winter/daemon.i"
+	@echo "... winter/daemon.s"
+	@echo "... winter/env.o"
+	@echo "... winter/env.i"
+	@echo "... winter/env.s"
 	@echo "... winter/fd_manager.o"
 	@echo "... winter/fd_manager.i"
 	@echo "... winter/fd_manager.s"
@@ -789,6 +1633,30 @@ help:
 	@echo "... winter/hook.o"
 	@echo "... winter/hook.i"
 	@echo "... winter/hook.s"
+	@echo "... winter/http/http.o"
+	@echo "... winter/http/http.i"
+	@echo "... winter/http/http.s"
+	@echo "... winter/http/http11_parser.rl.o"
+	@echo "... winter/http/http11_parser.rl.i"
+	@echo "... winter/http/http11_parser.rl.s"
+	@echo "... winter/http/http_connection.o"
+	@echo "... winter/http/http_connection.i"
+	@echo "... winter/http/http_connection.s"
+	@echo "... winter/http/http_parser.o"
+	@echo "... winter/http/http_parser.i"
+	@echo "... winter/http/http_parser.s"
+	@echo "... winter/http/http_server.o"
+	@echo "... winter/http/http_server.i"
+	@echo "... winter/http/http_server.s"
+	@echo "... winter/http/http_session.o"
+	@echo "... winter/http/http_session.i"
+	@echo "... winter/http/http_session.s"
+	@echo "... winter/http/httpclient_parser.rl.o"
+	@echo "... winter/http/httpclient_parser.rl.i"
+	@echo "... winter/http/httpclient_parser.rl.s"
+	@echo "... winter/http/servlet.o"
+	@echo "... winter/http/servlet.i"
+	@echo "... winter/http/servlet.s"
 	@echo "... winter/iomanager.o"
 	@echo "... winter/iomanager.i"
 	@echo "... winter/iomanager.s"
@@ -798,12 +1666,27 @@ help:
 	@echo "... winter/scheduler.o"
 	@echo "... winter/scheduler.i"
 	@echo "... winter/scheduler.s"
+	@echo "... winter/socket.o"
+	@echo "... winter/socket.i"
+	@echo "... winter/socket.s"
+	@echo "... winter/socket_stream.o"
+	@echo "... winter/socket_stream.i"
+	@echo "... winter/socket_stream.s"
+	@echo "... winter/stream.o"
+	@echo "... winter/stream.i"
+	@echo "... winter/stream.s"
+	@echo "... winter/tcp_server.o"
+	@echo "... winter/tcp_server.i"
+	@echo "... winter/tcp_server.s"
 	@echo "... winter/thread.o"
 	@echo "... winter/thread.i"
 	@echo "... winter/thread.s"
 	@echo "... winter/timer.o"
 	@echo "... winter/timer.i"
 	@echo "... winter/timer.s"
+	@echo "... winter/uri.rl.o"
+	@echo "... winter/uri.rl.i"
+	@echo "... winter/uri.rl.s"
 	@echo "... winter/util.o"
 	@echo "... winter/util.i"
 	@echo "... winter/util.s"

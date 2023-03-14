@@ -17,17 +17,34 @@ include_directories(.)
 
 set(LIB_SRC
     winter/address.cc
-    winter/log.cc
-    winter/util.cc
+    winter/bytearray.cc
     winter/config.cc
+    winter/daemon.cc
+    winter/env.cc
     winter/fd_manager.cc
     winter/fiber.cc
+    winter/http/http.cc
+    winter/http/http_connection.cc
+    winter/http/http_parser.cc
+    winter/http/http_session.cc
+    winter/http/http_server.cc
+    winter/http/servlet.cc
     winter/hook.cc
-    winter/scheduler.cc
     winter/iomanager.cc
-    winter/thread.cc
+    winter/log.cc
+    winter/scheduler.cc
+    winter/socket.cc
+    winter/socket_stream.cc
+    winter/stream.cc
+    winter/tcp_server.cc
     winter/timer.cc
+    winter/thread.cc
+    winter/util.cc
     )
+
+ragelmaker(winter/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/winter/http)
+ragelmaker(winter/http/httpclient_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/winter/http)
+ragelmaker(winter/uri.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/winter)
 
 add_library(winter SHARED ${LIB_SRC})
 force_redefine_file_macro_for_sources(winter) #__FILE__
@@ -40,50 +57,33 @@ set(LIBS
     dl
     yaml-cpp)
 
-add_executable(test tests/test.cc)
-add_dependencies(test winter)
-force_redefine_file_macro_for_sources(test) #__FILE__
-target_link_libraries(test ${LIBS})
+# add_executable(test tests/test.cc)
+# add_dependencies(test winter)
+# force_redefine_file_macro_for_sources(test) #__FILE__
+# target_link_libraries(test ${LIBS})
 
-add_executable(test_config tests/test_config.cc)
-add_dependencies(test_config winter)
-force_redefine_file_macro_for_sources(test_config) #__FILE__
-target_link_libraries(test_config ${LIBS})
+winter_add_executable(test1 "tests/test.cc" winter "${LIBS}")
+winter_add_executable(test_config "tests/test_config.cc" winter "${LIBS}")
+winter_add_executable(test_thread "tests/test_thread.cc" winter "${LIBS}")
+winter_add_executable(test_util "tests/test_util.cc" winter "${LIBS}")
+winter_add_executable(test_fiber "tests/test_fiber.cc" winter "${LIBS}")
+winter_add_executable(test_scheduler "tests/test_scheduler.cc" winter "${LIBS}")
+winter_add_executable(test_iomanager "tests/test_iomanager.cc" winter "${LIBS}")
+winter_add_executable(test_hook "tests/test_hook.cc" winter "${LIBS}")
+winter_add_executable(test_address "tests/test_address.cc" winter "${LIBS}")
+winter_add_executable(test_socket "tests/test_socket.cc" winter "${LIBS}")
+winter_add_executable(test_bytearray "tests/test_bytearray.cc" winter "${LIBS}")
+winter_add_executable(test_http "tests/test_http.cc" winter "${LIBS}")
+winter_add_executable(test_http_parser "tests/test_http_parser.cc" winter "${LIBS}")
+winter_add_executable(test_tcp_server "tests/test_tcp_server.cc" winter "${LIBS}")
+winter_add_executable(echo_server "examples/echo_server.cc" winter "${LIBS}")
+winter_add_executable(test_http_server "tests/test_http_server.cc" winter "${LIBS}")
+winter_add_executable(test_http_connection "tests/test_http_connection.cc" winter "${LIBS}")
+winter_add_executable(test_uri "tests/test_uri.cc" winter "${LIBS}")
 
-add_executable(test_thread tests/test_thread.cc)
-add_dependencies(test_thread winter)
-force_redefine_file_macro_for_sources(test_thread) #__FILE__
-target_link_libraries(test_thread ${LIBS})
+winter_add_executable(test_daemon "tests/test_daemon.cc" winter "${LIBS}")
 
-add_executable(test_util tests/test_util.cc)
-add_dependencies(test_util winter)
-force_redefine_file_macro_for_sources(test_util) #__FILE__
-target_link_libraries(test_util ${LIBS})
-
-add_executable(test_fiber tests/test_fiber.cc)
-add_dependencies(test_fiber winter)
-force_redefine_file_macro_for_sources(test_fiber) #__FILE__
-target_link_libraries(test_fiber ${LIBS})
-
-add_executable(test_scheduler tests/test_scheduler.cc)
-add_dependencies(test_scheduler winter)
-force_redefine_file_macro_for_sources(test_scheduler) #__FILE__
-target_link_libraries(test_scheduler ${LIBS})
-
-add_executable(test_iomanager tests/test_iomanager.cc)
-add_dependencies(test_iomanager winter)
-force_redefine_file_macro_for_sources(test_iomanager) #__FILE__
-target_link_libraries(test_iomanager ${LIBS})
-
-add_executable(test_hook tests/test_hook.cc)
-add_dependencies(test_hook winter)
-force_redefine_file_macro_for_sources(test_hook) #__FILE__
-target_link_libraries(test_hook ${LIBS})
-
-add_executable(test_address tests/test_address.cc)
-add_dependencies(test_address winter)
-force_redefine_file_macro_for_sources(test_address) #__FILE__
-target_link_libraries(test_address ${LIBS})
+winter_add_executable(test_env "tests/test_env.cc" winter "${LIBS}")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

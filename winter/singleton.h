@@ -1,6 +1,8 @@
 #ifndef __WINTER_SINGLETON_H__
 #define __WINTER_SINGLETON_H__
 
+#include <memory>
+
 namespace winter {
 
 template<class T, class X = void, int N = 0>

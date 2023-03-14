@@ -66,7 +66,11 @@ CMakeFiles/winter.dir/winter/hook.cc.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/socket2.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/socket2.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
@@ -114,10 +118,6 @@ CMakeFiles/winter.dir/winter/hook.cc.o: \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
@@ -828,4 +828,5 @@ CMakeFiles/winter.dir/winter/hook.cc.o: \
  /home/ghx/MyProjects/cpp/winter/winter/iomanager.h \
  /home/ghx/MyProjects/cpp/winter/winter/scheduler.h \
  /home/ghx/MyProjects/cpp/winter/winter/timer.h \
- /home/ghx/MyProjects/cpp/winter/winter/fd_manager.h
+ /home/ghx/MyProjects/cpp/winter/winter/fd_manager.h \
+ /home/ghx/MyProjects/cpp/winter/winter/macro.h
