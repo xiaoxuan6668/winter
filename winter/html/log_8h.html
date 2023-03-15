@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: log.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a>  </div>
+  <div class="headertitle">
+<div class="title">log.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>日志模块封装  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="singleton_8h_source.html">singleton.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="thread_8h_source.html">thread.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+log.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+</div>
+<p><a href="log_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1LogLevel.html">winter::LogLevel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志级别  <a href="classwinter_1_1LogLevel.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1LogEvent.html">winter::LogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志事件  <a href="classwinter_1_1LogEvent.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1LogEventWrap.html">winter::LogEventWrap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志事件包装器  <a href="classwinter_1_1LogEventWrap.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1LogFormatter.html">winter::LogFormatter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志格式化  <a href="classwinter_1_1LogFormatter.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1LogFormatter_1_1FormatItem.html">winter::LogFormatter::FormatItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志内容项格式化  <a href="classwinter_1_1LogFormatter_1_1FormatItem.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1LogAppender.html">winter::LogAppender</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志输出目标  <a href="classwinter_1_1LogAppender.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Logger.html">winter::Logger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志器  <a href="classwinter_1_1Logger.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1StdoutLogAppender.html">winter::StdoutLogAppender</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出到控制台的Appender  <a href="classwinter_1_1StdoutLogAppender.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1FileLogAppender.html">winter::FileLogAppender</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出到文件的Appender  <a href="classwinter_1_1FileLogAppender.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1LoggerManager.html">winter::LoggerManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志器管理类  <a href="classwinter_1_1LoggerManager.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a5c9c301dde1ff7a6f1fa40c2d2eb2154"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">WINTER_LOG_LEVEL</a>(logger,  level)</td></tr>
+<tr class="memdesc:a5c9c301dde1ff7a6f1fa40c2d2eb2154"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流式方式将日志级别level的日志写入到logger  <a href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">更多...</a><br /></td></tr>
+<tr class="separator:a5c9c301dde1ff7a6f1fa40c2d2eb2154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe71b448a50b4ea97b8d4df8e4e1de95"><td class="memItemLeft" align="right" valign="top"><a id="afe71b448a50b4ea97b8d4df8e4e1de95"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#afe71b448a50b4ea97b8d4df8e4e1de95">WINTER_LOG_DEBUG</a>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">WINTER_LOG_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf">winter::LogLevel::DEBUG</a>)</td></tr>
+<tr class="memdesc:afe71b448a50b4ea97b8d4df8e4e1de95"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流式方式将日志级别debug的日志写入到logger <br /></td></tr>
+<tr class="separator:afe71b448a50b4ea97b8d4df8e4e1de95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0bc969d93898a83f24f46a55a3eb80"><td class="memItemLeft" align="right" valign="top"><a id="adb0bc969d93898a83f24f46a55a3eb80"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#adb0bc969d93898a83f24f46a55a3eb80">WINTER_LOG_INFO</a>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">WINTER_LOG_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa280e0cb8c45468371e478ff3093c6c7d">winter::LogLevel::INFO</a>)</td></tr>
+<tr class="memdesc:adb0bc969d93898a83f24f46a55a3eb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流式方式将日志级别info的日志写入到logger <br /></td></tr>
+<tr class="separator:adb0bc969d93898a83f24f46a55a3eb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3449ecd0c8a2060cc531310cc41f741"><td class="memItemLeft" align="right" valign="top"><a id="aa3449ecd0c8a2060cc531310cc41f741"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aa3449ecd0c8a2060cc531310cc41f741">WINTER_LOG_WARN</a>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">WINTER_LOG_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa2d538688f1949fc887db35789db5bc39">winter::LogLevel::WARN</a>)</td></tr>
+<tr class="memdesc:aa3449ecd0c8a2060cc531310cc41f741"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流式方式将日志级别warn的日志写入到logger <br /></td></tr>
+<tr class="separator:aa3449ecd0c8a2060cc531310cc41f741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119bb0f9690791712092f86c687ae262"><td class="memItemLeft" align="right" valign="top"><a id="a119bb0f9690791712092f86c687ae262"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a119bb0f9690791712092f86c687ae262">WINTER_LOG_ERROR</a>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">WINTER_LOG_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa8dfcf774dfaf8765c241a1675217366f">winter::LogLevel::ERROR</a>)</td></tr>
+<tr class="memdesc:a119bb0f9690791712092f86c687ae262"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流式方式将日志级别error的日志写入到logger <br /></td></tr>
+<tr class="separator:a119bb0f9690791712092f86c687ae262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c031214503a1dc18fd1aca3d31b845"><td class="memItemLeft" align="right" valign="top"><a id="a22c031214503a1dc18fd1aca3d31b845"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a22c031214503a1dc18fd1aca3d31b845">WINTER_LOG_FATAL</a>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">WINTER_LOG_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa71060a875e987ea5dcba9e645f3ecdbf">winter::LogLevel::FATAL</a>)</td></tr>
+<tr class="memdesc:a22c031214503a1dc18fd1aca3d31b845"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流式方式将日志级别fatal的日志写入到logger <br /></td></tr>
+<tr class="separator:a22c031214503a1dc18fd1aca3d31b845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d399aefb3808866f3010e8a38ffa99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">WINTER_LOG_FMT_LEVEL</a>(logger,  level,  fmt, ...)</td></tr>
+<tr class="memdesc:a14d399aefb3808866f3010e8a38ffa99"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用格式化方式将日志级别level的日志写入到logger  <a href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">更多...</a><br /></td></tr>
+<tr class="separator:a14d399aefb3808866f3010e8a38ffa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9708c3e3857a61af56b60aef636353a1"><td class="memItemLeft" align="right" valign="top"><a id="a9708c3e3857a61af56b60aef636353a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a9708c3e3857a61af56b60aef636353a1">WINTER_LOG_FMT_DEBUG</a>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">WINTER_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf">winter::LogLevel::DEBUG</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="memdesc:a9708c3e3857a61af56b60aef636353a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用格式化方式将日志级别debug的日志写入到logger <br /></td></tr>
+<tr class="separator:a9708c3e3857a61af56b60aef636353a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93430ef5aebf97c4c0733dfd5f0acb18"><td class="memItemLeft" align="right" valign="top"><a id="a93430ef5aebf97c4c0733dfd5f0acb18"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a93430ef5aebf97c4c0733dfd5f0acb18">WINTER_LOG_FMT_INFO</a>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">WINTER_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa280e0cb8c45468371e478ff3093c6c7d">winter::LogLevel::INFO</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="memdesc:a93430ef5aebf97c4c0733dfd5f0acb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用格式化方式将日志级别info的日志写入到logger <br /></td></tr>
+<tr class="separator:a93430ef5aebf97c4c0733dfd5f0acb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae924f5dc9e78ade27af9f7922807ee54"><td class="memItemLeft" align="right" valign="top"><a id="ae924f5dc9e78ade27af9f7922807ee54"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ae924f5dc9e78ade27af9f7922807ee54">WINTER_LOG_FMT_WARN</a>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">WINTER_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa2d538688f1949fc887db35789db5bc39">winter::LogLevel::WARN</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="memdesc:ae924f5dc9e78ade27af9f7922807ee54"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用格式化方式将日志级别warn的日志写入到logger <br /></td></tr>
+<tr class="separator:ae924f5dc9e78ade27af9f7922807ee54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb336f1764f2032e9ff78a78e1b832d9"><td class="memItemLeft" align="right" valign="top"><a id="abb336f1764f2032e9ff78a78e1b832d9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#abb336f1764f2032e9ff78a78e1b832d9">WINTER_LOG_FMT_ERROR</a>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">WINTER_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa8dfcf774dfaf8765c241a1675217366f">winter::LogLevel::ERROR</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="memdesc:abb336f1764f2032e9ff78a78e1b832d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用格式化方式将日志级别error的日志写入到logger <br /></td></tr>
+<tr class="separator:abb336f1764f2032e9ff78a78e1b832d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada294b263b079b6a00b5be17ccb583a4"><td class="memItemLeft" align="right" valign="top"><a id="ada294b263b079b6a00b5be17ccb583a4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ada294b263b079b6a00b5be17ccb583a4">WINTER_LOG_FMT_FATAL</a>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">WINTER_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa71060a875e987ea5dcba9e645f3ecdbf">winter::LogLevel::FATAL</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="memdesc:ada294b263b079b6a00b5be17ccb583a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用格式化方式将日志级别fatal的日志写入到logger <br /></td></tr>
+<tr class="separator:ada294b263b079b6a00b5be17ccb583a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc515589ee3115aea1874c7a5dcfdb4d"><td class="memItemLeft" align="right" valign="top"><a id="acc515589ee3115aea1874c7a5dcfdb4d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#acc515589ee3115aea1874c7a5dcfdb4d">WINTER_LOG_ROOT</a>()&#160;&#160;&#160;<a class="el" href="classwinter_1_1Singleton.html#accda71d011c1bf38ee1cb675e3e596d9">winter::LoggerMgr::GetInstance</a>()-&gt;getRoot()</td></tr>
+<tr class="memdesc:acc515589ee3115aea1874c7a5dcfdb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取主日志器 <br /></td></tr>
+<tr class="separator:acc515589ee3115aea1874c7a5dcfdb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3135f0042c9ac12a88dc091c5f550247"><td class="memItemLeft" align="right" valign="top"><a id="a3135f0042c9ac12a88dc091c5f550247"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a3135f0042c9ac12a88dc091c5f550247">WINTER_LOG_NAME</a>(name)&#160;&#160;&#160;<a class="el" href="classwinter_1_1Singleton.html#accda71d011c1bf38ee1cb675e3e596d9">winter::LoggerMgr::GetInstance</a>()-&gt;getLogger(name)</td></tr>
+<tr class="memdesc:a3135f0042c9ac12a88dc091c5f550247"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取name的日志器 <br /></td></tr>
+<tr class="separator:a3135f0042c9ac12a88dc091c5f550247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:aa0342824e036783ad0170c2f9bc32958"><td class="memItemLeft" align="right" valign="top"><a id="aa0342824e036783ad0170c2f9bc32958"></a>
+typedef <a class="el" href="classwinter_1_1Singleton.html">winter::Singleton</a>&lt; LoggerManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aa0342824e036783ad0170c2f9bc32958">winter::LoggerMgr</a></td></tr>
+<tr class="memdesc:aa0342824e036783ad0170c2f9bc32958"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志器管理类单例模式 <br /></td></tr>
+<tr class="separator:aa0342824e036783ad0170c2f9bc32958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>日志模块封装 </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a14d399aefb3808866f3010e8a38ffa99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d399aefb3808866f3010e8a38ffa99">&#9670;&nbsp;</a></span>WINTER_LOG_FMT_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WINTER_LOG_FMT_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">logger, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span>(logger-&gt;getLevel() &lt;= level) \</div>
+<div class="line">        winter::LogEventWrap(winter::LogEvent::ptr(<span class="keyword">new</span> <a class="code" href="classwinter_1_1LogEvent.html">winter::LogEvent</a>(logger, level, \</div>
+<div class="line">                        __FILE__, __LINE__, 0, winter::GetThreadId(),\</div>
+<div class="line">                winter::GetFiberId(), time(0), <a class="code" href="classwinter_1_1Thread.html#a67b9dec71aa50359dc1ff18ff6198fc3">winter::Thread::GetName</a>()))).getEvent()-&gt;format(fmt, __VA_ARGS__)</div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html"><div class="ttname"><a href="classwinter_1_1LogEvent.html">winter::LogEvent</a></div><div class="ttdoc">日志事件</div><div class="ttdef"><b>Definition:</b> log.h:130</div></div>
+<div class="ttc" id="aclasswinter_1_1Thread_html_a67b9dec71aa50359dc1ff18ff6198fc3"><div class="ttname"><a href="classwinter_1_1Thread.html#a67b9dec71aa50359dc1ff18ff6198fc3">winter::Thread::GetName</a></div><div class="ttdeci">static const std::string &amp; GetName()</div><div class="ttdoc">获取当前的线程名称</div><div class="ttdef"><b>Definition:</b> thread.cc:38</div></div>
+</div><!-- fragment -->
+<p>使用格式化方式将日志级别level的日志写入到logger </p>
+
+</div>
+</div>
+<a id="a5c9c301dde1ff7a6f1fa40c2d2eb2154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9c301dde1ff7a6f1fa40c2d2eb2154">&#9670;&nbsp;</a></span>WINTER_LOG_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WINTER_LOG_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">logger, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">    <a class="code" href="classwinter_1_1LogEventWrap.html">winter::LogEventWrap</a>(winter::LogEvent::ptr(<span class="keyword">new</span> <a class="code" href="classwinter_1_1LogEvent.html">winter::LogEvent</a>(logger, level, \</div>
+<div class="line">                        __FILE__, __LINE__, 0, winter::GetThreadId(),\</div>
+<div class="line">                winter::GetFiberId(), time(0), <a class="code" href="classwinter_1_1Thread.html#a67b9dec71aa50359dc1ff18ff6198fc3">winter::Thread::GetName</a>()))).<a class="code" href="classwinter_1_1LogEventWrap.html#a49b6020949f4ffc7c2fdd454338cc9bb">getSS</a>()</div>
+<div class="ttc" id="aclasswinter_1_1LogEventWrap_html"><div class="ttname"><a href="classwinter_1_1LogEventWrap.html">winter::LogEventWrap</a></div><div class="ttdoc">日志事件包装器</div><div class="ttdef"><b>Definition:</b> log.h:240</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEventWrap_html_a49b6020949f4ffc7c2fdd454338cc9bb"><div class="ttname"><a href="classwinter_1_1LogEventWrap.html#a49b6020949f4ffc7c2fdd454338cc9bb">winter::LogEventWrap::getSS</a></div><div class="ttdeci">std::stringstream &amp; getSS()</div><div class="ttdoc">获取日志内容流</div><div class="ttdef"><b>Definition:</b> log.cc:72</div></div>
+</div><!-- fragment -->
+<p>使用流式方式将日志级别level的日志写入到logger </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

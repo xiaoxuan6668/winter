@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: winter::Scheduler类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>winter</b></li><li class="navelem"><a class="el" href="classwinter_1_1Scheduler.html">Scheduler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classwinter_1_1Scheduler-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">winter::Scheduler类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>协程调度器  
+ <a href="classwinter_1_1Scheduler.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&gt;</code></p>
+<div class="dynheader">
+类 winter::Scheduler 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+<div class="dynheader">
+winter::Scheduler 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a5cc26b05a7410d887434b5dd5fe1dd94"><td class="memItemLeft" align="right" valign="top"><a id="a5cc26b05a7410d887434b5dd5fe1dd94"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classwinter_1_1Scheduler.html">Scheduler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:a5cc26b05a7410d887434b5dd5fe1dd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66609d15f8681183a964e58d2f856ce"><td class="memItemLeft" align="right" valign="top"><a id="ad66609d15f8681183a964e58d2f856ce"></a>
+typedef <a class="el" href="classwinter_1_1Mutex.html">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b></td></tr>
+<tr class="separator:ad66609d15f8681183a964e58d2f856ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a04e5381f08a7f5b0637ee2ca6c512fab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a04e5381f08a7f5b0637ee2ca6c512fab">Scheduler</a> (size_t threads=1, bool use_caller=true, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr class="memdesc:a04e5381f08a7f5b0637ee2ca6c512fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classwinter_1_1Scheduler.html#a04e5381f08a7f5b0637ee2ca6c512fab">更多...</a><br /></td></tr>
+<tr class="separator:a04e5381f08a7f5b0637ee2ca6c512fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ef73bc531f94e2e86bb96319c2ecd6"><td class="memItemLeft" align="right" valign="top"><a id="ac9ef73bc531f94e2e86bb96319c2ecd6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#ac9ef73bc531f94e2e86bb96319c2ecd6">~Scheduler</a> ()</td></tr>
+<tr class="memdesc:ac9ef73bc531f94e2e86bb96319c2ecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:ac9ef73bc531f94e2e86bb96319c2ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4fba4dc0254b62f010243136dd0377"><td class="memItemLeft" align="right" valign="top"><a id="a3f4fba4dc0254b62f010243136dd0377"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a3f4fba4dc0254b62f010243136dd0377">getName</a> () const</td></tr>
+<tr class="memdesc:a3f4fba4dc0254b62f010243136dd0377"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回协程调度器名称 <br /></td></tr>
+<tr class="separator:a3f4fba4dc0254b62f010243136dd0377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3f4af394f0ad8b7473be19d950b957"><td class="memItemLeft" align="right" valign="top"><a id="a8d3f4af394f0ad8b7473be19d950b957"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a8d3f4af394f0ad8b7473be19d950b957">start</a> ()</td></tr>
+<tr class="memdesc:a8d3f4af394f0ad8b7473be19d950b957"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动协程调度器 <br /></td></tr>
+<tr class="separator:a8d3f4af394f0ad8b7473be19d950b957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaca812c6bc949567caf89e1d91443ac"><td class="memItemLeft" align="right" valign="top"><a id="abaca812c6bc949567caf89e1d91443ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#abaca812c6bc949567caf89e1d91443ac">stop</a> ()</td></tr>
+<tr class="memdesc:abaca812c6bc949567caf89e1d91443ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止协程调度器 <br /></td></tr>
+<tr class="separator:abaca812c6bc949567caf89e1d91443ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4075816ba2908dc6f42b37905b3d1d71"><td class="memTemplParams" colspan="2">template&lt;class FiberOrCb &gt; </td></tr>
+<tr class="memitem:a4075816ba2908dc6f42b37905b3d1d71"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a4075816ba2908dc6f42b37905b3d1d71">schedule</a> (FiberOrCb fc, int thread=-1)</td></tr>
+<tr class="memdesc:a4075816ba2908dc6f42b37905b3d1d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">调度协程  <a href="classwinter_1_1Scheduler.html#a4075816ba2908dc6f42b37905b3d1d71">更多...</a><br /></td></tr>
+<tr class="separator:a4075816ba2908dc6f42b37905b3d1d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43210262ba42549e3bcf5c0e2f8592af"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a43210262ba42549e3bcf5c0e2f8592af"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a43210262ba42549e3bcf5c0e2f8592af">schedule</a> (InputIterator begin, InputIterator end)</td></tr>
+<tr class="memdesc:a43210262ba42549e3bcf5c0e2f8592af"><td class="mdescLeft">&#160;</td><td class="mdescRight">批量调度协程  <a href="classwinter_1_1Scheduler.html#a43210262ba42549e3bcf5c0e2f8592af">更多...</a><br /></td></tr>
+<tr class="separator:a43210262ba42549e3bcf5c0e2f8592af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a2ae947254d25e0b4b6bdd51a413e4abf"><td class="memItemLeft" align="right" valign="top"><a id="a2ae947254d25e0b4b6bdd51a413e4abf"></a>
+static <a class="el" href="classwinter_1_1Scheduler.html">Scheduler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a2ae947254d25e0b4b6bdd51a413e4abf">GetThis</a> ()</td></tr>
+<tr class="memdesc:a2ae947254d25e0b4b6bdd51a413e4abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前协程调度器 <br /></td></tr>
+<tr class="separator:a2ae947254d25e0b4b6bdd51a413e4abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1740b1d7e20ddad8fda5934918a16895"><td class="memItemLeft" align="right" valign="top"><a id="a1740b1d7e20ddad8fda5934918a16895"></a>
+static <a class="el" href="classwinter_1_1Fiber.html">Fiber</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a1740b1d7e20ddad8fda5934918a16895">GetMainFiber</a> ()</td></tr>
+<tr class="memdesc:a1740b1d7e20ddad8fda5934918a16895"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前协程调度器的调度协程 <br /></td></tr>
+<tr class="separator:a1740b1d7e20ddad8fda5934918a16895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ab4a6a9100f3a18a9e9370a3106d07ab6"><td class="memItemLeft" align="right" valign="top"><a id="ab4a6a9100f3a18a9e9370a3106d07ab6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#ab4a6a9100f3a18a9e9370a3106d07ab6">tickle</a> ()</td></tr>
+<tr class="memdesc:ab4a6a9100f3a18a9e9370a3106d07ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知协程调度器有任务了 <br /></td></tr>
+<tr class="separator:ab4a6a9100f3a18a9e9370a3106d07ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752c9038882a884e9146cdf379ce24bd"><td class="memItemLeft" align="right" valign="top"><a id="a752c9038882a884e9146cdf379ce24bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a752c9038882a884e9146cdf379ce24bd">run</a> ()</td></tr>
+<tr class="memdesc:a752c9038882a884e9146cdf379ce24bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">协程调度函数 <br /></td></tr>
+<tr class="separator:a752c9038882a884e9146cdf379ce24bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1f5b9d89fd4fd99b34e06437bdb5cd"><td class="memItemLeft" align="right" valign="top"><a id="aec1f5b9d89fd4fd99b34e06437bdb5cd"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#aec1f5b9d89fd4fd99b34e06437bdb5cd">stopping</a> ()</td></tr>
+<tr class="memdesc:aec1f5b9d89fd4fd99b34e06437bdb5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回是否可以停止 <br /></td></tr>
+<tr class="separator:aec1f5b9d89fd4fd99b34e06437bdb5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6ae4e0beafc5f4181305a33384138a"><td class="memItemLeft" align="right" valign="top"><a id="a4e6ae4e0beafc5f4181305a33384138a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a4e6ae4e0beafc5f4181305a33384138a">idle</a> ()</td></tr>
+<tr class="memdesc:a4e6ae4e0beafc5f4181305a33384138a"><td class="mdescLeft">&#160;</td><td class="mdescRight">协程无任务可调度时执行idle协程 <br /></td></tr>
+<tr class="separator:a4e6ae4e0beafc5f4181305a33384138a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3c1f0017ff3c3644fe4831955aa115"><td class="memItemLeft" align="right" valign="top"><a id="abd3c1f0017ff3c3644fe4831955aa115"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#abd3c1f0017ff3c3644fe4831955aa115">setThis</a> ()</td></tr>
+<tr class="memdesc:abd3c1f0017ff3c3644fe4831955aa115"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前的协程调度器 <br /></td></tr>
+<tr class="separator:abd3c1f0017ff3c3644fe4831955aa115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71aeb2c9d3e38f46d447d8f9f1995b4"><td class="memItemLeft" align="right" valign="top"><a id="af71aeb2c9d3e38f46d447d8f9f1995b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#af71aeb2c9d3e38f46d447d8f9f1995b4">hasIdleThreads</a> ()</td></tr>
+<tr class="memdesc:af71aeb2c9d3e38f46d447d8f9f1995b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否有空闲线程 <br /></td></tr>
+<tr class="separator:af71aeb2c9d3e38f46d447d8f9f1995b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a20c019f7d1cc9fd38351bb68abf7333f"><td class="memItemLeft" align="right" valign="top"><a id="a20c019f7d1cc9fd38351bb68abf7333f"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a20c019f7d1cc9fd38351bb68abf7333f">m_threadIds</a></td></tr>
+<tr class="memdesc:a20c019f7d1cc9fd38351bb68abf7333f"><td class="mdescLeft">&#160;</td><td class="mdescRight">协程下的线程id数组 <br /></td></tr>
+<tr class="separator:a20c019f7d1cc9fd38351bb68abf7333f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d682d09f5dc0ef2b02a26a3fd3adc72"><td class="memItemLeft" align="right" valign="top"><a id="a2d682d09f5dc0ef2b02a26a3fd3adc72"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a2d682d09f5dc0ef2b02a26a3fd3adc72">m_threadCount</a> = 0</td></tr>
+<tr class="memdesc:a2d682d09f5dc0ef2b02a26a3fd3adc72"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程数量 <br /></td></tr>
+<tr class="separator:a2d682d09f5dc0ef2b02a26a3fd3adc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf42862e9463358c33810aa7bba791a1"><td class="memItemLeft" align="right" valign="top"><a id="aaf42862e9463358c33810aa7bba791a1"></a>
+std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#aaf42862e9463358c33810aa7bba791a1">m_activeThreadCount</a> = {0}</td></tr>
+<tr class="memdesc:aaf42862e9463358c33810aa7bba791a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">工作线程数量 <br /></td></tr>
+<tr class="separator:aaf42862e9463358c33810aa7bba791a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c6f4810fb506a74f3aeb9c9c203f12"><td class="memItemLeft" align="right" valign="top"><a id="a90c6f4810fb506a74f3aeb9c9c203f12"></a>
+std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a90c6f4810fb506a74f3aeb9c9c203f12">m_idleThreadCount</a> = {0}</td></tr>
+<tr class="memdesc:a90c6f4810fb506a74f3aeb9c9c203f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">空闲线程数量 <br /></td></tr>
+<tr class="separator:a90c6f4810fb506a74f3aeb9c9c203f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39c2dd726dd0bf143231d3fea6dca4a"><td class="memItemLeft" align="right" valign="top"><a id="ab39c2dd726dd0bf143231d3fea6dca4a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#ab39c2dd726dd0bf143231d3fea6dca4a">m_stopping</a> = true</td></tr>
+<tr class="memdesc:ab39c2dd726dd0bf143231d3fea6dca4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否正在停止 <br /></td></tr>
+<tr class="separator:ab39c2dd726dd0bf143231d3fea6dca4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0a4ec436145000a168b198f2ec3ea1"><td class="memItemLeft" align="right" valign="top"><a id="a9d0a4ec436145000a168b198f2ec3ea1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a9d0a4ec436145000a168b198f2ec3ea1">m_autoStop</a> = false</td></tr>
+<tr class="memdesc:a9d0a4ec436145000a168b198f2ec3ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否自动停止 <br /></td></tr>
+<tr class="separator:a9d0a4ec436145000a168b198f2ec3ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a81741e460e1cb39a94c558f7309f9"><td class="memItemLeft" align="right" valign="top"><a id="a35a81741e460e1cb39a94c558f7309f9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a35a81741e460e1cb39a94c558f7309f9">m_rootThread</a> = 0</td></tr>
+<tr class="memdesc:a35a81741e460e1cb39a94c558f7309f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">主线程id(use_caller) <br /></td></tr>
+<tr class="separator:a35a81741e460e1cb39a94c558f7309f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>协程调度器 </p>
+<p>封装的是N-M的协程调度器 内部有一个线程池,支持协程在线程池里面切换 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a04e5381f08a7f5b0637ee2ca6c512fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e5381f08a7f5b0637ee2ca6c512fab">&#9670;&nbsp;</a></span>Scheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">winter::Scheduler::Scheduler </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>threads</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_caller</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threads</td><td>线程数量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">use_caller</td><td>是否使用当前调用线程 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>协程调度器名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a4075816ba2908dc6f42b37905b3d1d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4075816ba2908dc6f42b37905b3d1d71">&#9670;&nbsp;</a></span>schedule() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FiberOrCb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void winter::Scheduler::schedule </td>
+          <td>(</td>
+          <td class="paramtype">FiberOrCb&#160;</td>
+          <td class="paramname"><em>fc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>调度协程 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>协程或函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread</td><td>协程执行的线程id,-1标识任意线程 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a43210262ba42549e3bcf5c0e2f8592af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43210262ba42549e3bcf5c0e2f8592af">&#9670;&nbsp;</a></span>schedule() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void winter::Scheduler::schedule </td>
+          <td>(</td>
+          <td class="paramtype">InputIterator&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIterator&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>批量调度协程 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">begin</td><td>协程数组的开始 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>协程数组的结束 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 -->
+</div>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="scheduler_8h_source.html">scheduler.h</a></li>
+<li>scheduler.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

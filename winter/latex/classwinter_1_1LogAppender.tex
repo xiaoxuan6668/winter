@@ -1,0 +1,103 @@
+\doxysection{winter\+::Log\+Appender类 参考}
+\label{classwinter_1_1LogAppender}\index{winter::LogAppender@{winter::LogAppender}}
+
+
+日志输出目标  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+类 winter\+::Log\+Appender 继承关系图\+:
+% FIG 0
+
+
+winter\+::Log\+Appender 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1LogAppender_ae786cdcf9d8305b131b9c907912a1037}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Log\+Appender} $>$ {\bfseries ptr}
+\item 
+\mbox{\label{classwinter_1_1LogAppender_a515435af9988458b665104b5b1558886}} 
+typedef \textbf{ Spinlock} {\bfseries Mutex\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1LogAppender_a90860bf4e913b707314dc00ce47a21f9}} 
+virtual \textbf{ $\sim$\+Log\+Appender} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+virtual void \textbf{ log} (std\+::shared\+\_\+ptr$<$ \textbf{ Logger} $>$ logger, \textbf{ Log\+Level\+::\+Level} level, Log\+Event\+::ptr event)=0
+\begin{DoxyCompactList}\small\item\em 写入日志 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_aa0ffebf4656f5ff2ff7b2651d0158224}} 
+virtual std\+::string \textbf{ to\+Yaml\+String} ()=0
+\begin{DoxyCompactList}\small\item\em 将日志输出目标的配置转成\+YAML String \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_a5feb667f73de79dfae88fd5e69ca83b0}} 
+void \textbf{ set\+Formatter} (Log\+Formatter\+::ptr val)
+\begin{DoxyCompactList}\small\item\em 更改日志格式器 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_a770891b56e006d790c8a15595b6fb7e9}} 
+Log\+Formatter\+::ptr \textbf{ get\+Formatter} ()
+\begin{DoxyCompactList}\small\item\em 获取日志格式器 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_a5e0268224bb76e03a81756efddb885de}} 
+\textbf{ Log\+Level\+::\+Level} \textbf{ get\+Level} () const
+\begin{DoxyCompactList}\small\item\em 获取日志级别 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_a8d80bba4a20a58093ac8778d53f215b7}} 
+void \textbf{ set\+Level} (\textbf{ Log\+Level\+::\+Level} val)
+\begin{DoxyCompactList}\small\item\em 设置日志级别 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1LogAppender_a798f108bbae977be1f0a201d9fb6ec1d}} 
+\textbf{ Log\+Level\+::\+Level} \textbf{ m\+\_\+level} = \textbf{ Log\+Level\+::\+DEBUG}
+\begin{DoxyCompactList}\small\item\em 日志级别 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_a5be443f039a62e67433beda2fc95d75b}} 
+bool \textbf{ m\+\_\+has\+Formatter} = false
+\begin{DoxyCompactList}\small\item\em 是否有自己的日志格式器 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_a254ff5db55a4d7d79f400cd965874a40}} 
+\textbf{ Mutex\+Type} \textbf{ m\+\_\+mutex}
+\begin{DoxyCompactList}\small\item\em \doxyref{Mutex}{p.}{classwinter_1_1Mutex} \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1LogAppender_a84d73e98588ec39350940dfdfab026a2}} 
+Log\+Formatter\+::ptr \textbf{ m\+\_\+formatter}
+\begin{DoxyCompactList}\small\item\em 日志格式器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1LogAppender_aff02b76416d2846736b7ecd798921a0a}} 
+class {\bfseries Logger}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+日志输出目标 
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1LogAppender_ad86c8c4e374ad615fbabc903e33ee3f8}} 
+\index{winter::LogAppender@{winter::LogAppender}!log@{log}}
+\index{log@{log}!winter::LogAppender@{winter::LogAppender}}
+\doxysubsubsection{log()}
+{\footnotesize\ttfamily virtual void winter\+::\+Log\+Appender\+::log (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \textbf{ Logger} $>$}]{logger,  }\item[{\textbf{ Log\+Level\+::\+Level}}]{level,  }\item[{Log\+Event\+::ptr}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+写入日志 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em logger} & 日志器 \\
+\hline
+\mbox{\texttt{ in}}  & {\em level} & 日志级别 \\
+\hline
+\mbox{\texttt{ in}}  & {\em event} & 日志事件 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ log.\+h}\item 
+log.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: socket_stream.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">socket_stream.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="socket__stream_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __WINTER_SOCKET_STREAM_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __WINTER_SOCKET_STREAM_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stream_8h.html">stream.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="socket_8h.html">socket.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>winter {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classwinter_1_1SocketStream.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1SocketStream.html">SocketStream</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1Stream.html">Stream</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;SocketStream&gt; ptr;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classwinter_1_1SocketStream.html#af917600ac217942f07f1ddb71733152b">SocketStream</a>(Socket::ptr sock, <span class="keywordtype">bool</span> owner = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classwinter_1_1SocketStream.html#a5d95625f3563063bd3f4d281dcc344a2">~SocketStream</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classwinter_1_1SocketStream.html#a27b29fa5b2268511493c970b524b8aa1">read</a>(<span class="keywordtype">void</span>* buffer, <span class="keywordtype">size_t</span> length) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classwinter_1_1SocketStream.html#a27b29fa5b2268511493c970b524b8aa1">read</a>(ByteArray::ptr ba, <span class="keywordtype">size_t</span> length) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classwinter_1_1SocketStream.html#a2f57d3ab04ce1025660a459e176cf249">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* buffer, <span class="keywordtype">size_t</span> length) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classwinter_1_1SocketStream.html#a2f57d3ab04ce1025660a459e176cf249">write</a>(ByteArray::ptr ba, <span class="keywordtype">size_t</span> length) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1SocketStream.html#a03d7add63aac9fc120ba77c193208dcf">close</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classwinter_1_1SocketStream.html#a2fd7776fb71d1909e5103487a72343a6">   85</a></span>&#160;    Socket::ptr <a class="code" href="classwinter_1_1SocketStream.html#a2fd7776fb71d1909e5103487a72343a6">getSocket</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classwinter_1_1SocketStream.html#a396590b13b75caa5ef673b39be1aa0cf">m_socket</a>;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1SocketStream.html#a040bcc18254468c842ba6911d1846d3b">isConnected</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classwinter_1_1SocketStream.html#a396590b13b75caa5ef673b39be1aa0cf">   93</a></span>&#160;    Socket::ptr <a class="code" href="classwinter_1_1SocketStream.html#a396590b13b75caa5ef673b39be1aa0cf">m_socket</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classwinter_1_1SocketStream.html#a67244e406391b0b2427f552e0e748347">   95</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1SocketStream.html#a67244e406391b0b2427f552e0e748347">m_owner</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html"><div class="ttname"><a href="classwinter_1_1SocketStream.html">winter::SocketStream</a></div><div class="ttdoc">Socket流</div><div class="ttdef"><b>Definition:</b> socket_stream.h:16</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a03d7add63aac9fc120ba77c193208dcf"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a03d7add63aac9fc120ba77c193208dcf">winter::SocketStream::close</a></div><div class="ttdeci">virtual void close() override</div><div class="ttdoc">关闭socket</div><div class="ttdef"><b>Definition:</b> socket_stream.cc:60</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a040bcc18254468c842ba6911d1846d3b"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a040bcc18254468c842ba6911d1846d3b">winter::SocketStream::isConnected</a></div><div class="ttdeci">bool isConnected() const</div><div class="ttdoc">返回是否连接</div><div class="ttdef"><b>Definition:</b> socket_stream.cc:16</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a27b29fa5b2268511493c970b524b8aa1"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a27b29fa5b2268511493c970b524b8aa1">winter::SocketStream::read</a></div><div class="ttdeci">virtual int read(void *buffer, size_t length) override</div><div class="ttdoc">读取数据</div><div class="ttdef"><b>Definition:</b> socket_stream.cc:20</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a2f57d3ab04ce1025660a459e176cf249"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a2f57d3ab04ce1025660a459e176cf249">winter::SocketStream::write</a></div><div class="ttdeci">virtual int write(const void *buffer, size_t length) override</div><div class="ttdoc">写入数据</div><div class="ttdef"><b>Definition:</b> socket_stream.cc:40</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a2fd7776fb71d1909e5103487a72343a6"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a2fd7776fb71d1909e5103487a72343a6">winter::SocketStream::getSocket</a></div><div class="ttdeci">Socket::ptr getSocket() const</div><div class="ttdoc">返回Socket类</div><div class="ttdef"><b>Definition:</b> socket_stream.h:85</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a396590b13b75caa5ef673b39be1aa0cf"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a396590b13b75caa5ef673b39be1aa0cf">winter::SocketStream::m_socket</a></div><div class="ttdeci">Socket::ptr m_socket</div><div class="ttdoc">Socket类</div><div class="ttdef"><b>Definition:</b> socket_stream.h:93</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a5d95625f3563063bd3f4d281dcc344a2"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a5d95625f3563063bd3f4d281dcc344a2">winter::SocketStream::~SocketStream</a></div><div class="ttdeci">~SocketStream()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> socket_stream.cc:10</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_a67244e406391b0b2427f552e0e748347"><div class="ttname"><a href="classwinter_1_1SocketStream.html#a67244e406391b0b2427f552e0e748347">winter::SocketStream::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">是否主控</div><div class="ttdef"><b>Definition:</b> socket_stream.h:95</div></div>
+<div class="ttc" id="aclasswinter_1_1SocketStream_html_af917600ac217942f07f1ddb71733152b"><div class="ttname"><a href="classwinter_1_1SocketStream.html#af917600ac217942f07f1ddb71733152b">winter::SocketStream::SocketStream</a></div><div class="ttdeci">SocketStream(Socket::ptr sock, bool owner=true)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> socket_stream.cc:5</div></div>
+<div class="ttc" id="aclasswinter_1_1Stream_html"><div class="ttname"><a href="classwinter_1_1Stream.html">winter::Stream</a></div><div class="ttdoc">流结构</div><div class="ttdef"><b>Definition:</b> stream.h:16</div></div>
+<div class="ttc" id="asocket_8h_html"><div class="ttname"><a href="socket_8h.html">socket.h</a></div><div class="ttdoc">Socket封装</div></div>
+<div class="ttc" id="astream_8h_html"><div class="ttname"><a href="stream_8h.html">stream.h</a></div><div class="ttdoc">流接口</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

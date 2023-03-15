@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: winter::IOManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>winter</b></li><li class="navelem"><a class="el" href="classwinter_1_1IOManager.html">IOManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classwinter_1_1IOManager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">winter::IOManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>基于Epoll的IO协程调度器  
+ <a href="classwinter_1_1IOManager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="iomanager_8h_source.html">iomanager.h</a>&gt;</code></p>
+<div class="dynheader">
+类 winter::IOManager 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+<div class="dynheader">
+winter::IOManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a22783d8bef693ea3c4514e19bbfa7e8a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> { <a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108">NONE</a> = 0x0
+, <a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aacdda58ec2715e038bc1764d5663fdbfa">READ</a> = 0x1
+, <a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aadb00c5ed17fe576b1399e521d3d4ab39">WRITE</a> = 0x4
+ }</td></tr>
+<tr class="memdesc:a22783d8bef693ea3c4514e19bbfa7e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO事件  <a href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">更多...</a><br /></td></tr>
+<tr class="separator:a22783d8bef693ea3c4514e19bbfa7e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9a02b0f15e520c4533d220fb5ed9d1"><td class="memItemLeft" align="right" valign="top"><a id="aad9a02b0f15e520c4533d220fb5ed9d1"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classwinter_1_1IOManager.html">IOManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:aad9a02b0f15e520c4533d220fb5ed9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecb903ea45d84665ec7a96cdb7daf4c"><td class="memItemLeft" align="right" valign="top"><a id="aaecb903ea45d84665ec7a96cdb7daf4c"></a>
+typedef <a class="el" href="classwinter_1_1RWMutex.html">RWMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RWMutexType</b></td></tr>
+<tr class="separator:aaecb903ea45d84665ec7a96cdb7daf4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classwinter_1_1Scheduler"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwinter_1_1Scheduler')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classwinter_1_1Scheduler.html">winter::Scheduler</a></td></tr>
+<tr class="memitem:a5cc26b05a7410d887434b5dd5fe1dd94 inherit pub_types_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a5cc26b05a7410d887434b5dd5fe1dd94"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classwinter_1_1Scheduler.html">Scheduler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:a5cc26b05a7410d887434b5dd5fe1dd94 inherit pub_types_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66609d15f8681183a964e58d2f856ce inherit pub_types_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="ad66609d15f8681183a964e58d2f856ce"></a>
+typedef <a class="el" href="classwinter_1_1Mutex.html">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b></td></tr>
+<tr class="separator:ad66609d15f8681183a964e58d2f856ce inherit pub_types_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classwinter_1_1TimerManager"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwinter_1_1TimerManager')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classwinter_1_1TimerManager.html">winter::TimerManager</a></td></tr>
+<tr class="memitem:af858bd7e7ae2514810162d942e1c9961 inherit pub_types_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a id="af858bd7e7ae2514810162d942e1c9961"></a>
+typedef <a class="el" href="classwinter_1_1RWMutex.html">RWMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#af858bd7e7ae2514810162d942e1c9961">RWMutexType</a></td></tr>
+<tr class="memdesc:af858bd7e7ae2514810162d942e1c9961 inherit pub_types_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">读写锁类型 <br /></td></tr>
+<tr class="separator:af858bd7e7ae2514810162d942e1c9961 inherit pub_types_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a53c356f3cc84af816f96a03f185422fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a53c356f3cc84af816f96a03f185422fa">IOManager</a> (size_t threads=1, bool use_caller=true, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr class="memdesc:a53c356f3cc84af816f96a03f185422fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classwinter_1_1IOManager.html#a53c356f3cc84af816f96a03f185422fa">更多...</a><br /></td></tr>
+<tr class="separator:a53c356f3cc84af816f96a03f185422fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c834d9a9af44d27a257a037e5227e92"><td class="memItemLeft" align="right" valign="top"><a id="a7c834d9a9af44d27a257a037e5227e92"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a7c834d9a9af44d27a257a037e5227e92">~IOManager</a> ()</td></tr>
+<tr class="memdesc:a7c834d9a9af44d27a257a037e5227e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:a7c834d9a9af44d27a257a037e5227e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace20f6a8710b7093abc1a163396f984"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#aace20f6a8710b7093abc1a163396f984">addEvent</a> (int fd, <a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event, std::function&lt; void()&gt; cb=nullptr)</td></tr>
+<tr class="memdesc:aace20f6a8710b7093abc1a163396f984"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加事件  <a href="classwinter_1_1IOManager.html#aace20f6a8710b7093abc1a163396f984">更多...</a><br /></td></tr>
+<tr class="separator:aace20f6a8710b7093abc1a163396f984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9464c12849613e79566611465976e06b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a9464c12849613e79566611465976e06b">delEvent</a> (int fd, <a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event)</td></tr>
+<tr class="memdesc:a9464c12849613e79566611465976e06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除事件  <a href="classwinter_1_1IOManager.html#a9464c12849613e79566611465976e06b">更多...</a><br /></td></tr>
+<tr class="separator:a9464c12849613e79566611465976e06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d7cc7892812d7ea6dd5f98aa3b607b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#ab1d7cc7892812d7ea6dd5f98aa3b607b">cancelEvent</a> (int fd, <a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event)</td></tr>
+<tr class="memdesc:ab1d7cc7892812d7ea6dd5f98aa3b607b"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消事件  <a href="classwinter_1_1IOManager.html#ab1d7cc7892812d7ea6dd5f98aa3b607b">更多...</a><br /></td></tr>
+<tr class="separator:ab1d7cc7892812d7ea6dd5f98aa3b607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6ed80ba67a5dcc8efe0bf840dc6003"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a1f6ed80ba67a5dcc8efe0bf840dc6003">cancelAll</a> (int fd)</td></tr>
+<tr class="memdesc:a1f6ed80ba67a5dcc8efe0bf840dc6003"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消所有事件  <a href="classwinter_1_1IOManager.html#a1f6ed80ba67a5dcc8efe0bf840dc6003">更多...</a><br /></td></tr>
+<tr class="separator:a1f6ed80ba67a5dcc8efe0bf840dc6003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwinter_1_1Scheduler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwinter_1_1Scheduler')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classwinter_1_1Scheduler.html">winter::Scheduler</a></td></tr>
+<tr class="memitem:a04e5381f08a7f5b0637ee2ca6c512fab inherit pub_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a04e5381f08a7f5b0637ee2ca6c512fab">Scheduler</a> (size_t threads=1, bool use_caller=true, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr class="memdesc:a04e5381f08a7f5b0637ee2ca6c512fab inherit pub_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classwinter_1_1Scheduler.html#a04e5381f08a7f5b0637ee2ca6c512fab">更多...</a><br /></td></tr>
+<tr class="separator:a04e5381f08a7f5b0637ee2ca6c512fab inherit pub_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ef73bc531f94e2e86bb96319c2ecd6 inherit pub_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="ac9ef73bc531f94e2e86bb96319c2ecd6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#ac9ef73bc531f94e2e86bb96319c2ecd6">~Scheduler</a> ()</td></tr>
+<tr class="memdesc:ac9ef73bc531f94e2e86bb96319c2ecd6 inherit pub_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:ac9ef73bc531f94e2e86bb96319c2ecd6 inherit pub_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4fba4dc0254b62f010243136dd0377 inherit pub_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a3f4fba4dc0254b62f010243136dd0377"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a3f4fba4dc0254b62f010243136dd0377">getName</a> () const</td></tr>
+<tr class="memdesc:a3f4fba4dc0254b62f010243136dd0377 inherit pub_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回协程调度器名称 <br /></td></tr>
+<tr class="separator:a3f4fba4dc0254b62f010243136dd0377 inherit pub_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3f4af394f0ad8b7473be19d950b957 inherit pub_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a8d3f4af394f0ad8b7473be19d950b957"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a8d3f4af394f0ad8b7473be19d950b957">start</a> ()</td></tr>
+<tr class="memdesc:a8d3f4af394f0ad8b7473be19d950b957 inherit pub_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动协程调度器 <br /></td></tr>
+<tr class="separator:a8d3f4af394f0ad8b7473be19d950b957 inherit pub_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaca812c6bc949567caf89e1d91443ac inherit pub_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="abaca812c6bc949567caf89e1d91443ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#abaca812c6bc949567caf89e1d91443ac">stop</a> ()</td></tr>
+<tr class="memdesc:abaca812c6bc949567caf89e1d91443ac inherit pub_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止协程调度器 <br /></td></tr>
+<tr class="separator:abaca812c6bc949567caf89e1d91443ac inherit pub_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4075816ba2908dc6f42b37905b3d1d71 inherit pub_methods_classwinter_1_1Scheduler"><td class="memTemplParams" colspan="2">template&lt;class FiberOrCb &gt; </td></tr>
+<tr class="memitem:a4075816ba2908dc6f42b37905b3d1d71 inherit pub_methods_classwinter_1_1Scheduler"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a4075816ba2908dc6f42b37905b3d1d71">schedule</a> (FiberOrCb fc, int thread=-1)</td></tr>
+<tr class="memdesc:a4075816ba2908dc6f42b37905b3d1d71 inherit pub_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">调度协程  <a href="classwinter_1_1Scheduler.html#a4075816ba2908dc6f42b37905b3d1d71">更多...</a><br /></td></tr>
+<tr class="separator:a4075816ba2908dc6f42b37905b3d1d71 inherit pub_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43210262ba42549e3bcf5c0e2f8592af inherit pub_methods_classwinter_1_1Scheduler"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a43210262ba42549e3bcf5c0e2f8592af inherit pub_methods_classwinter_1_1Scheduler"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a43210262ba42549e3bcf5c0e2f8592af">schedule</a> (InputIterator begin, InputIterator end)</td></tr>
+<tr class="memdesc:a43210262ba42549e3bcf5c0e2f8592af inherit pub_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">批量调度协程  <a href="classwinter_1_1Scheduler.html#a43210262ba42549e3bcf5c0e2f8592af">更多...</a><br /></td></tr>
+<tr class="separator:a43210262ba42549e3bcf5c0e2f8592af inherit pub_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwinter_1_1TimerManager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwinter_1_1TimerManager')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classwinter_1_1TimerManager.html">winter::TimerManager</a></td></tr>
+<tr class="memitem:a84bdd355209c5329a1205b42c6189342 inherit pub_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a id="a84bdd355209c5329a1205b42c6189342"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a84bdd355209c5329a1205b42c6189342">TimerManager</a> ()</td></tr>
+<tr class="memdesc:a84bdd355209c5329a1205b42c6189342 inherit pub_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数 <br /></td></tr>
+<tr class="separator:a84bdd355209c5329a1205b42c6189342 inherit pub_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3511cd5dd068026f63e90325f78974e4 inherit pub_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a id="a3511cd5dd068026f63e90325f78974e4"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a3511cd5dd068026f63e90325f78974e4">~TimerManager</a> ()</td></tr>
+<tr class="memdesc:a3511cd5dd068026f63e90325f78974e4 inherit pub_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:a3511cd5dd068026f63e90325f78974e4 inherit pub_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2248be0553854f3eb088755cc843f51d inherit pub_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a2248be0553854f3eb088755cc843f51d">addTimer</a> (uint64_t ms, std::function&lt; void()&gt; cb, bool recurring=false)</td></tr>
+<tr class="memdesc:a2248be0553854f3eb088755cc843f51d inherit pub_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加定时器  <a href="classwinter_1_1TimerManager.html#a2248be0553854f3eb088755cc843f51d">更多...</a><br /></td></tr>
+<tr class="separator:a2248be0553854f3eb088755cc843f51d inherit pub_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b00fce684f2c32a54abff109b80697 inherit pub_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a49b00fce684f2c32a54abff109b80697">addConditionTimer</a> (uint64_t ms, std::function&lt; void()&gt; cb, std::weak_ptr&lt; void &gt; weak_cond, bool recurring=false)</td></tr>
+<tr class="memdesc:a49b00fce684f2c32a54abff109b80697 inherit pub_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加条件定时器  <a href="classwinter_1_1TimerManager.html#a49b00fce684f2c32a54abff109b80697">更多...</a><br /></td></tr>
+<tr class="separator:a49b00fce684f2c32a54abff109b80697 inherit pub_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e2d3d63e8cedbc360c29e535274625 inherit pub_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a id="ad2e2d3d63e8cedbc360c29e535274625"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#ad2e2d3d63e8cedbc360c29e535274625">getNextTimer</a> ()</td></tr>
+<tr class="memdesc:ad2e2d3d63e8cedbc360c29e535274625 inherit pub_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">到最近一个定时器执行的时间间隔(毫秒) <br /></td></tr>
+<tr class="separator:ad2e2d3d63e8cedbc360c29e535274625 inherit pub_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af1387ddef3f8eee96dfe05976db612 inherit pub_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a6af1387ddef3f8eee96dfe05976db612">listExpiredCb</a> (std::vector&lt; std::function&lt; void()&gt; &gt; &amp;cbs)</td></tr>
+<tr class="memdesc:a6af1387ddef3f8eee96dfe05976db612 inherit pub_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取需要执行的定时器的回调函数列表  <a href="classwinter_1_1TimerManager.html#a6af1387ddef3f8eee96dfe05976db612">更多...</a><br /></td></tr>
+<tr class="separator:a6af1387ddef3f8eee96dfe05976db612 inherit pub_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56be6455820b6678a81ecc7723e1a2b inherit pub_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a id="ad56be6455820b6678a81ecc7723e1a2b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#ad56be6455820b6678a81ecc7723e1a2b">hasTimer</a> ()</td></tr>
+<tr class="memdesc:ad56be6455820b6678a81ecc7723e1a2b inherit pub_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否有定时器 <br /></td></tr>
+<tr class="separator:ad56be6455820b6678a81ecc7723e1a2b inherit pub_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a85c64e3a90cc4ac302e71fe321630b56"><td class="memItemLeft" align="right" valign="top"><a id="a85c64e3a90cc4ac302e71fe321630b56"></a>
+static <a class="el" href="classwinter_1_1IOManager.html">IOManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a85c64e3a90cc4ac302e71fe321630b56">GetThis</a> ()</td></tr>
+<tr class="memdesc:a85c64e3a90cc4ac302e71fe321630b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前的IOManager <br /></td></tr>
+<tr class="separator:a85c64e3a90cc4ac302e71fe321630b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classwinter_1_1Scheduler"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classwinter_1_1Scheduler')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classwinter_1_1Scheduler.html">winter::Scheduler</a></td></tr>
+<tr class="memitem:a2ae947254d25e0b4b6bdd51a413e4abf inherit pub_static_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a2ae947254d25e0b4b6bdd51a413e4abf"></a>
+static <a class="el" href="classwinter_1_1Scheduler.html">Scheduler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a2ae947254d25e0b4b6bdd51a413e4abf">GetThis</a> ()</td></tr>
+<tr class="memdesc:a2ae947254d25e0b4b6bdd51a413e4abf inherit pub_static_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前协程调度器 <br /></td></tr>
+<tr class="separator:a2ae947254d25e0b4b6bdd51a413e4abf inherit pub_static_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1740b1d7e20ddad8fda5934918a16895 inherit pub_static_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a1740b1d7e20ddad8fda5934918a16895"></a>
+static <a class="el" href="classwinter_1_1Fiber.html">Fiber</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a1740b1d7e20ddad8fda5934918a16895">GetMainFiber</a> ()</td></tr>
+<tr class="memdesc:a1740b1d7e20ddad8fda5934918a16895 inherit pub_static_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前协程调度器的调度协程 <br /></td></tr>
+<tr class="separator:a1740b1d7e20ddad8fda5934918a16895 inherit pub_static_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a39c80bbb2a0b8e3d0e3990a21f020e48"><td class="memItemLeft" align="right" valign="top"><a id="a39c80bbb2a0b8e3d0e3990a21f020e48"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a39c80bbb2a0b8e3d0e3990a21f020e48">tickle</a> () override</td></tr>
+<tr class="memdesc:a39c80bbb2a0b8e3d0e3990a21f020e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知协程调度器有任务了 <br /></td></tr>
+<tr class="separator:a39c80bbb2a0b8e3d0e3990a21f020e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0649651f100e29b8226ae21bfd5960eb"><td class="memItemLeft" align="right" valign="top"><a id="a0649651f100e29b8226ae21bfd5960eb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a0649651f100e29b8226ae21bfd5960eb">stopping</a> () override</td></tr>
+<tr class="memdesc:a0649651f100e29b8226ae21bfd5960eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回是否可以停止 <br /></td></tr>
+<tr class="separator:a0649651f100e29b8226ae21bfd5960eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7401a7329e5c1aa23203e69142d0f231"><td class="memItemLeft" align="right" valign="top"><a id="a7401a7329e5c1aa23203e69142d0f231"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a7401a7329e5c1aa23203e69142d0f231">idle</a> () override</td></tr>
+<tr class="memdesc:a7401a7329e5c1aa23203e69142d0f231"><td class="mdescLeft">&#160;</td><td class="mdescRight">协程无任务可调度时执行idle协程 <br /></td></tr>
+<tr class="separator:a7401a7329e5c1aa23203e69142d0f231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a71d858bd34b1dc2184e07929b6346b"><td class="memItemLeft" align="right" valign="top"><a id="a4a71d858bd34b1dc2184e07929b6346b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a4a71d858bd34b1dc2184e07929b6346b">onTimerInsertedAtFront</a> () override</td></tr>
+<tr class="memdesc:a4a71d858bd34b1dc2184e07929b6346b"><td class="mdescLeft">&#160;</td><td class="mdescRight">当有新的定时器插入到定时器的首部,执行该函数 <br /></td></tr>
+<tr class="separator:a4a71d858bd34b1dc2184e07929b6346b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0513f19af4c6f5ba962ec3bef5336eaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a0513f19af4c6f5ba962ec3bef5336eaa">contextResize</a> (size_t size)</td></tr>
+<tr class="memdesc:a0513f19af4c6f5ba962ec3bef5336eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置socket句柄上下文的容器大小  <a href="classwinter_1_1IOManager.html#a0513f19af4c6f5ba962ec3bef5336eaa">更多...</a><br /></td></tr>
+<tr class="separator:a0513f19af4c6f5ba962ec3bef5336eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6c1b1aa7f5f171780104a53675a6a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1IOManager.html#a5a6c1b1aa7f5f171780104a53675a6a1">stopping</a> (uint64_t &amp;timeout)</td></tr>
+<tr class="memdesc:a5a6c1b1aa7f5f171780104a53675a6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断是否可以停止  <a href="classwinter_1_1IOManager.html#a5a6c1b1aa7f5f171780104a53675a6a1">更多...</a><br /></td></tr>
+<tr class="separator:a5a6c1b1aa7f5f171780104a53675a6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classwinter_1_1Scheduler"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwinter_1_1Scheduler')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classwinter_1_1Scheduler.html">winter::Scheduler</a></td></tr>
+<tr class="memitem:a752c9038882a884e9146cdf379ce24bd inherit pro_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a752c9038882a884e9146cdf379ce24bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a752c9038882a884e9146cdf379ce24bd">run</a> ()</td></tr>
+<tr class="memdesc:a752c9038882a884e9146cdf379ce24bd inherit pro_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">协程调度函数 <br /></td></tr>
+<tr class="separator:a752c9038882a884e9146cdf379ce24bd inherit pro_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3c1f0017ff3c3644fe4831955aa115 inherit pro_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="abd3c1f0017ff3c3644fe4831955aa115"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#abd3c1f0017ff3c3644fe4831955aa115">setThis</a> ()</td></tr>
+<tr class="memdesc:abd3c1f0017ff3c3644fe4831955aa115 inherit pro_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前的协程调度器 <br /></td></tr>
+<tr class="separator:abd3c1f0017ff3c3644fe4831955aa115 inherit pro_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71aeb2c9d3e38f46d447d8f9f1995b4 inherit pro_methods_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="af71aeb2c9d3e38f46d447d8f9f1995b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#af71aeb2c9d3e38f46d447d8f9f1995b4">hasIdleThreads</a> ()</td></tr>
+<tr class="memdesc:af71aeb2c9d3e38f46d447d8f9f1995b4 inherit pro_methods_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否有空闲线程 <br /></td></tr>
+<tr class="separator:af71aeb2c9d3e38f46d447d8f9f1995b4 inherit pro_methods_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classwinter_1_1TimerManager"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwinter_1_1TimerManager')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classwinter_1_1TimerManager.html">winter::TimerManager</a></td></tr>
+<tr class="memitem:a2865d5ee8f591ca7d2c9ec371d10f7da inherit pro_methods_classwinter_1_1TimerManager"><td class="memItemLeft" align="right" valign="top"><a id="a2865d5ee8f591ca7d2c9ec371d10f7da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a2865d5ee8f591ca7d2c9ec371d10f7da">addTimer</a> (<a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a> val, <a class="el" href="classwinter_1_1RWMutex.html#a9b2d220f87978f1ed5bb8e4c7023396d">RWMutexType::WriteLock</a> &amp;lock)</td></tr>
+<tr class="memdesc:a2865d5ee8f591ca7d2c9ec371d10f7da inherit pro_methods_classwinter_1_1TimerManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">将定时器添加到管理器中 <br /></td></tr>
+<tr class="separator:a2865d5ee8f591ca7d2c9ec371d10f7da inherit pro_methods_classwinter_1_1TimerManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_classwinter_1_1Scheduler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwinter_1_1Scheduler')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classwinter_1_1Scheduler.html">winter::Scheduler</a></td></tr>
+<tr class="memitem:a20c019f7d1cc9fd38351bb68abf7333f inherit pro_attribs_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a20c019f7d1cc9fd38351bb68abf7333f"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a20c019f7d1cc9fd38351bb68abf7333f">m_threadIds</a></td></tr>
+<tr class="memdesc:a20c019f7d1cc9fd38351bb68abf7333f inherit pro_attribs_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">协程下的线程id数组 <br /></td></tr>
+<tr class="separator:a20c019f7d1cc9fd38351bb68abf7333f inherit pro_attribs_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d682d09f5dc0ef2b02a26a3fd3adc72 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a2d682d09f5dc0ef2b02a26a3fd3adc72"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a2d682d09f5dc0ef2b02a26a3fd3adc72">m_threadCount</a> = 0</td></tr>
+<tr class="memdesc:a2d682d09f5dc0ef2b02a26a3fd3adc72 inherit pro_attribs_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程数量 <br /></td></tr>
+<tr class="separator:a2d682d09f5dc0ef2b02a26a3fd3adc72 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf42862e9463358c33810aa7bba791a1 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="aaf42862e9463358c33810aa7bba791a1"></a>
+std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#aaf42862e9463358c33810aa7bba791a1">m_activeThreadCount</a> = {0}</td></tr>
+<tr class="memdesc:aaf42862e9463358c33810aa7bba791a1 inherit pro_attribs_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">工作线程数量 <br /></td></tr>
+<tr class="separator:aaf42862e9463358c33810aa7bba791a1 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c6f4810fb506a74f3aeb9c9c203f12 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a90c6f4810fb506a74f3aeb9c9c203f12"></a>
+std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a90c6f4810fb506a74f3aeb9c9c203f12">m_idleThreadCount</a> = {0}</td></tr>
+<tr class="memdesc:a90c6f4810fb506a74f3aeb9c9c203f12 inherit pro_attribs_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">空闲线程数量 <br /></td></tr>
+<tr class="separator:a90c6f4810fb506a74f3aeb9c9c203f12 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39c2dd726dd0bf143231d3fea6dca4a inherit pro_attribs_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="ab39c2dd726dd0bf143231d3fea6dca4a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#ab39c2dd726dd0bf143231d3fea6dca4a">m_stopping</a> = true</td></tr>
+<tr class="memdesc:ab39c2dd726dd0bf143231d3fea6dca4a inherit pro_attribs_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否正在停止 <br /></td></tr>
+<tr class="separator:ab39c2dd726dd0bf143231d3fea6dca4a inherit pro_attribs_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0a4ec436145000a168b198f2ec3ea1 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a9d0a4ec436145000a168b198f2ec3ea1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a9d0a4ec436145000a168b198f2ec3ea1">m_autoStop</a> = false</td></tr>
+<tr class="memdesc:a9d0a4ec436145000a168b198f2ec3ea1 inherit pro_attribs_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否自动停止 <br /></td></tr>
+<tr class="separator:a9d0a4ec436145000a168b198f2ec3ea1 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a81741e460e1cb39a94c558f7309f9 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memItemLeft" align="right" valign="top"><a id="a35a81741e460e1cb39a94c558f7309f9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Scheduler.html#a35a81741e460e1cb39a94c558f7309f9">m_rootThread</a> = 0</td></tr>
+<tr class="memdesc:a35a81741e460e1cb39a94c558f7309f9 inherit pro_attribs_classwinter_1_1Scheduler"><td class="mdescLeft">&#160;</td><td class="mdescRight">主线程id(use_caller) <br /></td></tr>
+<tr class="separator:a35a81741e460e1cb39a94c558f7309f9 inherit pro_attribs_classwinter_1_1Scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>基于Epoll的IO协程调度器 </p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a22783d8bef693ea3c4514e19bbfa7e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22783d8bef693ea3c4514e19bbfa7e8a">&#9670;&nbsp;</a></span>Event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">winter::IOManager::Event</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IO事件 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108"></a>NONE&#160;</td><td class="fielddoc"><p>无事件 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a22783d8bef693ea3c4514e19bbfa7e8aacdda58ec2715e038bc1764d5663fdbfa"></a>READ&#160;</td><td class="fielddoc"><p>读事件(EPOLLIN) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a22783d8bef693ea3c4514e19bbfa7e8aadb00c5ed17fe576b1399e521d3d4ab39"></a>WRITE&#160;</td><td class="fielddoc"><p>写事件(EPOLLOUT) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a53c356f3cc84af816f96a03f185422fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c356f3cc84af816f96a03f185422fa">&#9670;&nbsp;</a></span>IOManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">winter::IOManager::IOManager </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>threads</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_caller</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threads</td><td>线程数量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">use_caller</td><td>是否将调用线程包含进去 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>调度器的名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aace20f6a8710b7093abc1a163396f984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace20f6a8710b7093abc1a163396f984">&#9670;&nbsp;</a></span>addEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::IOManager::addEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a>&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>cb</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>socket句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>事件类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>事件回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>添加成功返回0,失败返回-1 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a1f6ed80ba67a5dcc8efe0bf840dc6003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6ed80ba67a5dcc8efe0bf840dc6003">&#9670;&nbsp;</a></span>cancelAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool winter::IOManager::cancelAll </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取消所有事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>socket句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab1d7cc7892812d7ea6dd5f98aa3b607b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d7cc7892812d7ea6dd5f98aa3b607b">&#9670;&nbsp;</a></span>cancelEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool winter::IOManager::cancelEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a>&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取消事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>socket句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>事件类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>如果事件存在则触发事件 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a0513f19af4c6f5ba962ec3bef5336eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0513f19af4c6f5ba962ec3bef5336eaa">&#9670;&nbsp;</a></span>contextResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void winter::IOManager::contextResize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重置socket句柄上下文的容器大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>容量大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9464c12849613e79566611465976e06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9464c12849613e79566611465976e06b">&#9670;&nbsp;</a></span>delEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool winter::IOManager::delEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a>&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>socket句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>事件类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>不会触发事件 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5a6c1b1aa7f5f171780104a53675a6a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6c1b1aa7f5f171780104a53675a6a1">&#9670;&nbsp;</a></span>stopping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool winter::IOManager::stopping </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断是否可以停止 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">timeout</td><td>最近要出发的定时器事件间隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回是否可以停止 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 -->
+</div>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="iomanager_8h_source.html">iomanager.h</a></li>
+<li>iomanager.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

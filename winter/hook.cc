@@ -125,7 +125,7 @@ retry:
         }
 
         int rt = iom->addEvent(fd, (winter::IOManager::Event)(event));
-        if(WINTER_UNLICKLY(rt)) {
+        if(WINTER_UNLIKELY(rt)) {
             WINTER_LOG_ERROR(g_logger) << hook_fun_name << " addEvent("
                 << fd << ", " << event << ")";
             if(timer) {

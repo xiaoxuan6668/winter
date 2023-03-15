@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: uri.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">uri.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="uri_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __WINTER_URI_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __WINTER_URI_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="address_8h.html">address.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>winter {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">     foo://user@sylar.com:8042/over/there?name=ferret#nose</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">       \_/   \______________/\_________/ \_________/ \__/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">        |           |            |            |        |</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">     scheme     authority       path        query   fragment</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1Uri.html">Uri</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#ab4cd9e7f1796a48790f331f1e50b5fe7">   28</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;Uri&gt; <a class="code" href="classwinter_1_1Uri.html#ab4cd9e7f1796a48790f331f1e50b5fe7">ptr</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> <a class="code" href="classwinter_1_1Uri.html#ab4cd9e7f1796a48790f331f1e50b5fe7">Uri::ptr</a> <a class="code" href="classwinter_1_1Uri.html#abe24d8a57d01e1f84fd724a2a5bfb342">Create</a>(<span class="keyword">const</span> std::string&amp; uri);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classwinter_1_1Uri.html#a641cc0eac7d779063ed791184e123043">Uri</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#af918fb7bd2b100eace6d6c617d55d780">   45</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1Uri.html#af918fb7bd2b100eace6d6c617d55d780">getScheme</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_scheme;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#afb008277cb7546be20a14e222cb6a9c4">   50</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1Uri.html#afb008277cb7546be20a14e222cb6a9c4">getUserinfo</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_userinfo;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a2bce11661f6da79426c7224d56542824">   55</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1Uri.html#a2bce11661f6da79426c7224d56542824">getHost</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_host;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1Uri.html#aa00bdae6258c3e973e008bc76911b9ed">getPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#acdcaaee9b15a4293a2809e67d896fb42">   65</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1Uri.html#acdcaaee9b15a4293a2809e67d896fb42">getQuery</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_query;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#ad8b7a3d8f6405cee010ec21b2329e260">   70</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1Uri.html#ad8b7a3d8f6405cee010ec21b2329e260">getFragment</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fragment;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    int32_t <a class="code" href="classwinter_1_1Uri.html#a1d103fdef089f1c3fce8a4e0439ab8c5">getPort</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a7795b23ba05ec72042707c52b6bce1dd">   81</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Uri.html#a7795b23ba05ec72042707c52b6bce1dd">setScheme</a>(<span class="keyword">const</span> std::string&amp; v) { m_scheme = v;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a08e9ba9085d08d8c34d1136ccb8e985b">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Uri.html#a08e9ba9085d08d8c34d1136ccb8e985b">setUserinfo</a>(<span class="keyword">const</span> std::string&amp; v) { m_userinfo = v;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a5e5f2c31dcba7af746cd35418d92e338">   93</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Uri.html#a5e5f2c31dcba7af746cd35418d92e338">setHost</a>(<span class="keyword">const</span> std::string&amp; v) { m_host = v;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a2b61c41e743f76f4ed0661cf38602ace">   99</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Uri.html#a2b61c41e743f76f4ed0661cf38602ace">setPath</a>(<span class="keyword">const</span> std::string&amp; v) { m_path = v;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a957b977314142feead1fbfe43afbb5f6">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Uri.html#a957b977314142feead1fbfe43afbb5f6">setQuery</a>(<span class="keyword">const</span> std::string&amp; v) { m_query = v;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a658bbec9b4eee675dc667cc6b896ab54">  111</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Uri.html#a658bbec9b4eee675dc667cc6b896ab54">setFragment</a>(<span class="keyword">const</span> std::string&amp; v) { m_fragment = v;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classwinter_1_1Uri.html#a7c7f6407034b4c1440253d90cd94f2de">  117</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Uri.html#a7c7f6407034b4c1440253d90cd94f2de">setPort</a>(int32_t v) { m_port = v;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::ostream&amp; <a class="code" href="classwinter_1_1Uri.html#a6b1a2bccdf66f204ab7217839cde52b1">dump</a>(std::ostream&amp; os) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::string <a class="code" href="classwinter_1_1Uri.html#af0a1ab35b0a207f6468b974953dac485">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    Address::ptr <a class="code" href="classwinter_1_1Uri.html#a9556873bc7b86cd63ddac6f1ac5b29b4">createAddress</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">bool</span> isDefaultPort() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    std::string m_scheme;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::string m_userinfo;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    std::string m_host;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    std::string m_path;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::string m_query;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::string m_fragment;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    int32_t m_port;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aaddress_8h_html"><div class="ttname"><a href="address_8h.html">address.h</a></div><div class="ttdoc">网络地址的封装(IPv4,IPv6,Unix)</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html"><div class="ttname"><a href="classwinter_1_1Uri.html">winter::Uri</a></div><div class="ttdoc">URI类</div><div class="ttdef"><b>Definition:</b> uri.h:25</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a08e9ba9085d08d8c34d1136ccb8e985b"><div class="ttname"><a href="classwinter_1_1Uri.html#a08e9ba9085d08d8c34d1136ccb8e985b">winter::Uri::setUserinfo</a></div><div class="ttdeci">void setUserinfo(const std::string &amp;v)</div><div class="ttdoc">设置用户信息</div><div class="ttdef"><b>Definition:</b> uri.h:87</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a1d103fdef089f1c3fce8a4e0439ab8c5"><div class="ttname"><a href="classwinter_1_1Uri.html#a1d103fdef089f1c3fce8a4e0439ab8c5">winter::Uri::getPort</a></div><div class="ttdeci">int32_t getPort() const</div><div class="ttdoc">返回端口</div><div class="ttdef"><b>Definition:</b> uri.rl.cc:10894</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a2b61c41e743f76f4ed0661cf38602ace"><div class="ttname"><a href="classwinter_1_1Uri.html#a2b61c41e743f76f4ed0661cf38602ace">winter::Uri::setPath</a></div><div class="ttdeci">void setPath(const std::string &amp;v)</div><div class="ttdoc">设置路径</div><div class="ttdef"><b>Definition:</b> uri.h:99</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a2bce11661f6da79426c7224d56542824"><div class="ttname"><a href="classwinter_1_1Uri.html#a2bce11661f6da79426c7224d56542824">winter::Uri::getHost</a></div><div class="ttdeci">const std::string &amp; getHost() const</div><div class="ttdoc">返回host</div><div class="ttdef"><b>Definition:</b> uri.h:55</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a5e5f2c31dcba7af746cd35418d92e338"><div class="ttname"><a href="classwinter_1_1Uri.html#a5e5f2c31dcba7af746cd35418d92e338">winter::Uri::setHost</a></div><div class="ttdeci">void setHost(const std::string &amp;v)</div><div class="ttdoc">设置host信息</div><div class="ttdef"><b>Definition:</b> uri.h:93</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a641cc0eac7d779063ed791184e123043"><div class="ttname"><a href="classwinter_1_1Uri.html#a641cc0eac7d779063ed791184e123043">winter::Uri::Uri</a></div><div class="ttdeci">Uri()</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> uri.rl.cc:10873</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a658bbec9b4eee675dc667cc6b896ab54"><div class="ttname"><a href="classwinter_1_1Uri.html#a658bbec9b4eee675dc667cc6b896ab54">winter::Uri::setFragment</a></div><div class="ttdeci">void setFragment(const std::string &amp;v)</div><div class="ttdoc">设置fragment</div><div class="ttdef"><b>Definition:</b> uri.h:111</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a6b1a2bccdf66f204ab7217839cde52b1"><div class="ttname"><a href="classwinter_1_1Uri.html#a6b1a2bccdf66f204ab7217839cde52b1">winter::Uri::dump</a></div><div class="ttdeci">std::ostream &amp; dump(std::ostream &amp;os) const</div><div class="ttdoc">序列化到输出流</div><div class="ttdef"><b>Definition:</b> uri.rl.cc:10906</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a7795b23ba05ec72042707c52b6bce1dd"><div class="ttname"><a href="classwinter_1_1Uri.html#a7795b23ba05ec72042707c52b6bce1dd">winter::Uri::setScheme</a></div><div class="ttdeci">void setScheme(const std::string &amp;v)</div><div class="ttdoc">设置scheme</div><div class="ttdef"><b>Definition:</b> uri.h:81</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a7c7f6407034b4c1440253d90cd94f2de"><div class="ttname"><a href="classwinter_1_1Uri.html#a7c7f6407034b4c1440253d90cd94f2de">winter::Uri::setPort</a></div><div class="ttdeci">void setPort(int32_t v)</div><div class="ttdoc">设置端口号</div><div class="ttdef"><b>Definition:</b> uri.h:117</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a9556873bc7b86cd63ddac6f1ac5b29b4"><div class="ttname"><a href="classwinter_1_1Uri.html#a9556873bc7b86cd63ddac6f1ac5b29b4">winter::Uri::createAddress</a></div><div class="ttdeci">Address::ptr createAddress() const</div><div class="ttdoc">获取Address</div><div class="ttdef"><b>Definition:</b> uri.rl.cc:10926</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_a957b977314142feead1fbfe43afbb5f6"><div class="ttname"><a href="classwinter_1_1Uri.html#a957b977314142feead1fbfe43afbb5f6">winter::Uri::setQuery</a></div><div class="ttdeci">void setQuery(const std::string &amp;v)</div><div class="ttdoc">设置查询条件</div><div class="ttdef"><b>Definition:</b> uri.h:105</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_aa00bdae6258c3e973e008bc76911b9ed"><div class="ttname"><a href="classwinter_1_1Uri.html#aa00bdae6258c3e973e008bc76911b9ed">winter::Uri::getPath</a></div><div class="ttdeci">const std::string &amp; getPath() const</div><div class="ttdoc">返回路径</div><div class="ttdef"><b>Definition:</b> uri.rl.cc:10889</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_ab4cd9e7f1796a48790f331f1e50b5fe7"><div class="ttname"><a href="classwinter_1_1Uri.html#ab4cd9e7f1796a48790f331f1e50b5fe7">winter::Uri::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; Uri &gt; ptr</div><div class="ttdoc">智能指针类型定义</div><div class="ttdef"><b>Definition:</b> uri.h:28</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_abe24d8a57d01e1f84fd724a2a5bfb342"><div class="ttname"><a href="classwinter_1_1Uri.html#abe24d8a57d01e1f84fd724a2a5bfb342">winter::Uri::Create</a></div><div class="ttdeci">static Uri::ptr Create(const std::string &amp;uri)</div><div class="ttdoc">创建Uri对象</div><div class="ttdef"><b>Definition:</b> uri.rl.cc:19</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_acdcaaee9b15a4293a2809e67d896fb42"><div class="ttname"><a href="classwinter_1_1Uri.html#acdcaaee9b15a4293a2809e67d896fb42">winter::Uri::getQuery</a></div><div class="ttdeci">const std::string &amp; getQuery() const</div><div class="ttdoc">返回查询条件</div><div class="ttdef"><b>Definition:</b> uri.h:65</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_ad8b7a3d8f6405cee010ec21b2329e260"><div class="ttname"><a href="classwinter_1_1Uri.html#ad8b7a3d8f6405cee010ec21b2329e260">winter::Uri::getFragment</a></div><div class="ttdeci">const std::string &amp; getFragment() const</div><div class="ttdoc">返回fragment</div><div class="ttdef"><b>Definition:</b> uri.h:70</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_af0a1ab35b0a207f6468b974953dac485"><div class="ttname"><a href="classwinter_1_1Uri.html#af0a1ab35b0a207f6468b974953dac485">winter::Uri::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdoc">转成字符串</div><div class="ttdef"><b>Definition:</b> uri.rl.cc:10920</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_af918fb7bd2b100eace6d6c617d55d780"><div class="ttname"><a href="classwinter_1_1Uri.html#af918fb7bd2b100eace6d6c617d55d780">winter::Uri::getScheme</a></div><div class="ttdeci">const std::string &amp; getScheme() const</div><div class="ttdoc">返回scheme</div><div class="ttdef"><b>Definition:</b> uri.h:45</div></div>
+<div class="ttc" id="aclasswinter_1_1Uri_html_afb008277cb7546be20a14e222cb6a9c4"><div class="ttname"><a href="classwinter_1_1Uri.html#afb008277cb7546be20a14e222cb6a9c4">winter::Uri::getUserinfo</a></div><div class="ttdeci">const std::string &amp; getUserinfo() const</div><div class="ttdoc">返回用户信息</div><div class="ttdef"><b>Definition:</b> uri.h:50</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

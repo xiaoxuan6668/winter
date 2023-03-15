@@ -1,0 +1,199 @@
+\doxysection{winter\+::Config\+Var$<$ T, From\+Str, To\+Str $>$ 模板类 参考}
+\label{classwinter_1_1ConfigVar}\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+
+
+配置参数模板子类,保存对应类型的参数值  
+
+
+
+
+{\ttfamily \#include $<$config.\+h$>$}
+
+
+
+类 winter\+::Config\+Var$<$ T, From\+Str, To\+Str $>$ 继承关系图\+:
+% FIG 0
+
+
+winter\+::Config\+Var$<$ T, From\+Str, To\+Str $>$ 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1ConfigVar_a7f2b2109c78faa479c53836d8f186db1}} 
+typedef \textbf{ RWMutex} {\bfseries RWMutex\+Type}
+\item 
+\mbox{\label{classwinter_1_1ConfigVar_a98520c590b3e525f8b2ae79b3840915a}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Config\+Var} $>$ {\bfseries ptr}
+\item 
+\mbox{\label{classwinter_1_1ConfigVar_a57da5e21b394b523e33fd4dcd99dddb6}} 
+typedef std\+::function$<$ void(const T \&old\+\_\+value, const T \&new\+\_\+value)$>$ {\bfseries on\+\_\+change\+\_\+cb}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Config\+Var} (const std\+::string \&name, const T \&default\+\_\+value, const std\+::string \&description=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 通过参数名,参数值,描述构造\+Config\+Var \end{DoxyCompactList}\item 
+std\+::string \textbf{ to\+String} () override
+\begin{DoxyCompactList}\small\item\em 将参数值转换成\+YAML String \end{DoxyCompactList}\item 
+bool \textbf{ from\+String} (const std\+::string \&val) override
+\begin{DoxyCompactList}\small\item\em 从\+YAML String 转成参数的值 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVar_a873658a025ea411b05d94511bb49590a}} 
+const T \textbf{ get\+Value} ()
+\begin{DoxyCompactList}\small\item\em 获取当前参数的值 \end{DoxyCompactList}\item 
+void \textbf{ set\+Value} (const T \&v)
+\begin{DoxyCompactList}\small\item\em 设置当前参数的值 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVar_a411085407c6f0dc5719ef5368bfa3cc6}} 
+std\+::string \textbf{ get\+Type\+Name} () const override
+\begin{DoxyCompactList}\small\item\em 返回参数值的类型名称(typeinfo) \end{DoxyCompactList}\item 
+uint64\+\_\+t \textbf{ add\+Listener} (on\+\_\+change\+\_\+cb cb)
+\begin{DoxyCompactList}\small\item\em 添加变化回调函数 \end{DoxyCompactList}\item 
+void \textbf{ del\+Listener} (uint64\+\_\+t key)
+\begin{DoxyCompactList}\small\item\em 删除回调函数 \end{DoxyCompactList}\item 
+on\+\_\+change\+\_\+cb \textbf{ get\+Listener} (uint64\+\_\+t key)
+\begin{DoxyCompactList}\small\item\em 获取回调函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVar_ada5831d89adf44d292c7ec6ba8ec7f73}} 
+void \textbf{ clear\+Listener} ()
+\begin{DoxyCompactList}\small\item\em 清理所有的回调函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$class T, class From\+Str = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str = Lexical\+Cast$<$\+T, std\+::string$>$$>$\newline
+class winter\+::\+Config\+Var$<$ T, From\+Str, To\+Str $>$}
+
+配置参数模板子类,保存对应类型的参数值 
+
+T 参数的具体类型 From\+Str 从std\+::string转换成\+T类型的仿函数 To\+Str 从\+T转换成std\+::string的仿函数 std\+::string 为\+YAML格式的字符串 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{classwinter_1_1ConfigVar_a8194f0b8d1db9546aff9e0d0c2c6d6b8}} 
+\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}!ConfigVar@{ConfigVar}}
+\index{ConfigVar@{ConfigVar}!winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+\doxysubsubsection{ConfigVar()}
+{\footnotesize\ttfamily template$<$class T , class From\+Str  = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str  = Lexical\+Cast$<$\+T, std\+::string$>$$>$ \\
+\textbf{ winter\+::\+Config\+Var}$<$ T, From\+Str, To\+Str $>$\+::\textbf{ Config\+Var} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const T \&}]{default\+\_\+value,  }\item[{const std\+::string \&}]{description = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+通过参数名,参数值,描述构造\+Config\+Var 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em name} & 参数名称有效字符为[0-\/9a-\/z\+\_\+.] \\
+\hline
+\mbox{\texttt{ in}}  & {\em default\+\_\+value} & 参数的默认值 \\
+\hline
+\mbox{\texttt{ in}}  & {\em description} & 参数的描述 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1ConfigVar_a72c465aefc6a6b4332535f09c6e3c61a}} 
+\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}!addListener@{addListener}}
+\index{addListener@{addListener}!winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+\doxysubsubsection{addListener()}
+{\footnotesize\ttfamily template$<$class T , class From\+Str  = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str  = Lexical\+Cast$<$\+T, std\+::string$>$$>$ \\
+uint64\+\_\+t \textbf{ winter\+::\+Config\+Var}$<$ T, From\+Str, To\+Str $>$\+::add\+Listener (\begin{DoxyParamCaption}\item[{on\+\_\+change\+\_\+cb}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+添加变化回调函数 
+
+\begin{DoxyReturn}{返回}
+返回该回调函数对应的唯一id,用于删除回调 
+\end{DoxyReturn}
+\mbox{\label{classwinter_1_1ConfigVar_a47701603db1197d72938d846ad310655}} 
+\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}!delListener@{delListener}}
+\index{delListener@{delListener}!winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+\doxysubsubsection{delListener()}
+{\footnotesize\ttfamily template$<$class T , class From\+Str  = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str  = Lexical\+Cast$<$\+T, std\+::string$>$$>$ \\
+void \textbf{ winter\+::\+Config\+Var}$<$ T, From\+Str, To\+Str $>$\+::del\+Listener (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+删除回调函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em key} & 回调函数的唯一id \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1ConfigVar_a4ac524f5924f98ee588b7a8d352b6a58}} 
+\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}!fromString@{fromString}}
+\index{fromString@{fromString}!winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+\doxysubsubsection{fromString()}
+{\footnotesize\ttfamily template$<$class T , class From\+Str  = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str  = Lexical\+Cast$<$\+T, std\+::string$>$$>$ \\
+bool \textbf{ winter\+::\+Config\+Var}$<$ T, From\+Str, To\+Str $>$\+::from\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+从\+YAML String 转成参数的值 
+
+
+\begin{DoxyExceptions}{异常}
+{\em 当转换失败抛出异常} & \\
+\hline
+\end{DoxyExceptions}
+
+
+实现了 \textbf{ winter\+::\+Config\+Var\+Base} \doxyref{}{p.}{classwinter_1_1ConfigVarBase_a32562ff80600bd154b9395d27df33779}.
+
+函数调用图\+:
+% FIG 2
+\mbox{\label{classwinter_1_1ConfigVar_aafbe6cade0fdefdd14021f03886271f8}} 
+\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}!getListener@{getListener}}
+\index{getListener@{getListener}!winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+\doxysubsubsection{getListener()}
+{\footnotesize\ttfamily template$<$class T , class From\+Str  = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str  = Lexical\+Cast$<$\+T, std\+::string$>$$>$ \\
+on\+\_\+change\+\_\+cb \textbf{ winter\+::\+Config\+Var}$<$ T, From\+Str, To\+Str $>$\+::get\+Listener (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取回调函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em key} & 回调函数的唯一id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+如果存在返回对应的回调函数,否则返回nullptr 
+\end{DoxyReturn}
+\mbox{\label{classwinter_1_1ConfigVar_a14dbb92b9585d0cb62ddb52c8eb1e796}} 
+\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}!setValue@{setValue}}
+\index{setValue@{setValue}!winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+\doxysubsubsection{setValue()}
+{\footnotesize\ttfamily template$<$class T , class From\+Str  = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str  = Lexical\+Cast$<$\+T, std\+::string$>$$>$ \\
+void \textbf{ winter\+::\+Config\+Var}$<$ T, From\+Str, To\+Str $>$\+::set\+Value (\begin{DoxyParamCaption}\item[{const T \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置当前参数的值 
+
+如果参数的值有发生变化,则通知对应的注册回调函数 \mbox{\label{classwinter_1_1ConfigVar_a9497b5d59fd72366c7abcce405c1a954}} 
+\index{winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}!toString@{toString}}
+\index{toString@{toString}!winter::ConfigVar$<$ T, FromStr, ToStr $>$@{winter::ConfigVar$<$ T, FromStr, ToStr $>$}}
+\doxysubsubsection{toString()}
+{\footnotesize\ttfamily template$<$class T , class From\+Str  = Lexical\+Cast$<$std\+::string, T$>$, class To\+Str  = Lexical\+Cast$<$\+T, std\+::string$>$$>$ \\
+std\+::string \textbf{ winter\+::\+Config\+Var}$<$ T, From\+Str, To\+Str $>$\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+将参数值转换成\+YAML String 
+
+
+\begin{DoxyExceptions}{异常}
+{\em 当转换失败抛出异常} & \\
+\hline
+\end{DoxyExceptions}
+
+
+实现了 \textbf{ winter\+::\+Config\+Var\+Base} \doxyref{}{p.}{classwinter_1_1ConfigVarBase_a701adf6ad6e581234fc55cad34393647}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ config.\+h}\end{DoxyCompactItemize}

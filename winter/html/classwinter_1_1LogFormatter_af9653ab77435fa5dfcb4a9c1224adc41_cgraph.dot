@@ -1,0 +1,10 @@
+digraph "winter::LogFormatter::LogFormatter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="winter::LogFormatter\l::LogFormatter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="构造函数"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="winter::LogFormatter\l::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1LogFormatter.html#aae71679c2e77cf243188261ebf73c830",tooltip="初始化,解析日志模板"];
+}

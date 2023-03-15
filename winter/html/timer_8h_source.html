@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: timer.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">timer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="timer_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __WINTER_TIMER_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __WINTER_TIMER_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="thread_8h.html">thread.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>winter {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>TimerManager;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classwinter_1_1Timer.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1Timer.html">Timer</a> : <span class="keyword">public</span> std::enable_shared_from_this&lt;Timer&gt; {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwinter_1_1TimerManager.html">TimerManager</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">   23</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;Timer&gt; <a class="code" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">ptr</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Timer.html#acdf074505739ac360cee9f3921cdac81">cancel</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Timer.html#a3591cdfb43d32d1fd98116666d606af2">refresh</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Timer.html#a4b9ae41234b2e97b4578e0bd4d060dba">reset</a>(uint64_t ms, <span class="keywordtype">bool</span> from_now);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classwinter_1_1Timer.html">Timer</a>(uint64_t ms, std::function&lt;<span class="keywordtype">void</span>()&gt; cb,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          <span class="keywordtype">bool</span> recurring, <a class="code" href="classwinter_1_1TimerManager.html">TimerManager</a>* manager);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classwinter_1_1Timer.html">Timer</a>(uint64_t next);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> m_recurring = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    uint64_t m_ms = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    uint64_t m_next = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::function&lt;void()&gt; m_cb;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classwinter_1_1TimerManager.html">TimerManager</a>* m_manager = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">struct </span>Comparator {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classwinter_1_1TimerManager.html">   84</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1TimerManager.html">TimerManager</a> {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwinter_1_1Timer.html">Timer</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classwinter_1_1TimerManager.html#af858bd7e7ae2514810162d942e1c9961">   88</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classwinter_1_1RWMutex.html">RWMutex</a> <a class="code" href="classwinter_1_1TimerManager.html#af858bd7e7ae2514810162d942e1c9961">RWMutexType</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classwinter_1_1TimerManager.html#a84bdd355209c5329a1205b42c6189342">TimerManager</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classwinter_1_1TimerManager.html#a3511cd5dd068026f63e90325f78974e4">~TimerManager</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a> <a class="code" href="classwinter_1_1TimerManager.html#a2248be0553854f3eb088755cc843f51d">addTimer</a>(uint64_t ms, std::function&lt;<span class="keywordtype">void</span>()&gt; cb</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        ,<span class="keywordtype">bool</span> recurring = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a> <a class="code" href="classwinter_1_1TimerManager.html#a49b00fce684f2c32a54abff109b80697">addConditionTimer</a>(uint64_t ms, std::function&lt;<span class="keywordtype">void</span>()&gt; cb</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        ,std::weak_ptr&lt;void&gt; weak_cond</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        ,<span class="keywordtype">bool</span> recurring = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    uint64_t <a class="code" href="classwinter_1_1TimerManager.html#ad2e2d3d63e8cedbc360c29e535274625">getNextTimer</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TimerManager.html#a6af1387ddef3f8eee96dfe05976db612">listExpiredCb</a>(std::vector&lt;std::function&lt;<span class="keywordtype">void</span>()&gt; &gt;&amp; cbs);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1TimerManager.html#ad56be6455820b6678a81ecc7723e1a2b">hasTimer</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classwinter_1_1TimerManager.html#ac3a6c2abacd7a64b3be02893040994b2">  140</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TimerManager.html#ac3a6c2abacd7a64b3be02893040994b2">onTimerInsertedAtFront</a>() = 0;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TimerManager.html#a2248be0553854f3eb088755cc843f51d">addTimer</a>(<a class="code" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a> val, <a class="code" href="structwinter_1_1WriteScopedLockImpl.html">RWMutexType::WriteLock</a>&amp; lock);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">bool</span> detectClockRollover(uint64_t now_ms);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="classwinter_1_1RWMutex.html">RWMutexType</a> m_mutex;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::set&lt;Timer::ptr, Timer::Comparator&gt; m_timers;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">bool</span> m_tickled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    uint64_t m_previouseTime = 0;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;};</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasswinter_1_1RWMutex_html"><div class="ttname"><a href="classwinter_1_1RWMutex.html">winter::RWMutex</a></div><div class="ttdoc">读写互斥量</div><div class="ttdef"><b>Definition:</b> thread.h:268</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html"><div class="ttname"><a href="classwinter_1_1TimerManager.html">winter::TimerManager</a></div><div class="ttdoc">定时器管理器</div><div class="ttdef"><b>Definition:</b> timer.h:84</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_a2248be0553854f3eb088755cc843f51d"><div class="ttname"><a href="classwinter_1_1TimerManager.html#a2248be0553854f3eb088755cc843f51d">winter::TimerManager::addTimer</a></div><div class="ttdeci">Timer::ptr addTimer(uint64_t ms, std::function&lt; void()&gt; cb, bool recurring=false)</div><div class="ttdoc">添加定时器</div><div class="ttdef"><b>Definition:</b> timer.cc:99</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_a3511cd5dd068026f63e90325f78974e4"><div class="ttname"><a href="classwinter_1_1TimerManager.html#a3511cd5dd068026f63e90325f78974e4">winter::TimerManager::~TimerManager</a></div><div class="ttdeci">virtual ~TimerManager()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> timer.cc:96</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_a49b00fce684f2c32a54abff109b80697"><div class="ttname"><a href="classwinter_1_1TimerManager.html#a49b00fce684f2c32a54abff109b80697">winter::TimerManager::addConditionTimer</a></div><div class="ttdeci">Timer::ptr addConditionTimer(uint64_t ms, std::function&lt; void()&gt; cb, std::weak_ptr&lt; void &gt; weak_cond, bool recurring=false)</div><div class="ttdoc">添加条件定时器</div><div class="ttdef"><b>Definition:</b> timer.cc:114</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_a6af1387ddef3f8eee96dfe05976db612"><div class="ttname"><a href="classwinter_1_1TimerManager.html#a6af1387ddef3f8eee96dfe05976db612">winter::TimerManager::listExpiredCb</a></div><div class="ttdeci">void listExpiredCb(std::vector&lt; std::function&lt; void()&gt; &gt; &amp;cbs)</div><div class="ttdoc">获取需要执行的定时器的回调函数列表</div><div class="ttdef"><b>Definition:</b> timer.cc:136</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_a84bdd355209c5329a1205b42c6189342"><div class="ttname"><a href="classwinter_1_1TimerManager.html#a84bdd355209c5329a1205b42c6189342">winter::TimerManager::TimerManager</a></div><div class="ttdeci">TimerManager()</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> timer.cc:92</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_ac3a6c2abacd7a64b3be02893040994b2"><div class="ttname"><a href="classwinter_1_1TimerManager.html#ac3a6c2abacd7a64b3be02893040994b2">winter::TimerManager::onTimerInsertedAtFront</a></div><div class="ttdeci">virtual void onTimerInsertedAtFront()=0</div><div class="ttdoc">当有新的定时器插入到定时器的首部,执行该函数</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_ad2e2d3d63e8cedbc360c29e535274625"><div class="ttname"><a href="classwinter_1_1TimerManager.html#ad2e2d3d63e8cedbc360c29e535274625">winter::TimerManager::getNextTimer</a></div><div class="ttdeci">uint64_t getNextTimer()</div><div class="ttdoc">到最近一个定时器执行的时间间隔(毫秒)</div><div class="ttdef"><b>Definition:</b> timer.cc:120</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_ad56be6455820b6678a81ecc7723e1a2b"><div class="ttname"><a href="classwinter_1_1TimerManager.html#ad56be6455820b6678a81ecc7723e1a2b">winter::TimerManager::hasTimer</a></div><div class="ttdeci">bool hasTimer()</div><div class="ttdoc">是否有定时器</div><div class="ttdef"><b>Definition:</b> timer.cc:198</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html_af858bd7e7ae2514810162d942e1c9961"><div class="ttname"><a href="classwinter_1_1TimerManager.html#af858bd7e7ae2514810162d942e1c9961">winter::TimerManager::RWMutexType</a></div><div class="ttdeci">RWMutex RWMutexType</div><div class="ttdoc">读写锁类型</div><div class="ttdef"><b>Definition:</b> timer.h:88</div></div>
+<div class="ttc" id="aclasswinter_1_1Timer_html"><div class="ttname"><a href="classwinter_1_1Timer.html">winter::Timer</a></div><div class="ttdoc">定时器</div><div class="ttdef"><b>Definition:</b> timer.h:19</div></div>
+<div class="ttc" id="aclasswinter_1_1Timer_html_a3591cdfb43d32d1fd98116666d606af2"><div class="ttname"><a href="classwinter_1_1Timer.html#a3591cdfb43d32d1fd98116666d606af2">winter::Timer::refresh</a></div><div class="ttdeci">bool refresh()</div><div class="ttdoc">刷新设置定时器的执行时间</div><div class="ttdef"><b>Definition:</b> timer.cc:51</div></div>
+<div class="ttc" id="aclasswinter_1_1Timer_html_a4b9ae41234b2e97b4578e0bd4d060dba"><div class="ttname"><a href="classwinter_1_1Timer.html#a4b9ae41234b2e97b4578e0bd4d060dba">winter::Timer::reset</a></div><div class="ttdeci">bool reset(uint64_t ms, bool from_now)</div><div class="ttdoc">重置定时器时间</div><div class="ttdef"><b>Definition:</b> timer.cc:66</div></div>
+<div class="ttc" id="aclasswinter_1_1Timer_html_a8b243de7bf1b2dd24b847d54f5595d55"><div class="ttname"><a href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">winter::Timer::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; Timer &gt; ptr</div><div class="ttdoc">定时器的智能指针类型</div><div class="ttdef"><b>Definition:</b> timer.h:23</div></div>
+<div class="ttc" id="aclasswinter_1_1Timer_html_acdf074505739ac360cee9f3921cdac81"><div class="ttname"><a href="classwinter_1_1Timer.html#acdf074505739ac360cee9f3921cdac81">winter::Timer::cancel</a></div><div class="ttdeci">bool cancel()</div><div class="ttdoc">取消定时器</div><div class="ttdef"><b>Definition:</b> timer.cc:40</div></div>
+<div class="ttc" id="astructwinter_1_1WriteScopedLockImpl_html"><div class="ttname"><a href="structwinter_1_1WriteScopedLockImpl.html">winter::WriteScopedLockImpl</a></div><div class="ttdoc">局部写锁模板实现</div><div class="ttdef"><b>Definition:</b> thread.h:151</div></div>
+<div class="ttc" id="athread_8h_html"><div class="ttname"><a href="thread_8h.html">thread.h</a></div><div class="ttdoc">线程相关的封装</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

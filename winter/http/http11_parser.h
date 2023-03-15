@@ -1,3 +1,7 @@
+/**
+ * @file bytearray.h
+ * @brief 二进制数组(序列化/反序列化)
+ */
 #ifndef http11_parser_h
 #define http11_parser_h
 

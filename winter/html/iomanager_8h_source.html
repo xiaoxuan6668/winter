@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: iomanager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">iomanager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="iomanager_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __WINTER_IOMANAGER_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __WINTER_IOMANAGER_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="scheduler_8h.html">scheduler.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">timer.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>winter {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classwinter_1_1IOManager.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1IOManager.html">IOManager</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1Scheduler.html">Scheduler</a>, <span class="keyword">public</span> <a class="code" href="classwinter_1_1TimerManager.html">TimerManager</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;IOManager&gt; ptr;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classwinter_1_1RWMutex.html">RWMutex</a> <a class="code" href="classwinter_1_1RWMutex.html">RWMutexType</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">   24</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108">   26</a></span>&#160;        <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108">NONE</a>    = 0x0,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aacdda58ec2715e038bc1764d5663fdbfa">   28</a></span>&#160;        <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aacdda58ec2715e038bc1764d5663fdbfa">READ</a>    = 0x1,</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aadb00c5ed17fe576b1399e521d3d4ab39">   30</a></span>&#160;        <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aadb00c5ed17fe576b1399e521d3d4ab39">WRITE</a>   = 0x4,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">struct </span>FdContext {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classwinter_1_1Mutex.html">Mutex</a> MutexType;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html">   41</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html">EventContext</a> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#aab33de8d4f714e1ca08d164c7fc23fc3">   43</a></span>&#160;            <a class="code" href="classwinter_1_1Scheduler.html">Scheduler</a>* <a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#aab33de8d4f714e1ca08d164c7fc23fc3">scheduler</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#ad26c2d4d0bc8075f057f67ff52f49517">   45</a></span>&#160;            Fiber::ptr <a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#ad26c2d4d0bc8075f057f67ff52f49517">fiber</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#a9c4efde1419866f94cf966bc596899ce">   47</a></span>&#160;            std::function&lt;void()&gt; <a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#a9c4efde1419866f94cf966bc596899ce">cb</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html">EventContext</a>&amp; getContext(<a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> resetContext(<a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html">EventContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> triggerEvent(<a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html">EventContext</a> read;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html">EventContext</a> write;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">int</span> fd = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> events = <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108">NONE</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classwinter_1_1Mutex.html">MutexType</a> mutex;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    };</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classwinter_1_1IOManager.html#a53c356f3cc84af816f96a03f185422fa">IOManager</a>(<span class="keywordtype">size_t</span> threads = 1, <span class="keywordtype">bool</span> use_caller = <span class="keyword">true</span>, <span class="keyword">const</span> std::string&amp; name = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classwinter_1_1IOManager.html#a7c834d9a9af44d27a257a037e5227e92">~IOManager</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classwinter_1_1IOManager.html#aace20f6a8710b7093abc1a163396f984">addEvent</a>(<span class="keywordtype">int</span> fd, <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event, std::function&lt;<span class="keywordtype">void</span>()&gt; cb = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1IOManager.html#a9464c12849613e79566611465976e06b">delEvent</a>(<span class="keywordtype">int</span> fd, <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1IOManager.html#ab1d7cc7892812d7ea6dd5f98aa3b607b">cancelEvent</a>(<span class="keywordtype">int</span> fd, <a class="code" href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">Event</a> event);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1IOManager.html#a1f6ed80ba67a5dcc8efe0bf840dc6003">cancelAll</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">static</span> <a class="code" href="classwinter_1_1IOManager.html">IOManager</a>* <a class="code" href="classwinter_1_1IOManager.html#a85c64e3a90cc4ac302e71fe321630b56">GetThis</a>();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1IOManager.html#a39c80bbb2a0b8e3d0e3990a21f020e48">tickle</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1IOManager.html#a0649651f100e29b8226ae21bfd5960eb">stopping</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1IOManager.html#a7401a7329e5c1aa23203e69142d0f231">idle</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1IOManager.html#a4a71d858bd34b1dc2184e07929b6346b">onTimerInsertedAtFront</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1IOManager.html#a0513f19af4c6f5ba962ec3bef5336eaa">contextResize</a>(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1IOManager.html#a0649651f100e29b8226ae21bfd5960eb">stopping</a>(uint64_t&amp; timeout);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">int</span> m_epfd = 0;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">int</span> m_tickleFds[2];</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::atomic&lt;size_t&gt; m_pendingEventCount = {0};</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    RWMutexType m_mutex;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    std::vector&lt;FdContext*&gt; m_fdContexts;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html"><div class="ttname"><a href="classwinter_1_1IOManager.html">winter::IOManager</a></div><div class="ttdoc">基于Epoll的IO协程调度器</div><div class="ttdef"><b>Definition:</b> iomanager.h:16</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a0513f19af4c6f5ba962ec3bef5336eaa"><div class="ttname"><a href="classwinter_1_1IOManager.html#a0513f19af4c6f5ba962ec3bef5336eaa">winter::IOManager::contextResize</a></div><div class="ttdeci">void contextResize(size_t size)</div><div class="ttdoc">重置socket句柄上下文的容器大小</div><div class="ttdef"><b>Definition:</b> iomanager.cc:88</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a0649651f100e29b8226ae21bfd5960eb"><div class="ttname"><a href="classwinter_1_1IOManager.html#a0649651f100e29b8226ae21bfd5960eb">winter::IOManager::stopping</a></div><div class="ttdeci">bool stopping() override</div><div class="ttdoc">返回是否可以停止</div><div class="ttdef"><b>Definition:</b> iomanager.cc:276</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a1f6ed80ba67a5dcc8efe0bf840dc6003"><div class="ttname"><a href="classwinter_1_1IOManager.html#a1f6ed80ba67a5dcc8efe0bf840dc6003">winter::IOManager::cancelAll</a></div><div class="ttdeci">bool cancelAll(int fd)</div><div class="ttdoc">取消所有事件</div><div class="ttdef"><b>Definition:</b> iomanager.cc:217</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a22783d8bef693ea3c4514e19bbfa7e8a"><div class="ttname"><a href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8a">winter::IOManager::Event</a></div><div class="ttdeci">Event</div><div class="ttdoc">IO事件</div><div class="ttdef"><b>Definition:</b> iomanager.h:24</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108"><div class="ttname"><a href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108">winter::IOManager::NONE</a></div><div class="ttdeci">@ NONE</div><div class="ttdoc">无事件</div><div class="ttdef"><b>Definition:</b> iomanager.h:26</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a22783d8bef693ea3c4514e19bbfa7e8aacdda58ec2715e038bc1764d5663fdbfa"><div class="ttname"><a href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aacdda58ec2715e038bc1764d5663fdbfa">winter::IOManager::READ</a></div><div class="ttdeci">@ READ</div><div class="ttdoc">读事件(EPOLLIN)</div><div class="ttdef"><b>Definition:</b> iomanager.h:28</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a22783d8bef693ea3c4514e19bbfa7e8aadb00c5ed17fe576b1399e521d3d4ab39"><div class="ttname"><a href="classwinter_1_1IOManager.html#a22783d8bef693ea3c4514e19bbfa7e8aadb00c5ed17fe576b1399e521d3d4ab39">winter::IOManager::WRITE</a></div><div class="ttdeci">@ WRITE</div><div class="ttdoc">写事件(EPOLLOUT)</div><div class="ttdef"><b>Definition:</b> iomanager.h:30</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a39c80bbb2a0b8e3d0e3990a21f020e48"><div class="ttname"><a href="classwinter_1_1IOManager.html#a39c80bbb2a0b8e3d0e3990a21f020e48">winter::IOManager::tickle</a></div><div class="ttdeci">void tickle() override</div><div class="ttdoc">通知协程调度器有任务了</div><div class="ttdef"><b>Definition:</b> iomanager.cc:260</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a4a71d858bd34b1dc2184e07929b6346b"><div class="ttname"><a href="classwinter_1_1IOManager.html#a4a71d858bd34b1dc2184e07929b6346b">winter::IOManager::onTimerInsertedAtFront</a></div><div class="ttdeci">void onTimerInsertedAtFront() override</div><div class="ttdoc">当有新的定时器插入到定时器的首部,执行该函数</div><div class="ttdef"><b>Definition:</b> iomanager.cc:382</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a53c356f3cc84af816f96a03f185422fa"><div class="ttname"><a href="classwinter_1_1IOManager.html#a53c356f3cc84af816f96a03f185422fa">winter::IOManager::IOManager</a></div><div class="ttdeci">IOManager(size_t threads=1, bool use_caller=true, const std::string &amp;name=&quot;&quot;)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> iomanager.cc:51</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a7401a7329e5c1aa23203e69142d0f231"><div class="ttname"><a href="classwinter_1_1IOManager.html#a7401a7329e5c1aa23203e69142d0f231">winter::IOManager::idle</a></div><div class="ttdeci">void idle() override</div><div class="ttdoc">协程无任务可调度时执行idle协程</div><div class="ttdef"><b>Definition:</b> iomanager.cc:281</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a7c834d9a9af44d27a257a037e5227e92"><div class="ttname"><a href="classwinter_1_1IOManager.html#a7c834d9a9af44d27a257a037e5227e92">winter::IOManager::~IOManager</a></div><div class="ttdeci">~IOManager()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> iomanager.cc:75</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a85c64e3a90cc4ac302e71fe321630b56"><div class="ttname"><a href="classwinter_1_1IOManager.html#a85c64e3a90cc4ac302e71fe321630b56">winter::IOManager::GetThis</a></div><div class="ttdeci">static IOManager * GetThis()</div><div class="ttdoc">返回当前的IOManager</div><div class="ttdef"><b>Definition:</b> iomanager.cc:256</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a9464c12849613e79566611465976e06b"><div class="ttname"><a href="classwinter_1_1IOManager.html#a9464c12849613e79566611465976e06b">winter::IOManager::delEvent</a></div><div class="ttdeci">bool delEvent(int fd, Event event)</div><div class="ttdoc">删除事件</div><div class="ttdef"><b>Definition:</b> iomanager.cc:151</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_aace20f6a8710b7093abc1a163396f984"><div class="ttname"><a href="classwinter_1_1IOManager.html#aace20f6a8710b7093abc1a163396f984">winter::IOManager::addEvent</a></div><div class="ttdeci">int addEvent(int fd, Event event, std::function&lt; void()&gt; cb=nullptr)</div><div class="ttdoc">添加事件</div><div class="ttdef"><b>Definition:</b> iomanager.cc:99</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_ab1d7cc7892812d7ea6dd5f98aa3b607b"><div class="ttname"><a href="classwinter_1_1IOManager.html#ab1d7cc7892812d7ea6dd5f98aa3b607b">winter::IOManager::cancelEvent</a></div><div class="ttdeci">bool cancelEvent(int fd, Event event)</div><div class="ttdoc">取消事件</div><div class="ttdef"><b>Definition:</b> iomanager.cc:185</div></div>
+<div class="ttc" id="aclasswinter_1_1Mutex_html"><div class="ttname"><a href="classwinter_1_1Mutex.html">winter::Mutex</a></div><div class="ttdoc">互斥量</div><div class="ttdef"><b>Definition:</b> thread.h:199</div></div>
+<div class="ttc" id="aclasswinter_1_1RWMutex_html"><div class="ttname"><a href="classwinter_1_1RWMutex.html">winter::RWMutex</a></div><div class="ttdoc">读写互斥量</div><div class="ttdef"><b>Definition:</b> thread.h:268</div></div>
+<div class="ttc" id="aclasswinter_1_1Scheduler_html"><div class="ttname"><a href="classwinter_1_1Scheduler.html">winter::Scheduler</a></div><div class="ttdoc">协程调度器</div><div class="ttdef"><b>Definition:</b> scheduler.h:21</div></div>
+<div class="ttc" id="aclasswinter_1_1TimerManager_html"><div class="ttname"><a href="classwinter_1_1TimerManager.html">winter::TimerManager</a></div><div class="ttdoc">定时器管理器</div><div class="ttdef"><b>Definition:</b> timer.h:84</div></div>
+<div class="ttc" id="ascheduler_8h_html"><div class="ttname"><a href="scheduler_8h.html">scheduler.h</a></div><div class="ttdoc">协程调度器封装</div></div>
+<div class="ttc" id="astructwinter_1_1IOManager_1_1FdContext_1_1EventContext_html"><div class="ttname"><a href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html">winter::IOManager::FdContext::EventContext</a></div><div class="ttdoc">事件上线文类</div><div class="ttdef"><b>Definition:</b> iomanager.h:41</div></div>
+<div class="ttc" id="astructwinter_1_1IOManager_1_1FdContext_1_1EventContext_html_a9c4efde1419866f94cf966bc596899ce"><div class="ttname"><a href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#a9c4efde1419866f94cf966bc596899ce">winter::IOManager::FdContext::EventContext::cb</a></div><div class="ttdeci">std::function&lt; void()&gt; cb</div><div class="ttdoc">事件的回调函数</div><div class="ttdef"><b>Definition:</b> iomanager.h:47</div></div>
+<div class="ttc" id="astructwinter_1_1IOManager_1_1FdContext_1_1EventContext_html_aab33de8d4f714e1ca08d164c7fc23fc3"><div class="ttname"><a href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#aab33de8d4f714e1ca08d164c7fc23fc3">winter::IOManager::FdContext::EventContext::scheduler</a></div><div class="ttdeci">Scheduler * scheduler</div><div class="ttdoc">事件执行的调度器</div><div class="ttdef"><b>Definition:</b> iomanager.h:43</div></div>
+<div class="ttc" id="astructwinter_1_1IOManager_1_1FdContext_1_1EventContext_html_ad26c2d4d0bc8075f057f67ff52f49517"><div class="ttname"><a href="structwinter_1_1IOManager_1_1FdContext_1_1EventContext.html#ad26c2d4d0bc8075f057f67ff52f49517">winter::IOManager::FdContext::EventContext::fiber</a></div><div class="ttdeci">Fiber::ptr fiber</div><div class="ttdoc">事件协程</div><div class="ttdef"><b>Definition:</b> iomanager.h:45</div></div>
+<div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div><div class="ttdoc">定时器封装</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

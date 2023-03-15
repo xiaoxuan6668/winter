@@ -14,7 +14,10 @@ bool Env::init(int argc, char** argv) {
     char link[1024] = {0};
     char path[1024] = {0};
     sprintf(link, "/proc/%d/exe", getpid());
-    readlink(link, path, sizeof(path));
+    auto readlink_num = readlink(link, path, sizeof(path));
+    if(readlink_num){
+        WINTER_LOG_INFO(g_logger) << "readlink_num=" << readlink_num;
+    }
     // /path/xxx/exe
     m_exe = path;
 

@@ -1,0 +1,56 @@
+\doxysection{socket.\+h 文件参考}
+\label{socket_8h}\index{socket.h@{socket.h}}
+
+
+Socket封装  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$netinet/tcp.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/err.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/ssl.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}address.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}noncopyable.\+h\char`\"{}}\newline
+socket.\+h 的引用(Include)关系图\+:
+% FIG 0
+此图展示该文件直接或间接的被哪些文件引用了\+:
+% FIG 1
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ winter\+::\+Socket}
+\begin{DoxyCompactList}\small\item\em Socket封装类 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+SSLSocket}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries winter\+::operator$<$$<$} (std\+::ostream \&os, const Socket \&sock)
+\begin{DoxyCompactList}\small\item\em 流式输出socket \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Socket封装 
+
+
+
+\doxysubsection{函数说明}
+\mbox{\label{socket_8cc_a91fa4a1c57fac4c1b7a4f04a66e8568d}} 
+\index{socket.h@{socket.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!socket.h@{socket.h}}
+\doxysubsubsection{operator$<$$<$()}
+{\footnotesize\ttfamily std\+::ostream \& winter\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \textbf{ Socket} \&}]{sock }\end{DoxyParamCaption})}
+
+
+
+流式输出socket 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in,out}}  & {\em os} & 输出流 \\
+\hline
+\mbox{\texttt{ in}}  & {\em sock} & Socket类 \\
+\hline
+\end{DoxyParams}

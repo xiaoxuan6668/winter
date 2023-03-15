@@ -1,0 +1,85 @@
+\doxysection{winter\+::Config\+Var\+Base类 参考}
+\label{classwinter_1_1ConfigVarBase}\index{winter::ConfigVarBase@{winter::ConfigVarBase}}
+
+
+配置变量的基类  
+
+
+
+
+{\ttfamily \#include $<$config.\+h$>$}
+
+
+
+类 winter\+::Config\+Var\+Base 继承关系图\+:
+% FIG 0
+
+
+winter\+::Config\+Var\+Base 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_ad4a4d71731c0742a9c930866ccecaeeb}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Config\+Var\+Base} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Config\+Var\+Base} (const std\+::string \&name, const std\+::string \&description=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_a298776215b5e45effe7bd539abbb5019}} 
+virtual \textbf{ $\sim$\+Config\+Var\+Base} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_a11729997d1d29c25f2d2181611cb2ec9}} 
+const std\+::string \& \textbf{ get\+Name} () const
+\begin{DoxyCompactList}\small\item\em 返回配置参数名称 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_a001acd26e164d6321ed926284c3d7e45}} 
+const std\+::string \& \textbf{ get\+Description} () const
+\begin{DoxyCompactList}\small\item\em 返回配置参数的描述 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_a701adf6ad6e581234fc55cad34393647}} 
+virtual std\+::string \textbf{ to\+String} ()=0
+\begin{DoxyCompactList}\small\item\em 转成字符串 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_a32562ff80600bd154b9395d27df33779}} 
+virtual bool \textbf{ from\+String} (const std\+::string \&val)=0
+\begin{DoxyCompactList}\small\item\em 从字符串初始化值 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_aacd5d9c4653f73891872c30467ca7bed}} 
+virtual std\+::string \textbf{ get\+Type\+Name} () const =0
+\begin{DoxyCompactList}\small\item\em 返回配置参数值的类型名称 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_aa399ea53d3d280fe4b38506c70296328}} 
+std\+::string \textbf{ m\+\_\+name}
+\begin{DoxyCompactList}\small\item\em 配置参数的名称 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1ConfigVarBase_a167be5ff167ff01df7f097303728e688}} 
+std\+::string \textbf{ m\+\_\+description}
+\begin{DoxyCompactList}\small\item\em 配置参数的描述 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+配置变量的基类 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{classwinter_1_1ConfigVarBase_aabfef5b00e64fc687c6df1a6d64393d6}} 
+\index{winter::ConfigVarBase@{winter::ConfigVarBase}!ConfigVarBase@{ConfigVarBase}}
+\index{ConfigVarBase@{ConfigVarBase}!winter::ConfigVarBase@{winter::ConfigVarBase}}
+\doxysubsubsection{ConfigVarBase()}
+{\footnotesize\ttfamily winter\+::\+Config\+Var\+Base\+::\+Config\+Var\+Base (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{description = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em name} & 配置参数名称[0-\/9a-\/z\+\_\+.] \\
+\hline
+\mbox{\texttt{ in}}  & {\em description} & 配置参数描述 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ config.\+h}\end{DoxyCompactItemize}

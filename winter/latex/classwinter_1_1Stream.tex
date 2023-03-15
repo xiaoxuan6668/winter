@@ -1,0 +1,318 @@
+\doxysection{winter\+::Stream类 参考}
+\label{classwinter_1_1Stream}\index{winter::Stream@{winter::Stream}}
+
+
+流结构  
+
+
+
+
+{\ttfamily \#include $<$stream.\+h$>$}
+
+
+
+类 winter\+::Stream 继承关系图\+:
+% FIG 0
+
+
+winter\+::Stream 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Stream_a1a9f98adf0e431c202ccb5c50d57c265}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Stream} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Stream_ab306a3b79b10a87fc47884b7de31253a}} 
+virtual \textbf{ $\sim$\+Stream} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+virtual int \textbf{ read} (void $\ast$buffer, size\+\_\+t length)=0
+\begin{DoxyCompactList}\small\item\em 读数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ read} (Byte\+Array\+::ptr ba, size\+\_\+t length)=0
+\begin{DoxyCompactList}\small\item\em 读数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ read\+Fix\+Size} (void $\ast$buffer, size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em 读固定长度的数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ read\+Fix\+Size} (Byte\+Array\+::ptr ba, size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em 读固定长度的数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ write} (const void $\ast$buffer, size\+\_\+t length)=0
+\begin{DoxyCompactList}\small\item\em 写数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ write} (Byte\+Array\+::ptr ba, size\+\_\+t length)=0
+\begin{DoxyCompactList}\small\item\em 写数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ write\+Fix\+Size} (const void $\ast$buffer, size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em 写固定长度的数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ write\+Fix\+Size} (Byte\+Array\+::ptr ba, size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em 写固定长度的数据 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Stream_a0570f612d12e1a2382525bfa77a8fe52}} 
+virtual void \textbf{ close} ()=0
+\begin{DoxyCompactList}\small\item\em 关闭流 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+流结构 
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1Stream_a7e67841ee0b2911d77e1701d1aafa7e0}} 
+\index{winter::Stream@{winter::Stream}!read@{read}}
+\index{read@{read}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{read()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int winter\+::\+Stream\+::read (\begin{DoxyParamCaption}\item[{Byte\+Array\+::ptr}]{ba,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+读数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em ba} & 接收数据的\+Byte\+Array \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 接收数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回接收到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+在 \textbf{ winter\+::\+Socket\+Stream} \doxyref{}{p.}{classwinter_1_1SocketStream_ac185dfb075642051252f42278b15ca0b} 内被实现.
+
+\mbox{\label{classwinter_1_1Stream_acde320e3e72e9429a4fe2e0b8b2854d7}} 
+\index{winter::Stream@{winter::Stream}!read@{read}}
+\index{read@{read}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{read()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int winter\+::\+Stream\+::read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+读数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em buffer} & 接收数据的内存 \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 接收数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回接收到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+在 \textbf{ winter\+::\+Socket\+Stream} \doxyref{}{p.}{classwinter_1_1SocketStream_a27b29fa5b2268511493c970b524b8aa1} 内被实现.
+
+\mbox{\label{classwinter_1_1Stream_a48327678044f1850b8d97f49afaa86f7}} 
+\index{winter::Stream@{winter::Stream}!readFixSize@{readFixSize}}
+\index{readFixSize@{readFixSize}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{readFixSize()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int winter\+::\+Stream\+::read\+Fix\+Size (\begin{DoxyParamCaption}\item[{Byte\+Array\+::ptr}]{ba,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+读固定长度的数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em ba} & 接收数据的\+Byte\+Array \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 接收数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回接收到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+函数调用图\+:
+% FIG 2
+\mbox{\label{classwinter_1_1Stream_ad196c3c6ec35650bfd7ea149a7d03955}} 
+\index{winter::Stream@{winter::Stream}!readFixSize@{readFixSize}}
+\index{readFixSize@{readFixSize}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{readFixSize()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int winter\+::\+Stream\+::read\+Fix\+Size (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+读固定长度的数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em buffer} & 接收数据的内存 \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 接收数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回接收到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+函数调用图\+:
+% FIG 3
+\mbox{\label{classwinter_1_1Stream_aeb0217204d2d741c566b11c3eb99b957}} 
+\index{winter::Stream@{winter::Stream}!write@{write}}
+\index{write@{write}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{write()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int winter\+::\+Stream\+::write (\begin{DoxyParamCaption}\item[{Byte\+Array\+::ptr}]{ba,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+写数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em ba} & 写数据的\+Byte\+Array \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 写入数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回写入到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+在 \textbf{ winter\+::\+Socket\+Stream} \doxyref{}{p.}{classwinter_1_1SocketStream_ae6e8b2b08d2da5d58a6a5d63f5b59f81} 内被实现.
+
+\mbox{\label{classwinter_1_1Stream_a01be192ac0c9e174dc07fdaa0952ae52}} 
+\index{winter::Stream@{winter::Stream}!write@{write}}
+\index{write@{write}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{write()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int winter\+::\+Stream\+::write (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+写数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em buffer} & 写数据的内存 \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 写入数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回写入到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+在 \textbf{ winter\+::\+Socket\+Stream} \doxyref{}{p.}{classwinter_1_1SocketStream_a2f57d3ab04ce1025660a459e176cf249} 内被实现.
+
+\mbox{\label{classwinter_1_1Stream_ae20a24ec05a17ea7f282ab57742992af}} 
+\index{winter::Stream@{winter::Stream}!writeFixSize@{writeFixSize}}
+\index{writeFixSize@{writeFixSize}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{writeFixSize()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int winter\+::\+Stream\+::write\+Fix\+Size (\begin{DoxyParamCaption}\item[{Byte\+Array\+::ptr}]{ba,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+写固定长度的数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em ba} & 写数据的\+Byte\+Array \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 写入数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回写入到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+函数调用图\+:
+% FIG 4
+\mbox{\label{classwinter_1_1Stream_ac1c6aff5ac4debf4990722194110e55c}} 
+\index{winter::Stream@{winter::Stream}!writeFixSize@{writeFixSize}}
+\index{writeFixSize@{writeFixSize}!winter::Stream@{winter::Stream}}
+\doxysubsubsection{writeFixSize()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int winter\+::\+Stream\+::write\+Fix\+Size (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+写固定长度的数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em buffer} & 写数据的内存 \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 写入数据的内存大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回写入到的数据的实际大小 \\
+\hline
+{\em =0} & 被关闭 \\
+\hline
+{\em $<$0} & 出现流错误 \\
+\hline
+\end{DoxyRetVals}
+函数调用图\+:
+% FIG 5
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ stream.\+h}\item 
+stream.\+cc\end{DoxyCompactItemize}

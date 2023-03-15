@@ -1,0 +1,29 @@
+digraph "winter::Noncopyable"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{winter::Noncopyable\n||+ Noncopyable()\l+ ~Noncopyable()\l+ Noncopyable()\l+ operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="对象无法拷贝,赋值"];
+  Node1 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{winter::CASLock\n||+ CASLock()\l+ ~CASLock()\l+ lock()\l+ unlock()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1CASLock.html",tooltip="原子锁"];
+  Node1 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{winter::Mutex\n||+ Mutex()\l+ ~Mutex()\l+ lock()\l+ unlock()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1Mutex.html",tooltip="互斥量"];
+  Node1 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{winter::NullMutex\n||+ NullMutex()\l+ ~NullMutex()\l+ lock()\l+ unlock()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1NullMutex.html",tooltip="空锁(用于调试)"];
+  Node1 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{winter::NullRWMutex\n||+ NullRWMutex()\l+ ~NullRWMutex()\l+ rdlock()\l+ wrlock()\l+ unlock()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1NullRWMutex.html",tooltip="空读写锁(用于调试)"];
+  Node1 -> Node6 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{winter::RWMutex\n||+ RWMutex()\l+ ~RWMutex()\l+ rdlock()\l+ wrlock()\l+ unlock()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1RWMutex.html",tooltip="读写互斥量"];
+  Node1 -> Node7 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node7 [label="{winter::Semaphore\n||+ Semaphore()\l+ ~Semaphore()\l+ wait()\l+ notify()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1Semaphore.html",tooltip="信号量"];
+  Node1 -> Node8 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{winter::Socket\n|# m_sock\l# m_family\l# m_type\l# m_protocol\l# m_isConnected\l# m_localAddress\l# m_remoteAddress\l|+ Socket()\l+ ~Socket()\l+ getSendTimeout()\l+ setSendTimeout()\l+ getRecvTimeout()\l+ setRecvTimeout()\l+ getOption()\l+ getOption()\l+ setOption()\l+ setOption()\l和 27 更多...\l+ CreateTCP()\l+ CreateUDP()\l+ CreateTCPSocket()\l+ CreateUDPSocket()\l+ CreateTCPSocket6()\l+ CreateUDPSocket6()\l+ CreateUnixTCPSocket()\l+ CreateUnixUDPSocket()\l# initSock()\l# newSock()\l# init()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1Socket.html",tooltip="Socket封装类"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 [label="{winter::SSLSocket\n||+ SSLSocket()\l+ accept()\l+ bind()\l+ connect()\l+ listen()\l+ close()\l+ send()\l+ send()\l+ sendTo()\l+ sendTo()\l和 6 更多...\l+ CreateTCP()\l+ CreateTCPSocket()\l+ CreateTCPSocket6()\l# init()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1SSLSocket.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node10 [label="{winter::Spinlock\n||+ Spinlock()\l+ ~Spinlock()\l+ lock()\l+ unlock()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1Spinlock.html",tooltip="自旋锁"];
+  Node1 -> Node11 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node11 [label="{winter::TcpServer\n||+ TcpServer()\l+ ~TcpServer()\l+ bind()\l+ bind()\l+ start()\l+ stop()\l+ getRecvTimeout()\l+ getName()\l+ setRecvTimeout()\l+ setName()\l+ isStop()\l# handleClient()\l# startAccept()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1TcpServer.html",tooltip="TCP服务器封装"];
+  Node1 -> Node12 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node12 [label="{winter::Thread\n||+ Thread()\l+ ~Thread()\l+ getId()\l+ getName()\l+ join()\l+ GetThis()\l+ GetName()\l+ SetName()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1Thread.html",tooltip="线程类"];
+}

@@ -1,7 +1,6 @@
 /**
  * @file uri.h
  * @brief URI封装类
- * Learn @author sylar.yin
  */
 #ifndef __WINTER_URI_H__
 #define __WINTER_URI_H__

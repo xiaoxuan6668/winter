@@ -1,0 +1,44 @@
+\doxysection{winter\+::Stdout\+Log\+Appender类 参考}
+\label{classwinter_1_1StdoutLogAppender}\index{winter::StdoutLogAppender@{winter::StdoutLogAppender}}
+
+
+输出到控制台的\+Appender  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+类 winter\+::Stdout\+Log\+Appender 继承关系图\+:
+% FIG 0
+
+
+winter\+::Stdout\+Log\+Appender 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1StdoutLogAppender_a46bbc49f8579c4837147f7da5c2b9f40}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Stdout\+Log\+Appender} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1StdoutLogAppender_a85bebaae226661eeb0b7d69fa74db296}} 
+void {\bfseries log} (Logger\+::ptr logger, \textbf{ Log\+Level\+::\+Level} level, Log\+Event\+::ptr event) override
+\item 
+\mbox{\label{classwinter_1_1StdoutLogAppender_afa3bc86c1d37582cdebf5b2b3afde8c5}} 
+std\+::string \textbf{ to\+Yaml\+String} () override
+\begin{DoxyCompactList}\small\item\em 将日志输出目标的配置转成\+YAML String \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+输出到控制台的\+Appender 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ log.\+h}\item 
+log.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\doxysection{winter\+::Semaphore类 参考}
+\label{classwinter_1_1Semaphore}\index{winter::Semaphore@{winter::Semaphore}}
+
+
+信号量  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+
+
+类 winter\+::Semaphore 继承关系图\+:
+% FIG 0
+
+
+winter\+::Semaphore 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Semaphore} (uint32\+\_\+t count=0)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Semaphore_a58be4ccb334a7d75ed42d1f79f6f90c6}} 
+\textbf{ $\sim$\+Semaphore} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Semaphore_a21864927ffc243033762de88e2e6a64b}} 
+void \textbf{ wait} ()
+\begin{DoxyCompactList}\small\item\em 获取信号量 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Semaphore_ae49f833816ab37636b69bf92d1994486}} 
+void \textbf{ notify} ()
+\begin{DoxyCompactList}\small\item\em 释放信号量 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+信号量 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{classwinter_1_1Semaphore_a597c3407065aaf723e10148a3a29d1ff}} 
+\index{winter::Semaphore@{winter::Semaphore}!Semaphore@{Semaphore}}
+\index{Semaphore@{Semaphore}!winter::Semaphore@{winter::Semaphore}}
+\doxysubsubsection{Semaphore()}
+{\footnotesize\ttfamily winter\+::\+Semaphore\+::\+Semaphore (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{count = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em count} & 信号量值的大小 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ thread.\+h}\item 
+thread.\+cc\end{DoxyCompactItemize}

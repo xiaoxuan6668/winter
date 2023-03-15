@@ -1,0 +1,54 @@
+\doxysection{winter\+::Null\+RWMutex类 参考}
+\label{classwinter_1_1NullRWMutex}\index{winter::NullRWMutex@{winter::NullRWMutex}}
+
+
+空读写锁(用于调试)  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+
+
+类 winter\+::Null\+RWMutex 继承关系图\+:
+% FIG 0
+
+
+winter\+::Null\+RWMutex 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1NullRWMutex_a5e071c01e19c763cf0f0f222107ce27f}} 
+typedef \textbf{ Read\+Scoped\+Lock\+Impl}$<$ \textbf{ Null\+Mutex} $>$ \textbf{ Read\+Lock}
+\begin{DoxyCompactList}\small\item\em 局部读锁 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1NullRWMutex_af6c3dc17626d7d1c80c19a3b11476ca6}} 
+typedef \textbf{ Write\+Scoped\+Lock\+Impl}$<$ \textbf{ Null\+Mutex} $>$ \textbf{ Write\+Lock}
+\begin{DoxyCompactList}\small\item\em 局部写锁 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1NullRWMutex_ad4f27ea6f6c7a9b4b2854005f16d129c}} 
+\textbf{ Null\+RWMutex} ()
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1NullRWMutex_aa5ff19a1f48988b36c5102c7facf4578}} 
+\textbf{ $\sim$\+Null\+RWMutex} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1NullRWMutex_ac3c5c661a5d7abeb0b9e3197886e9a90}} 
+void \textbf{ rdlock} ()
+\begin{DoxyCompactList}\small\item\em 上读锁 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1NullRWMutex_ac8a8af174fc378711cffc555a8e6a256}} 
+void \textbf{ wrlock} ()
+\begin{DoxyCompactList}\small\item\em 上写锁 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1NullRWMutex_a99b42d14e7ef31de4175ea26957b9906}} 
+void \textbf{ unlock} ()
+\begin{DoxyCompactList}\small\item\em 解锁 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+空读写锁(用于调试) 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ thread.\+h}\end{DoxyCompactItemize}

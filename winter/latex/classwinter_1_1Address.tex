@@ -1,0 +1,231 @@
+\doxysection{winter\+::Address类 参考}
+\label{classwinter_1_1Address}\index{winter::Address@{winter::Address}}
+
+
+网络地址的基类,抽象类  
+
+
+
+
+{\ttfamily \#include $<$address.\+h$>$}
+
+
+
+类 winter\+::Address 继承关系图\+:
+% FIG 0
+
+
+winter\+::Address 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Address_a923250ece047c99526418500f7728412}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Address} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Address_a4748bdcce6eba8d16330c21b9431c0cc}} 
+virtual \textbf{ $\sim$\+Address} ()
+\begin{DoxyCompactList}\small\item\em 虚析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_af7dbeb4398e2b5787019a8e4ba635090}} 
+int \textbf{ get\+Family} () const
+\begin{DoxyCompactList}\small\item\em 返回协议簇 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_a7a819ced0a9f8599ba03efee3155b939}} 
+virtual const sockaddr $\ast$ \textbf{ get\+Addr} () const =0
+\begin{DoxyCompactList}\small\item\em 返回sockaddr指针,只读 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_a496cfda708eeef8196a7d4de1ad826fa}} 
+virtual sockaddr $\ast$ \textbf{ get\+Addr} ()=0
+\begin{DoxyCompactList}\small\item\em 返回sockaddr指针,读写 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_addb36544457d8ee477e1d4e482b027b8}} 
+virtual socklen\+\_\+t \textbf{ get\+Addr\+Len} () const =0
+\begin{DoxyCompactList}\small\item\em 返回sockaddr的长度 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_a8a1dc0b18d9a3c5e9b9944cbe75b8ad1}} 
+virtual std\+::ostream \& \textbf{ insert} (std\+::ostream \&os) const =0
+\begin{DoxyCompactList}\small\item\em 可读性输出地址 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_afdab5377a486a18b38c927074b9bb7ec}} 
+std\+::string \textbf{ to\+String} () const
+\begin{DoxyCompactList}\small\item\em 返回可读性字符串 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_af651bcf01bb5fe71b68ed33a27fc5ddd}} 
+bool \textbf{ operator$<$} (const \textbf{ Address} \&rhs) const
+\begin{DoxyCompactList}\small\item\em 小于号比较函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_ac892eb31dc6e610b1920dfec73ad2e43}} 
+bool \textbf{ operator==} (const \textbf{ Address} \&rhs) const
+\begin{DoxyCompactList}\small\item\em 等于函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Address_a8914e5d5af72917c9d1abfce49b1f449}} 
+bool \textbf{ operator!=} (const \textbf{ Address} \&rhs) const
+\begin{DoxyCompactList}\small\item\em 不等于函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static Address\+::ptr \textbf{ Create} (const sockaddr $\ast$addr, socklen\+\_\+t addrlen)
+\begin{DoxyCompactList}\small\item\em 通过sockaddr指针创建\+Address \end{DoxyCompactList}\item 
+static bool \textbf{ Lookup} (std\+::vector$<$ Address\+::ptr $>$ \&result, const std\+::string \&host, int family=AF\+\_\+\+INET, int type=0, int protocol=0)
+\begin{DoxyCompactList}\small\item\em 通过host地址返回对应条件的所有\+Address \end{DoxyCompactList}\item 
+static Address\+::ptr \textbf{ Lookup\+Any} (const std\+::string \&host, int family=AF\+\_\+\+INET, int type=0, int protocol=0)
+\begin{DoxyCompactList}\small\item\em 通过host地址返回对应条件的任意\+Address \end{DoxyCompactList}\item 
+static std\+::shared\+\_\+ptr$<$ \textbf{ IPAddress} $>$ \textbf{ Lookup\+Any\+IPAddress} (const std\+::string \&host, int family=AF\+\_\+\+INET, int type=0, int protocol=0)
+\begin{DoxyCompactList}\small\item\em 通过host地址返回对应条件的任意\+IPAddress \end{DoxyCompactList}\item 
+static bool \textbf{ Get\+Interface\+Addresses} (std\+::multimap$<$ std\+::string, std\+::pair$<$ Address\+::ptr, uint32\+\_\+t $>$ $>$ \&result, int family=AF\+\_\+\+INET)
+\begin{DoxyCompactList}\small\item\em 返回本机所有网卡的$<$网卡名, 地址, 子网掩码位数$>$ \end{DoxyCompactList}\item 
+static bool \textbf{ Get\+Interface\+Addresses} (std\+::vector$<$ std\+::pair$<$ Address\+::ptr, uint32\+\_\+t $>$ $>$ \&result, const std\+::string \&iface, int family=AF\+\_\+\+INET)
+\begin{DoxyCompactList}\small\item\em 获取指定网卡的地址和子网掩码位数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+网络地址的基类,抽象类 
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1Address_ab248b3f32f184a2721cfaf2c0fecda97}} 
+\index{winter::Address@{winter::Address}!Create@{Create}}
+\index{Create@{Create}!winter::Address@{winter::Address}}
+\doxysubsubsection{Create()}
+{\footnotesize\ttfamily Address\+::ptr winter\+::\+Address\+::\+Create (\begin{DoxyParamCaption}\item[{const sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t}]{addrlen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+通过sockaddr指针创建\+Address 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em addr} & sockaddr指针 \\
+\hline
+\mbox{\texttt{ in}}  & {\em addrlen} & sockaddr的长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回和sockaddr相匹配的\+Address,失败返回nullptr 
+\end{DoxyReturn}
+\mbox{\label{classwinter_1_1Address_a082f284b37aeaf4ac79a8ef6945fade4}} 
+\index{winter::Address@{winter::Address}!GetInterfaceAddresses@{GetInterfaceAddresses}}
+\index{GetInterfaceAddresses@{GetInterfaceAddresses}!winter::Address@{winter::Address}}
+\doxysubsubsection{GetInterfaceAddresses()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool winter\+::\+Address\+::\+Get\+Interface\+Addresses (\begin{DoxyParamCaption}\item[{std\+::multimap$<$ std\+::string, std\+::pair$<$ Address\+::ptr, uint32\+\_\+t $>$ $>$ \&}]{result,  }\item[{int}]{family = {\ttfamily AF\+\_\+INET} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+返回本机所有网卡的$<$网卡名, 地址, 子网掩码位数$>$ 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em result} & 保存本机所有地址 \\
+\hline
+\mbox{\texttt{ in}}  & {\em family} & 协议族(\+AF\+\_\+\+INT, AF\+\_\+\+INT6, AF\+\_\+\+UNIX) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否获取成功 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 2
+\mbox{\label{classwinter_1_1Address_a390a96b717da281c500541080a639179}} 
+\index{winter::Address@{winter::Address}!GetInterfaceAddresses@{GetInterfaceAddresses}}
+\index{GetInterfaceAddresses@{GetInterfaceAddresses}!winter::Address@{winter::Address}}
+\doxysubsubsection{GetInterfaceAddresses()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool winter\+::\+Address\+::\+Get\+Interface\+Addresses (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ Address\+::ptr, uint32\+\_\+t $>$ $>$ \&}]{result,  }\item[{const std\+::string \&}]{iface,  }\item[{int}]{family = {\ttfamily AF\+\_\+INET} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+获取指定网卡的地址和子网掩码位数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em result} & 保存指定网卡所有地址 \\
+\hline
+\mbox{\texttt{ in}}  & {\em iface} & 网卡名称 \\
+\hline
+\mbox{\texttt{ in}}  & {\em family} & 协议族(\+AF\+\_\+\+INT, AF\+\_\+\+INT6, AF\+\_\+\+UNIX) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否获取成功 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 3
+\mbox{\label{classwinter_1_1Address_a9a8170ee12049813bb4223b4d7e7ccfe}} 
+\index{winter::Address@{winter::Address}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!winter::Address@{winter::Address}}
+\doxysubsubsection{Lookup()}
+{\footnotesize\ttfamily bool winter\+::\+Address\+::\+Lookup (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Address\+::ptr $>$ \&}]{result,  }\item[{const std\+::string \&}]{host,  }\item[{int}]{family = {\ttfamily AF\+\_\+INET},  }\item[{int}]{type = {\ttfamily 0},  }\item[{int}]{protocol = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+通过host地址返回对应条件的所有\+Address 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em result} & 保存满足条件的\+Address \\
+\hline
+\mbox{\texttt{ in}}  & {\em host} & 域名,服务器名等.\+举例\+: www.\+sylar.\+top[\+:80] (方括号为可选内容) \\
+\hline
+\mbox{\texttt{ in}}  & {\em family} & 协议族(\+AF\+\_\+\+INT, AF\+\_\+\+INT6, AF\+\_\+\+UNIX) \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & socketl类型\+SOCK\+\_\+\+STREAM、\+SOCK\+\_\+\+DGRAM 等 \\
+\hline
+\mbox{\texttt{ in}}  & {\em protocol} & 协议,IPPROTO\+\_\+\+TCP、\+IPPROTO\+\_\+\+UDP 等 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回是否转换成功 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 4
+\mbox{\label{classwinter_1_1Address_ad347858e60b2c15e95a8502a984e2751}} 
+\index{winter::Address@{winter::Address}!LookupAny@{LookupAny}}
+\index{LookupAny@{LookupAny}!winter::Address@{winter::Address}}
+\doxysubsubsection{LookupAny()}
+{\footnotesize\ttfamily Address\+::ptr winter\+::\+Address\+::\+Lookup\+Any (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{host,  }\item[{int}]{family = {\ttfamily AF\+\_\+INET},  }\item[{int}]{type = {\ttfamily 0},  }\item[{int}]{protocol = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+通过host地址返回对应条件的任意\+Address 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em host} & 域名,服务器名等.\+举例\+: www.\+sylar.\+top[\+:80] (方括号为可选内容) \\
+\hline
+\mbox{\texttt{ in}}  & {\em family} & 协议族(\+AF\+\_\+\+INT, AF\+\_\+\+INT6, AF\+\_\+\+UNIX) \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & socketl类型\+SOCK\+\_\+\+STREAM、\+SOCK\+\_\+\+DGRAM 等 \\
+\hline
+\mbox{\texttt{ in}}  & {\em protocol} & 协议,IPPROTO\+\_\+\+TCP、\+IPPROTO\+\_\+\+UDP 等 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回满足条件的任意\+Address,失败返回nullptr 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 5
+\mbox{\label{classwinter_1_1Address_afc2d2968c79acc40ab58037c8fe564e4}} 
+\index{winter::Address@{winter::Address}!LookupAnyIPAddress@{LookupAnyIPAddress}}
+\index{LookupAnyIPAddress@{LookupAnyIPAddress}!winter::Address@{winter::Address}}
+\doxysubsubsection{LookupAnyIPAddress()}
+{\footnotesize\ttfamily IPAddress\+::ptr winter\+::\+Address\+::\+Lookup\+Any\+IPAddress (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{host,  }\item[{int}]{family = {\ttfamily AF\+\_\+INET},  }\item[{int}]{type = {\ttfamily 0},  }\item[{int}]{protocol = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+通过host地址返回对应条件的任意\+IPAddress 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em host} & 域名,服务器名等.\+举例\+: www.\+sylar.\+top[\+:80] (方括号为可选内容) \\
+\hline
+\mbox{\texttt{ in}}  & {\em family} & 协议族(\+AF\+\_\+\+INT, AF\+\_\+\+INT6, AF\+\_\+\+UNIX) \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & socketl类型\+SOCK\+\_\+\+STREAM、\+SOCK\+\_\+\+DGRAM 等 \\
+\hline
+\mbox{\texttt{ in}}  & {\em protocol} & 协议,IPPROTO\+\_\+\+TCP、\+IPPROTO\+\_\+\+UDP 等 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回满足条件的任意\+IPAddress,失败返回nullptr 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 6
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ address.\+h}\item 
+address.\+cc\end{DoxyCompactItemize}

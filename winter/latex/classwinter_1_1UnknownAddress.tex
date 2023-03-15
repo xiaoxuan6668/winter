@@ -1,0 +1,56 @@
+\doxysection{winter\+::Unknown\+Address类 参考}
+\label{classwinter_1_1UnknownAddress}\index{winter::UnknownAddress@{winter::UnknownAddress}}
+
+
+未知地址  
+
+
+
+
+{\ttfamily \#include $<$address.\+h$>$}
+
+
+
+类 winter\+::Unknown\+Address 继承关系图\+:
+% FIG 0
+
+
+winter\+::Unknown\+Address 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1UnknownAddress_a7ff37c4f9a58b76571f4c8d3445dd554}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Unknown\+Address} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1UnknownAddress_a7dc860a11fa8f3028e65100a4f0021d1}} 
+{\bfseries Unknown\+Address} (int family)
+\item 
+\mbox{\label{classwinter_1_1UnknownAddress_a21161ea5c60787bc9adf5cc92e61bed1}} 
+{\bfseries Unknown\+Address} (const sockaddr \&addr)
+\item 
+\mbox{\label{classwinter_1_1UnknownAddress_a053cc57a955200cbd72922cd62c8792e}} 
+const sockaddr $\ast$ \textbf{ get\+Addr} () const override
+\begin{DoxyCompactList}\small\item\em 返回sockaddr指针,只读 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1UnknownAddress_ab0ea2a755656b736781e1d4fd1443d06}} 
+sockaddr $\ast$ \textbf{ get\+Addr} () override
+\begin{DoxyCompactList}\small\item\em 返回sockaddr指针,读写 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1UnknownAddress_aa39a3e15708d25daca2e5b1bff9cdc34}} 
+socklen\+\_\+t \textbf{ get\+Addr\+Len} () const override
+\begin{DoxyCompactList}\small\item\em 返回sockaddr的长度 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1UnknownAddress_ab3ccd7621645d22b0fdb7952bdad25c7}} 
+std\+::ostream \& \textbf{ insert} (std\+::ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em 可读性输出地址 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+未知地址 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ address.\+h}\item 
+address.\+cc\end{DoxyCompactItemize}

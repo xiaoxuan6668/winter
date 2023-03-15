@@ -1,0 +1,13 @@
+digraph "winter::Socket"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{winter::Socket\n|# m_sock\l# m_family\l# m_type\l# m_protocol\l# m_isConnected\l# m_localAddress\l# m_remoteAddress\l|+ Socket()\l+ ~Socket()\l+ getSendTimeout()\l+ setSendTimeout()\l+ getRecvTimeout()\l+ setRecvTimeout()\l+ getOption()\l+ getOption()\l+ setOption()\l+ setOption()\l和 27 更多...\l+ CreateTCP()\l+ CreateUDP()\l+ CreateTCPSocket()\l+ CreateUDPSocket()\l+ CreateTCPSocket6()\l+ CreateUDPSocket6()\l+ CreateUnixTCPSocket()\l+ CreateUnixUDPSocket()\l# initSock()\l# newSock()\l# init()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Socket封装类"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{std::enable_shared\l_from_this\< Socket \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{winter::Noncopyable\n||+ Noncopyable()\l+ ~Noncopyable()\l+ Noncopyable()\l+ operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1Noncopyable.html",tooltip="对象无法拷贝,赋值"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{winter::SSLSocket\n||+ SSLSocket()\l+ accept()\l+ bind()\l+ connect()\l+ listen()\l+ close()\l+ send()\l+ send()\l+ sendTo()\l+ sendTo()\l和 6 更多...\l+ CreateTCP()\l+ CreateTCPSocket()\l+ CreateTCPSocket6()\l# init()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1SSLSocket.html",tooltip=" "];
+}

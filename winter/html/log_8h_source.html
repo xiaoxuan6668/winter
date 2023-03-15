@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: log.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">log.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="log_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __WINTER_LOG_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __WINTER_LOG_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="util_8h.html">util.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="singleton_8h.html">singleton.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="thread_8h.html">thread.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="log_8h.html#a5c9c301dde1ff7a6f1fa40c2d2eb2154">   24</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_LEVEL(logger, level) \</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    winter::LogEventWrap(winter::LogEvent::ptr(new winter::LogEvent(logger, level, \</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">                        __FILE__, __LINE__, 0, winter::GetThreadId(),\</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">                winter::GetFiberId(), time(0), winter::Thread::GetName()))).getSS()</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="log_8h.html#afe71b448a50b4ea97b8d4df8e4e1de95">   31</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_DEBUG(logger) WINTER_LOG_LEVEL(logger, winter::LogLevel::DEBUG)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="log_8h.html#adb0bc969d93898a83f24f46a55a3eb80">   35</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_INFO(logger) WINTER_LOG_LEVEL(logger, winter::LogLevel::INFO)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="log_8h.html#aa3449ecd0c8a2060cc531310cc41f741">   39</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_WARN(logger) WINTER_LOG_LEVEL(logger, winter::LogLevel::WARN)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="log_8h.html#a119bb0f9690791712092f86c687ae262">   43</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_ERROR(logger) WINTER_LOG_LEVEL(logger, winter::LogLevel::ERROR)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="log_8h.html#a22c031214503a1dc18fd1aca3d31b845">   47</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_FATAL(logger) WINTER_LOG_LEVEL(logger, winter::LogLevel::FATAL)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="log_8h.html#a14d399aefb3808866f3010e8a38ffa99">   52</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_FMT_LEVEL(logger, level, fmt, ...) \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    if(logger-&gt;getLevel() &lt;= level) \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        winter::LogEventWrap(winter::LogEvent::ptr(new winter::LogEvent(logger, level, \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">                        __FILE__, __LINE__, 0, winter::GetThreadId(),\</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">                winter::GetFiberId(), time(0), winter::Thread::GetName()))).getEvent()-&gt;format(fmt, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="log_8h.html#a9708c3e3857a61af56b60aef636353a1">   60</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_FMT_DEBUG(logger, fmt, ...) WINTER_LOG_FMT_LEVEL(logger, winter::LogLevel::DEBUG, fmt, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="log_8h.html#a93430ef5aebf97c4c0733dfd5f0acb18">   64</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_FMT_INFO(logger, fmt, ...)  WINTER_LOG_FMT_LEVEL(logger, winter::LogLevel::INFO, fmt, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="log_8h.html#ae924f5dc9e78ade27af9f7922807ee54">   68</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_FMT_WARN(logger, fmt, ...)  WINTER_LOG_FMT_LEVEL(logger, winter::LogLevel::WARN, fmt, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="log_8h.html#abb336f1764f2032e9ff78a78e1b832d9">   72</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_FMT_ERROR(logger, fmt, ...) WINTER_LOG_FMT_LEVEL(logger, winter::LogLevel::ERROR, fmt, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="log_8h.html#ada294b263b079b6a00b5be17ccb583a4">   76</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_FMT_FATAL(logger, fmt, ...) WINTER_LOG_FMT_LEVEL(logger, winter::LogLevel::FATAL, fmt, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="log_8h.html#acc515589ee3115aea1874c7a5dcfdb4d">   80</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_ROOT() winter::LoggerMgr::GetInstance()-&gt;getRoot()</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="log_8h.html#a3135f0042c9ac12a88dc091c5f550247">   84</a></span>&#160;<span class="preprocessor">#define WINTER_LOG_NAME(name) winter::LoggerMgr::GetInstance()-&gt;getLogger(name)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">namespace </span>winter{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">class </span>Logger;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">class </span>LoggerManager;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html">   94</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1LogLevel.html">LogLevel</a> {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">   99</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">Level</a> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa41d2ccf21c97f194c4350faf7e81e355">  101</a></span>&#160;        <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa41d2ccf21c97f194c4350faf7e81e355">UNKNOW</a> = 0,</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf">  103</a></span>&#160;        <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf">DEBUG</a> = 1,</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa280e0cb8c45468371e478ff3093c6c7d">  105</a></span>&#160;        <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa280e0cb8c45468371e478ff3093c6c7d">INFO</a> = 2,</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa2d538688f1949fc887db35789db5bc39">  107</a></span>&#160;        <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa2d538688f1949fc887db35789db5bc39">WARN</a> = 3,</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa8dfcf774dfaf8765c241a1675217366f">  109</a></span>&#160;        <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa8dfcf774dfaf8765c241a1675217366f">ERROR</a> = 4,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa71060a875e987ea5dcba9e645f3ecdbf">FATAL</a> = 5</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa71060a875e987ea5dcba9e645f3ecdbf">  112</a></span>&#160;    };</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classwinter_1_1LogLevel.html#a2c4a05dcd9fe352bc892de6018deb3ce">ToString</a>(<a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> <a class="code" href="classwinter_1_1LogLevel.html#a902b6302fdeb729e5597a3a1c21ee6e3">FromString</a>(<span class="keyword">const</span> std::string&amp; str);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html">  130</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1LogEvent.html">LogEvent</a> {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;LogEvent&gt; ptr;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classwinter_1_1LogEvent.html#ab65f6558e3c777394bbe3cce99e4b58f">LogEvent</a>(std::shared_ptr&lt;Logger&gt; logger, <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            ,<span class="keyword">const</span> <span class="keywordtype">char</span>* file, int32_t line, uint32_t elapse</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            ,uint32_t thread_id, uint32_t fiber_id, uint64_t time</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            ,<span class="keyword">const</span> std::string&amp; thread_name);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#ab8e4636fd2e565b76c9c5758110fdf07">  153</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classwinter_1_1LogEvent.html#ab8e4636fd2e565b76c9c5758110fdf07">getFile</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_file;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a302ad24c9e957a9c9835728381d4d54e">  158</a></span>&#160;    int32_t <a class="code" href="classwinter_1_1LogEvent.html#a302ad24c9e957a9c9835728381d4d54e">getLine</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_line;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a60f5e5404ae19fe2e94781076449d6d2">  163</a></span>&#160;    uint32_t <a class="code" href="classwinter_1_1LogEvent.html#a60f5e5404ae19fe2e94781076449d6d2">getElapse</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_elapse;}</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a5863882eeed5a9e780f72712cffdb910">  168</a></span>&#160;    uint32_t <a class="code" href="classwinter_1_1LogEvent.html#a5863882eeed5a9e780f72712cffdb910">getThreadId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_threadId;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a6c4263a63287082900ecb76afa21f7f3">  173</a></span>&#160;    uint32_t <a class="code" href="classwinter_1_1LogEvent.html#a6c4263a63287082900ecb76afa21f7f3">getFiberId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fiberId;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a656eeeef189c666283662f69a5c68bd1">  178</a></span>&#160;    uint64_t <a class="code" href="classwinter_1_1LogEvent.html#a656eeeef189c666283662f69a5c68bd1">getTime</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_time;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a5719a9240d529074187b7e0a1f2a8e49">  183</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1LogEvent.html#a5719a9240d529074187b7e0a1f2a8e49">getThreadName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_threadName;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a3ac71ce94d47c2f58aae97bc4836a368">  188</a></span>&#160;    std::string <a class="code" href="classwinter_1_1LogEvent.html#a3ac71ce94d47c2f58aae97bc4836a368">getContent</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ss.str();}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a3be3864a3ff47760597aec06a566d0bd">  193</a></span>&#160;    std::shared_ptr&lt;Logger&gt; <a class="code" href="classwinter_1_1LogEvent.html#a3be3864a3ff47760597aec06a566d0bd">getLogger</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_logger;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#a905282ccaf1fef361ea1e106b0ed33b8">  198</a></span>&#160;    <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> <a class="code" href="classwinter_1_1LogEvent.html#a905282ccaf1fef361ea1e106b0ed33b8">getLevel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_level;}</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEvent.html#aa5e03013b9d58593130342d1813ab369">  203</a></span>&#160;    std::stringstream&amp; <a class="code" href="classwinter_1_1LogEvent.html#aa5e03013b9d58593130342d1813ab369">getSS</a>() { <span class="keywordflow">return</span> m_ss;}</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LogEvent.html#a700a9ca85614513b2684351e420f7115">format</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LogEvent.html#a700a9ca85614513b2684351e420f7115">format</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list al);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* m_file = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    int32_t m_line = 0;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    uint32_t m_elapse = 0;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    uint32_t m_threadId = 0;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    uint32_t m_fiberId = 0;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    uint64_t m_time = 0;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    std::string m_threadName;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    std::stringstream m_ss;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    std::shared_ptr&lt;Logger&gt; m_logger;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> m_level;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEventWrap.html">  240</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1LogEventWrap.html">LogEventWrap</a> {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="classwinter_1_1LogEventWrap.html#aa90c67eb588ae310a3a6d5c1c548a7de">LogEventWrap</a>(LogEvent::ptr e);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="classwinter_1_1LogEventWrap.html#ab9979be177841221d5e593cbdde03d59">~LogEventWrap</a>();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="classwinter_1_1LogEventWrap.html#aa1c2a191832e5820cc3bd789ee13b1df">  257</a></span>&#160;    LogEvent::ptr <a class="code" href="classwinter_1_1LogEventWrap.html#aa1c2a191832e5820cc3bd789ee13b1df">getEvent</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_event;}</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    std::stringstream&amp; <a class="code" href="classwinter_1_1LogEventWrap.html#a49b6020949f4ffc7c2fdd454338cc9bb">getSS</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    LogEvent::ptr m_event;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classwinter_1_1LogFormatter.html">  273</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1LogFormatter.html">LogFormatter</a> {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;LogFormatter&gt; ptr;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="classwinter_1_1LogFormatter.html#af9653ab77435fa5dfcb4a9c1224adc41">LogFormatter</a>(<span class="keyword">const</span> std::string&amp; pattern);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    std::string <a class="code" href="classwinter_1_1LogFormatter.html#a9661c006e6c160ab177c36b136177dc5">format</a>(std::shared_ptr&lt;Logger&gt; logger, <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level, LogEvent::ptr event);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="classwinter_1_1LogFormatter_1_1FormatItem.html">  309</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwinter_1_1LogFormatter_1_1FormatItem.html">FormatItem</a> {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keyword">typedef</span> std::shared_ptr&lt;FormatItem&gt; ptr;</div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="classwinter_1_1LogFormatter_1_1FormatItem.html#affbae7d57a540e378a703d21a3ec6ccc">  315</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classwinter_1_1LogFormatter_1_1FormatItem.html#affbae7d57a540e378a703d21a3ec6ccc">~FormatItem</a>() {}</div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="classwinter_1_1LogFormatter_1_1FormatItem.html#af6ca08a7927d33aceac289f25d4ed109">  323</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LogFormatter_1_1FormatItem.html#af6ca08a7927d33aceac289f25d4ed109">format</a>(std::ostream&amp; os, std::shared_ptr&lt;Logger&gt; logger, <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level, LogEvent::ptr event) = 0;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    };</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LogFormatter.html#aae71679c2e77cf243188261ebf73c830">init</a>();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="classwinter_1_1LogFormatter.html#a45ada4ca4a44f2cf86d858c02ff2f082">  334</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1LogFormatter.html#a45ada4ca4a44f2cf86d858c02ff2f082">isError</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_error;}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="classwinter_1_1LogFormatter.html#a3b20033acc9cf833a6b5f1dc04698bb5">  339</a></span>&#160;    <span class="keyword">const</span> std::string <a class="code" href="classwinter_1_1LogFormatter.html#a3b20033acc9cf833a6b5f1dc04698bb5">getPattern</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pattern;}</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    std::string m_pattern;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    std::vector&lt;FormatItem::ptr&gt; m_items;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordtype">bool</span> m_error = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;};</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html">  353</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1LogAppender.html">LogAppender</a> {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwinter_1_1Logger.html">Logger</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;LogAppender&gt; ptr;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classwinter_1_1Spinlock.html">Spinlock</a> <a class="code" href="classwinter_1_1Spinlock.html">MutexType</a>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#a90860bf4e913b707314dc00ce47a21f9">  362</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classwinter_1_1LogAppender.html#a90860bf4e913b707314dc00ce47a21f9">~LogAppender</a>() {}</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#ad86c8c4e374ad615fbabc903e33ee3f8">  370</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LogAppender.html#ad86c8c4e374ad615fbabc903e33ee3f8">log</a>(std::shared_ptr&lt;Logger&gt; logger, <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level, LogEvent::ptr event) = 0;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#aa0ffebf4656f5ff2ff7b2651d0158224">  375</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classwinter_1_1LogAppender.html#aa0ffebf4656f5ff2ff7b2651d0158224">toYamlString</a>() = 0;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LogAppender.html#a5feb667f73de79dfae88fd5e69ca83b0">setFormatter</a>(LogFormatter::ptr val);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    LogFormatter::ptr <a class="code" href="classwinter_1_1LogAppender.html#a770891b56e006d790c8a15595b6fb7e9">getFormatter</a>();</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#a5e0268224bb76e03a81756efddb885de">  390</a></span>&#160;    <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> <a class="code" href="classwinter_1_1LogAppender.html#a5e0268224bb76e03a81756efddb885de">getLevel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classwinter_1_1LogAppender.html#a798f108bbae977be1f0a201d9fb6ec1d">m_level</a>;}</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#a8d80bba4a20a58093ac8778d53f215b7">  395</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LogAppender.html#a8d80bba4a20a58093ac8778d53f215b7">setLevel</a>(<a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> val) { <a class="code" href="classwinter_1_1LogAppender.html#a798f108bbae977be1f0a201d9fb6ec1d">m_level</a> = val;}</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#a798f108bbae977be1f0a201d9fb6ec1d">  398</a></span>&#160;    <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> <a class="code" href="classwinter_1_1LogAppender.html#a798f108bbae977be1f0a201d9fb6ec1d">m_level</a> = <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf">LogLevel::DEBUG</a>;</div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#a5be443f039a62e67433beda2fc95d75b">  400</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1LogAppender.html#a5be443f039a62e67433beda2fc95d75b">m_hasFormatter</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#a254ff5db55a4d7d79f400cd965874a40">  402</a></span>&#160;    <a class="code" href="classwinter_1_1Spinlock.html">MutexType</a> <a class="code" href="classwinter_1_1LogAppender.html#a254ff5db55a4d7d79f400cd965874a40">m_mutex</a>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="classwinter_1_1LogAppender.html#a84d73e98588ec39350940dfdfab026a2">  404</a></span>&#160;    LogFormatter::ptr <a class="code" href="classwinter_1_1LogAppender.html#a84d73e98588ec39350940dfdfab026a2">m_formatter</a>;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;};</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="classwinter_1_1Logger.html">  410</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1Logger.html">Logger</a> : <span class="keyword">public</span> std::enable_shared_from_this&lt;Logger&gt; {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwinter_1_1LoggerManager.html">LoggerManager</a>;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;Logger&gt; ptr;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classwinter_1_1Spinlock.html">Spinlock</a> <a class="code" href="classwinter_1_1Spinlock.html">MutexType</a>;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <a class="code" href="classwinter_1_1Logger.html#a7f098127b4b889669a153466d54625df">Logger</a>(<span class="keyword">const</span> std::string&amp; name = <span class="stringliteral">&quot;root&quot;</span>);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#af2f6344562afc1474f405546386352d0">log</a>(<a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level, LogEvent::ptr event);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#a96a3527e96df6299904cd9a6a9aa9380">debug</a>(LogEvent::ptr event);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#aca08050e8ca2e4053f06b510b7902cb4">info</a>(LogEvent::ptr event);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#aaa420b832c243ff1c9b643d98085d74c">warn</a>(LogEvent::ptr event);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#a49535d30e2a52354431ea63950b629e7">error</a>(LogEvent::ptr event);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#a2f4af6e2813e212925d53d10e245833e">fatal</a>(LogEvent::ptr event);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#aba8fe90bff02390aa1dce656a00500f5">addAppender</a>(LogAppender::ptr appender);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#a8b21713560f1ac8778bacade9243c907">delAppender</a>(LogAppender::ptr appender);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#acdb010b00f6cb490f3b887731d4b6381">clearAppenders</a>();</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00479"></a><span class="lineno"><a class="line" href="classwinter_1_1Logger.html#aa126409dbe18b84eaeae5c37549989f9">  479</a></span>&#160;    <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> <a class="code" href="classwinter_1_1Logger.html#aa126409dbe18b84eaeae5c37549989f9">getLevel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_level;}</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
+<div class="line"><a name="l00484"></a><span class="lineno"><a class="line" href="classwinter_1_1Logger.html#a9f52bb03960db65e64f5d5a3adf60660">  484</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#a9f52bb03960db65e64f5d5a3adf60660">setLevel</a>(<a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> val) { m_level = val;}</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00489"></a><span class="lineno"><a class="line" href="classwinter_1_1Logger.html#ad1c7665d4be017e1a8516f9293c05929">  489</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classwinter_1_1Logger.html#ad1c7665d4be017e1a8516f9293c05929">getName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_name;}</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#ada7b42dbdbf0c214646e744980ab27b9">setFormatter</a>(LogFormatter::ptr val);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1Logger.html#ada7b42dbdbf0c214646e744980ab27b9">setFormatter</a>(<span class="keyword">const</span> std::string&amp; val);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    LogFormatter::ptr <a class="code" href="classwinter_1_1Logger.html#ae19891c6fedfdab82da294b589657052">getFormatter</a>();</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160; </div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    std::string <a class="code" href="classwinter_1_1Logger.html#a83f8185d80b75e324c2fbb4efe174264">toYamlString</a>();</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    std::string m_name;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> m_level;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    MutexType m_mutex;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    std::list&lt;LogAppender::ptr&gt; m_appenders;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    LogFormatter::ptr m_formatter;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    Logger::ptr m_root;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;};</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
+<div class="line"><a name="l00528"></a><span class="lineno"><a class="line" href="classwinter_1_1StdoutLogAppender.html">  528</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1StdoutLogAppender.html">StdoutLogAppender</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1LogAppender.html">LogAppender</a> {</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;StdoutLogAppender&gt; ptr;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="keywordtype">void</span> log(Logger::ptr logger, <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level, LogEvent::ptr event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    std::string <a class="code" href="classwinter_1_1StdoutLogAppender.html#afa3bc86c1d37582cdebf5b2b3afde8c5">toYamlString</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;};</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160; </div>
+<div class="line"><a name="l00538"></a><span class="lineno"><a class="line" href="classwinter_1_1FileLogAppender.html">  538</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1FileLogAppender.html">FileLogAppender</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1LogAppender.html">LogAppender</a> {</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;FileLogAppender&gt; ptr;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <a class="code" href="classwinter_1_1FileLogAppender.html">FileLogAppender</a>(<span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordtype">void</span> log(Logger::ptr logger, <a class="code" href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">LogLevel::Level</a> level, LogEvent::ptr event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    std::string <a class="code" href="classwinter_1_1FileLogAppender.html#a200ea83e39b4d7e3582e5791dc2ac84e">toYamlString</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160; </div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1FileLogAppender.html#ac4e606f21e6b9dfbda0c0d9e5b3f66b8">reopen</a>();</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    std::string m_filename;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    std::ofstream m_filestream;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    uint64_t m_lastTime = 0;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;};</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
+<div class="line"><a name="l00562"></a><span class="lineno"><a class="line" href="classwinter_1_1LoggerManager.html">  562</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1LoggerManager.html">LoggerManager</a> {</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classwinter_1_1Spinlock.html">Spinlock</a> <a class="code" href="classwinter_1_1Spinlock.html">MutexType</a>;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <a class="code" href="classwinter_1_1LoggerManager.html#a63a0d9c64a44cc6f2b5ad1e5bf5b3c74">LoggerManager</a>();</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    Logger::ptr <a class="code" href="classwinter_1_1LoggerManager.html#ade13bcdf97f7b5555f5a8c99d5bd0926">getLogger</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1LoggerManager.html#abd066003779ebce8cf816299a482025f">init</a>();</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160; </div>
+<div class="line"><a name="l00584"></a><span class="lineno"><a class="line" href="classwinter_1_1LoggerManager.html#a38497f328ff809fc5eec0f201e8ba58f">  584</a></span>&#160;    Logger::ptr <a class="code" href="classwinter_1_1LoggerManager.html#a38497f328ff809fc5eec0f201e8ba58f">getRoot</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_root;}</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    std::string <a class="code" href="classwinter_1_1LoggerManager.html#a2b37ea9de6faacacf34e432ba4f702c6">toYamlString</a>();</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    MutexType m_mutex;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    std::map&lt;std::string, Logger::ptr&gt; m_loggers;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    Logger::ptr m_root;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;};</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160; </div>
+<div class="line"><a name="l00600"></a><span class="lineno"><a class="line" href="log_8h.html#aa0342824e036783ad0170c2f9bc32958">  600</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="classwinter_1_1Singleton.html">winter::Singleton&lt;LoggerManager&gt;</a> <a class="code" href="classwinter_1_1Singleton.html">LoggerMgr</a>;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;}</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasswinter_1_1FileLogAppender_html"><div class="ttname"><a href="classwinter_1_1FileLogAppender.html">winter::FileLogAppender</a></div><div class="ttdoc">输出到文件的Appender</div><div class="ttdef"><b>Definition:</b> log.h:538</div></div>
+<div class="ttc" id="aclasswinter_1_1FileLogAppender_html_a200ea83e39b4d7e3582e5791dc2ac84e"><div class="ttname"><a href="classwinter_1_1FileLogAppender.html#a200ea83e39b4d7e3582e5791dc2ac84e">winter::FileLogAppender::toYamlString</a></div><div class="ttdeci">std::string toYamlString() override</div><div class="ttdoc">将日志输出目标的配置转成YAML String</div><div class="ttdef"><b>Definition:</b> log.cc:364</div></div>
+<div class="ttc" id="aclasswinter_1_1FileLogAppender_html_ac4e606f21e6b9dfbda0c0d9e5b3f66b8"><div class="ttname"><a href="classwinter_1_1FileLogAppender.html#ac4e606f21e6b9dfbda0c0d9e5b3f66b8">winter::FileLogAppender::reopen</a></div><div class="ttdeci">bool reopen()</div><div class="ttdoc">重新打开日志文件</div><div class="ttdef"><b>Definition:</b> log.cc:380</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html"><div class="ttname"><a href="classwinter_1_1LogAppender.html">winter::LogAppender</a></div><div class="ttdoc">日志输出目标</div><div class="ttdef"><b>Definition:</b> log.h:353</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a254ff5db55a4d7d79f400cd965874a40"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a254ff5db55a4d7d79f400cd965874a40">winter::LogAppender::m_mutex</a></div><div class="ttdeci">MutexType m_mutex</div><div class="ttdoc">Mutex</div><div class="ttdef"><b>Definition:</b> log.h:402</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a5be443f039a62e67433beda2fc95d75b"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a5be443f039a62e67433beda2fc95d75b">winter::LogAppender::m_hasFormatter</a></div><div class="ttdeci">bool m_hasFormatter</div><div class="ttdoc">是否有自己的日志格式器</div><div class="ttdef"><b>Definition:</b> log.h:400</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a5e0268224bb76e03a81756efddb885de"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a5e0268224bb76e03a81756efddb885de">winter::LogAppender::getLevel</a></div><div class="ttdeci">LogLevel::Level getLevel() const</div><div class="ttdoc">获取日志级别</div><div class="ttdef"><b>Definition:</b> log.h:390</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a5feb667f73de79dfae88fd5e69ca83b0"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a5feb667f73de79dfae88fd5e69ca83b0">winter::LogAppender::setFormatter</a></div><div class="ttdeci">void setFormatter(LogFormatter::ptr val)</div><div class="ttdoc">更改日志格式器</div><div class="ttdef"><b>Definition:</b> log.cc:77</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a770891b56e006d790c8a15595b6fb7e9"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a770891b56e006d790c8a15595b6fb7e9">winter::LogAppender::getFormatter</a></div><div class="ttdeci">LogFormatter::ptr getFormatter()</div><div class="ttdoc">获取日志格式器</div><div class="ttdef"><b>Definition:</b> log.cc:87</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a798f108bbae977be1f0a201d9fb6ec1d"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a798f108bbae977be1f0a201d9fb6ec1d">winter::LogAppender::m_level</a></div><div class="ttdeci">LogLevel::Level m_level</div><div class="ttdoc">日志级别</div><div class="ttdef"><b>Definition:</b> log.h:398</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a84d73e98588ec39350940dfdfab026a2"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a84d73e98588ec39350940dfdfab026a2">winter::LogAppender::m_formatter</a></div><div class="ttdeci">LogFormatter::ptr m_formatter</div><div class="ttdoc">日志格式器</div><div class="ttdef"><b>Definition:</b> log.h:404</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a8d80bba4a20a58093ac8778d53f215b7"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a8d80bba4a20a58093ac8778d53f215b7">winter::LogAppender::setLevel</a></div><div class="ttdeci">void setLevel(LogLevel::Level val)</div><div class="ttdoc">设置日志级别</div><div class="ttdef"><b>Definition:</b> log.h:395</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_a90860bf4e913b707314dc00ce47a21f9"><div class="ttname"><a href="classwinter_1_1LogAppender.html#a90860bf4e913b707314dc00ce47a21f9">winter::LogAppender::~LogAppender</a></div><div class="ttdeci">virtual ~LogAppender()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> log.h:362</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_aa0ffebf4656f5ff2ff7b2651d0158224"><div class="ttname"><a href="classwinter_1_1LogAppender.html#aa0ffebf4656f5ff2ff7b2651d0158224">winter::LogAppender::toYamlString</a></div><div class="ttdeci">virtual std::string toYamlString()=0</div><div class="ttdoc">将日志输出目标的配置转成YAML String</div></div>
+<div class="ttc" id="aclasswinter_1_1LogAppender_html_ad86c8c4e374ad615fbabc903e33ee3f8"><div class="ttname"><a href="classwinter_1_1LogAppender.html#ad86c8c4e374ad615fbabc903e33ee3f8">winter::LogAppender::log</a></div><div class="ttdeci">virtual void log(std::shared_ptr&lt; Logger &gt; logger, LogLevel::Level level, LogEvent::ptr event)=0</div><div class="ttdoc">写入日志</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEventWrap_html"><div class="ttname"><a href="classwinter_1_1LogEventWrap.html">winter::LogEventWrap</a></div><div class="ttdoc">日志事件包装器</div><div class="ttdef"><b>Definition:</b> log.h:240</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEventWrap_html_a49b6020949f4ffc7c2fdd454338cc9bb"><div class="ttname"><a href="classwinter_1_1LogEventWrap.html#a49b6020949f4ffc7c2fdd454338cc9bb">winter::LogEventWrap::getSS</a></div><div class="ttdeci">std::stringstream &amp; getSS()</div><div class="ttdoc">获取日志内容流</div><div class="ttdef"><b>Definition:</b> log.cc:72</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEventWrap_html_aa1c2a191832e5820cc3bd789ee13b1df"><div class="ttname"><a href="classwinter_1_1LogEventWrap.html#aa1c2a191832e5820cc3bd789ee13b1df">winter::LogEventWrap::getEvent</a></div><div class="ttdeci">LogEvent::ptr getEvent() const</div><div class="ttdoc">获取日志事件</div><div class="ttdef"><b>Definition:</b> log.h:257</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEventWrap_html_aa90c67eb588ae310a3a6d5c1c548a7de"><div class="ttname"><a href="classwinter_1_1LogEventWrap.html#aa90c67eb588ae310a3a6d5c1c548a7de">winter::LogEventWrap::LogEventWrap</a></div><div class="ttdeci">LogEventWrap(LogEvent::ptr e)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> log.cc:48</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEventWrap_html_ab9979be177841221d5e593cbdde03d59"><div class="ttname"><a href="classwinter_1_1LogEventWrap.html#ab9979be177841221d5e593cbdde03d59">winter::LogEventWrap::~LogEventWrap</a></div><div class="ttdeci">~LogEventWrap()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> log.cc:52</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html"><div class="ttname"><a href="classwinter_1_1LogEvent.html">winter::LogEvent</a></div><div class="ttdoc">日志事件</div><div class="ttdef"><b>Definition:</b> log.h:130</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a302ad24c9e957a9c9835728381d4d54e"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a302ad24c9e957a9c9835728381d4d54e">winter::LogEvent::getLine</a></div><div class="ttdeci">int32_t getLine() const</div><div class="ttdoc">返回行号</div><div class="ttdef"><b>Definition:</b> log.h:158</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a3ac71ce94d47c2f58aae97bc4836a368"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a3ac71ce94d47c2f58aae97bc4836a368">winter::LogEvent::getContent</a></div><div class="ttdeci">std::string getContent() const</div><div class="ttdoc">返回日志内容</div><div class="ttdef"><b>Definition:</b> log.h:188</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a3be3864a3ff47760597aec06a566d0bd"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a3be3864a3ff47760597aec06a566d0bd">winter::LogEvent::getLogger</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; getLogger() const</div><div class="ttdoc">返回日志器</div><div class="ttdef"><b>Definition:</b> log.h:193</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a5719a9240d529074187b7e0a1f2a8e49"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a5719a9240d529074187b7e0a1f2a8e49">winter::LogEvent::getThreadName</a></div><div class="ttdeci">const std::string &amp; getThreadName() const</div><div class="ttdoc">返回线程名称</div><div class="ttdef"><b>Definition:</b> log.h:183</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a5863882eeed5a9e780f72712cffdb910"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a5863882eeed5a9e780f72712cffdb910">winter::LogEvent::getThreadId</a></div><div class="ttdeci">uint32_t getThreadId() const</div><div class="ttdoc">返回线程ID</div><div class="ttdef"><b>Definition:</b> log.h:168</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a60f5e5404ae19fe2e94781076449d6d2"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a60f5e5404ae19fe2e94781076449d6d2">winter::LogEvent::getElapse</a></div><div class="ttdeci">uint32_t getElapse() const</div><div class="ttdoc">返回耗时</div><div class="ttdef"><b>Definition:</b> log.h:163</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a656eeeef189c666283662f69a5c68bd1"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a656eeeef189c666283662f69a5c68bd1">winter::LogEvent::getTime</a></div><div class="ttdeci">uint64_t getTime() const</div><div class="ttdoc">返回时间</div><div class="ttdef"><b>Definition:</b> log.h:178</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a6c4263a63287082900ecb76afa21f7f3"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a6c4263a63287082900ecb76afa21f7f3">winter::LogEvent::getFiberId</a></div><div class="ttdeci">uint32_t getFiberId() const</div><div class="ttdoc">返回协程ID</div><div class="ttdef"><b>Definition:</b> log.h:173</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a700a9ca85614513b2684351e420f7115"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a700a9ca85614513b2684351e420f7115">winter::LogEvent::format</a></div><div class="ttdeci">void format(const char *fmt,...)</div><div class="ttdoc">格式化写入日志内容</div><div class="ttdef"><b>Definition:</b> log.cc:56</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_a905282ccaf1fef361ea1e106b0ed33b8"><div class="ttname"><a href="classwinter_1_1LogEvent.html#a905282ccaf1fef361ea1e106b0ed33b8">winter::LogEvent::getLevel</a></div><div class="ttdeci">LogLevel::Level getLevel() const</div><div class="ttdoc">返回日志级别</div><div class="ttdef"><b>Definition:</b> log.h:198</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_aa5e03013b9d58593130342d1813ab369"><div class="ttname"><a href="classwinter_1_1LogEvent.html#aa5e03013b9d58593130342d1813ab369">winter::LogEvent::getSS</a></div><div class="ttdeci">std::stringstream &amp; getSS()</div><div class="ttdoc">返回日志内容字符串流</div><div class="ttdef"><b>Definition:</b> log.h:203</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_ab65f6558e3c777394bbe3cce99e4b58f"><div class="ttname"><a href="classwinter_1_1LogEvent.html#ab65f6558e3c777394bbe3cce99e4b58f">winter::LogEvent::LogEvent</a></div><div class="ttdeci">LogEvent(std::shared_ptr&lt; Logger &gt; logger, LogLevel::Level level, const char *file, int32_t line, uint32_t elapse, uint32_t thread_id, uint32_t fiber_id, uint64_t time, const std::string &amp;thread_name)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> log.cc:216</div></div>
+<div class="ttc" id="aclasswinter_1_1LogEvent_html_ab8e4636fd2e565b76c9c5758110fdf07"><div class="ttname"><a href="classwinter_1_1LogEvent.html#ab8e4636fd2e565b76c9c5758110fdf07">winter::LogEvent::getFile</a></div><div class="ttdeci">const char * getFile() const</div><div class="ttdoc">返回文件名</div><div class="ttdef"><b>Definition:</b> log.h:153</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_1_1FormatItem_html"><div class="ttname"><a href="classwinter_1_1LogFormatter_1_1FormatItem.html">winter::LogFormatter::FormatItem</a></div><div class="ttdoc">日志内容项格式化</div><div class="ttdef"><b>Definition:</b> log.h:309</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_1_1FormatItem_html_af6ca08a7927d33aceac289f25d4ed109"><div class="ttname"><a href="classwinter_1_1LogFormatter_1_1FormatItem.html#af6ca08a7927d33aceac289f25d4ed109">winter::LogFormatter::FormatItem::format</a></div><div class="ttdeci">virtual void format(std::ostream &amp;os, std::shared_ptr&lt; Logger &gt; logger, LogLevel::Level level, LogEvent::ptr event)=0</div><div class="ttdoc">格式化日志到流</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_1_1FormatItem_html_affbae7d57a540e378a703d21a3ec6ccc"><div class="ttname"><a href="classwinter_1_1LogFormatter_1_1FormatItem.html#affbae7d57a540e378a703d21a3ec6ccc">winter::LogFormatter::FormatItem::~FormatItem</a></div><div class="ttdeci">virtual ~FormatItem()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> log.h:315</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_html"><div class="ttname"><a href="classwinter_1_1LogFormatter.html">winter::LogFormatter</a></div><div class="ttdoc">日志格式化</div><div class="ttdef"><b>Definition:</b> log.h:273</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_html_a3b20033acc9cf833a6b5f1dc04698bb5"><div class="ttname"><a href="classwinter_1_1LogFormatter.html#a3b20033acc9cf833a6b5f1dc04698bb5">winter::LogFormatter::getPattern</a></div><div class="ttdeci">const std::string getPattern() const</div><div class="ttdoc">返回日志模板</div><div class="ttdef"><b>Definition:</b> log.h:339</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_html_a45ada4ca4a44f2cf86d858c02ff2f082"><div class="ttname"><a href="classwinter_1_1LogFormatter.html#a45ada4ca4a44f2cf86d858c02ff2f082">winter::LogFormatter::isError</a></div><div class="ttdeci">bool isError() const</div><div class="ttdoc">是否有错误</div><div class="ttdef"><b>Definition:</b> log.h:334</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_html_a9661c006e6c160ab177c36b136177dc5"><div class="ttname"><a href="classwinter_1_1LogFormatter.html#a9661c006e6c160ab177c36b136177dc5">winter::LogFormatter::format</a></div><div class="ttdeci">std::string format(std::shared_ptr&lt; Logger &gt; logger, LogLevel::Level level, LogEvent::ptr event)</div><div class="ttdoc">返回格式化日志文本</div><div class="ttdef"><b>Definition:</b> log.cc:416</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_html_aae71679c2e77cf243188261ebf73c830"><div class="ttname"><a href="classwinter_1_1LogFormatter.html#aae71679c2e77cf243188261ebf73c830">winter::LogFormatter::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">初始化,解析日志模板</div><div class="ttdef"><b>Definition:</b> log.cc:425</div></div>
+<div class="ttc" id="aclasswinter_1_1LogFormatter_html_af9653ab77435fa5dfcb4a9c1224adc41"><div class="ttname"><a href="classwinter_1_1LogFormatter.html#af9653ab77435fa5dfcb4a9c1224adc41">winter::LogFormatter::LogFormatter</a></div><div class="ttdeci">LogFormatter(const std::string &amp;pattern)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> log.cc:411</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html"><div class="ttname"><a href="classwinter_1_1LogLevel.html">winter::LogLevel</a></div><div class="ttdoc">日志级别</div><div class="ttdef"><b>Definition:</b> log.h:94</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_a2c4a05dcd9fe352bc892de6018deb3ce"><div class="ttname"><a href="classwinter_1_1LogLevel.html#a2c4a05dcd9fe352bc892de6018deb3ce">winter::LogLevel::ToString</a></div><div class="ttdeci">static const char * ToString(LogLevel::Level level)</div><div class="ttdoc">将日志级别转成文本输出</div><div class="ttdef"><b>Definition:</b> log.cc:9</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_a902b6302fdeb729e5597a3a1c21ee6e3"><div class="ttname"><a href="classwinter_1_1LogLevel.html#a902b6302fdeb729e5597a3a1c21ee6e3">winter::LogLevel::FromString</a></div><div class="ttdeci">static LogLevel::Level FromString(const std::string &amp;str)</div><div class="ttdoc">将文本转换成日志级别</div><div class="ttdef"><b>Definition:</b> log.cc:28</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_af748406df19621a0bdfc42faaed3e4af"><div class="ttname"><a href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4af">winter::LogLevel::Level</a></div><div class="ttdeci">Level</div><div class="ttdoc">日志级别枚举</div><div class="ttdef"><b>Definition:</b> log.h:99</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_af748406df19621a0bdfc42faaed3e4afa280e0cb8c45468371e478ff3093c6c7d"><div class="ttname"><a href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa280e0cb8c45468371e478ff3093c6c7d">winter::LogLevel::INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdoc">INFO 级别</div><div class="ttdef"><b>Definition:</b> log.h:105</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_af748406df19621a0bdfc42faaed3e4afa2d538688f1949fc887db35789db5bc39"><div class="ttname"><a href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa2d538688f1949fc887db35789db5bc39">winter::LogLevel::WARN</a></div><div class="ttdeci">@ WARN</div><div class="ttdoc">WARN 级别</div><div class="ttdef"><b>Definition:</b> log.h:107</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_af748406df19621a0bdfc42faaed3e4afa41d2ccf21c97f194c4350faf7e81e355"><div class="ttname"><a href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa41d2ccf21c97f194c4350faf7e81e355">winter::LogLevel::UNKNOW</a></div><div class="ttdeci">@ UNKNOW</div><div class="ttdoc">未知级别</div><div class="ttdef"><b>Definition:</b> log.h:101</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_af748406df19621a0bdfc42faaed3e4afa71060a875e987ea5dcba9e645f3ecdbf"><div class="ttname"><a href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa71060a875e987ea5dcba9e645f3ecdbf">winter::LogLevel::FATAL</a></div><div class="ttdeci">@ FATAL</div><div class="ttdoc">FATAL 级别</div><div class="ttdef"><b>Definition:</b> log.h:111</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_af748406df19621a0bdfc42faaed3e4afa8dfcf774dfaf8765c241a1675217366f"><div class="ttname"><a href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afa8dfcf774dfaf8765c241a1675217366f">winter::LogLevel::ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdoc">ERROR 级别</div><div class="ttdef"><b>Definition:</b> log.h:109</div></div>
+<div class="ttc" id="aclasswinter_1_1LogLevel_html_af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf"><div class="ttname"><a href="classwinter_1_1LogLevel.html#af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf">winter::LogLevel::DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdoc">DEBUG 级别</div><div class="ttdef"><b>Definition:</b> log.h:103</div></div>
+<div class="ttc" id="aclasswinter_1_1LoggerManager_html"><div class="ttname"><a href="classwinter_1_1LoggerManager.html">winter::LoggerManager</a></div><div class="ttdoc">日志器管理类</div><div class="ttdef"><b>Definition:</b> log.h:562</div></div>
+<div class="ttc" id="aclasswinter_1_1LoggerManager_html_a2b37ea9de6faacacf34e432ba4f702c6"><div class="ttname"><a href="classwinter_1_1LoggerManager.html#a2b37ea9de6faacacf34e432ba4f702c6">winter::LoggerManager::toYamlString</a></div><div class="ttdeci">std::string toYamlString()</div><div class="ttdoc">将所有的日志器配置转成YAML String</div><div class="ttdef"><b>Definition:</b> log.cc:756</div></div>
+<div class="ttc" id="aclasswinter_1_1LoggerManager_html_a38497f328ff809fc5eec0f201e8ba58f"><div class="ttname"><a href="classwinter_1_1LoggerManager.html#a38497f328ff809fc5eec0f201e8ba58f">winter::LoggerManager::getRoot</a></div><div class="ttdeci">Logger::ptr getRoot() const</div><div class="ttdoc">返回主日志器</div><div class="ttdef"><b>Definition:</b> log.h:584</div></div>
+<div class="ttc" id="aclasswinter_1_1LoggerManager_html_a63a0d9c64a44cc6f2b5ad1e5bf5b3c74"><div class="ttname"><a href="classwinter_1_1LoggerManager.html#a63a0d9c64a44cc6f2b5ad1e5bf5b3c74">winter::LoggerManager::LoggerManager</a></div><div class="ttdeci">LoggerManager()</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> log.cc:535</div></div>
+<div class="ttc" id="aclasswinter_1_1LoggerManager_html_abd066003779ebce8cf816299a482025f"><div class="ttname"><a href="classwinter_1_1LoggerManager.html#abd066003779ebce8cf816299a482025f">winter::LoggerManager::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">初始化</div><div class="ttdef"><b>Definition:</b> log.cc:767</div></div>
+<div class="ttc" id="aclasswinter_1_1LoggerManager_html_ade13bcdf97f7b5555f5a8c99d5bd0926"><div class="ttname"><a href="classwinter_1_1LoggerManager.html#ade13bcdf97f7b5555f5a8c99d5bd0926">winter::LoggerManager::getLogger</a></div><div class="ttdeci">Logger::ptr getLogger(const std::string &amp;name)</div><div class="ttdoc">获取日志器</div><div class="ttdef"><b>Definition:</b> log.cc:544</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html"><div class="ttname"><a href="classwinter_1_1Logger.html">winter::Logger</a></div><div class="ttdoc">日志器</div><div class="ttdef"><b>Definition:</b> log.h:410</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_a2f4af6e2813e212925d53d10e245833e"><div class="ttname"><a href="classwinter_1_1Logger.html#a2f4af6e2813e212925d53d10e245833e">winter::Logger::fatal</a></div><div class="ttdeci">void fatal(LogEvent::ptr event)</div><div class="ttdoc">写fatal级别日志</div><div class="ttdef"><b>Definition:</b> log.cc:341</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_a49535d30e2a52354431ea63950b629e7"><div class="ttname"><a href="classwinter_1_1Logger.html#a49535d30e2a52354431ea63950b629e7">winter::Logger::error</a></div><div class="ttdeci">void error(LogEvent::ptr event)</div><div class="ttdoc">写error级别日志</div><div class="ttdef"><b>Definition:</b> log.cc:337</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_a7f098127b4b889669a153466d54625df"><div class="ttname"><a href="classwinter_1_1Logger.html#a7f098127b4b889669a153466d54625df">winter::Logger::Logger</a></div><div class="ttdeci">Logger(const std::string &amp;name=&quot;root&quot;)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> log.cc:231</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_a83f8185d80b75e324c2fbb4efe174264"><div class="ttname"><a href="classwinter_1_1Logger.html#a83f8185d80b75e324c2fbb4efe174264">winter::Logger::toYamlString</a></div><div class="ttdeci">std::string toYamlString()</div><div class="ttdoc">将日志器的配置转成YAML String</div><div class="ttdef"><b>Definition:</b> log.cc:261</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_a8b21713560f1ac8778bacade9243c907"><div class="ttname"><a href="classwinter_1_1Logger.html#a8b21713560f1ac8778bacade9243c907">winter::Logger::delAppender</a></div><div class="ttdeci">void delAppender(LogAppender::ptr appender)</div><div class="ttdoc">删除日志目标</div><div class="ttdef"><b>Definition:</b> log.cc:295</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_a96a3527e96df6299904cd9a6a9aa9380"><div class="ttname"><a href="classwinter_1_1Logger.html#a96a3527e96df6299904cd9a6a9aa9380">winter::Logger::debug</a></div><div class="ttdeci">void debug(LogEvent::ptr event)</div><div class="ttdoc">写debug级别日志</div><div class="ttdef"><b>Definition:</b> log.cc:325</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_a9f52bb03960db65e64f5d5a3adf60660"><div class="ttname"><a href="classwinter_1_1Logger.html#a9f52bb03960db65e64f5d5a3adf60660">winter::Logger::setLevel</a></div><div class="ttdeci">void setLevel(LogLevel::Level val)</div><div class="ttdoc">设置日志级别</div><div class="ttdef"><b>Definition:</b> log.h:484</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_aa126409dbe18b84eaeae5c37549989f9"><div class="ttname"><a href="classwinter_1_1Logger.html#aa126409dbe18b84eaeae5c37549989f9">winter::Logger::getLevel</a></div><div class="ttdeci">LogLevel::Level getLevel() const</div><div class="ttdoc">返回日志级别</div><div class="ttdef"><b>Definition:</b> log.h:479</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_aaa420b832c243ff1c9b643d98085d74c"><div class="ttname"><a href="classwinter_1_1Logger.html#aaa420b832c243ff1c9b643d98085d74c">winter::Logger::warn</a></div><div class="ttdeci">void warn(LogEvent::ptr event)</div><div class="ttdoc">写warn级别日志</div><div class="ttdef"><b>Definition:</b> log.cc:333</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_aba8fe90bff02390aa1dce656a00500f5"><div class="ttname"><a href="classwinter_1_1Logger.html#aba8fe90bff02390aa1dce656a00500f5">winter::Logger::addAppender</a></div><div class="ttdeci">void addAppender(LogAppender::ptr appender)</div><div class="ttdoc">添加日志目标</div><div class="ttdef"><b>Definition:</b> log.cc:286</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_aca08050e8ca2e4053f06b510b7902cb4"><div class="ttname"><a href="classwinter_1_1Logger.html#aca08050e8ca2e4053f06b510b7902cb4">winter::Logger::info</a></div><div class="ttdeci">void info(LogEvent::ptr event)</div><div class="ttdoc">写info级别日志</div><div class="ttdef"><b>Definition:</b> log.cc:329</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_acdb010b00f6cb490f3b887731d4b6381"><div class="ttname"><a href="classwinter_1_1Logger.html#acdb010b00f6cb490f3b887731d4b6381">winter::Logger::clearAppenders</a></div><div class="ttdeci">void clearAppenders()</div><div class="ttdoc">清空日志目标</div><div class="ttdef"><b>Definition:</b> log.cc:306</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_ad1c7665d4be017e1a8516f9293c05929"><div class="ttname"><a href="classwinter_1_1Logger.html#ad1c7665d4be017e1a8516f9293c05929">winter::Logger::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdoc">返回日志名称</div><div class="ttdef"><b>Definition:</b> log.h:489</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_ada7b42dbdbf0c214646e744980ab27b9"><div class="ttname"><a href="classwinter_1_1Logger.html#ada7b42dbdbf0c214646e744980ab27b9">winter::Logger::setFormatter</a></div><div class="ttdeci">void setFormatter(LogFormatter::ptr val)</div><div class="ttdoc">设置日志格式器</div><div class="ttdef"><b>Definition:</b> log.cc:237</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_ae19891c6fedfdab82da294b589657052"><div class="ttname"><a href="classwinter_1_1Logger.html#ae19891c6fedfdab82da294b589657052">winter::Logger::getFormatter</a></div><div class="ttdeci">LogFormatter::ptr getFormatter()</div><div class="ttdoc">获取日志格式器</div><div class="ttdef"><b>Definition:</b> log.cc:281</div></div>
+<div class="ttc" id="aclasswinter_1_1Logger_html_af2f6344562afc1474f405546386352d0"><div class="ttname"><a href="classwinter_1_1Logger.html#af2f6344562afc1474f405546386352d0">winter::Logger::log</a></div><div class="ttdeci">void log(LogLevel::Level level, LogEvent::ptr event)</div><div class="ttdoc">写日志</div><div class="ttdef"><b>Definition:</b> log.cc:311</div></div>
+<div class="ttc" id="aclasswinter_1_1Singleton_html"><div class="ttname"><a href="classwinter_1_1Singleton.html">winter::Singleton</a></div><div class="ttdoc">单例模式封装类</div><div class="ttdef"><b>Definition:</b> singleton.h:19</div></div>
+<div class="ttc" id="aclasswinter_1_1Spinlock_html"><div class="ttname"><a href="classwinter_1_1Spinlock.html">winter::Spinlock</a></div><div class="ttdoc">自旋锁</div><div class="ttdef"><b>Definition:</b> thread.h:353</div></div>
+<div class="ttc" id="aclasswinter_1_1StdoutLogAppender_html"><div class="ttname"><a href="classwinter_1_1StdoutLogAppender.html">winter::StdoutLogAppender</a></div><div class="ttdoc">输出到控制台的Appender</div><div class="ttdef"><b>Definition:</b> log.h:528</div></div>
+<div class="ttc" id="aclasswinter_1_1StdoutLogAppender_html_afa3bc86c1d37582cdebf5b2b3afde8c5"><div class="ttname"><a href="classwinter_1_1StdoutLogAppender.html#afa3bc86c1d37582cdebf5b2b3afde8c5">winter::StdoutLogAppender::toYamlString</a></div><div class="ttdeci">std::string toYamlString() override</div><div class="ttdoc">将日志输出目标的配置转成YAML String</div><div class="ttdef"><b>Definition:</b> log.cc:396</div></div>
+<div class="ttc" id="asingleton_8h_html"><div class="ttname"><a href="singleton_8h.html">singleton.h</a></div><div class="ttdoc">单例模式封装</div></div>
+<div class="ttc" id="athread_8h_html"><div class="ttname"><a href="thread_8h.html">thread.h</a></div><div class="ttdoc">线程相关的封装</div></div>
+<div class="ttc" id="autil_8h_html"><div class="ttname"><a href="util_8h.html">util.h</a></div><div class="ttdoc">常用的工具函数</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

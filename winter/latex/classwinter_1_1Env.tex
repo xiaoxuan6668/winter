@@ -1,0 +1,57 @@
+\doxysection{winter\+::Env类 参考}
+\label{classwinter_1_1Env}\index{winter::Env@{winter::Env}}
+
+
+winter\+::Env 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Env_af49d8780bba244206fc39ff33836a74c}} 
+typedef \textbf{ RWMutex} {\bfseries RWMutex\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Env_a5490f1db99f9913a331dbf73f8675a87}} 
+bool {\bfseries init} (int argc, char $\ast$$\ast$argv)
+\item 
+\mbox{\label{classwinter_1_1Env_a53ae9ea64504d6d460590ce9fbbf864c}} 
+void {\bfseries add} (const std\+::string \&key, const std\+::string \&val)
+\item 
+\mbox{\label{classwinter_1_1Env_a54aa141a7d8c816d7402f144b0d68979}} 
+bool {\bfseries has} (const std\+::string \&key)
+\item 
+\mbox{\label{classwinter_1_1Env_a9bd2effa35025c43ea62e667b622bc12}} 
+void {\bfseries del} (const std\+::string \&key)
+\item 
+\mbox{\label{classwinter_1_1Env_aa13a21d02f7e707c8ee664b3c9529b65}} 
+std\+::string {\bfseries get} (const std\+::string \&key, const std\+::string \&default\+\_\+value=\char`\"{}\char`\"{})
+\item 
+\mbox{\label{classwinter_1_1Env_a904954619248386b82d421e4bbfa537b}} 
+void {\bfseries add\+Help} (const std\+::string \&key, const std\+::string \&desc)
+\item 
+\mbox{\label{classwinter_1_1Env_af8cf79b3d8ed9e5f126fb7052807e61c}} 
+void {\bfseries remove\+Help} (const std\+::string \&key)
+\item 
+\mbox{\label{classwinter_1_1Env_a67861d3106fcc1888014e8764ce970cd}} 
+void {\bfseries print\+Help} ()
+\item 
+\mbox{\label{classwinter_1_1Env_a755bad6f9e43adee35f9e6737503edba}} 
+const std\+::string \& {\bfseries get\+Exe} () const
+\item 
+\mbox{\label{classwinter_1_1Env_ae46e3a63c36528ded42b45e271cfef4f}} 
+const std\+::string \& {\bfseries get\+Cwd} () const
+\item 
+\mbox{\label{classwinter_1_1Env_a78cebf079f8f69be1f576741d6d901a7}} 
+bool {\bfseries set\+Env} (const std\+::string \&key, const std\+::string \&val)
+\item 
+\mbox{\label{classwinter_1_1Env_a0d0cd825279b71ecc3e26307aa4416ed}} 
+std\+::string {\bfseries get\+Env} (const std\+::string \&key, const std\+::string \&default\+\_\+value=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+env.\+h\item 
+env.\+cc\end{DoxyCompactItemize}

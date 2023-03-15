@@ -30,7 +30,13 @@ void IOManager::FdContext::resetContext(EventContext& ctx) {
 }
 
 void IOManager::FdContext::triggerEvent(IOManager::Event event) {
+    //WINTER_LOG_INFO(g_logger) << "fd=" << fd
+    //    << " triggerEvent event=" << event
+    //    << " events=" << events;
     WINTER_ASSERT(events & event);
+    //if(WINTER_UNLIKELY(!(event & event))) {
+    //    return;
+    //}
     events = (Event)(events & ~event);
     EventContext& ctx = getContext(event);
     if(ctx.cb) {
@@ -103,9 +109,8 @@ int IOManager::addEvent(int fd, Event event, std::function<void()> cb) {
         fd_ctx = m_fdContexts[fd];
     }
 
-    // 同一个fd不允许重复添加相同的事件
     FdContext::MutexType::Lock lock2(fd_ctx->mutex);
-    if(fd_ctx->events & event) {
+    if(WINTER_UNLIKELY(fd_ctx->events & event)) {
         WINTER_LOG_ERROR(g_logger) << "addEvent assert fd=" << fd
                     << " event=" << event
                     << " fd_ctx.event=" << fd_ctx->events;
@@ -126,14 +131,12 @@ int IOManager::addEvent(int fd, Event event, std::function<void()> cb) {
     }
 
     ++m_pendingEventCount;
-    // 找到这个fd的event事件对应的EventContext，对其中的scheduler, cb, fiber进行赋值
     fd_ctx->events = (Event)(fd_ctx->events | event);
     FdContext::EventContext& event_ctx = fd_ctx->getContext(event);
     WINTER_ASSERT(!event_ctx.scheduler
                 && !event_ctx.fiber
                 && !event_ctx.cb);
 
-    // 赋值scheduler和回调函数，如果回调函数为空，则把当前协程当成回调执行体
     event_ctx.scheduler = Scheduler::GetThis();
     if(cb) {
         event_ctx.cb.swap(cb);
@@ -154,10 +157,10 @@ bool IOManager::delEvent(int fd, Event event) {
     lock.unlock();
 
     FdContext::MutexType::Lock lock2(fd_ctx->mutex);
-    if(!(fd_ctx->events & event)) {
+    if(WINTER_UNLIKELY(!(fd_ctx->events & event))) {
         return false;
     }
-    // 清除指定的事件，表示不关心这个事件了，如果清除之后结果为0，则从epoll_wait中删除该文件描述符
+
     Event new_events = (Event)(fd_ctx->events & ~event);
     int op = new_events ? EPOLL_CTL_MOD : EPOLL_CTL_DEL;
     epoll_event epevent;
@@ -173,7 +176,6 @@ bool IOManager::delEvent(int fd, Event event) {
     }
 
     --m_pendingEventCount;
-    // 重置该fd对应的event事件上下文
     fd_ctx->events = new_events;
     FdContext::EventContext& event_ctx = fd_ctx->getContext(event);
     fd_ctx->resetContext(event_ctx);
@@ -189,7 +191,7 @@ bool IOManager::cancelEvent(int fd, Event event) {
     lock.unlock();
 
     FdContext::MutexType::Lock lock2(fd_ctx->mutex);
-    if(!(fd_ctx->events & event)) {
+    if(WINTER_UNLIKELY(!(fd_ctx->events & event))) {
         return false;
     }
 
@@ -256,8 +258,7 @@ IOManager* IOManager::GetThis() {
 }
 
 void IOManager::tickle() {
-    // 添加! 会多一个Fiber
-    if(hasIdleThreads()) {
+    if(!hasIdleThreads()) {
         return;
     }
     int rt = write(m_tickleFds[1], "T", 1);
@@ -269,6 +270,7 @@ bool IOManager::stopping(uint64_t& timeout) {
     return timeout == ~0ull
         && m_pendingEventCount == 0
         && Scheduler::stopping();
+
 }
 
 bool IOManager::stopping() {
@@ -278,15 +280,15 @@ bool IOManager::stopping() {
 
 void IOManager::idle() {
     WINTER_LOG_DEBUG(g_logger) << "idle";
-    epoll_event* events = new epoll_event[64]();
-    //执行完idle，执行析构函数，释放数组
+    const uint64_t MAX_EVNETS = 256;
+    epoll_event* events = new epoll_event[MAX_EVNETS]();
     std::shared_ptr<epoll_event> shared_events(events, [](epoll_event* ptr){
         delete[] ptr;
     });
 
     while(true) {
         uint64_t next_timeout = 0;
-        if(stopping(next_timeout)) {
+        if(WINTER_UNLIKELY(stopping(next_timeout))) {
             WINTER_LOG_INFO(g_logger) << "name=" << getName()
                                      << " idle stopping exit";
             break;
@@ -301,7 +303,7 @@ void IOManager::idle() {
             } else {
                 next_timeout = MAX_TIMEOUT;
             }
-            rt = epoll_wait(m_epfd, events, 64, (int)next_timeout);
+            rt = epoll_wait(m_epfd, events, MAX_EVNETS, (int)next_timeout);
             if(rt < 0 && errno == EINTR) {
             } else {
                 break;
@@ -316,17 +318,20 @@ void IOManager::idle() {
             cbs.clear();
         }
 
+        //if(WINTER_UNLIKELY(rt == MAX_EVNETS)) {
+        //    WINTER_LOG_INFO(g_logger) << "epoll wait events=" << rt;
+        //}
+
         for(int i = 0; i < rt; ++i) {
             epoll_event& event = events[i];
             if(event.data.fd == m_tickleFds[0]) {
-                uint8_t dummy;
-                while(read(m_tickleFds[0], &dummy, 1) == 1);
+                uint8_t dummy[256];
+                while(read(m_tickleFds[0], dummy, sizeof(dummy)) > 0);
                 continue;
             }
 
             FdContext* fd_ctx = (FdContext*)event.data.ptr;
             FdContext::MutexType::Lock lock(fd_ctx->mutex);
-            //如果是错误或者是中断，需要唤醒它的读和写事件
             if(event.events & (EPOLLERR | EPOLLHUP)) {
                 event.events |= EPOLLIN | EPOLLOUT;
             }
@@ -354,11 +359,13 @@ void IOManager::idle() {
                 continue;
             }
 
-            if(real_events & READ) {
+            //WINTER_LOG_INFO(g_logger) << " fd=" << fd_ctx->fd << " events=" << fd_ctx->events
+            //                         << " real_events=" << real_events;
+            if(fd_ctx->events & READ) {
                 fd_ctx->triggerEvent(READ);
                 --m_pendingEventCount;
             }
-            if(real_events & WRITE) {
+            if(fd_ctx->events & WRITE) {
                 fd_ctx->triggerEvent(WRITE);
                 --m_pendingEventCount;
             }

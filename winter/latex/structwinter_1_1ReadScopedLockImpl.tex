@@ -1,0 +1,59 @@
+\doxysection{winter\+::Read\+Scoped\+Lock\+Impl$<$ T $>$ 模板结构体 参考}
+\label{structwinter_1_1ReadScopedLockImpl}\index{winter::ReadScopedLockImpl$<$ T $>$@{winter::ReadScopedLockImpl$<$ T $>$}}
+
+
+局部读锁模板实现  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+
+
+winter\+::Read\+Scoped\+Lock\+Impl$<$ T $>$ 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Read\+Scoped\+Lock\+Impl} (T \&mutex)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1ReadScopedLockImpl_aaec4a9aa9ebb486d607f7f306928d7ce}} 
+\textbf{ $\sim$\+Read\+Scoped\+Lock\+Impl} ()
+\begin{DoxyCompactList}\small\item\em 析构函数,自动释放锁 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1ReadScopedLockImpl_a969787ea9fc8d91a677d158f2a486810}} 
+void \textbf{ lock} ()
+\begin{DoxyCompactList}\small\item\em 上读锁 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1ReadScopedLockImpl_ac0832a8dbe9155cd59b77000684b6d5a}} 
+void \textbf{ unlock} ()
+\begin{DoxyCompactList}\small\item\em 释放锁 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$class T$>$\newline
+struct winter\+::\+Read\+Scoped\+Lock\+Impl$<$ T $>$}
+
+局部读锁模板实现 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{structwinter_1_1ReadScopedLockImpl_a3d97ce8d0723b5669255fccbf69bd628}} 
+\index{winter::ReadScopedLockImpl$<$ T $>$@{winter::ReadScopedLockImpl$<$ T $>$}!ReadScopedLockImpl@{ReadScopedLockImpl}}
+\index{ReadScopedLockImpl@{ReadScopedLockImpl}!winter::ReadScopedLockImpl$<$ T $>$@{winter::ReadScopedLockImpl$<$ T $>$}}
+\doxysubsubsection{ReadScopedLockImpl()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\textbf{ winter\+::\+Read\+Scoped\+Lock\+Impl}$<$ T $>$\+::\textbf{ Read\+Scoped\+Lock\+Impl} (\begin{DoxyParamCaption}\item[{T \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em mutex} & 读写锁 \\
+\hline
+\end{DoxyParams}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ thread.\+h}\end{DoxyCompactItemize}

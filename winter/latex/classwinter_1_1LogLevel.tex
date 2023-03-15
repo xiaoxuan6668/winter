@@ -1,0 +1,116 @@
+\doxysection{winter\+::Log\+Level类 参考}
+\label{classwinter_1_1LogLevel}\index{winter::LogLevel@{winter::LogLevel}}
+
+
+日志级别  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+winter\+::Log\+Level 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ Level} \{ \newline
+\textbf{ UNKNOW} = 0
+, \textbf{ DEBUG} = 1
+, \textbf{ INFO} = 2
+, \textbf{ WARN} = 3
+, \newline
+\textbf{ ERROR} = 4
+, \textbf{ FATAL} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em 日志级别枚举 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \textbf{ To\+String} (\textbf{ Log\+Level\+::\+Level} level)
+\begin{DoxyCompactList}\small\item\em 将日志级别转成文本输出 \end{DoxyCompactList}\item 
+static \textbf{ Log\+Level\+::\+Level} \textbf{ From\+String} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em 将文本转换成日志级别 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+日志级别 
+
+\doxysubsection{成员枚举类型说明}
+\mbox{\label{classwinter_1_1LogLevel_af748406df19621a0bdfc42faaed3e4af}} 
+\index{winter::LogLevel@{winter::LogLevel}!Level@{Level}}
+\index{Level@{Level}!winter::LogLevel@{winter::LogLevel}}
+\doxysubsubsection{Level}
+{\footnotesize\ttfamily enum \textbf{ winter\+::\+Log\+Level\+::\+Level}}
+
+
+
+日志级别枚举 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNKNOW@{UNKNOW}!winter::LogLevel@{winter::LogLevel}}\index{winter::LogLevel@{winter::LogLevel}!UNKNOW@{UNKNOW}}}\mbox{\label{classwinter_1_1LogLevel_af748406df19621a0bdfc42faaed3e4afa41d2ccf21c97f194c4350faf7e81e355}} 
+UNKNOW&未知级别 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEBUG@{DEBUG}!winter::LogLevel@{winter::LogLevel}}\index{winter::LogLevel@{winter::LogLevel}!DEBUG@{DEBUG}}}\mbox{\label{classwinter_1_1LogLevel_af748406df19621a0bdfc42faaed3e4afae5e16e5af676c5e972dbebf8cee081cf}} 
+DEBUG&DEBUG 级别 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INFO@{INFO}!winter::LogLevel@{winter::LogLevel}}\index{winter::LogLevel@{winter::LogLevel}!INFO@{INFO}}}\mbox{\label{classwinter_1_1LogLevel_af748406df19621a0bdfc42faaed3e4afa280e0cb8c45468371e478ff3093c6c7d}} 
+INFO&INFO 级别 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WARN@{WARN}!winter::LogLevel@{winter::LogLevel}}\index{winter::LogLevel@{winter::LogLevel}!WARN@{WARN}}}\mbox{\label{classwinter_1_1LogLevel_af748406df19621a0bdfc42faaed3e4afa2d538688f1949fc887db35789db5bc39}} 
+WARN&WARN 级别 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR@{ERROR}!winter::LogLevel@{winter::LogLevel}}\index{winter::LogLevel@{winter::LogLevel}!ERROR@{ERROR}}}\mbox{\label{classwinter_1_1LogLevel_af748406df19621a0bdfc42faaed3e4afa8dfcf774dfaf8765c241a1675217366f}} 
+ERROR&ERROR 级别 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FATAL@{FATAL}!winter::LogLevel@{winter::LogLevel}}\index{winter::LogLevel@{winter::LogLevel}!FATAL@{FATAL}}}\mbox{\label{classwinter_1_1LogLevel_af748406df19621a0bdfc42faaed3e4afa71060a875e987ea5dcba9e645f3ecdbf}} 
+FATAL&FATAL 级别 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1LogLevel_a902b6302fdeb729e5597a3a1c21ee6e3}} 
+\index{winter::LogLevel@{winter::LogLevel}!FromString@{FromString}}
+\index{FromString@{FromString}!winter::LogLevel@{winter::LogLevel}}
+\doxysubsubsection{FromString()}
+{\footnotesize\ttfamily \textbf{ Log\+Level\+::\+Level} winter\+::\+Log\+Level\+::\+From\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+将文本转换成日志级别 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em str} & 日志级别文本 \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1LogLevel_a2c4a05dcd9fe352bc892de6018deb3ce}} 
+\index{winter::LogLevel@{winter::LogLevel}!ToString@{ToString}}
+\index{ToString@{ToString}!winter::LogLevel@{winter::LogLevel}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily const char $\ast$ winter\+::\+Log\+Level\+::\+To\+String (\begin{DoxyParamCaption}\item[{\textbf{ Log\+Level\+::\+Level}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+将日志级别转成文本输出 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em level} & 日志级别 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ log.\+h}\item 
+log.\+cc\end{DoxyCompactItemize}

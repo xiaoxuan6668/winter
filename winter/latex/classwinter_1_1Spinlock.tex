@@ -1,0 +1,48 @@
+\doxysection{winter\+::Spinlock类 参考}
+\label{classwinter_1_1Spinlock}\index{winter::Spinlock@{winter::Spinlock}}
+
+
+自旋锁  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+
+
+类 winter\+::Spinlock 继承关系图\+:
+% FIG 0
+
+
+winter\+::Spinlock 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Spinlock_abd0247c29fdb9cbc11d4eb0054653a30}} 
+typedef \textbf{ Scoped\+Lock\+Impl}$<$ \textbf{ Spinlock} $>$ \textbf{ Lock}
+\begin{DoxyCompactList}\small\item\em 局部锁 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Spinlock_ad3e11f32a4718233a62a961e5337e5b7}} 
+\textbf{ Spinlock} ()
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Spinlock_a591df1ad76868ba31e04255d1fc53b09}} 
+\textbf{ $\sim$\+Spinlock} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Spinlock_a488369d9fcfb1b3e49e4c53aa75370a6}} 
+void \textbf{ lock} ()
+\begin{DoxyCompactList}\small\item\em 上锁 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Spinlock_a03ecd0b55f91b761b0dd81b1702f6838}} 
+void \textbf{ unlock} ()
+\begin{DoxyCompactList}\small\item\em 解锁 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+自旋锁 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ thread.\+h}\end{DoxyCompactItemize}

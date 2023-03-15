@@ -1,0 +1,46 @@
+\doxysection{endian.\+h 文件参考}
+\label{endian_8h}\index{endian.h@{endian.h}}
+
+
+字节序操作函数(大端/小端)  
+
+
+{\ttfamily \#include $<$byteswap.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+endian.\+h 的引用(Include)关系图\+:
+% FIG 0
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{endian_8h_af5f36791b0863168fbf0c4391bac2fc8}} 
+\#define {\bfseries WINTER\+\_\+\+LITTLE\+\_\+\+ENDIAN}~1
+\item 
+\mbox{\label{endian_8h_a8a08532b324ce2d198364f826976120f}} 
+\#define {\bfseries WINTER\+\_\+\+BIG\+\_\+\+ENDIAN}~2
+\item 
+\mbox{\label{endian_8h_aad6197589e12c89e4c054810bb5e93fa}} 
+\#define {\bfseries WINTER\+\_\+\+BYTE\+\_\+\+ORDER}~WINTER\+\_\+\+BIG\+\_\+\+ENDIAN
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{endian_8h_ae3cc16cf933f7c52e2688776e4e027d2}} 
+{\footnotesize template$<$class T $>$ }\\std\+::enable\+\_\+if$<$ sizeof(T)==sizeof(uint64\+\_\+t), T $>$\+::type \textbf{ winter\+::byteswap} (T value)
+\begin{DoxyCompactList}\small\item\em 8字节类型的字节序转化 \end{DoxyCompactList}\item 
+\mbox{\label{endian_8h_a21c38946fb863a5c44ec63ec14994921}} 
+{\footnotesize template$<$class T $>$ }\\std\+::enable\+\_\+if$<$ sizeof(T)==sizeof(uint32\+\_\+t), T $>$\+::type \textbf{ winter\+::byteswap} (T value)
+\begin{DoxyCompactList}\small\item\em 4字节类型的字节序转化 \end{DoxyCompactList}\item 
+\mbox{\label{endian_8h_ab66a20ccd341de727cb3cbc2c19f3374}} 
+{\footnotesize template$<$class T $>$ }\\std\+::enable\+\_\+if$<$ sizeof(T)==sizeof(uint16\+\_\+t), T $>$\+::type \textbf{ winter\+::byteswap} (T value)
+\begin{DoxyCompactList}\small\item\em 2字节类型的字节序转化 \end{DoxyCompactList}\item 
+\mbox{\label{endian_8h_ada4338146b3e622c9c5bfb31de5b8eb7}} 
+{\footnotesize template$<$class T $>$ }\\T \textbf{ winter\+::byteswap\+On\+Little\+Endian} (T t)
+\begin{DoxyCompactList}\small\item\em 只在小端机器上执行byteswap, 在大端机器上什么都不做 \end{DoxyCompactList}\item 
+\mbox{\label{endian_8h_abaa31696c29dd365cd2cd3b04156396d}} 
+{\footnotesize template$<$class T $>$ }\\T \textbf{ winter\+::byteswap\+On\+Big\+Endian} (T t)
+\begin{DoxyCompactList}\small\item\em 只在大端机器上执行byteswap, 在小端机器上什么都不做 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+字节序操作函数(大端/小端) 
+

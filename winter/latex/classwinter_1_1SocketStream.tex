@@ -1,0 +1,240 @@
+\doxysection{winter\+::Socket\+Stream类 参考}
+\label{classwinter_1_1SocketStream}\index{winter::SocketStream@{winter::SocketStream}}
+
+
+Socket流  
+
+
+
+
+{\ttfamily \#include $<$socket\+\_\+stream.\+h$>$}
+
+
+
+类 winter\+::Socket\+Stream 继承关系图\+:
+% FIG 0
+
+
+winter\+::Socket\+Stream 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1SocketStream_a496ffc6a6b152f1f3c2d76fe7dad0440}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Socket\+Stream} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Socket\+Stream} (Socket\+::ptr sock, bool owner=true)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Socket\+Stream} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+virtual int \textbf{ read} (void $\ast$buffer, size\+\_\+t length) override
+\begin{DoxyCompactList}\small\item\em 读取数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ read} (Byte\+Array\+::ptr ba, size\+\_\+t length) override
+\begin{DoxyCompactList}\small\item\em 读取数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ write} (const void $\ast$buffer, size\+\_\+t length) override
+\begin{DoxyCompactList}\small\item\em 写入数据 \end{DoxyCompactList}\item 
+virtual int \textbf{ write} (Byte\+Array\+::ptr ba, size\+\_\+t length) override
+\begin{DoxyCompactList}\small\item\em 写入数据 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1SocketStream_a03d7add63aac9fc120ba77c193208dcf}} 
+virtual void \textbf{ close} () override
+\begin{DoxyCompactList}\small\item\em 关闭socket \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1SocketStream_a2fd7776fb71d1909e5103487a72343a6}} 
+Socket\+::ptr \textbf{ get\+Socket} () const
+\begin{DoxyCompactList}\small\item\em 返回\+Socket类 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1SocketStream_a040bcc18254468c842ba6911d1846d3b}} 
+bool \textbf{ is\+Connected} () const
+\begin{DoxyCompactList}\small\item\em 返回是否连接 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1SocketStream_a396590b13b75caa5ef673b39be1aa0cf}} 
+Socket\+::ptr \textbf{ m\+\_\+socket}
+\begin{DoxyCompactList}\small\item\em Socket类 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1SocketStream_a67244e406391b0b2427f552e0e748347}} 
+bool \textbf{ m\+\_\+owner}
+\begin{DoxyCompactList}\small\item\em 是否主控 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Socket流 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{classwinter_1_1SocketStream_af917600ac217942f07f1ddb71733152b}} 
+\index{winter::SocketStream@{winter::SocketStream}!SocketStream@{SocketStream}}
+\index{SocketStream@{SocketStream}!winter::SocketStream@{winter::SocketStream}}
+\doxysubsubsection{SocketStream()}
+{\footnotesize\ttfamily winter\+::\+Socket\+Stream\+::\+Socket\+Stream (\begin{DoxyParamCaption}\item[{Socket\+::ptr}]{sock,  }\item[{bool}]{owner = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em sock} & Socket类 \\
+\hline
+\mbox{\texttt{ in}}  & {\em owner} & 是否完全控制 \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1SocketStream_a5d95625f3563063bd3f4d281dcc344a2}} 
+\index{winter::SocketStream@{winter::SocketStream}!````~SocketStream@{$\sim$SocketStream}}
+\index{````~SocketStream@{$\sim$SocketStream}!winter::SocketStream@{winter::SocketStream}}
+\doxysubsubsection{$\sim$SocketStream()}
+{\footnotesize\ttfamily winter\+::\+Socket\+Stream\+::$\sim$\+Socket\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+析构函数 
+
+如果m\+\_\+owner=true,则close 
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1SocketStream_ac185dfb075642051252f42278b15ca0b}} 
+\index{winter::SocketStream@{winter::SocketStream}!read@{read}}
+\index{read@{read}!winter::SocketStream@{winter::SocketStream}}
+\doxysubsubsection{read()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int winter\+::\+Socket\+Stream\+::read (\begin{DoxyParamCaption}\item[{Byte\+Array\+::ptr}]{ba,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+读取数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em ba} & 接收数据的\+Byte\+Array \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 待接收数据的内存长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回实际接收到的数据长度 \\
+\hline
+{\em =0} & socket被远端关闭 \\
+\hline
+{\em $<$0} & socket错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+实现了 \textbf{ winter\+::\+Stream} \doxyref{}{p.}{classwinter_1_1Stream_a7e67841ee0b2911d77e1701d1aafa7e0}.
+
+函数调用图\+:
+% FIG 2
+\mbox{\label{classwinter_1_1SocketStream_a27b29fa5b2268511493c970b524b8aa1}} 
+\index{winter::SocketStream@{winter::SocketStream}!read@{read}}
+\index{read@{read}!winter::SocketStream@{winter::SocketStream}}
+\doxysubsubsection{read()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int winter\+::\+Socket\+Stream\+::read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+读取数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em buffer} & 待接收数据的内存 \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 待接收数据的内存长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回实际接收到的数据长度 \\
+\hline
+{\em =0} & socket被远端关闭 \\
+\hline
+{\em $<$0} & socket错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+实现了 \textbf{ winter\+::\+Stream} \doxyref{}{p.}{classwinter_1_1Stream_acde320e3e72e9429a4fe2e0b8b2854d7}.
+
+函数调用图\+:
+% FIG 3
+\mbox{\label{classwinter_1_1SocketStream_ae6e8b2b08d2da5d58a6a5d63f5b59f81}} 
+\index{winter::SocketStream@{winter::SocketStream}!write@{write}}
+\index{write@{write}!winter::SocketStream@{winter::SocketStream}}
+\doxysubsubsection{write()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int winter\+::\+Socket\+Stream\+::write (\begin{DoxyParamCaption}\item[{Byte\+Array\+::ptr}]{ba,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+写入数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em ba} & 待发送数据的\+Byte\+Array \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 待发送数据的内存长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回实际接收到的数据长度 \\
+\hline
+{\em =0} & socket被远端关闭 \\
+\hline
+{\em $<$0} & socket错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+实现了 \textbf{ winter\+::\+Stream} \doxyref{}{p.}{classwinter_1_1Stream_aeb0217204d2d741c566b11c3eb99b957}.
+
+函数调用图\+:
+% FIG 4
+\mbox{\label{classwinter_1_1SocketStream_a2f57d3ab04ce1025660a459e176cf249}} 
+\index{winter::SocketStream@{winter::SocketStream}!write@{write}}
+\index{write@{write}!winter::SocketStream@{winter::SocketStream}}
+\doxysubsubsection{write()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int winter\+::\+Socket\+Stream\+::write (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+写入数据 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em buffer} & 待发送数据的内存 \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & 待发送数据的内存长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em $>$0} & 返回实际接收到的数据长度 \\
+\hline
+{\em =0} & socket被远端关闭 \\
+\hline
+{\em $<$0} & socket错误 \\
+\hline
+\end{DoxyRetVals}
+
+
+实现了 \textbf{ winter\+::\+Stream} \doxyref{}{p.}{classwinter_1_1Stream_a01be192ac0c9e174dc07fdaa0952ae52}.
+
+函数调用图\+:
+% FIG 5
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ socket\+\_\+stream.\+h}\item 
+socket\+\_\+stream.\+cc\end{DoxyCompactItemize}

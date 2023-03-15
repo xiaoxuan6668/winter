@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: tcp_server.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tcp_server.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tcp__server_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __WINTER_TCP_SERVER_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __WINTER_TCP_SERVER_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="address_8h.html">address.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iomanager_8h.html">iomanager.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="socket_8h.html">socket.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="noncopyable_8h.html">noncopyable.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>winter {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classwinter_1_1TcpServer.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1TcpServer.html">TcpServer</a> : <span class="keyword">public</span> std::enable_shared_from_this&lt;TcpServer&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    , <a class="code" href="classwinter_1_1Noncopyable.html">Noncopyable</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;TcpServer&gt; ptr;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classwinter_1_1TcpServer.html#a9083be6ae9c922c6b6470a99b3d0251c">TcpServer</a>(<a class="code" href="classwinter_1_1IOManager.html">winter::IOManager</a>* woker = <a class="code" href="classwinter_1_1IOManager.html#a85c64e3a90cc4ac302e71fe321630b56">winter::IOManager::GetThis</a>()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;              ,<a class="code" href="classwinter_1_1IOManager.html">winter::IOManager</a>* accept_woker = <a class="code" href="classwinter_1_1IOManager.html#a85c64e3a90cc4ac302e71fe321630b56">winter::IOManager::GetThis</a>());</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classwinter_1_1TcpServer.html#a3f0fd0c957d9ac2e9ee10d76dd2f49ad">~TcpServer</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1TcpServer.html#af6ce89e363d8668f5b93a73b58d46a9f">bind</a>(winter::Address::ptr addr, <span class="keywordtype">bool</span> ssl = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1TcpServer.html#af6ce89e363d8668f5b93a73b58d46a9f">bind</a>(<span class="keyword">const</span> std::vector&lt;Address::ptr&gt;&amp; addrs</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        ,std::vector&lt;Address::ptr&gt;&amp; fails</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        ,<span class="keywordtype">bool</span> ssl = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1TcpServer.html#a0e99b0cb104002b57d99b0f451b61897">start</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TcpServer.html#aca982f331c1e9fa40b92d0b0a822b807">stop</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classwinter_1_1TcpServer.html#a74a3e6f697536fb7f258ec937e5b8365">   67</a></span>&#160;    uint64_t <a class="code" href="classwinter_1_1TcpServer.html#a74a3e6f697536fb7f258ec937e5b8365">getRecvTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_recvTimeout;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classwinter_1_1TcpServer.html#a2887621b21c16fe5a2d39baf8fb07abf">   72</a></span>&#160;    std::string <a class="code" href="classwinter_1_1TcpServer.html#a2887621b21c16fe5a2d39baf8fb07abf">getName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_name;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classwinter_1_1TcpServer.html#a819cb3d55287553eb2f14304164f3e47">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TcpServer.html#a819cb3d55287553eb2f14304164f3e47">setRecvTimeout</a>(uint64_t v) { m_recvTimeout = v;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classwinter_1_1TcpServer.html#a1a601a80c5aec9067fa2bf9c1eea869e">   82</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TcpServer.html#a1a601a80c5aec9067fa2bf9c1eea869e">setName</a>(<span class="keyword">const</span> std::string&amp; v) { m_name = v;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classwinter_1_1TcpServer.html#ab3c9323aa3712124bcba7f1f7ffbc298">   87</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1TcpServer.html#ab3c9323aa3712124bcba7f1f7ffbc298">isStop</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isStop;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TcpServer.html#aaf02c1aa7a1195799bda0b0ee4b41e94">handleClient</a>(Socket::ptr client);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1TcpServer.html#ae36b980cfe9099462ac58bd991a82eab">startAccept</a>(Socket::ptr sock);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::vector&lt;Socket::ptr&gt; m_socks;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="classwinter_1_1IOManager.html">IOManager</a>* m_worker;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classwinter_1_1IOManager.html">IOManager</a>* m_acceptWorker;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    uint64_t m_recvTimeout;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::string m_name;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> m_isStop;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aaddress_8h_html"><div class="ttname"><a href="address_8h.html">address.h</a></div><div class="ttdoc">网络地址的封装(IPv4,IPv6,Unix)</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html"><div class="ttname"><a href="classwinter_1_1IOManager.html">winter::IOManager</a></div><div class="ttdoc">基于Epoll的IO协程调度器</div><div class="ttdef"><b>Definition:</b> iomanager.h:16</div></div>
+<div class="ttc" id="aclasswinter_1_1IOManager_html_a85c64e3a90cc4ac302e71fe321630b56"><div class="ttname"><a href="classwinter_1_1IOManager.html#a85c64e3a90cc4ac302e71fe321630b56">winter::IOManager::GetThis</a></div><div class="ttdeci">static IOManager * GetThis()</div><div class="ttdoc">返回当前的IOManager</div><div class="ttdef"><b>Definition:</b> iomanager.cc:256</div></div>
+<div class="ttc" id="aclasswinter_1_1Noncopyable_html"><div class="ttname"><a href="classwinter_1_1Noncopyable.html">winter::Noncopyable</a></div><div class="ttdoc">对象无法拷贝,赋值</div><div class="ttdef"><b>Definition:</b> noncopyable.h:13</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html"><div class="ttname"><a href="classwinter_1_1TcpServer.html">winter::TcpServer</a></div><div class="ttdoc">TCP服务器封装</div><div class="ttdef"><b>Definition:</b> tcp_server.h:21</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_a0e99b0cb104002b57d99b0f451b61897"><div class="ttname"><a href="classwinter_1_1TcpServer.html#a0e99b0cb104002b57d99b0f451b61897">winter::TcpServer::start</a></div><div class="ttdeci">virtual bool start()</div><div class="ttdoc">启动服务</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:83</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_a1a601a80c5aec9067fa2bf9c1eea869e"><div class="ttname"><a href="classwinter_1_1TcpServer.html#a1a601a80c5aec9067fa2bf9c1eea869e">winter::TcpServer::setName</a></div><div class="ttdeci">void setName(const std::string &amp;v)</div><div class="ttdoc">设置服务器名称</div><div class="ttdef"><b>Definition:</b> tcp_server.h:82</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_a2887621b21c16fe5a2d39baf8fb07abf"><div class="ttname"><a href="classwinter_1_1TcpServer.html#a2887621b21c16fe5a2d39baf8fb07abf">winter::TcpServer::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdoc">返回服务器名称</div><div class="ttdef"><b>Definition:</b> tcp_server.h:72</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_a3f0fd0c957d9ac2e9ee10d76dd2f49ad"><div class="ttname"><a href="classwinter_1_1TcpServer.html#a3f0fd0c957d9ac2e9ee10d76dd2f49ad">winter::TcpServer::~TcpServer</a></div><div class="ttdeci">virtual ~TcpServer()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:22</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_a74a3e6f697536fb7f258ec937e5b8365"><div class="ttname"><a href="classwinter_1_1TcpServer.html#a74a3e6f697536fb7f258ec937e5b8365">winter::TcpServer::getRecvTimeout</a></div><div class="ttdeci">uint64_t getRecvTimeout() const</div><div class="ttdoc">返回读取超时时间(毫秒)</div><div class="ttdef"><b>Definition:</b> tcp_server.h:67</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_a819cb3d55287553eb2f14304164f3e47"><div class="ttname"><a href="classwinter_1_1TcpServer.html#a819cb3d55287553eb2f14304164f3e47">winter::TcpServer::setRecvTimeout</a></div><div class="ttdeci">void setRecvTimeout(uint64_t v)</div><div class="ttdoc">设置读取超时时间(毫秒)</div><div class="ttdef"><b>Definition:</b> tcp_server.h:77</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_a9083be6ae9c922c6b6470a99b3d0251c"><div class="ttname"><a href="classwinter_1_1TcpServer.html#a9083be6ae9c922c6b6470a99b3d0251c">winter::TcpServer::TcpServer</a></div><div class="ttdeci">TcpServer(winter::IOManager *woker=winter::IOManager::GetThis(), winter::IOManager *accept_woker=winter::IOManager::GetThis())</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:13</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_aaf02c1aa7a1195799bda0b0ee4b41e94"><div class="ttname"><a href="classwinter_1_1TcpServer.html#aaf02c1aa7a1195799bda0b0ee4b41e94">winter::TcpServer::handleClient</a></div><div class="ttdeci">virtual void handleClient(Socket::ptr client)</div><div class="ttdoc">处理新连接的Socket类</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:107</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_ab3c9323aa3712124bcba7f1f7ffbc298"><div class="ttname"><a href="classwinter_1_1TcpServer.html#ab3c9323aa3712124bcba7f1f7ffbc298">winter::TcpServer::isStop</a></div><div class="ttdeci">bool isStop() const</div><div class="ttdoc">是否停止</div><div class="ttdef"><b>Definition:</b> tcp_server.h:87</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_aca982f331c1e9fa40b92d0b0a822b807"><div class="ttname"><a href="classwinter_1_1TcpServer.html#aca982f331c1e9fa40b92d0b0a822b807">winter::TcpServer::stop</a></div><div class="ttdeci">virtual void stop()</div><div class="ttdoc">停止服务</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:95</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_ae36b980cfe9099462ac58bd991a82eab"><div class="ttname"><a href="classwinter_1_1TcpServer.html#ae36b980cfe9099462ac58bd991a82eab">winter::TcpServer::startAccept</a></div><div class="ttdeci">virtual void startAccept(Socket::ptr sock)</div><div class="ttdoc">开始接受连接</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:69</div></div>
+<div class="ttc" id="aclasswinter_1_1TcpServer_html_af6ce89e363d8668f5b93a73b58d46a9f"><div class="ttname"><a href="classwinter_1_1TcpServer.html#af6ce89e363d8668f5b93a73b58d46a9f">winter::TcpServer::bind</a></div><div class="ttdeci">virtual bool bind(winter::Address::ptr addr, bool ssl=false)</div><div class="ttdoc">绑定地址</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:29</div></div>
+<div class="ttc" id="aiomanager_8h_html"><div class="ttname"><a href="iomanager_8h.html">iomanager.h</a></div><div class="ttdoc">基于Epoll的IO协程调度器</div></div>
+<div class="ttc" id="anoncopyable_8h_html"><div class="ttname"><a href="noncopyable_8h.html">noncopyable.h</a></div><div class="ttdoc">不可拷贝对象封装</div></div>
+<div class="ttc" id="asocket_8h_html"><div class="ttname"><a href="socket_8h.html">socket.h</a></div><div class="ttdoc">Socket封装</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

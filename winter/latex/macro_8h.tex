@@ -1,0 +1,68 @@
+\doxysection{macro.\+h 文件参考}
+\label{macro_8h}\index{macro.h@{macro.h}}
+
+
+常用宏的封装  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+macro.\+h 的引用(Include)关系图\+:
+% FIG 0
+此图展示该文件直接或间接的被哪些文件引用了\+:
+% FIG 1
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{macro_8h_a98d167fe3f6732d288412f24dcc35d50}} 
+\#define {\bfseries WINTER\+\_\+\+LIKELY}(x)~(x)
+\item 
+\mbox{\label{macro_8h_aca9ab6fc51c5a39a4dfaf0a635bb3494}} 
+\#define {\bfseries WINTER\+\_\+\+UNLIKELY}(x)~(x)
+\item 
+\#define {\bfseries WINTER\+\_\+\+ASSERT}(x)
+\item 
+\#define {\bfseries WINTER\+\_\+\+ASSERT2}(x,  w)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+常用宏的封装 
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\label{macro_8h_a9526df6ab59100e97457445212c2f7fb}} 
+\index{macro.h@{macro.h}!WINTER\_ASSERT@{WINTER\_ASSERT}}
+\index{WINTER\_ASSERT@{WINTER\_ASSERT}!macro.h@{macro.h}}
+\doxysubsubsection{WINTER\_ASSERT}
+{\footnotesize\ttfamily \#define WINTER\+\_\+\+ASSERT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(WINTER\_UNLIKELY(!(x))) \{ \(\backslash\)}
+\DoxyCodeLine{        WINTER\_LOG\_ERROR(WINTER\_LOG\_ROOT()) << \textcolor{stringliteral}{"{}ASSERTION: "{}} \#x \(\backslash\)}
+\DoxyCodeLine{            << \textcolor{stringliteral}{"{}\(\backslash\)nbacktrace:\(\backslash\)n"{}} \(\backslash\)}
+\DoxyCodeLine{            << winter::BacktraceToString(100, 2, \textcolor{stringliteral}{"{}    "{}}); \(\backslash\)}
+\DoxyCodeLine{        assert(x); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\label{macro_8h_a436124cac1f3e9d5abb744a735bf3d0a}} 
+\index{macro.h@{macro.h}!WINTER\_ASSERT2@{WINTER\_ASSERT2}}
+\index{WINTER\_ASSERT2@{WINTER\_ASSERT2}!macro.h@{macro.h}}
+\doxysubsubsection{WINTER\_ASSERT2}
+{\footnotesize\ttfamily \#define WINTER\+\_\+\+ASSERT2(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{w }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(WINTER\_UNLIKELY(!(x))) \{ \(\backslash\)}
+\DoxyCodeLine{        WINTER\_LOG\_ERROR(WINTER\_LOG\_ROOT()) << \textcolor{stringliteral}{"{}ASSERTION: "{}} \#x \(\backslash\)}
+\DoxyCodeLine{            << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << w \(\backslash\)}
+\DoxyCodeLine{            << \textcolor{stringliteral}{"{}\(\backslash\)nbacktrace:\(\backslash\)n"{}} \(\backslash\)}
+\DoxyCodeLine{            << winter::BacktraceToString(100, 2, \textcolor{stringliteral}{"{}    "{}}); \(\backslash\)}
+\DoxyCodeLine{        assert(x); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}

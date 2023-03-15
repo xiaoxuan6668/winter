@@ -1,3 +1,7 @@
+/**
+ * @file hook.h
+ * @brief hook函数封装
+ */
 #ifndef __WINTER_HOOK_H__
 #define __WINTER_HOOK_H__
 
@@ -10,7 +14,13 @@
 #include <unistd.h>
 
 namespace winter {
+    /**
+     * @brief 当前线程是否hook
+     */
     bool is_hook_enable();
+    /**
+     * @brief 设置当前线程的hook状态
+     */
     void set_hook_enable(bool flag);
 }
 

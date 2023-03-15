@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: address.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">address.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="address_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __WINTER_ADDRESS_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __WINTER_ADDRESS_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;sys/un.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>winter {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>IPAddress;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classwinter_1_1Address.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1Address.html">Address</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;Address&gt; ptr;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> Address::ptr <a class="code" href="classwinter_1_1Address.html#ab248b3f32f184a2721cfaf2c0fecda97">Create</a>(<span class="keyword">const</span> sockaddr* addr, socklen_t addrlen);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Address.html#a9a8170ee12049813bb4223b4d7e7ccfe">Lookup</a>(std::vector&lt;Address::ptr&gt;&amp; result, <span class="keyword">const</span> std::string&amp; host,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">int</span> family = AF_INET, <span class="keywordtype">int</span> type = 0, <span class="keywordtype">int</span> protocol = 0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> Address::ptr <a class="code" href="classwinter_1_1Address.html#ad347858e60b2c15e95a8502a984e2751">LookupAny</a>(<span class="keyword">const</span> std::string&amp; host,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">int</span> family = AF_INET, <span class="keywordtype">int</span> type = 0, <span class="keywordtype">int</span> protocol = 0);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> std::shared_ptr&lt;IPAddress&gt; <a class="code" href="classwinter_1_1Address.html#afc2d2968c79acc40ab58037c8fe564e4">LookupAnyIPAddress</a>(<span class="keyword">const</span> std::string&amp; host,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">int</span> family = AF_INET, <span class="keywordtype">int</span> type = 0, <span class="keywordtype">int</span> protocol = 0);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Address.html#a082f284b37aeaf4ac79a8ef6945fade4">GetInterfaceAddresses</a>(std::multimap&lt;std::string</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    ,std::pair&lt;Address::ptr, uint32_t&gt; &gt;&amp; result,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <span class="keywordtype">int</span> family = AF_INET);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Address.html#a082f284b37aeaf4ac79a8ef6945fade4">GetInterfaceAddresses</a>(std::vector&lt;std::pair&lt;Address::ptr, uint32_t&gt; &gt;&amp;result</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    ,<span class="keyword">const</span> std::string&amp; iface, <span class="keywordtype">int</span> family = AF_INET);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classwinter_1_1Address.html#a4748bdcce6eba8d16330c21b9431c0cc">   92</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classwinter_1_1Address.html#a4748bdcce6eba8d16330c21b9431c0cc">~Address</a>() {}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classwinter_1_1Address.html#af7dbeb4398e2b5787019a8e4ba635090">getFamily</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classwinter_1_1Address.html#a7a819ced0a9f8599ba03efee3155b939">  102</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> sockaddr* <a class="code" href="classwinter_1_1Address.html#a7a819ced0a9f8599ba03efee3155b939">getAddr</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classwinter_1_1Address.html#a496cfda708eeef8196a7d4de1ad826fa">  107</a></span>&#160;    <span class="keyword">virtual</span> sockaddr* <a class="code" href="classwinter_1_1Address.html#a496cfda708eeef8196a7d4de1ad826fa">getAddr</a>() = 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classwinter_1_1Address.html#addb36544457d8ee477e1d4e482b027b8">  112</a></span>&#160;    <span class="keyword">virtual</span> socklen_t <a class="code" href="classwinter_1_1Address.html#addb36544457d8ee477e1d4e482b027b8">getAddrLen</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classwinter_1_1Address.html#a8a1dc0b18d9a3c5e9b9944cbe75b8ad1">  117</a></span>&#160;    <span class="keyword">virtual</span> std::ostream&amp; <a class="code" href="classwinter_1_1Address.html#a8a1dc0b18d9a3c5e9b9944cbe75b8ad1">insert</a>(std::ostream&amp; os) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::string <a class="code" href="classwinter_1_1Address.html#afdab5377a486a18b38c927074b9bb7ec">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Address.html#af651bcf01bb5fe71b68ed33a27fc5ddd">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="classwinter_1_1Address.html">Address</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Address.html#ac892eb31dc6e610b1920dfec73ad2e43">operator==</a>(<span class="keyword">const</span> <a class="code" href="classwinter_1_1Address.html">Address</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwinter_1_1Address.html#a8914e5d5af72917c9d1abfce49b1f449">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classwinter_1_1Address.html">Address</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;};</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classwinter_1_1IPAddress.html">  143</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1IPAddress.html">IPAddress</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1Address.html">Address</a> {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;IPAddress&gt; ptr;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">static</span> IPAddress::ptr <a class="code" href="classwinter_1_1IPAddress.html#a9718fbd9719a73a79cdec11737362855">Create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* address, uint16_t port = 0);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classwinter_1_1IPAddress.html#a3099488065e0425e7cc13ea66979c976">  160</a></span>&#160;    <span class="keyword">virtual</span> IPAddress::ptr <a class="code" href="classwinter_1_1IPAddress.html#a3099488065e0425e7cc13ea66979c976">broadcastAddress</a>(uint32_t prefix_len) = 0;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classwinter_1_1IPAddress.html#a0c78356fb1554277df370db7e2ced25a">  167</a></span>&#160;    <span class="keyword">virtual</span> IPAddress::ptr <a class="code" href="classwinter_1_1IPAddress.html#a0c78356fb1554277df370db7e2ced25a">networdAddress</a>(uint32_t prefix_len) = 0;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classwinter_1_1IPAddress.html#acfb779bd8d337ab9dd825339f44344de">  174</a></span>&#160;    <span class="keyword">virtual</span> IPAddress::ptr <a class="code" href="classwinter_1_1IPAddress.html#acfb779bd8d337ab9dd825339f44344de">subnetMask</a>(uint32_t prefix_len) = 0;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classwinter_1_1IPAddress.html#ae1d2effeeda38a919f1ee71a69ac92b7">  179</a></span>&#160;    <span class="keyword">virtual</span> uint32_t <a class="code" href="classwinter_1_1IPAddress.html#ae1d2effeeda38a919f1ee71a69ac92b7">getPort</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classwinter_1_1IPAddress.html#ad244483866750d98ca27e0fea7bbff21">  184</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1IPAddress.html#ad244483866750d98ca27e0fea7bbff21">setPort</a>(uint16_t v) = 0;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="classwinter_1_1IPv4Address.html">  190</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1IPv4Address.html">IPv4Address</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1IPAddress.html">IPAddress</a> {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;IPv4Address&gt; ptr;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">static</span> IPv4Address::ptr <a class="code" href="classwinter_1_1IPv4Address.html#aae5df0b452f02dd9f7b6bb95f34b764d">Create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* address, uint16_t port = 0);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="classwinter_1_1IPv4Address.html#a7b3f3064190f6608ce94bd2662e0c4c7">IPv4Address</a>(<span class="keyword">const</span> sockaddr_in&amp; address);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="classwinter_1_1IPv4Address.html#a7b3f3064190f6608ce94bd2662e0c4c7">IPv4Address</a>(uint32_t address = INADDR_ANY, uint16_t port = 0);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keyword">const</span> sockaddr* <a class="code" href="classwinter_1_1IPv4Address.html#ad5679de2bb805b68d07ab3899394f98c">getAddr</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    sockaddr* <a class="code" href="classwinter_1_1IPv4Address.html#ad5679de2bb805b68d07ab3899394f98c">getAddr</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    socklen_t <a class="code" href="classwinter_1_1IPv4Address.html#a0870ec1062f3d4c2e482f17ba28eea52">getAddrLen</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    std::ostream&amp; <a class="code" href="classwinter_1_1IPv4Address.html#a3e617d4534071d9e07b66e1869c32939">insert</a>(std::ostream&amp; os) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    IPAddress::ptr <a class="code" href="classwinter_1_1IPv4Address.html#a72b54488b4cd6012aaa787d63dc3c3dc">broadcastAddress</a>(uint32_t prefix_len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    IPAddress::ptr <a class="code" href="classwinter_1_1IPv4Address.html#a0c1a750761958be05d2e897de5565dcb">networdAddress</a>(uint32_t prefix_len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    IPAddress::ptr <a class="code" href="classwinter_1_1IPv4Address.html#a9dbc5f78aaf138d9421c1a7239def66c">subnetMask</a>(uint32_t prefix_len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    uint32_t <a class="code" href="classwinter_1_1IPv4Address.html#aded3875cd5dee5eb9388a88369d8a76e">getPort</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1IPv4Address.html#a384d1593a6bc10d305f72027b4b13c67">setPort</a>(uint16_t v) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    sockaddr_in m_addr;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classwinter_1_1IPv6Address.html">  232</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1IPv6Address.html">IPv6Address</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1IPAddress.html">IPAddress</a> {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;IPv6Address&gt; ptr;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">static</span> IPv6Address::ptr <a class="code" href="classwinter_1_1IPv6Address.html#a27c0a1861e3c8aec4523d7304bf1dc71">Create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* address, uint16_t port = 0);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="classwinter_1_1IPv6Address.html#ae22f4c577c39aac55e6ab8ace5c2cbf5">IPv6Address</a>();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="classwinter_1_1IPv6Address.html#ae22f4c577c39aac55e6ab8ace5c2cbf5">IPv6Address</a>(<span class="keyword">const</span> sockaddr_in6&amp; address);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="classwinter_1_1IPv6Address.html#ae22f4c577c39aac55e6ab8ace5c2cbf5">IPv6Address</a>(<span class="keyword">const</span> uint8_t address[16], uint16_t port = 0);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">const</span> sockaddr* <a class="code" href="classwinter_1_1IPv6Address.html#a6db3a0ba106df981e3c876bc92e942be">getAddr</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    sockaddr* <a class="code" href="classwinter_1_1IPv6Address.html#a6db3a0ba106df981e3c876bc92e942be">getAddr</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    socklen_t <a class="code" href="classwinter_1_1IPv6Address.html#a29189b6c84a3b226e49e1dde5cad78f7">getAddrLen</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    std::ostream&amp; <a class="code" href="classwinter_1_1IPv6Address.html#ad1e984b9a35bd06aec89f6ca4856ca91">insert</a>(std::ostream&amp; os) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    IPAddress::ptr <a class="code" href="classwinter_1_1IPv6Address.html#a21c270641060b95d6ce0ded4cc9c3689">broadcastAddress</a>(uint32_t prefix_len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    IPAddress::ptr <a class="code" href="classwinter_1_1IPv6Address.html#a5d9540aae305cb80ff68f38ecae44a7b">networdAddress</a>(uint32_t prefix_len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    IPAddress::ptr <a class="code" href="classwinter_1_1IPv6Address.html#afa386caee18d49f3307648bf7d10af65">subnetMask</a>(uint32_t prefix_len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    uint32_t <a class="code" href="classwinter_1_1IPv6Address.html#ac87090a6d4a3c445ffa07d2ef0bd4d2e">getPort</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinter_1_1IPv6Address.html#a3e475c83ba43d5831b978401e1dcfe6e">setPort</a>(uint16_t v) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    sockaddr_in6 m_addr;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;};</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="classwinter_1_1UnixAddress.html">  276</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1UnixAddress.html">UnixAddress</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1Address.html">Address</a> {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;UnixAddress&gt; ptr;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="classwinter_1_1UnixAddress.html#a3de36798c0278cb41db93d56432a20db">UnixAddress</a>();</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classwinter_1_1UnixAddress.html#a3de36798c0278cb41db93d56432a20db">UnixAddress</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">const</span> sockaddr* <a class="code" href="classwinter_1_1UnixAddress.html#a2f15274758bacb36c2e83650c9d5e9e3">getAddr</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    sockaddr* <a class="code" href="classwinter_1_1UnixAddress.html#a2f15274758bacb36c2e83650c9d5e9e3">getAddr</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    socklen_t <a class="code" href="classwinter_1_1UnixAddress.html#a3e00041563916d3acee99411b694743a">getAddrLen</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">void</span> setAddrLen(uint32_t v);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::ostream&amp; <a class="code" href="classwinter_1_1UnixAddress.html#a4c3c57e1d480691e6e7d708bf21f458d">insert</a>(std::ostream&amp; os) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    sockaddr_un m_addr;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    socklen_t m_length;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;};</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="classwinter_1_1UnknownAddress.html">  304</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinter_1_1UnknownAddress.html">UnknownAddress</a> : <span class="keyword">public</span> <a class="code" href="classwinter_1_1Address.html">Address</a> {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;UnknownAddress&gt; ptr;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="classwinter_1_1UnknownAddress.html">UnknownAddress</a>(<span class="keywordtype">int</span> family);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <a class="code" href="classwinter_1_1UnknownAddress.html">UnknownAddress</a>(<span class="keyword">const</span> sockaddr&amp; addr);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">const</span> sockaddr* <a class="code" href="classwinter_1_1UnknownAddress.html#a053cc57a955200cbd72922cd62c8792e">getAddr</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    sockaddr* <a class="code" href="classwinter_1_1UnknownAddress.html#a053cc57a955200cbd72922cd62c8792e">getAddr</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    socklen_t <a class="code" href="classwinter_1_1UnknownAddress.html#aa39a3e15708d25daca2e5b1bff9cdc34">getAddrLen</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    std::ostream&amp; <a class="code" href="classwinter_1_1UnknownAddress.html#ab3ccd7621645d22b0fdb7952bdad25c7">insert</a>(std::ostream&amp; os) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    sockaddr m_addr;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;};</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classwinter_1_1Address.html">Address</a>&amp; addr);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasswinter_1_1Address_html"><div class="ttname"><a href="classwinter_1_1Address.html">winter::Address</a></div><div class="ttdoc">网络地址的基类,抽象类</div><div class="ttdef"><b>Definition:</b> address.h:26</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_a082f284b37aeaf4ac79a8ef6945fade4"><div class="ttname"><a href="classwinter_1_1Address.html#a082f284b37aeaf4ac79a8ef6945fade4">winter::Address::GetInterfaceAddresses</a></div><div class="ttdeci">static bool GetInterfaceAddresses(std::multimap&lt; std::string, std::pair&lt; Address::ptr, uint32_t &gt; &gt; &amp;result, int family=AF_INET)</div><div class="ttdoc">返回本机所有网卡的&lt;网卡名, 地址, 子网掩码位数&gt;</div><div class="ttdef"><b>Definition:</b> address.cc:115</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_a4748bdcce6eba8d16330c21b9431c0cc"><div class="ttname"><a href="classwinter_1_1Address.html#a4748bdcce6eba8d16330c21b9431c0cc">winter::Address::~Address</a></div><div class="ttdeci">virtual ~Address()</div><div class="ttdoc">虚析构函数</div><div class="ttdef"><b>Definition:</b> address.h:92</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_a496cfda708eeef8196a7d4de1ad826fa"><div class="ttname"><a href="classwinter_1_1Address.html#a496cfda708eeef8196a7d4de1ad826fa">winter::Address::getAddr</a></div><div class="ttdeci">virtual sockaddr * getAddr()=0</div><div class="ttdoc">返回sockaddr指针,读写</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_a7a819ced0a9f8599ba03efee3155b939"><div class="ttname"><a href="classwinter_1_1Address.html#a7a819ced0a9f8599ba03efee3155b939">winter::Address::getAddr</a></div><div class="ttdeci">virtual const sockaddr * getAddr() const =0</div><div class="ttdoc">返回sockaddr指针,只读</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_a8914e5d5af72917c9d1abfce49b1f449"><div class="ttname"><a href="classwinter_1_1Address.html#a8914e5d5af72917c9d1abfce49b1f449">winter::Address::operator!=</a></div><div class="ttdeci">bool operator!=(const Address &amp;rhs) const</div><div class="ttdoc">不等于函数</div><div class="ttdef"><b>Definition:</b> address.cc:242</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_a8a1dc0b18d9a3c5e9b9944cbe75b8ad1"><div class="ttname"><a href="classwinter_1_1Address.html#a8a1dc0b18d9a3c5e9b9944cbe75b8ad1">winter::Address::insert</a></div><div class="ttdeci">virtual std::ostream &amp; insert(std::ostream &amp;os) const =0</div><div class="ttdoc">可读性输出地址</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_a9a8170ee12049813bb4223b4d7e7ccfe"><div class="ttname"><a href="classwinter_1_1Address.html#a9a8170ee12049813bb4223b4d7e7ccfe">winter::Address::Lookup</a></div><div class="ttdeci">static bool Lookup(std::vector&lt; Address::ptr &gt; &amp;result, const std::string &amp;host, int family=AF_INET, int type=0, int protocol=0)</div><div class="ttdoc">通过host地址返回对应条件的所有Address</div><div class="ttdef"><b>Definition:</b> address.cc:55</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_ab248b3f32f184a2721cfaf2c0fecda97"><div class="ttname"><a href="classwinter_1_1Address.html#ab248b3f32f184a2721cfaf2c0fecda97">winter::Address::Create</a></div><div class="ttdeci">static Address::ptr Create(const sockaddr *addr, socklen_t addrlen)</div><div class="ttdoc">通过sockaddr指针创建Address</div><div class="ttdef"><b>Definition:</b> address.cc:204</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_ac892eb31dc6e610b1920dfec73ad2e43"><div class="ttname"><a href="classwinter_1_1Address.html#ac892eb31dc6e610b1920dfec73ad2e43">winter::Address::operator==</a></div><div class="ttdeci">bool operator==(const Address &amp;rhs) const</div><div class="ttdoc">等于函数</div><div class="ttdef"><b>Definition:</b> address.cc:237</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_ad347858e60b2c15e95a8502a984e2751"><div class="ttname"><a href="classwinter_1_1Address.html#ad347858e60b2c15e95a8502a984e2751">winter::Address::LookupAny</a></div><div class="ttdeci">static Address::ptr LookupAny(const std::string &amp;host, int family=AF_INET, int type=0, int protocol=0)</div><div class="ttdoc">通过host地址返回对应条件的任意Address</div><div class="ttdef"><b>Definition:</b> address.cc:28</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_addb36544457d8ee477e1d4e482b027b8"><div class="ttname"><a href="classwinter_1_1Address.html#addb36544457d8ee477e1d4e482b027b8">winter::Address::getAddrLen</a></div><div class="ttdeci">virtual socklen_t getAddrLen() const =0</div><div class="ttdoc">返回sockaddr的长度</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_af651bcf01bb5fe71b68ed33a27fc5ddd"><div class="ttname"><a href="classwinter_1_1Address.html#af651bcf01bb5fe71b68ed33a27fc5ddd">winter::Address::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Address &amp;rhs) const</div><div class="ttdoc">小于号比较函数</div><div class="ttdef"><b>Definition:</b> address.cc:224</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_af7dbeb4398e2b5787019a8e4ba635090"><div class="ttname"><a href="classwinter_1_1Address.html#af7dbeb4398e2b5787019a8e4ba635090">winter::Address::getFamily</a></div><div class="ttdeci">int getFamily() const</div><div class="ttdoc">返回协议簇</div><div class="ttdef"><b>Definition:</b> address.cc:194</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_afc2d2968c79acc40ab58037c8fe564e4"><div class="ttname"><a href="classwinter_1_1Address.html#afc2d2968c79acc40ab58037c8fe564e4">winter::Address::LookupAnyIPAddress</a></div><div class="ttdeci">static std::shared_ptr&lt; IPAddress &gt; LookupAnyIPAddress(const std::string &amp;host, int family=AF_INET, int type=0, int protocol=0)</div><div class="ttdoc">通过host地址返回对应条件的任意IPAddress</div><div class="ttdef"><b>Definition:</b> address.cc:37</div></div>
+<div class="ttc" id="aclasswinter_1_1Address_html_afdab5377a486a18b38c927074b9bb7ec"><div class="ttname"><a href="classwinter_1_1Address.html#afdab5377a486a18b38c927074b9bb7ec">winter::Address::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdoc">返回可读性字符串</div><div class="ttdef"><b>Definition:</b> address.cc:198</div></div>
+<div class="ttc" id="aclasswinter_1_1IPAddress_html"><div class="ttname"><a href="classwinter_1_1IPAddress.html">winter::IPAddress</a></div><div class="ttdoc">IP地址的基类</div><div class="ttdef"><b>Definition:</b> address.h:143</div></div>
+<div class="ttc" id="aclasswinter_1_1IPAddress_html_a0c78356fb1554277df370db7e2ced25a"><div class="ttname"><a href="classwinter_1_1IPAddress.html#a0c78356fb1554277df370db7e2ced25a">winter::IPAddress::networdAddress</a></div><div class="ttdeci">virtual IPAddress::ptr networdAddress(uint32_t prefix_len)=0</div><div class="ttdoc">获取该地址的网段</div></div>
+<div class="ttc" id="aclasswinter_1_1IPAddress_html_a3099488065e0425e7cc13ea66979c976"><div class="ttname"><a href="classwinter_1_1IPAddress.html#a3099488065e0425e7cc13ea66979c976">winter::IPAddress::broadcastAddress</a></div><div class="ttdeci">virtual IPAddress::ptr broadcastAddress(uint32_t prefix_len)=0</div><div class="ttdoc">获取该地址的广播地址</div></div>
+<div class="ttc" id="aclasswinter_1_1IPAddress_html_a9718fbd9719a73a79cdec11737362855"><div class="ttname"><a href="classwinter_1_1IPAddress.html#a9718fbd9719a73a79cdec11737362855">winter::IPAddress::Create</a></div><div class="ttdeci">static IPAddress::ptr Create(const char *address, uint16_t port=0)</div><div class="ttdoc">通过域名,IP,服务器名创建IPAddress</div><div class="ttdef"><b>Definition:</b> address.cc:246</div></div>
+<div class="ttc" id="aclasswinter_1_1IPAddress_html_acfb779bd8d337ab9dd825339f44344de"><div class="ttname"><a href="classwinter_1_1IPAddress.html#acfb779bd8d337ab9dd825339f44344de">winter::IPAddress::subnetMask</a></div><div class="ttdeci">virtual IPAddress::ptr subnetMask(uint32_t prefix_len)=0</div><div class="ttdoc">获取子网掩码地址</div></div>
+<div class="ttc" id="aclasswinter_1_1IPAddress_html_ad244483866750d98ca27e0fea7bbff21"><div class="ttname"><a href="classwinter_1_1IPAddress.html#ad244483866750d98ca27e0fea7bbff21">winter::IPAddress::setPort</a></div><div class="ttdeci">virtual void setPort(uint16_t v)=0</div><div class="ttdoc">设置端口号</div></div>
+<div class="ttc" id="aclasswinter_1_1IPAddress_html_ae1d2effeeda38a919f1ee71a69ac92b7"><div class="ttname"><a href="classwinter_1_1IPAddress.html#ae1d2effeeda38a919f1ee71a69ac92b7">winter::IPAddress::getPort</a></div><div class="ttdeci">virtual uint32_t getPort() const =0</div><div class="ttdoc">返回端口号</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html"><div class="ttname"><a href="classwinter_1_1IPv4Address.html">winter::IPv4Address</a></div><div class="ttdoc">IPv4地址</div><div class="ttdef"><b>Definition:</b> address.h:190</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_a0870ec1062f3d4c2e482f17ba28eea52"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#a0870ec1062f3d4c2e482f17ba28eea52">winter::IPv4Address::getAddrLen</a></div><div class="ttdeci">socklen_t getAddrLen() const override</div><div class="ttdoc">返回sockaddr的长度</div><div class="ttdef"><b>Definition:</b> address.cc:307</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_a0c1a750761958be05d2e897de5565dcb"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#a0c1a750761958be05d2e897de5565dcb">winter::IPv4Address::networdAddress</a></div><div class="ttdeci">IPAddress::ptr networdAddress(uint32_t prefix_len) override</div><div class="ttdoc">获取该地址的网段</div><div class="ttdef"><b>Definition:</b> address.cc:332</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_a384d1593a6bc10d305f72027b4b13c67"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#a384d1593a6bc10d305f72027b4b13c67">winter::IPv4Address::setPort</a></div><div class="ttdeci">void setPort(uint16_t v) override</div><div class="ttdoc">设置端口号</div><div class="ttdef"><b>Definition:</b> address.cc:355</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_a3e617d4534071d9e07b66e1869c32939"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#a3e617d4534071d9e07b66e1869c32939">winter::IPv4Address::insert</a></div><div class="ttdeci">std::ostream &amp; insert(std::ostream &amp;os) const override</div><div class="ttdoc">可读性输出地址</div><div class="ttdef"><b>Definition:</b> address.cc:311</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_a72b54488b4cd6012aaa787d63dc3c3dc"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#a72b54488b4cd6012aaa787d63dc3c3dc">winter::IPv4Address::broadcastAddress</a></div><div class="ttdeci">IPAddress::ptr broadcastAddress(uint32_t prefix_len) override</div><div class="ttdoc">获取该地址的广播地址</div><div class="ttdef"><b>Definition:</b> address.cc:321</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_a7b3f3064190f6608ce94bd2662e0c4c7"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#a7b3f3064190f6608ce94bd2662e0c4c7">winter::IPv4Address::IPv4Address</a></div><div class="ttdeci">IPv4Address(const sockaddr_in &amp;address)</div><div class="ttdoc">通过sockaddr_in构造IPv4Address</div><div class="ttdef"><b>Definition:</b> address.cc:288</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_a9dbc5f78aaf138d9421c1a7239def66c"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#a9dbc5f78aaf138d9421c1a7239def66c">winter::IPv4Address::subnetMask</a></div><div class="ttdeci">IPAddress::ptr subnetMask(uint32_t prefix_len) override</div><div class="ttdoc">获取子网掩码地址</div><div class="ttdef"><b>Definition:</b> address.cc:343</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_aae5df0b452f02dd9f7b6bb95f34b764d"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#aae5df0b452f02dd9f7b6bb95f34b764d">winter::IPv4Address::Create</a></div><div class="ttdeci">static IPv4Address::ptr Create(const char *address, uint16_t port=0)</div><div class="ttdoc">使用点分十进制地址创建IPv4Address</div><div class="ttdef"><b>Definition:</b> address.cc:275</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_ad5679de2bb805b68d07ab3899394f98c"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#ad5679de2bb805b68d07ab3899394f98c">winter::IPv4Address::getAddr</a></div><div class="ttdeci">const sockaddr * getAddr() const override</div><div class="ttdoc">返回sockaddr指针,只读</div><div class="ttdef"><b>Definition:</b> address.cc:303</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv4Address_html_aded3875cd5dee5eb9388a88369d8a76e"><div class="ttname"><a href="classwinter_1_1IPv4Address.html#aded3875cd5dee5eb9388a88369d8a76e">winter::IPv4Address::getPort</a></div><div class="ttdeci">uint32_t getPort() const override</div><div class="ttdoc">返回端口号</div><div class="ttdef"><b>Definition:</b> address.cc:351</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html"><div class="ttname"><a href="classwinter_1_1IPv6Address.html">winter::IPv6Address</a></div><div class="ttdoc">IPv6地址</div><div class="ttdef"><b>Definition:</b> address.h:232</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_a21c270641060b95d6ce0ded4cc9c3689"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#a21c270641060b95d6ce0ded4cc9c3689">winter::IPv6Address::broadcastAddress</a></div><div class="ttdeci">IPAddress::ptr broadcastAddress(uint32_t prefix_len) override</div><div class="ttdoc">获取该地址的广播地址</div><div class="ttdef"><b>Definition:</b> address.cc:426</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_a27c0a1861e3c8aec4523d7304bf1dc71"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#a27c0a1861e3c8aec4523d7304bf1dc71">winter::IPv6Address::Create</a></div><div class="ttdeci">static IPv6Address::ptr Create(const char *address, uint16_t port=0)</div><div class="ttdoc">通过IPv6地址字符串构造IPv6Address</div><div class="ttdef"><b>Definition:</b> address.cc:359</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_a29189b6c84a3b226e49e1dde5cad78f7"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#a29189b6c84a3b226e49e1dde5cad78f7">winter::IPv6Address::getAddrLen</a></div><div class="ttdeci">socklen_t getAddrLen() const override</div><div class="ttdoc">返回sockaddr的长度</div><div class="ttdef"><b>Definition:</b> address.cc:396</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_a3e475c83ba43d5831b978401e1dcfe6e"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#a3e475c83ba43d5831b978401e1dcfe6e">winter::IPv6Address::setPort</a></div><div class="ttdeci">void setPort(uint16_t v) override</div><div class="ttdoc">设置端口号</div><div class="ttdef"><b>Definition:</b> address.cc:463</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_a5d9540aae305cb80ff68f38ecae44a7b"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#a5d9540aae305cb80ff68f38ecae44a7b">winter::IPv6Address::networdAddress</a></div><div class="ttdeci">IPAddress::ptr networdAddress(uint32_t prefix_len) override</div><div class="ttdoc">获取该地址的网段</div><div class="ttdef"><b>Definition:</b> address.cc:436</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_a6db3a0ba106df981e3c876bc92e942be"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#a6db3a0ba106df981e3c876bc92e942be">winter::IPv6Address::getAddr</a></div><div class="ttdeci">const sockaddr * getAddr() const override</div><div class="ttdoc">返回sockaddr指针,只读</div><div class="ttdef"><b>Definition:</b> address.cc:392</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_ac87090a6d4a3c445ffa07d2ef0bd4d2e"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#ac87090a6d4a3c445ffa07d2ef0bd4d2e">winter::IPv6Address::getPort</a></div><div class="ttdeci">uint32_t getPort() const override</div><div class="ttdoc">返回端口号</div><div class="ttdef"><b>Definition:</b> address.cc:459</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_ad1e984b9a35bd06aec89f6ca4856ca91"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#ad1e984b9a35bd06aec89f6ca4856ca91">winter::IPv6Address::insert</a></div><div class="ttdeci">std::ostream &amp; insert(std::ostream &amp;os) const override</div><div class="ttdoc">可读性输出地址</div><div class="ttdef"><b>Definition:</b> address.cc:400</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_ae22f4c577c39aac55e6ab8ace5c2cbf5"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#ae22f4c577c39aac55e6ab8ace5c2cbf5">winter::IPv6Address::IPv6Address</a></div><div class="ttdeci">IPv6Address()</div><div class="ttdoc">无参构造函数</div><div class="ttdef"><b>Definition:</b> address.cc:372</div></div>
+<div class="ttc" id="aclasswinter_1_1IPv6Address_html_afa386caee18d49f3307648bf7d10af65"><div class="ttname"><a href="classwinter_1_1IPv6Address.html#afa386caee18d49f3307648bf7d10af65">winter::IPv6Address::subnetMask</a></div><div class="ttdeci">IPAddress::ptr subnetMask(uint32_t prefix_len) override</div><div class="ttdoc">获取子网掩码地址</div><div class="ttdef"><b>Definition:</b> address.cc:446</div></div>
+<div class="ttc" id="aclasswinter_1_1UnixAddress_html"><div class="ttname"><a href="classwinter_1_1UnixAddress.html">winter::UnixAddress</a></div><div class="ttdoc">UnixSocket地址</div><div class="ttdef"><b>Definition:</b> address.h:276</div></div>
+<div class="ttc" id="aclasswinter_1_1UnixAddress_html_a2f15274758bacb36c2e83650c9d5e9e3"><div class="ttname"><a href="classwinter_1_1UnixAddress.html#a2f15274758bacb36c2e83650c9d5e9e3">winter::UnixAddress::getAddr</a></div><div class="ttdeci">const sockaddr * getAddr() const override</div><div class="ttdoc">返回sockaddr指针,只读</div><div class="ttdef"><b>Definition:</b> address.cc:499</div></div>
+<div class="ttc" id="aclasswinter_1_1UnixAddress_html_a3de36798c0278cb41db93d56432a20db"><div class="ttname"><a href="classwinter_1_1UnixAddress.html#a3de36798c0278cb41db93d56432a20db">winter::UnixAddress::UnixAddress</a></div><div class="ttdeci">UnixAddress()</div><div class="ttdoc">无参构造函数</div><div class="ttdef"><b>Definition:</b> address.cc:469</div></div>
+<div class="ttc" id="aclasswinter_1_1UnixAddress_html_a3e00041563916d3acee99411b694743a"><div class="ttname"><a href="classwinter_1_1UnixAddress.html#a3e00041563916d3acee99411b694743a">winter::UnixAddress::getAddrLen</a></div><div class="ttdeci">socklen_t getAddrLen() const override</div><div class="ttdoc">返回sockaddr的长度</div><div class="ttdef"><b>Definition:</b> address.cc:503</div></div>
+<div class="ttc" id="aclasswinter_1_1UnixAddress_html_a4c3c57e1d480691e6e7d708bf21f458d"><div class="ttname"><a href="classwinter_1_1UnixAddress.html#a4c3c57e1d480691e6e7d708bf21f458d">winter::UnixAddress::insert</a></div><div class="ttdeci">std::ostream &amp; insert(std::ostream &amp;os) const override</div><div class="ttdoc">可读性输出地址</div><div class="ttdef"><b>Definition:</b> address.cc:507</div></div>
+<div class="ttc" id="aclasswinter_1_1UnknownAddress_html"><div class="ttname"><a href="classwinter_1_1UnknownAddress.html">winter::UnknownAddress</a></div><div class="ttdoc">未知地址</div><div class="ttdef"><b>Definition:</b> address.h:304</div></div>
+<div class="ttc" id="aclasswinter_1_1UnknownAddress_html_a053cc57a955200cbd72922cd62c8792e"><div class="ttname"><a href="classwinter_1_1UnknownAddress.html#a053cc57a955200cbd72922cd62c8792e">winter::UnknownAddress::getAddr</a></div><div class="ttdeci">const sockaddr * getAddr() const override</div><div class="ttdoc">返回sockaddr指针,只读</div><div class="ttdef"><b>Definition:</b> address.cc:529</div></div>
+<div class="ttc" id="aclasswinter_1_1UnknownAddress_html_aa39a3e15708d25daca2e5b1bff9cdc34"><div class="ttname"><a href="classwinter_1_1UnknownAddress.html#aa39a3e15708d25daca2e5b1bff9cdc34">winter::UnknownAddress::getAddrLen</a></div><div class="ttdeci">socklen_t getAddrLen() const override</div><div class="ttdoc">返回sockaddr的长度</div><div class="ttdef"><b>Definition:</b> address.cc:533</div></div>
+<div class="ttc" id="aclasswinter_1_1UnknownAddress_html_ab3ccd7621645d22b0fdb7952bdad25c7"><div class="ttname"><a href="classwinter_1_1UnknownAddress.html#ab3ccd7621645d22b0fdb7952bdad25c7">winter::UnknownAddress::insert</a></div><div class="ttdeci">std::ostream &amp; insert(std::ostream &amp;os) const override</div><div class="ttdoc">可读性输出地址</div><div class="ttdef"><b>Definition:</b> address.cc:537</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

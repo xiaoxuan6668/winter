@@ -1,0 +1,230 @@
+\doxysection{winter\+::Uri类 参考}
+\label{classwinter_1_1Uri}\index{winter::Uri@{winter::Uri}}
+
+
+URI类  
+
+
+
+
+{\ttfamily \#include $<$uri.\+h$>$}
+
+
+
+winter\+::Uri 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Uri_ab4cd9e7f1796a48790f331f1e50b5fe7}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Uri} $>$ \textbf{ ptr}
+\begin{DoxyCompactList}\small\item\em 智能指针类型定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Uri_a641cc0eac7d779063ed791184e123043}} 
+\textbf{ Uri} ()
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_af918fb7bd2b100eace6d6c617d55d780}} 
+const std\+::string \& \textbf{ get\+Scheme} () const
+\begin{DoxyCompactList}\small\item\em 返回scheme \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_afb008277cb7546be20a14e222cb6a9c4}} 
+const std\+::string \& \textbf{ get\+Userinfo} () const
+\begin{DoxyCompactList}\small\item\em 返回用户信息 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_a2bce11661f6da79426c7224d56542824}} 
+const std\+::string \& \textbf{ get\+Host} () const
+\begin{DoxyCompactList}\small\item\em 返回host \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_aa00bdae6258c3e973e008bc76911b9ed}} 
+const std\+::string \& \textbf{ get\+Path} () const
+\begin{DoxyCompactList}\small\item\em 返回路径 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_acdcaaee9b15a4293a2809e67d896fb42}} 
+const std\+::string \& \textbf{ get\+Query} () const
+\begin{DoxyCompactList}\small\item\em 返回查询条件 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_ad8b7a3d8f6405cee010ec21b2329e260}} 
+const std\+::string \& \textbf{ get\+Fragment} () const
+\begin{DoxyCompactList}\small\item\em 返回fragment \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_a1d103fdef089f1c3fce8a4e0439ab8c5}} 
+int32\+\_\+t \textbf{ get\+Port} () const
+\begin{DoxyCompactList}\small\item\em 返回端口 \end{DoxyCompactList}\item 
+void \textbf{ set\+Scheme} (const std\+::string \&v)
+\begin{DoxyCompactList}\small\item\em 设置scheme \end{DoxyCompactList}\item 
+void \textbf{ set\+Userinfo} (const std\+::string \&v)
+\begin{DoxyCompactList}\small\item\em 设置用户信息 \end{DoxyCompactList}\item 
+void \textbf{ set\+Host} (const std\+::string \&v)
+\begin{DoxyCompactList}\small\item\em 设置host信息 \end{DoxyCompactList}\item 
+void \textbf{ set\+Path} (const std\+::string \&v)
+\begin{DoxyCompactList}\small\item\em 设置路径 \end{DoxyCompactList}\item 
+void \textbf{ set\+Query} (const std\+::string \&v)
+\begin{DoxyCompactList}\small\item\em 设置查询条件 \end{DoxyCompactList}\item 
+void \textbf{ set\+Fragment} (const std\+::string \&v)
+\begin{DoxyCompactList}\small\item\em 设置fragment \end{DoxyCompactList}\item 
+void \textbf{ set\+Port} (int32\+\_\+t v)
+\begin{DoxyCompactList}\small\item\em 设置端口号 \end{DoxyCompactList}\item 
+std\+::ostream \& \textbf{ dump} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em 序列化到输出流 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_af0a1ab35b0a207f6468b974953dac485}} 
+std\+::string \textbf{ to\+String} () const
+\begin{DoxyCompactList}\small\item\em 转成字符串 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Uri_a9556873bc7b86cd63ddac6f1ac5b29b4}} 
+Address\+::ptr \textbf{ create\+Address} () const
+\begin{DoxyCompactList}\small\item\em 获取\+Address \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ Uri\+::ptr} \textbf{ Create} (const std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em 创建\+Uri对象 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+URI类 
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1Uri_abe24d8a57d01e1f84fd724a2a5bfb342}} 
+\index{winter::Uri@{winter::Uri}!Create@{Create}}
+\index{Create@{Create}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{Create()}
+{\footnotesize\ttfamily \textbf{ Uri\+::ptr} winter\+::\+Uri\+::\+Create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+创建\+Uri对象 
+
+
+\begin{DoxyParams}{参数}
+{\em uri} & uri字符串 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+解析成功返回\+Uri对象否则返回nullptr 
+\end{DoxyReturn}
+\mbox{\label{classwinter_1_1Uri_a6b1a2bccdf66f204ab7217839cde52b1}} 
+\index{winter::Uri@{winter::Uri}!dump@{dump}}
+\index{dump@{dump}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{dump()}
+{\footnotesize\ttfamily std\+::ostream \& winter\+::\+Uri\+::dump (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+序列化到输出流 
+
+
+\begin{DoxyParams}{参数}
+{\em os} & 输出流 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+输出流 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 1
+\mbox{\label{classwinter_1_1Uri_a658bbec9b4eee675dc667cc6b896ab54}} 
+\index{winter::Uri@{winter::Uri}!setFragment@{setFragment}}
+\index{setFragment@{setFragment}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{setFragment()}
+{\footnotesize\ttfamily void winter\+::\+Uri\+::set\+Fragment (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置fragment 
+
+
+\begin{DoxyParams}{参数}
+{\em v} & fragment \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1Uri_a5e5f2c31dcba7af746cd35418d92e338}} 
+\index{winter::Uri@{winter::Uri}!setHost@{setHost}}
+\index{setHost@{setHost}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{setHost()}
+{\footnotesize\ttfamily void winter\+::\+Uri\+::set\+Host (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置host信息 
+
+
+\begin{DoxyParams}{参数}
+{\em v} & host \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1Uri_a2b61c41e743f76f4ed0661cf38602ace}} 
+\index{winter::Uri@{winter::Uri}!setPath@{setPath}}
+\index{setPath@{setPath}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{setPath()}
+{\footnotesize\ttfamily void winter\+::\+Uri\+::set\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置路径 
+
+
+\begin{DoxyParams}{参数}
+{\em v} & 路径 \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1Uri_a7c7f6407034b4c1440253d90cd94f2de}} 
+\index{winter::Uri@{winter::Uri}!setPort@{setPort}}
+\index{setPort@{setPort}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{setPort()}
+{\footnotesize\ttfamily void winter\+::\+Uri\+::set\+Port (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置端口号 
+
+
+\begin{DoxyParams}{参数}
+{\em v} & 端口 \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1Uri_a957b977314142feead1fbfe43afbb5f6}} 
+\index{winter::Uri@{winter::Uri}!setQuery@{setQuery}}
+\index{setQuery@{setQuery}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{setQuery()}
+{\footnotesize\ttfamily void winter\+::\+Uri\+::set\+Query (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置查询条件 
+
+
+\begin{DoxyParams}{参数}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1Uri_a7795b23ba05ec72042707c52b6bce1dd}} 
+\index{winter::Uri@{winter::Uri}!setScheme@{setScheme}}
+\index{setScheme@{setScheme}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{setScheme()}
+{\footnotesize\ttfamily void winter\+::\+Uri\+::set\+Scheme (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置scheme 
+
+
+\begin{DoxyParams}{参数}
+{\em v} & scheme \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1Uri_a08e9ba9085d08d8c34d1136ccb8e985b}} 
+\index{winter::Uri@{winter::Uri}!setUserinfo@{setUserinfo}}
+\index{setUserinfo@{setUserinfo}!winter::Uri@{winter::Uri}}
+\doxysubsubsection{setUserinfo()}
+{\footnotesize\ttfamily void winter\+::\+Uri\+::set\+Userinfo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置用户信息 
+
+
+\begin{DoxyParams}{参数}
+{\em v} & 用户信息 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ uri.\+h}\item 
+uri.\+rl.\+cc\end{DoxyCompactItemize}

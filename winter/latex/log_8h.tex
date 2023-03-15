@@ -1,0 +1,138 @@
+\doxysection{log.\+h 文件参考}
+\label{log_8h}\index{log.h@{log.h}}
+
+
+日志模块封装  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}singleton.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thread.\+h\char`\"{}}\newline
+log.\+h 的引用(Include)关系图\+:
+% FIG 0
+此图展示该文件直接或间接的被哪些文件引用了\+:
+% FIG 1
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ winter\+::\+Log\+Level}
+\begin{DoxyCompactList}\small\item\em 日志级别 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Log\+Event}
+\begin{DoxyCompactList}\small\item\em 日志事件 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Log\+Event\+Wrap}
+\begin{DoxyCompactList}\small\item\em 日志事件包装器 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Log\+Formatter}
+\begin{DoxyCompactList}\small\item\em 日志格式化 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Log\+Formatter\+::\+Format\+Item}
+\begin{DoxyCompactList}\small\item\em 日志内容项格式化 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Log\+Appender}
+\begin{DoxyCompactList}\small\item\em 日志输出目标 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Logger}
+\begin{DoxyCompactList}\small\item\em 日志器 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Stdout\+Log\+Appender}
+\begin{DoxyCompactList}\small\item\em 输出到控制台的\+Appender \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+File\+Log\+Appender}
+\begin{DoxyCompactList}\small\item\em 输出到文件的\+Appender \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Logger\+Manager}
+\begin{DoxyCompactList}\small\item\em 日志器管理类 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+LEVEL}(logger,  level)
+\begin{DoxyCompactList}\small\item\em 使用流式方式将日志级别level的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_afe71b448a50b4ea97b8d4df8e4e1de95}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+DEBUG}(logger)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+DEBUG})
+\begin{DoxyCompactList}\small\item\em 使用流式方式将日志级别debug的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_adb0bc969d93898a83f24f46a55a3eb80}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+INFO}(logger)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+INFO})
+\begin{DoxyCompactList}\small\item\em 使用流式方式将日志级别info的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_aa3449ecd0c8a2060cc531310cc41f741}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+WARN}(logger)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+WARN})
+\begin{DoxyCompactList}\small\item\em 使用流式方式将日志级别warn的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_a119bb0f9690791712092f86c687ae262}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+ERROR}(logger)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+ERROR})
+\begin{DoxyCompactList}\small\item\em 使用流式方式将日志级别error的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_a22c031214503a1dc18fd1aca3d31b845}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+FATAL}(logger)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+FATAL})
+\begin{DoxyCompactList}\small\item\em 使用流式方式将日志级别fatal的日志写入到logger \end{DoxyCompactList}\item 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+LEVEL}(logger,  level,  fmt, ...)
+\begin{DoxyCompactList}\small\item\em 使用格式化方式将日志级别level的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_a9708c3e3857a61af56b60aef636353a1}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+DEBUG}(logger,  fmt, ...)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+DEBUG}, fmt, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 使用格式化方式将日志级别debug的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_a93430ef5aebf97c4c0733dfd5f0acb18}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+INFO}(logger,  fmt, ...)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+INFO}, fmt, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 使用格式化方式将日志级别info的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_ae924f5dc9e78ade27af9f7922807ee54}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+WARN}(logger,  fmt, ...)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+WARN}, fmt, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 使用格式化方式将日志级别warn的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_abb336f1764f2032e9ff78a78e1b832d9}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+ERROR}(logger,  fmt, ...)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+ERROR}, fmt, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 使用格式化方式将日志级别error的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_ada294b263b079b6a00b5be17ccb583a4}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+FATAL}(logger,  fmt, ...)~\textbf{ WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+LEVEL}(logger, \textbf{ winter\+::\+Log\+Level\+::\+FATAL}, fmt, \+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 使用格式化方式将日志级别fatal的日志写入到logger \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_acc515589ee3115aea1874c7a5dcfdb4d}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+ROOT}()~\textbf{ winter\+::\+Logger\+Mgr\+::\+Get\+Instance}()-\/$>$get\+Root()
+\begin{DoxyCompactList}\small\item\em 获取主日志器 \end{DoxyCompactList}\item 
+\mbox{\label{log_8h_a3135f0042c9ac12a88dc091c5f550247}} 
+\#define \textbf{ WINTER\+\_\+\+LOG\+\_\+\+NAME}(name)~\textbf{ winter\+::\+Logger\+Mgr\+::\+Get\+Instance}()-\/$>$get\+Logger(name)
+\begin{DoxyCompactList}\small\item\em 获取name的日志器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{log_8h_aa0342824e036783ad0170c2f9bc32958}} 
+typedef \textbf{ winter\+::\+Singleton}$<$ Logger\+Manager $>$ \textbf{ winter\+::\+Logger\+Mgr}
+\begin{DoxyCompactList}\small\item\em 日志器管理类单例模式 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+日志模块封装 
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\label{log_8h_a14d399aefb3808866f3010e8a38ffa99}} 
+\index{log.h@{log.h}!WINTER\_LOG\_FMT\_LEVEL@{WINTER\_LOG\_FMT\_LEVEL}}
+\index{WINTER\_LOG\_FMT\_LEVEL@{WINTER\_LOG\_FMT\_LEVEL}!log.h@{log.h}}
+\doxysubsubsection{WINTER\_LOG\_FMT\_LEVEL}
+{\footnotesize\ttfamily \#define WINTER\+\_\+\+LOG\+\_\+\+FMT\+\_\+\+LEVEL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{level,  }\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(logger-\/>getLevel() <= level) \(\backslash\)}
+\DoxyCodeLine{        winter::LogEventWrap(winter::LogEvent::ptr(\textcolor{keyword}{new} winter::LogEvent(logger, level, \(\backslash\)}
+\DoxyCodeLine{                        \_\_FILE\_\_, \_\_LINE\_\_, 0, winter::GetThreadId(),\(\backslash\)}
+\DoxyCodeLine{                winter::GetFiberId(), time(0), winter::Thread::GetName()))).getEvent()-\/>format(fmt, \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+
+
+使用格式化方式将日志级别level的日志写入到logger 
+
+\mbox{\label{log_8h_a5c9c301dde1ff7a6f1fa40c2d2eb2154}} 
+\index{log.h@{log.h}!WINTER\_LOG\_LEVEL@{WINTER\_LOG\_LEVEL}}
+\index{WINTER\_LOG\_LEVEL@{WINTER\_LOG\_LEVEL}!log.h@{log.h}}
+\doxysubsubsection{WINTER\_LOG\_LEVEL}
+{\footnotesize\ttfamily \#define WINTER\+\_\+\+LOG\+\_\+\+LEVEL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{level }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    winter::LogEventWrap(winter::LogEvent::ptr(\textcolor{keyword}{new} winter::LogEvent(logger, level, \(\backslash\)}
+\DoxyCodeLine{                        \_\_FILE\_\_, \_\_LINE\_\_, 0, winter::GetThreadId(),\(\backslash\)}
+\DoxyCodeLine{                winter::GetFiberId(), time(0), winter::Thread::GetName()))).getSS()}
+
+\end{DoxyCode}
+
+
+使用流式方式将日志级别level的日志写入到logger 
+

@@ -1,3 +1,7 @@
+/**
+ * @file http_connection.h
+ * @brief HTTP客户端类
+ */
 #ifndef __WINTER_HTTP_CONNECTION_H__
 #define __WINTER_HTTP_CONNECTION_H__
 

@@ -1,0 +1,76 @@
+\doxysection{winter\+::Unix\+Address类 参考}
+\label{classwinter_1_1UnixAddress}\index{winter::UnixAddress@{winter::UnixAddress}}
+
+
+Unix\+Socket地址  
+
+
+
+
+{\ttfamily \#include $<$address.\+h$>$}
+
+
+
+类 winter\+::Unix\+Address 继承关系图\+:
+% FIG 0
+
+
+winter\+::Unix\+Address 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1UnixAddress_a1268aa7a43a06b2429d0716e63b524dc}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Unix\+Address} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1UnixAddress_a3de36798c0278cb41db93d56432a20db}} 
+\textbf{ Unix\+Address} ()
+\begin{DoxyCompactList}\small\item\em 无参构造函数 \end{DoxyCompactList}\item 
+\textbf{ Unix\+Address} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em 通过路径构造\+Unix\+Address \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1UnixAddress_a2f15274758bacb36c2e83650c9d5e9e3}} 
+const sockaddr $\ast$ \textbf{ get\+Addr} () const override
+\begin{DoxyCompactList}\small\item\em 返回sockaddr指针,只读 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1UnixAddress_a76028d216fcee162b8e817c650f34cfd}} 
+sockaddr $\ast$ \textbf{ get\+Addr} () override
+\begin{DoxyCompactList}\small\item\em 返回sockaddr指针,读写 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1UnixAddress_a3e00041563916d3acee99411b694743a}} 
+socklen\+\_\+t \textbf{ get\+Addr\+Len} () const override
+\begin{DoxyCompactList}\small\item\em 返回sockaddr的长度 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1UnixAddress_a7107d946bca6a787d6ae5684a8f86ead}} 
+void {\bfseries set\+Addr\+Len} (uint32\+\_\+t v)
+\item 
+\mbox{\label{classwinter_1_1UnixAddress_a4c3c57e1d480691e6e7d708bf21f458d}} 
+std\+::ostream \& \textbf{ insert} (std\+::ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em 可读性输出地址 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+Unix\+Socket地址 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{classwinter_1_1UnixAddress_a66e42cc0da706c44a945edefcb1cc150}} 
+\index{winter::UnixAddress@{winter::UnixAddress}!UnixAddress@{UnixAddress}}
+\index{UnixAddress@{UnixAddress}!winter::UnixAddress@{winter::UnixAddress}}
+\doxysubsubsection{UnixAddress()}
+{\footnotesize\ttfamily winter\+::\+Unix\+Address\+::\+Unix\+Address (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+通过路径构造\+Unix\+Address 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em path} & Unix\+Socket路径(长度小于\+UNIX\+\_\+\+PATH\+\_\+\+MAX) \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ address.\+h}\item 
+address.\+cc\end{DoxyCompactItemize}

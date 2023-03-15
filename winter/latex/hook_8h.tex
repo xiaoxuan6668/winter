@@ -1,0 +1,165 @@
+\doxysection{hook.\+h 文件参考}
+\label{hook_8h}\index{hook.h@{hook.h}}
+
+
+hook函数封装  
+
+
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+hook.\+h 的引用(Include)关系图\+:
+% FIG 0
+\doxysubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{hook_8h_a6510c2594c6ec655c5d854be1be1549f}} 
+typedef unsigned int($\ast$ {\bfseries sleep\+\_\+fun}) (unsigned int seconds)
+\item 
+\mbox{\label{hook_8h_a9d19c22dd0de93ddd011ff3e933ea326}} 
+typedef int($\ast$ {\bfseries usleep\+\_\+fun}) (useconds\+\_\+t usec)
+\item 
+\mbox{\label{hook_8h_af020bdfceabb83ef6a37b67c86214552}} 
+typedef int($\ast$ {\bfseries nanosleep\+\_\+fun}) (const struct timespec $\ast$req, struct timespec $\ast$rem)
+\item 
+\mbox{\label{hook_8h_a85d5dc60114c1d08607f796a65ade6cf}} 
+typedef int($\ast$ {\bfseries socket\+\_\+fun}) (int domain, int type, int protocol)
+\item 
+\mbox{\label{hook_8h_a9c525f49b1905bdd7c9518de634095b4}} 
+typedef int($\ast$ {\bfseries connect\+\_\+fun}) (int sockfd, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen)
+\item 
+\mbox{\label{hook_8h_ad9f6ac4c3e23c52bdf2624783cf21aa1}} 
+typedef int($\ast$ {\bfseries accept\+\_\+fun}) (int s, struct sockaddr $\ast$addr, socklen\+\_\+t $\ast$addrlen)
+\item 
+\mbox{\label{hook_8h_ac06e8f91c1ec6b5577cdfbb6af388c33}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries read\+\_\+fun}) (int fd, void $\ast$buf, size\+\_\+t count)
+\item 
+\mbox{\label{hook_8h_af11acd9b3568d3a49fa500f0823e2aaf}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries readv\+\_\+fun}) (int fd, const struct iovec $\ast$iov, int iovcnt)
+\item 
+\mbox{\label{hook_8h_ad6533d1e274b2406b8ba3698c14297c9}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries recv\+\_\+fun}) (int sockfd, void $\ast$buf, size\+\_\+t len, int flags)
+\item 
+\mbox{\label{hook_8h_aab76f00d0714aedcbf8860cd5b5ac021}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries recvfrom\+\_\+fun}) (int sockfd, void $\ast$buf, size\+\_\+t len, int flags, struct sockaddr $\ast$src\+\_\+addr, socklen\+\_\+t $\ast$addrlen)
+\item 
+\mbox{\label{hook_8h_a96ac40f3edbae56ca6099c056d1b3637}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries recvmsg\+\_\+fun}) (int sockfd, struct msghdr $\ast$msg, int flags)
+\item 
+\mbox{\label{hook_8h_a4fc648bec0927b048dfdc84f120d4448}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries write\+\_\+fun}) (int fd, const void $\ast$buf, size\+\_\+t count)
+\item 
+\mbox{\label{hook_8h_a7bc34e31d9c6379aa0b9063ed76dd268}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries writev\+\_\+fun}) (int fd, const struct iovec $\ast$iov, int iovcnt)
+\item 
+\mbox{\label{hook_8h_a961a4c859053856116df838deb37ed51}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries send\+\_\+fun}) (int s, const void $\ast$msg, size\+\_\+t len, int flags)
+\item 
+\mbox{\label{hook_8h_a53bc224b11a0c280666c126bc8f5f555}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries sendto\+\_\+fun}) (int s, const void $\ast$msg, size\+\_\+t len, int flags, const struct sockaddr $\ast$to, socklen\+\_\+t tolen)
+\item 
+\mbox{\label{hook_8h_abfc743fb9705b6f759d68691a11923fa}} 
+typedef ssize\+\_\+t($\ast$ {\bfseries sendmsg\+\_\+fun}) (int s, const struct msghdr $\ast$msg, int flags)
+\item 
+\mbox{\label{hook_8h_a1c1f3d7b9917606bfa316455a55100e2}} 
+typedef int($\ast$ {\bfseries close\+\_\+fun}) (int fd)
+\item 
+\mbox{\label{hook_8h_a13527d0ac991b8ec45cc69035475c592}} 
+typedef int($\ast$ {\bfseries fcntl\+\_\+fun}) (int fd, int cmd,...)
+\item 
+\mbox{\label{hook_8h_a376c81449d3ba67ac7097bdad1f91702}} 
+typedef int($\ast$ {\bfseries ioctl\+\_\+fun}) (int d, unsigned long int request,...)
+\item 
+\mbox{\label{hook_8h_ac028cfb1ea5160627e5d305b08810889}} 
+typedef int($\ast$ {\bfseries getsockopt\+\_\+fun}) (int sockfd, int level, int optname, void $\ast$optval, socklen\+\_\+t $\ast$optlen)
+\item 
+\mbox{\label{hook_8h_adc99c6bd07e5a3084c06b55b83fa3232}} 
+typedef int($\ast$ {\bfseries setsockopt\+\_\+fun}) (int sockfd, int level, int optname, const void $\ast$optval, socklen\+\_\+t optlen)
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{hook_8cc_af7ed2de099e372b4523a055e10235cd1}} 
+bool {\bfseries winter\+::is\+\_\+hook\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em 当前线程是否hook \end{DoxyCompactList}\item 
+\mbox{\label{hook_8cc_a2bfb2c26e50582a7f4909ef30cb5ad83}} 
+void {\bfseries winter\+::set\+\_\+hook\+\_\+enable} (bool flag)
+\begin{DoxyCompactList}\small\item\em 设置当前线程的hook状态 \end{DoxyCompactList}\item 
+\mbox{\label{hook_8h_a043892655d754216bbcf8d8eb4c3b687}} 
+int {\bfseries connect\+\_\+with\+\_\+timeout} (int fd, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen, uint64\+\_\+t timeout\+\_\+ms)
+\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{hook_8h_a28fa9f842d916efcf5cd02888151777c}} 
+sleep\+\_\+fun {\bfseries sleep\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a00747f17a364e2773f98bbed73a661ab}} 
+usleep\+\_\+fun {\bfseries usleep\+\_\+f}
+\item 
+\mbox{\label{hook_8h_aa9cfabd22e8e34e52edcd9a6dc52d6d7}} 
+nanosleep\+\_\+fun {\bfseries nanosleep\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a5c92da2058edaebc2948da048d1efe08}} 
+socket\+\_\+fun {\bfseries socket\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a2f8319664f570a791c194adbc5218753}} 
+connect\+\_\+fun {\bfseries connect\+\_\+f}
+\item 
+\mbox{\label{hook_8h_ab319e66249a1e8af1a58038dc4f97f17}} 
+accept\+\_\+fun {\bfseries accept\+\_\+f}
+\item 
+\mbox{\label{hook_8h_acf96a8abe9b6bea12e487302aa85b535}} 
+read\+\_\+fun {\bfseries read\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a112f4396291ee49da44a1e031dd51603}} 
+readv\+\_\+fun {\bfseries readv\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a288cb0fdb8677d2452fce75a7e2f2364}} 
+recv\+\_\+fun {\bfseries recv\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a567a076666812070b9dec5ed1a6f4989}} 
+recvfrom\+\_\+fun {\bfseries recvfrom\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a9a40ce88798df665aed14ed03efc95bc}} 
+recvmsg\+\_\+fun {\bfseries recvmsg\+\_\+f}
+\item 
+\mbox{\label{hook_8h_ad93804cea84b095a5103807738fb5286}} 
+write\+\_\+fun {\bfseries write\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a20264910fb49a96856e915d42317f328}} 
+writev\+\_\+fun {\bfseries writev\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a3c701d5d4319de6facdd24b95a31cf18}} 
+send\+\_\+fun {\bfseries send\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a422a97edabc8edb0cc439f65d754600c}} 
+sendto\+\_\+fun {\bfseries sendto\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a9ec84f761f2fade2a1e55e44598f6f7f}} 
+sendmsg\+\_\+fun {\bfseries sendmsg\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a3466c7d802010ddbbb95c5190a3b03d5}} 
+close\+\_\+fun {\bfseries close\+\_\+f}
+\item 
+\mbox{\label{hook_8h_abb24ea265f6aa7c740c0e6da842b6d7f}} 
+fcntl\+\_\+fun {\bfseries fcntl\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a17d068c63810b47db209546097f5bcfc}} 
+ioctl\+\_\+fun {\bfseries ioctl\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a0ccaa6f4964423584c7e5e37c2fba2f4}} 
+getsockopt\+\_\+fun {\bfseries getsockopt\+\_\+f}
+\item 
+\mbox{\label{hook_8h_a65b06a0a021b84494a58db4a03df24d2}} 
+setsockopt\+\_\+fun {\bfseries setsockopt\+\_\+f}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+hook函数封装 
+

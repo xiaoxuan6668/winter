@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: winter::Config类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>winter</b></li><li class="navelem"><a class="el" href="classwinter_1_1Config.html">Config</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classwinter_1_1Config-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">winter::Config类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ConfigVar的管理类  
+ <a href="classwinter_1_1Config.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="config_8h_source.html">config.h</a>&gt;</code></p>
+<div class="dynheader">
+winter::Config 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa5fa7bedac489970b2a02d7f86721c05"><td class="memItemLeft" align="right" valign="top"><a id="aa5fa7bedac489970b2a02d7f86721c05"></a>
+typedef std::unordered_map&lt; std::string, ConfigVarBase::ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigVarMap</b></td></tr>
+<tr class="separator:aa5fa7bedac489970b2a02d7f86721c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd71c761abe06132cdfb51f306239979"><td class="memItemLeft" align="right" valign="top"><a id="afd71c761abe06132cdfb51f306239979"></a>
+typedef <a class="el" href="classwinter_1_1RWMutex.html">RWMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RWMutexType</b></td></tr>
+<tr class="separator:afd71c761abe06132cdfb51f306239979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:af6810f336963c3de02df602e42342571"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:af6810f336963c3de02df602e42342571"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classwinter_1_1ConfigVar.html">ConfigVar</a>&lt; T &gt;::ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Config.html#af6810f336963c3de02df602e42342571">Lookup</a> (const std::string &amp;name, const T &amp;default_value, const std::string &amp;description=&quot;&quot;)</td></tr>
+<tr class="memdesc:af6810f336963c3de02df602e42342571"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取/创建对应参数名的配置参数  <a href="classwinter_1_1Config.html#af6810f336963c3de02df602e42342571">更多...</a><br /></td></tr>
+<tr class="separator:af6810f336963c3de02df602e42342571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f2a0fcf76d4379b9bdac4c200c0d33"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ac7f2a0fcf76d4379b9bdac4c200c0d33"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classwinter_1_1ConfigVar.html">ConfigVar</a>&lt; T &gt;::ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Config.html#ac7f2a0fcf76d4379b9bdac4c200c0d33">Lookup</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:ac7f2a0fcf76d4379b9bdac4c200c0d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找配置参数  <a href="classwinter_1_1Config.html#ac7f2a0fcf76d4379b9bdac4c200c0d33">更多...</a><br /></td></tr>
+<tr class="separator:ac7f2a0fcf76d4379b9bdac4c200c0d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a63816cdfd1ccedc904d9c24cc6c45"><td class="memItemLeft" align="right" valign="top"><a id="a40a63816cdfd1ccedc904d9c24cc6c45"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Config.html#a40a63816cdfd1ccedc904d9c24cc6c45">LoadFromYaml</a> (const YAML::Node &amp;root)</td></tr>
+<tr class="memdesc:a40a63816cdfd1ccedc904d9c24cc6c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用YAML::Node初始化配置模块 <br /></td></tr>
+<tr class="separator:a40a63816cdfd1ccedc904d9c24cc6c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657f3cc40ac39147c8f5d479807458fe"><td class="memItemLeft" align="right" valign="top">static ConfigVarBase::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Config.html#a657f3cc40ac39147c8f5d479807458fe">LookupBase</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a657f3cc40ac39147c8f5d479807458fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找配置参数,返回配置参数的基类  <a href="classwinter_1_1Config.html#a657f3cc40ac39147c8f5d479807458fe">更多...</a><br /></td></tr>
+<tr class="separator:a657f3cc40ac39147c8f5d479807458fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28054e5da7f5a430afdd94053b2dc05b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Config.html#a28054e5da7f5a430afdd94053b2dc05b">Visit</a> (std::function&lt; void(ConfigVarBase::ptr)&gt; cb)</td></tr>
+<tr class="memdesc:a28054e5da7f5a430afdd94053b2dc05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">遍历配置模块里面所有配置项  <a href="classwinter_1_1Config.html#a28054e5da7f5a430afdd94053b2dc05b">更多...</a><br /></td></tr>
+<tr class="separator:a28054e5da7f5a430afdd94053b2dc05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>ConfigVar的管理类 </p>
+<p>提供便捷的方法创建/访问ConfigVar </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ac7f2a0fcf76d4379b9bdac4c200c0d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f2a0fcf76d4379b9bdac4c200c0d33">&#9670;&nbsp;</a></span>Lookup() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classwinter_1_1ConfigVar.html">ConfigVar</a>&lt;T&gt;::ptr winter::Config::Lookup </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查找配置参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>配置参数名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回配置参数名为name的配置参数 </dd></dl>
+
+</div>
+</div>
+<a id="af6810f336963c3de02df602e42342571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6810f336963c3de02df602e42342571">&#9670;&nbsp;</a></span>Lookup() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classwinter_1_1ConfigVar.html">ConfigVar</a>&lt;T&gt;::ptr winter::Config::Lookup </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取/创建对应参数名的配置参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>配置参数名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">default_value</td><td>参数默认值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">description</td><td>参数描述</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>获取参数名为name的配置参数,如果存在直接返回 如果不存在,创建参数配置并用default_value赋值 </p><dl class="section return"><dt>返回</dt><dd>返回对应的配置参数,如果参数名存在但是类型不匹配则返回nullptr </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">如果参数名包含非法字符[^0-9a-z_.]</td><td>抛出异常 std::invalid_argument </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a657f3cc40ac39147c8f5d479807458fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657f3cc40ac39147c8f5d479807458fe">&#9670;&nbsp;</a></span>LookupBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigVarBase::ptr winter::Config::LookupBase </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查找配置参数,返回配置参数的基类 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>配置参数名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28054e5da7f5a430afdd94053b2dc05b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28054e5da7f5a430afdd94053b2dc05b">&#9670;&nbsp;</a></span>Visit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void winter::Config::Visit </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(ConfigVarBase::ptr)&gt;&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>遍历配置模块里面所有配置项 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>配置项回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="config_8h_source.html">config.h</a></li>
+<li>config.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

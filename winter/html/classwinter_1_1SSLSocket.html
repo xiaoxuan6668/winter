@@ -1,0 +1,1063 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: winter::SSLSocket类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>winter</b></li><li class="navelem"><a class="el" href="classwinter_1_1SSLSocket.html">SSLSocket</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classwinter_1_1SSLSocket-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">winter::SSLSocket类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 winter::SSLSocket 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+<div class="dynheader">
+winter::SSLSocket 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ac6782762b3037e56760b56d8a17f0175"><td class="memItemLeft" align="right" valign="top"><a id="ac6782762b3037e56760b56d8a17f0175"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classwinter_1_1SSLSocket.html">SSLSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:ac6782762b3037e56760b56d8a17f0175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classwinter_1_1Socket"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwinter_1_1Socket')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classwinter_1_1Socket.html">winter::Socket</a></td></tr>
+<tr class="memitem:a7946d5354118316d0c299cb44cad0da5 inherit pub_types_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a7946d5354118316d0c299cb44cad0da5">Type</a> { <a class="el" href="classwinter_1_1Socket.html#a7946d5354118316d0c299cb44cad0da5a65f3479623445bb212a214ebaf2d8b4e">TCP</a> = SOCK_STREAM
+, <a class="el" href="classwinter_1_1Socket.html#a7946d5354118316d0c299cb44cad0da5a39639c1f9c2072d424d84b245f771cdc">UDP</a> = SOCK_DGRAM
+ }</td></tr>
+<tr class="memdesc:a7946d5354118316d0c299cb44cad0da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket类型  <a href="classwinter_1_1Socket.html#a7946d5354118316d0c299cb44cad0da5">更多...</a><br /></td></tr>
+<tr class="separator:a7946d5354118316d0c299cb44cad0da5 inherit pub_types_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29e7bef75bd74877c5543ecc06e5625 inherit pub_types_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ad29e7bef75bd74877c5543ecc06e5625">Family</a> { <a class="el" href="classwinter_1_1Socket.html#ad29e7bef75bd74877c5543ecc06e5625ac1f32e472afbaa78b2dc27c94a699199">IPv4</a> = AF_INET
+, <a class="el" href="classwinter_1_1Socket.html#ad29e7bef75bd74877c5543ecc06e5625acb0fa78ffd17cf8478b2f4bd97591b3d">IPv6</a> = AF_INET6
+, <a class="el" href="classwinter_1_1Socket.html#ad29e7bef75bd74877c5543ecc06e5625acc139d92afcb6e3072db291c68ca1b06">UNIX</a> = AF_UNIX
+ }</td></tr>
+<tr class="memdesc:ad29e7bef75bd74877c5543ecc06e5625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket协议簇  <a href="classwinter_1_1Socket.html#ad29e7bef75bd74877c5543ecc06e5625">更多...</a><br /></td></tr>
+<tr class="separator:ad29e7bef75bd74877c5543ecc06e5625 inherit pub_types_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d7f21ffc8050784345d47751c85db9 inherit pub_types_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a70d7f21ffc8050784345d47751c85db9"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classwinter_1_1Socket.html">Socket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:a70d7f21ffc8050784345d47751c85db9 inherit pub_types_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0ea302ef1c10d2f34fbdf8961560a2 inherit pub_types_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="adb0ea302ef1c10d2f34fbdf8961560a2"></a>
+typedef std::weak_ptr&lt; <a class="el" href="classwinter_1_1Socket.html">Socket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weak_ptr</b></td></tr>
+<tr class="separator:adb0ea302ef1c10d2f34fbdf8961560a2 inherit pub_types_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a77a83f0e8e8bfe08f1f638e159f46bac"><td class="memItemLeft" align="right" valign="top"><a id="a77a83f0e8e8bfe08f1f638e159f46bac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SSLSocket</b> (int family, int type, int protocol=0)</td></tr>
+<tr class="separator:a77a83f0e8e8bfe08f1f638e159f46bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807b0103c4f471ff01fd07cffefd76a7"><td class="memItemLeft" align="right" valign="top">virtual Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a807b0103c4f471ff01fd07cffefd76a7">accept</a> () override</td></tr>
+<tr class="memdesc:a807b0103c4f471ff01fd07cffefd76a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收connect链接  <a href="classwinter_1_1SSLSocket.html#a807b0103c4f471ff01fd07cffefd76a7">更多...</a><br /></td></tr>
+<tr class="separator:a807b0103c4f471ff01fd07cffefd76a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733026188f4de367327694b1397ae0aa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a733026188f4de367327694b1397ae0aa">bind</a> (const Address::ptr addr) override</td></tr>
+<tr class="memdesc:a733026188f4de367327694b1397ae0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定地址  <a href="classwinter_1_1SSLSocket.html#a733026188f4de367327694b1397ae0aa">更多...</a><br /></td></tr>
+<tr class="separator:a733026188f4de367327694b1397ae0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e7d579359dadf5bd93d7cb5f356d43"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a17e7d579359dadf5bd93d7cb5f356d43">connect</a> (const Address::ptr addr, uint64_t timeout_ms=-1) override</td></tr>
+<tr class="memdesc:a17e7d579359dadf5bd93d7cb5f356d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">连接地址  <a href="classwinter_1_1SSLSocket.html#a17e7d579359dadf5bd93d7cb5f356d43">更多...</a><br /></td></tr>
+<tr class="separator:a17e7d579359dadf5bd93d7cb5f356d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee39fb21e01a7e62226ca90bb8a3e9fb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#aee39fb21e01a7e62226ca90bb8a3e9fb">listen</a> (int backlog=SOMAXCONN) override</td></tr>
+<tr class="memdesc:aee39fb21e01a7e62226ca90bb8a3e9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">监听socket  <a href="classwinter_1_1SSLSocket.html#aee39fb21e01a7e62226ca90bb8a3e9fb">更多...</a><br /></td></tr>
+<tr class="separator:aee39fb21e01a7e62226ca90bb8a3e9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2552d5906cb144912525ed5ca56a53f1"><td class="memItemLeft" align="right" valign="top"><a id="a2552d5906cb144912525ed5ca56a53f1"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a2552d5906cb144912525ed5ca56a53f1">close</a> () override</td></tr>
+<tr class="memdesc:a2552d5906cb144912525ed5ca56a53f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭socket <br /></td></tr>
+<tr class="separator:a2552d5906cb144912525ed5ca56a53f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e1bb89ae682274e3e282d8d8c47916"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a52e1bb89ae682274e3e282d8d8c47916">send</a> (const void *buffer, size_t length, int flags=0) override</td></tr>
+<tr class="memdesc:a52e1bb89ae682274e3e282d8d8c47916"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据  <a href="classwinter_1_1SSLSocket.html#a52e1bb89ae682274e3e282d8d8c47916">更多...</a><br /></td></tr>
+<tr class="separator:a52e1bb89ae682274e3e282d8d8c47916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0335c40e79876ed239123ecf4e8aff97"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a0335c40e79876ed239123ecf4e8aff97">send</a> (const iovec *buffers, size_t length, int flags=0) override</td></tr>
+<tr class="memdesc:a0335c40e79876ed239123ecf4e8aff97"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据  <a href="classwinter_1_1SSLSocket.html#a0335c40e79876ed239123ecf4e8aff97">更多...</a><br /></td></tr>
+<tr class="separator:a0335c40e79876ed239123ecf4e8aff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9829b03c1f6ebd864b852b5818d377"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a9d9829b03c1f6ebd864b852b5818d377">sendTo</a> (const void *buffer, size_t length, const Address::ptr to, int flags=0) override</td></tr>
+<tr class="memdesc:a9d9829b03c1f6ebd864b852b5818d377"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据  <a href="classwinter_1_1SSLSocket.html#a9d9829b03c1f6ebd864b852b5818d377">更多...</a><br /></td></tr>
+<tr class="separator:a9d9829b03c1f6ebd864b852b5818d377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767f0f7dfafd1aa73893af5de018fb04"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a767f0f7dfafd1aa73893af5de018fb04">sendTo</a> (const iovec *buffers, size_t length, const Address::ptr to, int flags=0) override</td></tr>
+<tr class="memdesc:a767f0f7dfafd1aa73893af5de018fb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据  <a href="classwinter_1_1SSLSocket.html#a767f0f7dfafd1aa73893af5de018fb04">更多...</a><br /></td></tr>
+<tr class="separator:a767f0f7dfafd1aa73893af5de018fb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a02ec69a72b376181932edef9a474c2"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a0a02ec69a72b376181932edef9a474c2">recv</a> (void *buffer, size_t length, int flags=0) override</td></tr>
+<tr class="memdesc:a0a02ec69a72b376181932edef9a474c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">接受数据  <a href="classwinter_1_1SSLSocket.html#a0a02ec69a72b376181932edef9a474c2">更多...</a><br /></td></tr>
+<tr class="separator:a0a02ec69a72b376181932edef9a474c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e2136e3fb46f1e95171bd0f45a9913"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a06e2136e3fb46f1e95171bd0f45a9913">recv</a> (iovec *buffers, size_t length, int flags=0) override</td></tr>
+<tr class="memdesc:a06e2136e3fb46f1e95171bd0f45a9913"><td class="mdescLeft">&#160;</td><td class="mdescRight">接受数据  <a href="classwinter_1_1SSLSocket.html#a06e2136e3fb46f1e95171bd0f45a9913">更多...</a><br /></td></tr>
+<tr class="separator:a06e2136e3fb46f1e95171bd0f45a9913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fab92657e273799eadbb4e3b248e03"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#ae5fab92657e273799eadbb4e3b248e03">recvFrom</a> (void *buffer, size_t length, Address::ptr from, int flags=0) override</td></tr>
+<tr class="memdesc:ae5fab92657e273799eadbb4e3b248e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">接受数据  <a href="classwinter_1_1SSLSocket.html#ae5fab92657e273799eadbb4e3b248e03">更多...</a><br /></td></tr>
+<tr class="separator:ae5fab92657e273799eadbb4e3b248e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37da461523f12a61669b80fbef7106b3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a37da461523f12a61669b80fbef7106b3">recvFrom</a> (iovec *buffers, size_t length, Address::ptr from, int flags=0) override</td></tr>
+<tr class="memdesc:a37da461523f12a61669b80fbef7106b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">接受数据  <a href="classwinter_1_1SSLSocket.html#a37da461523f12a61669b80fbef7106b3">更多...</a><br /></td></tr>
+<tr class="separator:a37da461523f12a61669b80fbef7106b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce6fe6c5f64f81a878330281ce03069"><td class="memItemLeft" align="right" valign="top"><a id="a2ce6fe6c5f64f81a878330281ce03069"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadCertificates</b> (const std::string &amp;cert_file, const std::string &amp;key_file)</td></tr>
+<tr class="separator:a2ce6fe6c5f64f81a878330281ce03069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661755c29ee76ae92b227f058a2bf5f6"><td class="memItemLeft" align="right" valign="top"><a id="a661755c29ee76ae92b227f058a2bf5f6"></a>
+virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a661755c29ee76ae92b227f058a2bf5f6">dump</a> (std::ostream &amp;os) const override</td></tr>
+<tr class="memdesc:a661755c29ee76ae92b227f058a2bf5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出信息到流中 <br /></td></tr>
+<tr class="separator:a661755c29ee76ae92b227f058a2bf5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwinter_1_1Socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwinter_1_1Socket')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classwinter_1_1Socket.html">winter::Socket</a></td></tr>
+<tr class="memitem:a4a3ddfb5115035765347d566ac5da786 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a4a3ddfb5115035765347d566ac5da786">Socket</a> (int family, int type, int protocol=0)</td></tr>
+<tr class="memdesc:a4a3ddfb5115035765347d566ac5da786 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket构造函数  <a href="classwinter_1_1Socket.html#a4a3ddfb5115035765347d566ac5da786">更多...</a><br /></td></tr>
+<tr class="separator:a4a3ddfb5115035765347d566ac5da786 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09705d9dabafc0cc8c2e3e50487a5b31 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a09705d9dabafc0cc8c2e3e50487a5b31"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a09705d9dabafc0cc8c2e3e50487a5b31">~Socket</a> ()</td></tr>
+<tr class="memdesc:a09705d9dabafc0cc8c2e3e50487a5b31 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:a09705d9dabafc0cc8c2e3e50487a5b31 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c1c04fa8908d4ba833057c63bfd4a9 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a19c1c04fa8908d4ba833057c63bfd4a9"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a19c1c04fa8908d4ba833057c63bfd4a9">getSendTimeout</a> ()</td></tr>
+<tr class="memdesc:a19c1c04fa8908d4ba833057c63bfd4a9 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取发送超时时间(毫秒) <br /></td></tr>
+<tr class="separator:a19c1c04fa8908d4ba833057c63bfd4a9 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2ddb1ba8d347d6cdece905dc8cf000 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a7d2ddb1ba8d347d6cdece905dc8cf000"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a7d2ddb1ba8d347d6cdece905dc8cf000">setSendTimeout</a> (int64_t v)</td></tr>
+<tr class="memdesc:a7d2ddb1ba8d347d6cdece905dc8cf000 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置发送超时时间(毫秒) <br /></td></tr>
+<tr class="separator:a7d2ddb1ba8d347d6cdece905dc8cf000 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0feb8cd5af119fb2d96b917a6ab2479 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="af0feb8cd5af119fb2d96b917a6ab2479"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#af0feb8cd5af119fb2d96b917a6ab2479">getRecvTimeout</a> ()</td></tr>
+<tr class="memdesc:af0feb8cd5af119fb2d96b917a6ab2479 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取接受超时时间(毫秒) <br /></td></tr>
+<tr class="separator:af0feb8cd5af119fb2d96b917a6ab2479 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9782a3bc929951c0b2a72babd73b4ee0 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a9782a3bc929951c0b2a72babd73b4ee0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a9782a3bc929951c0b2a72babd73b4ee0">setRecvTimeout</a> (int64_t v)</td></tr>
+<tr class="memdesc:a9782a3bc929951c0b2a72babd73b4ee0 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置接受超时时间(毫秒) <br /></td></tr>
+<tr class="separator:a9782a3bc929951c0b2a72babd73b4ee0 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb769b17085e8e57b7ab388878969dd inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#abfb769b17085e8e57b7ab388878969dd">getOption</a> (int level, int option, void *result, socklen_t *len)</td></tr>
+<tr class="memdesc:abfb769b17085e8e57b7ab388878969dd inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sockopt  <a href="classwinter_1_1Socket.html#abfb769b17085e8e57b7ab388878969dd">更多...</a><br /></td></tr>
+<tr class="separator:abfb769b17085e8e57b7ab388878969dd inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714f94d92106ea92dfe9cf185b9db64b inherit pub_methods_classwinter_1_1Socket"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a714f94d92106ea92dfe9cf185b9db64b inherit pub_methods_classwinter_1_1Socket"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a714f94d92106ea92dfe9cf185b9db64b">getOption</a> (int level, int option, T &amp;result)</td></tr>
+<tr class="memdesc:a714f94d92106ea92dfe9cf185b9db64b inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sockopt模板  <a href="classwinter_1_1Socket.html#a714f94d92106ea92dfe9cf185b9db64b">更多...</a><br /></td></tr>
+<tr class="separator:a714f94d92106ea92dfe9cf185b9db64b inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63890c4bd6f91ac10adf7989525ccdb inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ae63890c4bd6f91ac10adf7989525ccdb">setOption</a> (int level, int option, const void *result, socklen_t len)</td></tr>
+<tr class="memdesc:ae63890c4bd6f91ac10adf7989525ccdb inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置sockopt  <a href="classwinter_1_1Socket.html#ae63890c4bd6f91ac10adf7989525ccdb">更多...</a><br /></td></tr>
+<tr class="separator:ae63890c4bd6f91ac10adf7989525ccdb inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bb3314553579494b2a40cf267e795b inherit pub_methods_classwinter_1_1Socket"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:af6bb3314553579494b2a40cf267e795b inherit pub_methods_classwinter_1_1Socket"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#af6bb3314553579494b2a40cf267e795b">setOption</a> (int level, int option, const T &amp;value)</td></tr>
+<tr class="memdesc:af6bb3314553579494b2a40cf267e795b inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置sockopt模板  <a href="classwinter_1_1Socket.html#af6bb3314553579494b2a40cf267e795b">更多...</a><br /></td></tr>
+<tr class="separator:af6bb3314553579494b2a40cf267e795b inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906febf2266457c2cc9a06071c089a11 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a906febf2266457c2cc9a06071c089a11"></a>
+Address::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a906febf2266457c2cc9a06071c089a11">getRemoteAddress</a> ()</td></tr>
+<tr class="memdesc:a906febf2266457c2cc9a06071c089a11 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取远端地址 <br /></td></tr>
+<tr class="separator:a906febf2266457c2cc9a06071c089a11 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb916e9028c92c709953e0595cefbe9a inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="abb916e9028c92c709953e0595cefbe9a"></a>
+Address::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#abb916e9028c92c709953e0595cefbe9a">getLocalAddress</a> ()</td></tr>
+<tr class="memdesc:abb916e9028c92c709953e0595cefbe9a inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本地地址 <br /></td></tr>
+<tr class="separator:abb916e9028c92c709953e0595cefbe9a inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7099e6f4c2ee5e58d901297f20a3ff09 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a7099e6f4c2ee5e58d901297f20a3ff09"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a7099e6f4c2ee5e58d901297f20a3ff09">getFamily</a> () const</td></tr>
+<tr class="memdesc:a7099e6f4c2ee5e58d901297f20a3ff09 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取协议簇 <br /></td></tr>
+<tr class="separator:a7099e6f4c2ee5e58d901297f20a3ff09 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da3f5551b7da09b9811984023168adf inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a5da3f5551b7da09b9811984023168adf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a5da3f5551b7da09b9811984023168adf">getType</a> () const</td></tr>
+<tr class="memdesc:a5da3f5551b7da09b9811984023168adf inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取类型 <br /></td></tr>
+<tr class="separator:a5da3f5551b7da09b9811984023168adf inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2850e9090e448cc3f6fc2b160946f40f inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a2850e9090e448cc3f6fc2b160946f40f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a2850e9090e448cc3f6fc2b160946f40f">getProtocol</a> () const</td></tr>
+<tr class="memdesc:a2850e9090e448cc3f6fc2b160946f40f inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取协议 <br /></td></tr>
+<tr class="separator:a2850e9090e448cc3f6fc2b160946f40f inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00993b57c76aeadb7e7938f164275f6 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="af00993b57c76aeadb7e7938f164275f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#af00993b57c76aeadb7e7938f164275f6">isConnected</a> () const</td></tr>
+<tr class="memdesc:af00993b57c76aeadb7e7938f164275f6 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回是否连接 <br /></td></tr>
+<tr class="separator:af00993b57c76aeadb7e7938f164275f6 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53b07ea70805925ce517814ed8da603 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="aa53b07ea70805925ce517814ed8da603"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#aa53b07ea70805925ce517814ed8da603">isValid</a> () const</td></tr>
+<tr class="memdesc:aa53b07ea70805925ce517814ed8da603 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否有效(m_sock != -1) <br /></td></tr>
+<tr class="separator:aa53b07ea70805925ce517814ed8da603 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f927fc79a97d10a12ca96af5ebda95 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="ab9f927fc79a97d10a12ca96af5ebda95"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ab9f927fc79a97d10a12ca96af5ebda95">getError</a> ()</td></tr>
+<tr class="memdesc:ab9f927fc79a97d10a12ca96af5ebda95 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Socket错误 <br /></td></tr>
+<tr class="separator:ab9f927fc79a97d10a12ca96af5ebda95 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbbf9d597547f88a6579fe18896ceab inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a9cbbf9d597547f88a6579fe18896ceab"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a9cbbf9d597547f88a6579fe18896ceab">getSocket</a> () const</td></tr>
+<tr class="memdesc:a9cbbf9d597547f88a6579fe18896ceab inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回socket句柄 <br /></td></tr>
+<tr class="separator:a9cbbf9d597547f88a6579fe18896ceab inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4499ed19a069afd8c2192aec4bc3bb4 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="ae4499ed19a069afd8c2192aec4bc3bb4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ae4499ed19a069afd8c2192aec4bc3bb4">cancelRead</a> ()</td></tr>
+<tr class="memdesc:ae4499ed19a069afd8c2192aec4bc3bb4 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消读 <br /></td></tr>
+<tr class="separator:ae4499ed19a069afd8c2192aec4bc3bb4 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10b058159be78e2e1b9904e601e3f62 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="ab10b058159be78e2e1b9904e601e3f62"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ab10b058159be78e2e1b9904e601e3f62">cancelWrite</a> ()</td></tr>
+<tr class="memdesc:ab10b058159be78e2e1b9904e601e3f62 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消写 <br /></td></tr>
+<tr class="separator:ab10b058159be78e2e1b9904e601e3f62 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628bd637038a8dc6de4b4e4109554b83 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a628bd637038a8dc6de4b4e4109554b83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a628bd637038a8dc6de4b4e4109554b83">cancelAccept</a> ()</td></tr>
+<tr class="memdesc:a628bd637038a8dc6de4b4e4109554b83 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消accept <br /></td></tr>
+<tr class="separator:a628bd637038a8dc6de4b4e4109554b83 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f310447333866d2fe6a24032ae1ff4 inherit pub_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="ae7f310447333866d2fe6a24032ae1ff4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ae7f310447333866d2fe6a24032ae1ff4">cancelAll</a> ()</td></tr>
+<tr class="memdesc:ae7f310447333866d2fe6a24032ae1ff4 inherit pub_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消所有事件 <br /></td></tr>
+<tr class="separator:ae7f310447333866d2fe6a24032ae1ff4 inherit pub_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aaa7ca9fb91938c93244a7d2bca98aa53"><td class="memItemLeft" align="right" valign="top"><a id="aaa7ca9fb91938c93244a7d2bca98aa53"></a>
+static SSLSocket::ptr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTCP</b> (winter::Address::ptr address)</td></tr>
+<tr class="separator:aaa7ca9fb91938c93244a7d2bca98aa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79737b7d2edb9d29706be827fb8da31b"><td class="memItemLeft" align="right" valign="top"><a id="a79737b7d2edb9d29706be827fb8da31b"></a>
+static SSLSocket::ptr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTCPSocket</b> ()</td></tr>
+<tr class="separator:a79737b7d2edb9d29706be827fb8da31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174e3cc320cbab9da9e04fe983e08802"><td class="memItemLeft" align="right" valign="top"><a id="a174e3cc320cbab9da9e04fe983e08802"></a>
+static SSLSocket::ptr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTCPSocket6</b> ()</td></tr>
+<tr class="separator:a174e3cc320cbab9da9e04fe983e08802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classwinter_1_1Socket"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classwinter_1_1Socket')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classwinter_1_1Socket.html">winter::Socket</a></td></tr>
+<tr class="memitem:abca38232328a6db2fcf7d51345d92c5e inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top">static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#abca38232328a6db2fcf7d51345d92c5e">CreateTCP</a> (winter::Address::ptr address)</td></tr>
+<tr class="memdesc:abca38232328a6db2fcf7d51345d92c5e inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建TCP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a>(满足地址类型)  <a href="classwinter_1_1Socket.html#abca38232328a6db2fcf7d51345d92c5e">更多...</a><br /></td></tr>
+<tr class="separator:abca38232328a6db2fcf7d51345d92c5e inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b556266264b0aca55f398fdc94bdea inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top">static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a53b556266264b0aca55f398fdc94bdea">CreateUDP</a> (winter::Address::ptr address)</td></tr>
+<tr class="memdesc:a53b556266264b0aca55f398fdc94bdea inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建UDP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a>(满足地址类型)  <a href="classwinter_1_1Socket.html#a53b556266264b0aca55f398fdc94bdea">更多...</a><br /></td></tr>
+<tr class="separator:a53b556266264b0aca55f398fdc94bdea inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3156b1acf4233744041dca05c9adffdc inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a3156b1acf4233744041dca05c9adffdc"></a>
+static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a3156b1acf4233744041dca05c9adffdc">CreateTCPSocket</a> ()</td></tr>
+<tr class="memdesc:a3156b1acf4233744041dca05c9adffdc inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建IPv4的TCP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a> <br /></td></tr>
+<tr class="separator:a3156b1acf4233744041dca05c9adffdc inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4184c0eec6b2dfc443c420926acf8530 inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a4184c0eec6b2dfc443c420926acf8530"></a>
+static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a4184c0eec6b2dfc443c420926acf8530">CreateUDPSocket</a> ()</td></tr>
+<tr class="memdesc:a4184c0eec6b2dfc443c420926acf8530 inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建IPv4的UDP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a> <br /></td></tr>
+<tr class="separator:a4184c0eec6b2dfc443c420926acf8530 inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26eeae761dab345068649ac15cd38bc inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="af26eeae761dab345068649ac15cd38bc"></a>
+static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#af26eeae761dab345068649ac15cd38bc">CreateTCPSocket6</a> ()</td></tr>
+<tr class="memdesc:af26eeae761dab345068649ac15cd38bc inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建IPv6的TCP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a> <br /></td></tr>
+<tr class="separator:af26eeae761dab345068649ac15cd38bc inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab9a31e5f900e4b677dffa5f2008fcd inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="adab9a31e5f900e4b677dffa5f2008fcd"></a>
+static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#adab9a31e5f900e4b677dffa5f2008fcd">CreateUDPSocket6</a> ()</td></tr>
+<tr class="memdesc:adab9a31e5f900e4b677dffa5f2008fcd inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建IPv6的UDP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a> <br /></td></tr>
+<tr class="separator:adab9a31e5f900e4b677dffa5f2008fcd inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718233bca88539d5c2507e2c6114d788 inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a718233bca88539d5c2507e2c6114d788"></a>
+static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a718233bca88539d5c2507e2c6114d788">CreateUnixTCPSocket</a> ()</td></tr>
+<tr class="memdesc:a718233bca88539d5c2507e2c6114d788 inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建Unix的TCP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a> <br /></td></tr>
+<tr class="separator:a718233bca88539d5c2507e2c6114d788 inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503c9a3f8b52629c8f21ab4320b9a977 inherit pub_static_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a503c9a3f8b52629c8f21ab4320b9a977"></a>
+static Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a503c9a3f8b52629c8f21ab4320b9a977">CreateUnixUDPSocket</a> ()</td></tr>
+<tr class="memdesc:a503c9a3f8b52629c8f21ab4320b9a977 inherit pub_static_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建Unix的UDP <a class="el" href="classwinter_1_1Socket.html" title="Socket封装类">Socket</a> <br /></td></tr>
+<tr class="separator:a503c9a3f8b52629c8f21ab4320b9a977 inherit pub_static_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a518e94315aeaa1efae8c3702d524a1ad"><td class="memItemLeft" align="right" valign="top"><a id="a518e94315aeaa1efae8c3702d524a1ad"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1SSLSocket.html#a518e94315aeaa1efae8c3702d524a1ad">init</a> (int sock) override</td></tr>
+<tr class="memdesc:a518e94315aeaa1efae8c3702d524a1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化sock <br /></td></tr>
+<tr class="separator:a518e94315aeaa1efae8c3702d524a1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classwinter_1_1Socket"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwinter_1_1Socket')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classwinter_1_1Socket.html">winter::Socket</a></td></tr>
+<tr class="memitem:abeb0ac772d823c24aef6ded601e0da4a inherit pro_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="abeb0ac772d823c24aef6ded601e0da4a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#abeb0ac772d823c24aef6ded601e0da4a">initSock</a> ()</td></tr>
+<tr class="memdesc:abeb0ac772d823c24aef6ded601e0da4a inherit pro_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化socket <br /></td></tr>
+<tr class="separator:abeb0ac772d823c24aef6ded601e0da4a inherit pro_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2774cb4315a54946e8a6b83946d76172 inherit pro_methods_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a2774cb4315a54946e8a6b83946d76172"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a2774cb4315a54946e8a6b83946d76172">newSock</a> ()</td></tr>
+<tr class="memdesc:a2774cb4315a54946e8a6b83946d76172 inherit pro_methods_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建socket <br /></td></tr>
+<tr class="separator:a2774cb4315a54946e8a6b83946d76172 inherit pro_methods_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_classwinter_1_1Socket"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwinter_1_1Socket')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classwinter_1_1Socket.html">winter::Socket</a></td></tr>
+<tr class="memitem:a9ebda2b4012f0810b579cdf204489c35 inherit pro_attribs_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a9ebda2b4012f0810b579cdf204489c35"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a9ebda2b4012f0810b579cdf204489c35">m_sock</a></td></tr>
+<tr class="memdesc:a9ebda2b4012f0810b579cdf204489c35 inherit pro_attribs_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">socket句柄 <br /></td></tr>
+<tr class="separator:a9ebda2b4012f0810b579cdf204489c35 inherit pro_attribs_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78603acad68b8287c28a8803140dce3 inherit pro_attribs_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="ab78603acad68b8287c28a8803140dce3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ab78603acad68b8287c28a8803140dce3">m_family</a></td></tr>
+<tr class="memdesc:ab78603acad68b8287c28a8803140dce3 inherit pro_attribs_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">协议簇 <br /></td></tr>
+<tr class="separator:ab78603acad68b8287c28a8803140dce3 inherit pro_attribs_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b2ccf92ab2d3063d9814578c2446be inherit pro_attribs_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a01b2ccf92ab2d3063d9814578c2446be"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a01b2ccf92ab2d3063d9814578c2446be">m_type</a></td></tr>
+<tr class="memdesc:a01b2ccf92ab2d3063d9814578c2446be inherit pro_attribs_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">类型 <br /></td></tr>
+<tr class="separator:a01b2ccf92ab2d3063d9814578c2446be inherit pro_attribs_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e308f9403a6efc945fa7126e7324c52 inherit pro_attribs_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a5e308f9403a6efc945fa7126e7324c52"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a5e308f9403a6efc945fa7126e7324c52">m_protocol</a></td></tr>
+<tr class="memdesc:a5e308f9403a6efc945fa7126e7324c52 inherit pro_attribs_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">协议 <br /></td></tr>
+<tr class="separator:a5e308f9403a6efc945fa7126e7324c52 inherit pro_attribs_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12a2f529ccc9296faff3eec56cf0559 inherit pro_attribs_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="ae12a2f529ccc9296faff3eec56cf0559"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#ae12a2f529ccc9296faff3eec56cf0559">m_isConnected</a></td></tr>
+<tr class="memdesc:ae12a2f529ccc9296faff3eec56cf0559 inherit pro_attribs_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否连接 <br /></td></tr>
+<tr class="separator:ae12a2f529ccc9296faff3eec56cf0559 inherit pro_attribs_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d72a39e709f8817518b1700c2dc256 inherit pro_attribs_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="af3d72a39e709f8817518b1700c2dc256"></a>
+Address::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#af3d72a39e709f8817518b1700c2dc256">m_localAddress</a></td></tr>
+<tr class="memdesc:af3d72a39e709f8817518b1700c2dc256 inherit pro_attribs_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地地址 <br /></td></tr>
+<tr class="separator:af3d72a39e709f8817518b1700c2dc256 inherit pro_attribs_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bdc230c7b6e32a647ec94b01d2624c9 inherit pro_attribs_classwinter_1_1Socket"><td class="memItemLeft" align="right" valign="top"><a id="a0bdc230c7b6e32a647ec94b01d2624c9"></a>
+Address::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1Socket.html#a0bdc230c7b6e32a647ec94b01d2624c9">m_remoteAddress</a></td></tr>
+<tr class="memdesc:a0bdc230c7b6e32a647ec94b01d2624c9 inherit pro_attribs_classwinter_1_1Socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端地址 <br /></td></tr>
+<tr class="separator:a0bdc230c7b6e32a647ec94b01d2624c9 inherit pro_attribs_classwinter_1_1Socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a807b0103c4f471ff01fd07cffefd76a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807b0103c4f471ff01fd07cffefd76a7">&#9670;&nbsp;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Socket::ptr winter::SSLSocket::accept </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>接收connect链接 </p>
+<dl class="section return"><dt>返回</dt><dd>成功返回新连接的socket,失败返回nullptr </dd></dl>
+<dl class="section pre"><dt>前置条件</dt><dd>Socket必须 bind , listen 成功 </dd></dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#adb06e093b985142b6cab612d2c41fbc7">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="a733026188f4de367327694b1397ae0aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733026188f4de367327694b1397ae0aa">&#9670;&nbsp;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool winter::SSLSocket::bind </td>
+          <td>(</td>
+          <td class="paramtype">const Address::ptr&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定地址 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否绑定成功 </dd></dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#a68bef9408d20d97e35e6fab5caaa2c76">winter::Socket</a> .</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a17e7d579359dadf5bd93d7cb5f356d43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e7d579359dadf5bd93d7cb5f356d43">&#9670;&nbsp;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool winter::SSLSocket::connect </td>
+          <td>(</td>
+          <td class="paramtype">const Address::ptr&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>连接地址 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>目标地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>超时时间(毫秒) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#a810f83aaed2843108d6a40ab32562e2c">winter::Socket</a> .</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="aee39fb21e01a7e62226ca90bb8a3e9fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee39fb21e01a7e62226ca90bb8a3e9fb">&#9670;&nbsp;</a></span>listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool winter::SSLSocket::listen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>backlog</em> = <code>SOMAXCONN</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>监听socket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">backlog</td><td>未完成连接队列的最大长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回监听是否成功 </dd></dl>
+<dl class="section pre"><dt>前置条件</dt><dd>必须先 bind 成功 </dd></dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#a48002284e8069b3329143eb64a8a4fff">winter::Socket</a> .</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a06e2136e3fb46f1e95171bd0f45a9913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e2136e3fb46f1e95171bd0f45a9913">&#9670;&nbsp;</a></span>recv() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::recv </td>
+          <td>(</td>
+          <td class="paramtype">iovec *&#160;</td>
+          <td class="paramname"><em>buffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>接受数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffers</td><td>接收数据的内存(iovec数组) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>接收数据的内存大小(iovec数组长度) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>接收到对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#add5c1ba5928d3f9b7a4093572ab77955">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="a0a02ec69a72b376181932edef9a474c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a02ec69a72b376181932edef9a474c2">&#9670;&nbsp;</a></span>recv() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::recv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>接受数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>接收数据的内存 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>接收数据的内存大小 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>接收到对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#a1d7cf2c27fb45db9153acf5984219919">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="a37da461523f12a61669b80fbef7106b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37da461523f12a61669b80fbef7106b3">&#9670;&nbsp;</a></span>recvFrom() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::recvFrom </td>
+          <td>(</td>
+          <td class="paramtype">iovec *&#160;</td>
+          <td class="paramname"><em>buffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Address::ptr&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>接受数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffers</td><td>接收数据的内存(iovec数组) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>接收数据的内存大小(iovec数组长度) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">from</td><td>发送端地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>接收到对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#ac13b02fab6256c04039e28b870a2fa37">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="ae5fab92657e273799eadbb4e3b248e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5fab92657e273799eadbb4e3b248e03">&#9670;&nbsp;</a></span>recvFrom() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::recvFrom </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Address::ptr&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>接受数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>接收数据的内存 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>接收数据的内存大小 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">from</td><td>发送端地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>接收到对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#ae2ae857ab74a2918d82ee94a0a32af89">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="a0335c40e79876ed239123ecf4e8aff97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0335c40e79876ed239123ecf4e8aff97">&#9670;&nbsp;</a></span>send() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::send </td>
+          <td>(</td>
+          <td class="paramtype">const iovec *&#160;</td>
+          <td class="paramname"><em>buffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffers</td><td>待发送数据的内存(iovec数组) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待发送数据的长度(iovec长度) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>发送成功对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#a91f771a5bf4cc6e6873a26b51388dc4a">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="a52e1bb89ae682274e3e282d8d8c47916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e1bb89ae682274e3e282d8d8c47916">&#9670;&nbsp;</a></span>send() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::send </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>待发送数据的内存 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待发送数据的长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>发送成功对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#ae5733517bf94e4c46bfda61ebebb0e24">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="a767f0f7dfafd1aa73893af5de018fb04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767f0f7dfafd1aa73893af5de018fb04">&#9670;&nbsp;</a></span>sendTo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::sendTo </td>
+          <td>(</td>
+          <td class="paramtype">const iovec *&#160;</td>
+          <td class="paramname"><em>buffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Address::ptr&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffers</td><td>待发送数据的内存(iovec数组) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待发送数据的长度(iovec长度) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>发送的目标地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>发送成功对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#a962cab7eb507a37a5850f0261ca8a425">winter::Socket</a> .</p>
+
+</div>
+</div>
+<a id="a9d9829b03c1f6ebd864b852b5818d377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9829b03c1f6ebd864b852b5818d377">&#9670;&nbsp;</a></span>sendTo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int winter::SSLSocket::sendTo </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Address::ptr&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>待发送数据的内存 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待发送数据的长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>发送的目标地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>标志字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>发送成功对应大小的数据 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket出错 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="classwinter_1_1Socket.html#a5157d3410f970d8dcfeb2db191afc538">winter::Socket</a> .</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="socket_8h_source.html">socket.h</a></li>
+<li>socket.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

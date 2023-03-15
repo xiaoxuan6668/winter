@@ -1,0 +1,179 @@
+\doxysection{winter\+::Scheduler类 参考}
+\label{classwinter_1_1Scheduler}\index{winter::Scheduler@{winter::Scheduler}}
+
+
+协程调度器  
+
+
+
+
+{\ttfamily \#include $<$scheduler.\+h$>$}
+
+
+
+类 winter\+::Scheduler 继承关系图\+:
+% FIG 0
+
+
+winter\+::Scheduler 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Scheduler_a5cc26b05a7410d887434b5dd5fe1dd94}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Scheduler} $>$ {\bfseries ptr}
+\item 
+\mbox{\label{classwinter_1_1Scheduler_ad66609d15f8681183a964e58d2f856ce}} 
+typedef \textbf{ Mutex} {\bfseries Mutex\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Scheduler} (size\+\_\+t threads=1, bool use\+\_\+caller=true, const std\+::string \&name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_ac9ef73bc531f94e2e86bb96319c2ecd6}} 
+virtual \textbf{ $\sim$\+Scheduler} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a3f4fba4dc0254b62f010243136dd0377}} 
+const std\+::string \& \textbf{ get\+Name} () const
+\begin{DoxyCompactList}\small\item\em 返回协程调度器名称 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a8d3f4af394f0ad8b7473be19d950b957}} 
+void \textbf{ start} ()
+\begin{DoxyCompactList}\small\item\em 启动协程调度器 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_abaca812c6bc949567caf89e1d91443ac}} 
+void \textbf{ stop} ()
+\begin{DoxyCompactList}\small\item\em 停止协程调度器 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Fiber\+Or\+Cb $>$ }\\void \textbf{ schedule} (Fiber\+Or\+Cb fc, int thread=-\/1)
+\begin{DoxyCompactList}\small\item\em 调度协程 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Input\+Iterator $>$ }\\void \textbf{ schedule} (Input\+Iterator begin, Input\+Iterator end)
+\begin{DoxyCompactList}\small\item\em 批量调度协程 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Scheduler_a2ae947254d25e0b4b6bdd51a413e4abf}} 
+static \textbf{ Scheduler} $\ast$ \textbf{ Get\+This} ()
+\begin{DoxyCompactList}\small\item\em 返回当前协程调度器 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a1740b1d7e20ddad8fda5934918a16895}} 
+static \textbf{ Fiber} $\ast$ \textbf{ Get\+Main\+Fiber} ()
+\begin{DoxyCompactList}\small\item\em 返回当前协程调度器的调度协程 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Scheduler_ab4a6a9100f3a18a9e9370a3106d07ab6}} 
+virtual void \textbf{ tickle} ()
+\begin{DoxyCompactList}\small\item\em 通知协程调度器有任务了 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a752c9038882a884e9146cdf379ce24bd}} 
+void \textbf{ run} ()
+\begin{DoxyCompactList}\small\item\em 协程调度函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_aec1f5b9d89fd4fd99b34e06437bdb5cd}} 
+virtual bool \textbf{ stopping} ()
+\begin{DoxyCompactList}\small\item\em 返回是否可以停止 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a4e6ae4e0beafc5f4181305a33384138a}} 
+virtual void \textbf{ idle} ()
+\begin{DoxyCompactList}\small\item\em 协程无任务可调度时执行idle协程 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_abd3c1f0017ff3c3644fe4831955aa115}} 
+void \textbf{ set\+This} ()
+\begin{DoxyCompactList}\small\item\em 设置当前的协程调度器 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_af71aeb2c9d3e38f46d447d8f9f1995b4}} 
+bool \textbf{ has\+Idle\+Threads} ()
+\begin{DoxyCompactList}\small\item\em 是否有空闲线程 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1Scheduler_a20c019f7d1cc9fd38351bb68abf7333f}} 
+std\+::vector$<$ int $>$ \textbf{ m\+\_\+thread\+Ids}
+\begin{DoxyCompactList}\small\item\em 协程下的线程id数组 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a2d682d09f5dc0ef2b02a26a3fd3adc72}} 
+size\+\_\+t \textbf{ m\+\_\+thread\+Count} = 0
+\begin{DoxyCompactList}\small\item\em 线程数量 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_aaf42862e9463358c33810aa7bba791a1}} 
+std\+::atomic$<$ size\+\_\+t $>$ \textbf{ m\+\_\+active\+Thread\+Count} = \{0\}
+\begin{DoxyCompactList}\small\item\em 工作线程数量 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a90c6f4810fb506a74f3aeb9c9c203f12}} 
+std\+::atomic$<$ size\+\_\+t $>$ \textbf{ m\+\_\+idle\+Thread\+Count} = \{0\}
+\begin{DoxyCompactList}\small\item\em 空闲线程数量 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_ab39c2dd726dd0bf143231d3fea6dca4a}} 
+bool \textbf{ m\+\_\+stopping} = true
+\begin{DoxyCompactList}\small\item\em 是否正在停止 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a9d0a4ec436145000a168b198f2ec3ea1}} 
+bool \textbf{ m\+\_\+auto\+Stop} = false
+\begin{DoxyCompactList}\small\item\em 是否自动停止 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1Scheduler_a35a81741e460e1cb39a94c558f7309f9}} 
+int \textbf{ m\+\_\+root\+Thread} = 0
+\begin{DoxyCompactList}\small\item\em 主线程id(use\+\_\+caller) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+协程调度器 
+
+封装的是\+N-\/\+M的协程调度器 内部有一个线程池,支持协程在线程池里面切换 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{classwinter_1_1Scheduler_a04e5381f08a7f5b0637ee2ca6c512fab}} 
+\index{winter::Scheduler@{winter::Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!winter::Scheduler@{winter::Scheduler}}
+\doxysubsubsection{Scheduler()}
+{\footnotesize\ttfamily winter\+::\+Scheduler\+::\+Scheduler (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{threads = {\ttfamily 1},  }\item[{bool}]{use\+\_\+caller = {\ttfamily true},  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em threads} & 线程数量 \\
+\hline
+\mbox{\texttt{ in}}  & {\em use\+\_\+caller} & 是否使用当前调用线程 \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & 协程调度器名称 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1Scheduler_a4075816ba2908dc6f42b37905b3d1d71}} 
+\index{winter::Scheduler@{winter::Scheduler}!schedule@{schedule}}
+\index{schedule@{schedule}!winter::Scheduler@{winter::Scheduler}}
+\doxysubsubsection{schedule()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Fiber\+Or\+Cb $>$ \\
+void winter\+::\+Scheduler\+::schedule (\begin{DoxyParamCaption}\item[{Fiber\+Or\+Cb}]{fc,  }\item[{int}]{thread = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+调度协程 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em fc} & 协程或函数 \\
+\hline
+\mbox{\texttt{ in}}  & {\em thread} & 协程执行的线程id,-\/1标识任意线程 \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 2
+\mbox{\label{classwinter_1_1Scheduler_a43210262ba42549e3bcf5c0e2f8592af}} 
+\index{winter::Scheduler@{winter::Scheduler}!schedule@{schedule}}
+\index{schedule@{schedule}!winter::Scheduler@{winter::Scheduler}}
+\doxysubsubsection{schedule()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Input\+Iterator $>$ \\
+void winter\+::\+Scheduler\+::schedule (\begin{DoxyParamCaption}\item[{Input\+Iterator}]{begin,  }\item[{Input\+Iterator}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+批量调度协程 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em begin} & 协程数组的开始 \\
+\hline
+\mbox{\texttt{ in}}  & {\em end} & 协程数组的结束 \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 3
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ scheduler.\+h}\item 
+scheduler.\+cc\end{DoxyCompactItemize}

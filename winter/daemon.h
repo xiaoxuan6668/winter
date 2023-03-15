@@ -1,3 +1,7 @@
+/**
+ * @file daemon.h
+ * @brief 守护进程模块
+ */
 #ifndef __WINTER_DAEMON_H__
 #define __WINTER_DAEMON_H__
 

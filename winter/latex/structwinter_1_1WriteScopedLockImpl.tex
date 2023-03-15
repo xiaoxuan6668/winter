@@ -1,0 +1,59 @@
+\doxysection{winter\+::Write\+Scoped\+Lock\+Impl$<$ T $>$ 模板结构体 参考}
+\label{structwinter_1_1WriteScopedLockImpl}\index{winter::WriteScopedLockImpl$<$ T $>$@{winter::WriteScopedLockImpl$<$ T $>$}}
+
+
+局部写锁模板实现  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+
+
+winter\+::Write\+Scoped\+Lock\+Impl$<$ T $>$ 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Write\+Scoped\+Lock\+Impl} (T \&mutex)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1WriteScopedLockImpl_ab49a46a882934b5fa774754cc515032f}} 
+\textbf{ $\sim$\+Write\+Scoped\+Lock\+Impl} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1WriteScopedLockImpl_af99775e89a732ec5f940e8141bb8f11e}} 
+void \textbf{ lock} ()
+\begin{DoxyCompactList}\small\item\em 上写锁 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1WriteScopedLockImpl_a1832daccaf6d0abe1abda5aaa52fd555}} 
+void \textbf{ unlock} ()
+\begin{DoxyCompactList}\small\item\em 解锁 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$class T$>$\newline
+struct winter\+::\+Write\+Scoped\+Lock\+Impl$<$ T $>$}
+
+局部写锁模板实现 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{structwinter_1_1WriteScopedLockImpl_a5182d3f653ae4c6583ae632c1e4a30e3}} 
+\index{winter::WriteScopedLockImpl$<$ T $>$@{winter::WriteScopedLockImpl$<$ T $>$}!WriteScopedLockImpl@{WriteScopedLockImpl}}
+\index{WriteScopedLockImpl@{WriteScopedLockImpl}!winter::WriteScopedLockImpl$<$ T $>$@{winter::WriteScopedLockImpl$<$ T $>$}}
+\doxysubsubsection{WriteScopedLockImpl()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\textbf{ winter\+::\+Write\+Scoped\+Lock\+Impl}$<$ T $>$\+::\textbf{ Write\+Scoped\+Lock\+Impl} (\begin{DoxyParamCaption}\item[{T \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em mutex} & 读写锁 \\
+\hline
+\end{DoxyParams}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ thread.\+h}\end{DoxyCompactItemize}

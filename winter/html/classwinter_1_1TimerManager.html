@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>winter: winter::TimerManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">winter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>winter</b></li><li class="navelem"><a class="el" href="classwinter_1_1TimerManager.html">TimerManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classwinter_1_1TimerManager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">winter::TimerManager类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>定时器管理器  
+ <a href="classwinter_1_1TimerManager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="timer_8h_source.html">timer.h</a>&gt;</code></p>
+<div class="dynheader">
+类 winter::TimerManager 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+<div class="dynheader">
+winter::TimerManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:af858bd7e7ae2514810162d942e1c9961"><td class="memItemLeft" align="right" valign="top"><a id="af858bd7e7ae2514810162d942e1c9961"></a>
+typedef <a class="el" href="classwinter_1_1RWMutex.html">RWMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#af858bd7e7ae2514810162d942e1c9961">RWMutexType</a></td></tr>
+<tr class="memdesc:af858bd7e7ae2514810162d942e1c9961"><td class="mdescLeft">&#160;</td><td class="mdescRight">读写锁类型 <br /></td></tr>
+<tr class="separator:af858bd7e7ae2514810162d942e1c9961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a84bdd355209c5329a1205b42c6189342"><td class="memItemLeft" align="right" valign="top"><a id="a84bdd355209c5329a1205b42c6189342"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a84bdd355209c5329a1205b42c6189342">TimerManager</a> ()</td></tr>
+<tr class="memdesc:a84bdd355209c5329a1205b42c6189342"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数 <br /></td></tr>
+<tr class="separator:a84bdd355209c5329a1205b42c6189342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3511cd5dd068026f63e90325f78974e4"><td class="memItemLeft" align="right" valign="top"><a id="a3511cd5dd068026f63e90325f78974e4"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a3511cd5dd068026f63e90325f78974e4">~TimerManager</a> ()</td></tr>
+<tr class="memdesc:a3511cd5dd068026f63e90325f78974e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:a3511cd5dd068026f63e90325f78974e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2248be0553854f3eb088755cc843f51d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a2248be0553854f3eb088755cc843f51d">addTimer</a> (uint64_t ms, std::function&lt; void()&gt; cb, bool recurring=false)</td></tr>
+<tr class="memdesc:a2248be0553854f3eb088755cc843f51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加定时器  <a href="classwinter_1_1TimerManager.html#a2248be0553854f3eb088755cc843f51d">更多...</a><br /></td></tr>
+<tr class="separator:a2248be0553854f3eb088755cc843f51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b00fce684f2c32a54abff109b80697"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a49b00fce684f2c32a54abff109b80697">addConditionTimer</a> (uint64_t ms, std::function&lt; void()&gt; cb, std::weak_ptr&lt; void &gt; weak_cond, bool recurring=false)</td></tr>
+<tr class="memdesc:a49b00fce684f2c32a54abff109b80697"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加条件定时器  <a href="classwinter_1_1TimerManager.html#a49b00fce684f2c32a54abff109b80697">更多...</a><br /></td></tr>
+<tr class="separator:a49b00fce684f2c32a54abff109b80697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e2d3d63e8cedbc360c29e535274625"><td class="memItemLeft" align="right" valign="top"><a id="ad2e2d3d63e8cedbc360c29e535274625"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#ad2e2d3d63e8cedbc360c29e535274625">getNextTimer</a> ()</td></tr>
+<tr class="memdesc:ad2e2d3d63e8cedbc360c29e535274625"><td class="mdescLeft">&#160;</td><td class="mdescRight">到最近一个定时器执行的时间间隔(毫秒) <br /></td></tr>
+<tr class="separator:ad2e2d3d63e8cedbc360c29e535274625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af1387ddef3f8eee96dfe05976db612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a6af1387ddef3f8eee96dfe05976db612">listExpiredCb</a> (std::vector&lt; std::function&lt; void()&gt; &gt; &amp;cbs)</td></tr>
+<tr class="memdesc:a6af1387ddef3f8eee96dfe05976db612"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取需要执行的定时器的回调函数列表  <a href="classwinter_1_1TimerManager.html#a6af1387ddef3f8eee96dfe05976db612">更多...</a><br /></td></tr>
+<tr class="separator:a6af1387ddef3f8eee96dfe05976db612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56be6455820b6678a81ecc7723e1a2b"><td class="memItemLeft" align="right" valign="top"><a id="ad56be6455820b6678a81ecc7723e1a2b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#ad56be6455820b6678a81ecc7723e1a2b">hasTimer</a> ()</td></tr>
+<tr class="memdesc:ad56be6455820b6678a81ecc7723e1a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否有定时器 <br /></td></tr>
+<tr class="separator:ad56be6455820b6678a81ecc7723e1a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ac3a6c2abacd7a64b3be02893040994b2"><td class="memItemLeft" align="right" valign="top"><a id="ac3a6c2abacd7a64b3be02893040994b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#ac3a6c2abacd7a64b3be02893040994b2">onTimerInsertedAtFront</a> ()=0</td></tr>
+<tr class="memdesc:ac3a6c2abacd7a64b3be02893040994b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">当有新的定时器插入到定时器的首部,执行该函数 <br /></td></tr>
+<tr class="separator:ac3a6c2abacd7a64b3be02893040994b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2865d5ee8f591ca7d2c9ec371d10f7da"><td class="memItemLeft" align="right" valign="top"><a id="a2865d5ee8f591ca7d2c9ec371d10f7da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwinter_1_1TimerManager.html#a2865d5ee8f591ca7d2c9ec371d10f7da">addTimer</a> (<a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a> val, <a class="el" href="classwinter_1_1RWMutex.html#a9b2d220f87978f1ed5bb8e4c7023396d">RWMutexType::WriteLock</a> &amp;lock)</td></tr>
+<tr class="memdesc:a2865d5ee8f591ca7d2c9ec371d10f7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">将定时器添加到管理器中 <br /></td></tr>
+<tr class="separator:a2865d5ee8f591ca7d2c9ec371d10f7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a50de43af5bed41f30c071d8cce0e81bc"><td class="memItemLeft" align="right" valign="top"><a id="a50de43af5bed41f30c071d8cce0e81bc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Timer</b></td></tr>
+<tr class="separator:a50de43af5bed41f30c071d8cce0e81bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>定时器管理器 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a49b00fce684f2c32a54abff109b80697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b00fce684f2c32a54abff109b80697">&#9670;&nbsp;</a></span>addConditionTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a> winter::TimerManager::addConditionTimer </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::weak_ptr&lt; void &gt;&#160;</td>
+          <td class="paramname"><em>weak_cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recurring</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加条件定时器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>定时器执行间隔时间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>定时器回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">weak_cond</td><td>条件 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recurring</td><td>是否循环 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2248be0553854f3eb088755cc843f51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2248be0553854f3eb088755cc843f51d">&#9670;&nbsp;</a></span>addTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwinter_1_1Timer.html#a8b243de7bf1b2dd24b847d54f5595d55">Timer::ptr</a> winter::TimerManager::addTimer </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recurring</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加定时器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>定时器执行间隔时间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>定时器回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recurring</td><td>是否循环定时器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6af1387ddef3f8eee96dfe05976db612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af1387ddef3f8eee96dfe05976db612">&#9670;&nbsp;</a></span>listExpiredCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void winter::TimerManager::listExpiredCb </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::function&lt; void()&gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cbs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取需要执行的定时器的回调函数列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">cbs</td><td>回调函数数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="timer_8h_source.html">timer.h</a></li>
+<li>timer.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

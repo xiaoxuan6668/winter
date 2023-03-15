@@ -1,0 +1,256 @@
+\doxysection{winter\+::IOManager类 参考}
+\label{classwinter_1_1IOManager}\index{winter::IOManager@{winter::IOManager}}
+
+
+基于\+Epoll的\+IO协程调度器  
+
+
+
+
+{\ttfamily \#include $<$iomanager.\+h$>$}
+
+
+
+类 winter\+::IOManager 继承关系图\+:
+% FIG 0
+
+
+winter\+::IOManager 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ Event} \{ \textbf{ NONE} = 0x0
+, \textbf{ READ} = 0x1
+, \textbf{ WRITE} = 0x4
+ \}
+\begin{DoxyCompactList}\small\item\em IO事件 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1IOManager_aad9a02b0f15e520c4533d220fb5ed9d1}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ IOManager} $>$ {\bfseries ptr}
+\item 
+\mbox{\label{classwinter_1_1IOManager_aaecb903ea45d84665ec7a96cdb7daf4c}} 
+typedef \textbf{ RWMutex} {\bfseries RWMutex\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ IOManager} (size\+\_\+t threads=1, bool use\+\_\+caller=true, const std\+::string \&name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1IOManager_a7c834d9a9af44d27a257a037e5227e92}} 
+\textbf{ $\sim$\+IOManager} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+int \textbf{ add\+Event} (int fd, \textbf{ Event} event, std\+::function$<$ void()$>$ cb=nullptr)
+\begin{DoxyCompactList}\small\item\em 添加事件 \end{DoxyCompactList}\item 
+bool \textbf{ del\+Event} (int fd, \textbf{ Event} event)
+\begin{DoxyCompactList}\small\item\em 删除事件 \end{DoxyCompactList}\item 
+bool \textbf{ cancel\+Event} (int fd, \textbf{ Event} event)
+\begin{DoxyCompactList}\small\item\em 取消事件 \end{DoxyCompactList}\item 
+bool \textbf{ cancel\+All} (int fd)
+\begin{DoxyCompactList}\small\item\em 取消所有事件 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1IOManager_a85c64e3a90cc4ac302e71fe321630b56}} 
+static \textbf{ IOManager} $\ast$ \textbf{ Get\+This} ()
+\begin{DoxyCompactList}\small\item\em 返回当前的\+IOManager \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1IOManager_a39c80bbb2a0b8e3d0e3990a21f020e48}} 
+void \textbf{ tickle} () override
+\begin{DoxyCompactList}\small\item\em 通知协程调度器有任务了 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1IOManager_a0649651f100e29b8226ae21bfd5960eb}} 
+bool \textbf{ stopping} () override
+\begin{DoxyCompactList}\small\item\em 返回是否可以停止 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1IOManager_a7401a7329e5c1aa23203e69142d0f231}} 
+void \textbf{ idle} () override
+\begin{DoxyCompactList}\small\item\em 协程无任务可调度时执行idle协程 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1IOManager_a4a71d858bd34b1dc2184e07929b6346b}} 
+void \textbf{ on\+Timer\+Inserted\+At\+Front} () override
+\begin{DoxyCompactList}\small\item\em 当有新的定时器插入到定时器的首部,执行该函数 \end{DoxyCompactList}\item 
+void \textbf{ context\+Resize} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em 重置socket句柄上下文的容器大小 \end{DoxyCompactList}\item 
+bool \textbf{ stopping} (uint64\+\_\+t \&timeout)
+\begin{DoxyCompactList}\small\item\em 判断是否可以停止 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+基于\+Epoll的\+IO协程调度器 
+
+\doxysubsection{成员枚举类型说明}
+\mbox{\label{classwinter_1_1IOManager_a22783d8bef693ea3c4514e19bbfa7e8a}} 
+\index{winter::IOManager@{winter::IOManager}!Event@{Event}}
+\index{Event@{Event}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{Event}
+{\footnotesize\ttfamily enum \textbf{ winter\+::\+IOManager\+::\+Event}}
+
+
+
+IO事件 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!winter::IOManager@{winter::IOManager}}\index{winter::IOManager@{winter::IOManager}!NONE@{NONE}}}\mbox{\label{classwinter_1_1IOManager_a22783d8bef693ea3c4514e19bbfa7e8aa76e23b9b6216cc3f18c568164d6a5108}} 
+NONE&无事件 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{READ@{READ}!winter::IOManager@{winter::IOManager}}\index{winter::IOManager@{winter::IOManager}!READ@{READ}}}\mbox{\label{classwinter_1_1IOManager_a22783d8bef693ea3c4514e19bbfa7e8aacdda58ec2715e038bc1764d5663fdbfa}} 
+READ&读事件(\+EPOLLIN) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRITE@{WRITE}!winter::IOManager@{winter::IOManager}}\index{winter::IOManager@{winter::IOManager}!WRITE@{WRITE}}}\mbox{\label{classwinter_1_1IOManager_a22783d8bef693ea3c4514e19bbfa7e8aadb00c5ed17fe576b1399e521d3d4ab39}} 
+WRITE&写事件(\+EPOLLOUT) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\label{classwinter_1_1IOManager_a53c356f3cc84af816f96a03f185422fa}} 
+\index{winter::IOManager@{winter::IOManager}!IOManager@{IOManager}}
+\index{IOManager@{IOManager}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{IOManager()}
+{\footnotesize\ttfamily winter\+::\+IOManager\+::\+IOManager (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{threads = {\ttfamily 1},  }\item[{bool}]{use\+\_\+caller = {\ttfamily true},  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em threads} & 线程数量 \\
+\hline
+\mbox{\texttt{ in}}  & {\em use\+\_\+caller} & 是否将调用线程包含进去 \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & 调度器的名称 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1IOManager_aace20f6a8710b7093abc1a163396f984}} 
+\index{winter::IOManager@{winter::IOManager}!addEvent@{addEvent}}
+\index{addEvent@{addEvent}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{addEvent()}
+{\footnotesize\ttfamily int winter\+::\+IOManager\+::add\+Event (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{\textbf{ Event}}]{event,  }\item[{std\+::function$<$ void()$>$}]{cb = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+添加事件 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em fd} & socket句柄 \\
+\hline
+\mbox{\texttt{ in}}  & {\em event} & 事件类型 \\
+\hline
+\mbox{\texttt{ in}}  & {\em cb} & 事件回调函数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+添加成功返回0,失败返回-\/1 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 2
+\mbox{\label{classwinter_1_1IOManager_a1f6ed80ba67a5dcc8efe0bf840dc6003}} 
+\index{winter::IOManager@{winter::IOManager}!cancelAll@{cancelAll}}
+\index{cancelAll@{cancelAll}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{cancelAll()}
+{\footnotesize\ttfamily bool winter\+::\+IOManager\+::cancel\+All (\begin{DoxyParamCaption}\item[{int}]{fd }\end{DoxyParamCaption})}
+
+
+
+取消所有事件 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em fd} & socket句柄 \\
+\hline
+\end{DoxyParams}
+函数调用图\+:
+% FIG 3
+\mbox{\label{classwinter_1_1IOManager_ab1d7cc7892812d7ea6dd5f98aa3b607b}} 
+\index{winter::IOManager@{winter::IOManager}!cancelEvent@{cancelEvent}}
+\index{cancelEvent@{cancelEvent}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{cancelEvent()}
+{\footnotesize\ttfamily bool winter\+::\+IOManager\+::cancel\+Event (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{\textbf{ Event}}]{event }\end{DoxyParamCaption})}
+
+
+
+取消事件 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em fd} & socket句柄 \\
+\hline
+\mbox{\texttt{ in}}  & {\em event} & 事件类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{注意}
+如果事件存在则触发事件 
+\end{DoxyAttention}
+函数调用图\+:
+% FIG 4
+\mbox{\label{classwinter_1_1IOManager_a0513f19af4c6f5ba962ec3bef5336eaa}} 
+\index{winter::IOManager@{winter::IOManager}!contextResize@{contextResize}}
+\index{contextResize@{contextResize}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{contextResize()}
+{\footnotesize\ttfamily void winter\+::\+IOManager\+::context\+Resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+重置socket句柄上下文的容器大小 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em size} & 容量大小 \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1IOManager_a9464c12849613e79566611465976e06b}} 
+\index{winter::IOManager@{winter::IOManager}!delEvent@{delEvent}}
+\index{delEvent@{delEvent}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{delEvent()}
+{\footnotesize\ttfamily bool winter\+::\+IOManager\+::del\+Event (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{\textbf{ Event}}]{event }\end{DoxyParamCaption})}
+
+
+
+删除事件 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em fd} & socket句柄 \\
+\hline
+\mbox{\texttt{ in}}  & {\em event} & 事件类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{注意}
+不会触发事件 
+\end{DoxyAttention}
+函数调用图\+:
+% FIG 5
+\mbox{\label{classwinter_1_1IOManager_a5a6c1b1aa7f5f171780104a53675a6a1}} 
+\index{winter::IOManager@{winter::IOManager}!stopping@{stopping}}
+\index{stopping@{stopping}!winter::IOManager@{winter::IOManager}}
+\doxysubsubsection{stopping()}
+{\footnotesize\ttfamily bool winter\+::\+IOManager\+::stopping (\begin{DoxyParamCaption}\item[{uint64\+\_\+t \&}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+判断是否可以停止 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ out}}  & {\em timeout} & 最近要出发的定时器事件间隔 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回是否可以停止 
+\end{DoxyReturn}
+函数调用图\+:
+% FIG 6
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ iomanager.\+h}\item 
+iomanager.\+cc\end{DoxyCompactItemize}

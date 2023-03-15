@@ -1,0 +1,65 @@
+\doxysection{config.\+h 文件参考}
+\label{config_8h}\index{config.h@{config.h}}
+
+
+配置模块  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$boost/lexical\+\_\+cast.\+hpp$>$}\newline
+{\ttfamily \#include $<$yaml-\/cpp/yaml.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include \char`\"{}log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thread.\+h\char`\"{}}\newline
+config.\+h 的引用(Include)关系图\+:
+% FIG 0
+此图展示该文件直接或间接的被哪些文件引用了\+:
+% FIG 1
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ winter\+::\+Config\+Var\+Base}
+\begin{DoxyCompactList}\small\item\em 配置变量的基类 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ F, T $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类(F 源类型, T 目标类型) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::string, std\+::vector$<$ T $>$ $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(YAML String 转换成 std\+::vector$<$\+T$>$) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::vector$<$ T $>$, std\+::string $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(std\+::vector$<$\+T$>$ 转换成 YAML String) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::string, std\+::list$<$ T $>$ $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(YAML String 转换成 std\+::list$<$\+T$>$) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::list$<$ T $>$, std\+::string $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(std\+::list$<$\+T$>$ 转换成 YAML String) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::string, std\+::set$<$ T $>$ $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(YAML String 转换成 std\+::set$<$\+T$>$) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::set$<$ T $>$, std\+::string $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(std\+::set$<$\+T$>$ 转换成 YAML String) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::string, std\+::unordered\+\_\+set$<$ T $>$ $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(YAML String 转换成 std\+::unordered\+\_\+set$<$\+T$>$) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::unordered\+\_\+set$<$ T $>$, std\+::string $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(std\+::unordered\+\_\+set$<$\+T$>$ 转换成 YAML String) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::string, std\+::map$<$ std\+::string, T $>$ $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(YAML String 转换成 std\+::map$<$std\+::string, T$>$) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::map$<$ std\+::string, T $>$, std\+::string $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(std\+::map$<$std\+::string, T$>$ 转换成 YAML String) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::string, std\+::unordered\+\_\+map$<$ std\+::string, T $>$ $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(YAML String 转换成 std\+::unordered\+\_\+map$<$std\+::string, T$>$) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Lexical\+Cast$<$ std\+::unordered\+\_\+map$<$ std\+::string, T $>$, std\+::string $>$}
+\begin{DoxyCompactList}\small\item\em 类型转换模板类片特化(std\+::unordered\+\_\+map$<$std\+::string, T$>$ 转换成 YAML String) \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Config\+Var$<$ T, From\+Str, To\+Str $>$}
+\begin{DoxyCompactList}\small\item\em 配置参数模板子类,保存对应类型的参数值 \end{DoxyCompactList}\item 
+class \textbf{ winter\+::\+Config}
+\begin{DoxyCompactList}\small\item\em Config\+Var的管理类 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+配置模块 
+

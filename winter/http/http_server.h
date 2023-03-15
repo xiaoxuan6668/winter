@@ -1,3 +1,7 @@
+/**
+ * @file http_server.h
+ * @brief HTTP服务器封装
+ */
 #ifndef __WINTER_HTTP_HTTP_SERVER_H__
 #define __WINTER_HTTP_HTTP_SERVER_H__
 
@@ -8,19 +12,39 @@
 namespace winter {
 namespace http {
 
+/**
+ * @brief HTTP服务器类
+ */
 class HttpServer : public TcpServer {
 public:
+    /// 智能指针类型
     typedef std::shared_ptr<HttpServer> ptr;
+
+    /**
+     * @brief 构造函数
+     * @param[in] keepalive 是否长连接
+     * @param[in] worker 工作调度器
+     * @param[in] accept_worker 接收连接调度器
+     */
     HttpServer(bool keepalive = false
                ,winter::IOManager* worker = winter::IOManager::GetThis()
                ,winter::IOManager* accept_worker = winter::IOManager::GetThis());
 
+    /**
+     * @brief 获取ServletDispatch
+     */
     ServletDispatch::ptr getServletDispatch() const { return m_dispatch;}
+
+    /**
+     * @brief 设置ServletDispatch
+     */
     void setServletDispatch(ServletDispatch::ptr v) { m_dispatch = v;}
 protected:
     virtual void handleClient(Socket::ptr client) override;
 private:
+    /// 是否支持长连接
     bool m_isKeepalive;
+    /// Servlet分发器
     ServletDispatch::ptr m_dispatch;
 };
 

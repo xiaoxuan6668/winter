@@ -1,0 +1,136 @@
+\doxysection{winter\+::Fd\+Ctx类 参考}
+\label{classwinter_1_1FdCtx}\index{winter::FdCtx@{winter::FdCtx}}
+
+
+文件句柄上下文类  
+
+
+
+
+{\ttfamily \#include $<$fd\+\_\+manager.\+h$>$}
+
+
+
+类 winter\+::Fd\+Ctx 继承关系图\+:
+% FIG 0
+
+
+winter\+::Fd\+Ctx 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1FdCtx_ad55a67c98f0b5a4b2b0c65fecb0918e1}} 
+typedef std\+::shared\+\_\+ptr$<$ \textbf{ Fd\+Ctx} $>$ {\bfseries ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classwinter_1_1FdCtx_a7903c311a3989c272d681bdcd588e081}} 
+\textbf{ Fd\+Ctx} (int fd)
+\begin{DoxyCompactList}\small\item\em 通过文件句柄构造\+Fd\+Ctx \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1FdCtx_a53abe37e22071f81c6203ac256ced805}} 
+\textbf{ $\sim$\+Fd\+Ctx} ()
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1FdCtx_a786bd5c6f5b07a6c12d2f00971a188c0}} 
+bool \textbf{ is\+Init} () const
+\begin{DoxyCompactList}\small\item\em 是否初始化完成 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1FdCtx_a6e36c6b8d6ec4a78080f2f537830fd19}} 
+bool \textbf{ is\+Socket} () const
+\begin{DoxyCompactList}\small\item\em 是否socket \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1FdCtx_a165d2317cd1896dfbaae6a33a509cdbe}} 
+bool \textbf{ is\+Close} () const
+\begin{DoxyCompactList}\small\item\em 是否已关闭 \end{DoxyCompactList}\item 
+void \textbf{ set\+User\+Nonblock} (bool v)
+\begin{DoxyCompactList}\small\item\em 设置用户主动设置非阻塞 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1FdCtx_a31426b550bca5fd377ab97e37ef2718e}} 
+bool \textbf{ get\+User\+Nonblock} () const
+\begin{DoxyCompactList}\small\item\em 获取是否用户主动设置的非阻塞 \end{DoxyCompactList}\item 
+void \textbf{ set\+Sys\+Nonblock} (bool v)
+\begin{DoxyCompactList}\small\item\em 设置系统非阻塞 \end{DoxyCompactList}\item 
+\mbox{\label{classwinter_1_1FdCtx_a41d1b93de9ab6d4a410c7ae9db2135ca}} 
+bool \textbf{ get\+Sys\+Nonblock} () const
+\begin{DoxyCompactList}\small\item\em 获取系统非阻塞 \end{DoxyCompactList}\item 
+void \textbf{ set\+Timeout} (int type, uint64\+\_\+t v)
+\begin{DoxyCompactList}\small\item\em 设置超时时间 \end{DoxyCompactList}\item 
+uint64\+\_\+t \textbf{ get\+Timeout} (int type)
+\begin{DoxyCompactList}\small\item\em 获取超时时间 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+文件句柄上下文类 
+
+管理文件句柄类型(是否socket) 是否阻塞,是否关闭,读/写超时时间 
+
+\doxysubsection{成员函数说明}
+\mbox{\label{classwinter_1_1FdCtx_a697347d324dd640d1df86d1a695410e3}} 
+\index{winter::FdCtx@{winter::FdCtx}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!winter::FdCtx@{winter::FdCtx}}
+\doxysubsubsection{getTimeout()}
+{\footnotesize\ttfamily uint64\+\_\+t winter\+::\+Fd\+Ctx\+::get\+Timeout (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+获取超时时间 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em type} & 类型\+SO\+\_\+\+RCVTIMEO(读超时), SO\+\_\+\+SNDTIMEO(写超时) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+超时时间毫秒 
+\end{DoxyReturn}
+\mbox{\label{classwinter_1_1FdCtx_a6e7646363be06b8f213f5a3c920518d7}} 
+\index{winter::FdCtx@{winter::FdCtx}!setSysNonblock@{setSysNonblock}}
+\index{setSysNonblock@{setSysNonblock}!winter::FdCtx@{winter::FdCtx}}
+\doxysubsubsection{setSysNonblock()}
+{\footnotesize\ttfamily void winter\+::\+Fd\+Ctx\+::set\+Sys\+Nonblock (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置系统非阻塞 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em v} & 是否阻塞 \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1FdCtx_adf1203f57925cbb66497b91b09fd3a5c}} 
+\index{winter::FdCtx@{winter::FdCtx}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!winter::FdCtx@{winter::FdCtx}}
+\doxysubsubsection{setTimeout()}
+{\footnotesize\ttfamily void winter\+::\+Fd\+Ctx\+::set\+Timeout (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{uint64\+\_\+t}]{v }\end{DoxyParamCaption})}
+
+
+
+设置超时时间 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em type} & 类型\+SO\+\_\+\+RCVTIMEO(读超时), SO\+\_\+\+SNDTIMEO(写超时) \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & 时间毫秒 \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classwinter_1_1FdCtx_a6ed77fa229156e3b9724ff00fb9a109b}} 
+\index{winter::FdCtx@{winter::FdCtx}!setUserNonblock@{setUserNonblock}}
+\index{setUserNonblock@{setUserNonblock}!winter::FdCtx@{winter::FdCtx}}
+\doxysubsubsection{setUserNonblock()}
+{\footnotesize\ttfamily void winter\+::\+Fd\+Ctx\+::set\+User\+Nonblock (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置用户主动设置非阻塞 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em v} & 是否阻塞 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ fd\+\_\+manager.\+h}\item 
+fd\+\_\+manager.\+cc\end{DoxyCompactItemize}

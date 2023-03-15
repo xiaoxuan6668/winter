@@ -1,0 +1,35 @@
+\doxysection{winter\+::IOManager\+::Fd\+Context\+::Event\+Context结构体 参考}
+\label{structwinter_1_1IOManager_1_1FdContext_1_1EventContext}\index{winter::IOManager::FdContext::EventContext@{winter::IOManager::FdContext::EventContext}}
+
+
+事件上线文类  
+
+
+
+
+{\ttfamily \#include $<$iomanager.\+h$>$}
+
+
+
+winter\+::IOManager\+::Fd\+Context\+::Event\+Context 的协作图\+:
+% FIG 0
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{structwinter_1_1IOManager_1_1FdContext_1_1EventContext_aab33de8d4f714e1ca08d164c7fc23fc3}} 
+\textbf{ Scheduler} $\ast$ \textbf{ scheduler} = nullptr
+\begin{DoxyCompactList}\small\item\em 事件执行的调度器 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1IOManager_1_1FdContext_1_1EventContext_ad26c2d4d0bc8075f057f67ff52f49517}} 
+Fiber\+::ptr \textbf{ fiber}
+\begin{DoxyCompactList}\small\item\em 事件协程 \end{DoxyCompactList}\item 
+\mbox{\label{structwinter_1_1IOManager_1_1FdContext_1_1EventContext_a9c4efde1419866f94cf966bc596899ce}} 
+std\+::function$<$ void()$>$ \textbf{ cb}
+\begin{DoxyCompactList}\small\item\em 事件的回调函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+事件上线文类 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ iomanager.\+h}\end{DoxyCompactItemize}
