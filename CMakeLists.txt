@@ -5,7 +5,7 @@ project(winter)
 include (cmake/utils.cmake)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
 # -Wno-builtin-macro-redefined
 
 include_directories(.)
@@ -14,6 +14,17 @@ include_directories(.)
 
 # find_library(YAMLCPP yaml-cpp)
 # message("***", ${YAMLCPP})
+
+find_package(Boost REQUIRED)
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+endif()
+
+find_package(OpenSSL REQUIRED)
+if(OPENSSL_FOUND)
+    include_directories(${OPENSSL_INCLUDE_DIR})
+    link_directories(/usr/lib/x86_64-linux-gnu)
+endif()
 
 set(LIB_SRC
     winter/address.cc
@@ -29,6 +40,10 @@ set(LIB_SRC
     winter/http/http_session.cc
     winter/http/http_server.cc
     winter/http/servlet.cc
+    winter/http/ws_session.cc
+    winter/http/ws_servlet.cc
+    winter/http/ws_server.cc
+    winter/http/ws_connection.cc
     winter/hook.cc
     winter/iomanager.cc
     winter/log.cc
@@ -40,6 +55,7 @@ set(LIB_SRC
     winter/timer.cc
     winter/thread.cc
     winter/util.cc
+    winter/util/hash_util.cc
     )
 
 ragelmaker(winter/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/winter/http)
@@ -55,7 +71,8 @@ set(LIBS
     winter
     pthread
     dl
-    yaml-cpp)
+    yaml-cpp
+    ${OPENSSL_LIBRARIES})
 
 # add_executable(test tests/test.cc)
 # add_dependencies(test winter)
@@ -80,10 +97,12 @@ winter_add_executable(echo_server "examples/echo_server.cc" winter "${LIBS}")
 winter_add_executable(test_http_server "tests/test_http_server.cc" winter "${LIBS}")
 winter_add_executable(test_http_connection "tests/test_http_connection.cc" winter "${LIBS}")
 winter_add_executable(test_uri "tests/test_uri.cc" winter "${LIBS}")
+winter_add_executable(my_http_server "examples/my_http_server.cc" winter "${LIBS}")
 
 winter_add_executable(test_daemon "tests/test_daemon.cc" winter "${LIBS}")
-
 winter_add_executable(test_env "tests/test_env.cc" winter "${LIBS}")
+winter_add_executable(test_ws_server "tests/test_ws_server.cc" winter "${LIBS}")
+winter_add_executable(test_ws_client "tests/test_ws_client.cc" winter "${LIBS}")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

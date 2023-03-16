@@ -11,12 +11,22 @@
 
 
 
-类 winter\+::Fiber 继承关系图\+:
-% FIG 0
+类 winter\+::Fiber 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classwinter_1_1Fiber__inherit__graph}
+\end{center}
+\end{figure}
 
 
-winter\+::Fiber 的协作图\+:
-% FIG 1
+winter\+::Fiber 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classwinter_1_1Fiber__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public 类型}
 \begin{DoxyCompactItemize}
 \item 
@@ -131,8 +141,13 @@ class {\bfseries Scheduler}
 \begin{DoxyPostcond}{后置条件}
 返回到线程的主协程 
 \end{DoxyPostcond}
-函数调用图\+:
-% FIG 2
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classwinter_1_1Fiber_a4c5b469dc2c4fd847854c99b6dfe7711_cgraph}
+\end{center}
+\end{figure}
 \mbox{\label{classwinter_1_1Fiber_a8337a04ff19f91bdd46f17789490abc3}} 
 \index{winter::Fiber@{winter::Fiber}!call@{call}}
 \index{call@{call}!winter::Fiber@{winter::Fiber}}
@@ -146,8 +161,13 @@ class {\bfseries Scheduler}
 \begin{DoxyPrecond}{前置条件}
 执行的为当前线程的主协程 
 \end{DoxyPrecond}
-函数调用图\+:
-% FIG 3
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classwinter_1_1Fiber_a8337a04ff19f91bdd46f17789490abc3_cgraph}
+\end{center}
+\end{figure}
 \mbox{\label{classwinter_1_1Fiber_af7b3a73e11c8e997668f4c848db264a7}} 
 \index{winter::Fiber@{winter::Fiber}!CallerMainFunc@{CallerMainFunc}}
 \index{CallerMainFunc@{CallerMainFunc}!winter::Fiber@{winter::Fiber}}
@@ -162,7 +182,13 @@ class {\bfseries Scheduler}
 执行完成返回到线程调度协程 
 \end{DoxyPostcond}
 函数调用图\+:
-% FIG 4
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classwinter_1_1Fiber_af7b3a73e11c8e997668f4c848db264a7_cgraph}
+\end{center}
+\end{figure}
 \mbox{\label{classwinter_1_1Fiber_a1e87940a7cc24bc1e5f8f7f3b9a880dd}} 
 \index{winter::Fiber@{winter::Fiber}!MainFunc@{MainFunc}}
 \index{MainFunc@{MainFunc}!winter::Fiber@{winter::Fiber}}
@@ -177,7 +203,13 @@ class {\bfseries Scheduler}
 执行完成返回到线程主协程 
 \end{DoxyPostcond}
 函数调用图\+:
-% FIG 5
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classwinter_1_1Fiber_a1e87940a7cc24bc1e5f8f7f3b9a880dd_cgraph}
+\end{center}
+\end{figure}
 \mbox{\label{classwinter_1_1Fiber_afa261911e1f4323946ec136546b1c319}} 
 \index{winter::Fiber@{winter::Fiber}!reset@{reset}}
 \index{reset@{reset}!winter::Fiber@{winter::Fiber}}
@@ -226,7 +258,13 @@ class {\bfseries Scheduler}
 \doxyref{get\+State()}{p.}{classwinter_1_1Fiber_acf32500670a0208aede72b652546a9ef} = EXEC 
 \end{DoxyPostcond}
 函数调用图\+:
-% FIG 6
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classwinter_1_1Fiber_a59f74d23341483264b7e449a9d5b69c0_cgraph}
+\end{center}
+\end{figure}
 \mbox{\label{classwinter_1_1Fiber_a8586500f81bbfb1d95af07e4e01a514f}} 
 \index{winter::Fiber@{winter::Fiber}!YieldToHold@{YieldToHold}}
 \index{YieldToHold@{YieldToHold}!winter::Fiber@{winter::Fiber}}
@@ -240,8 +278,13 @@ class {\bfseries Scheduler}
 \begin{DoxyPostcond}{后置条件}
 \doxyref{get\+State()}{p.}{classwinter_1_1Fiber_acf32500670a0208aede72b652546a9ef} = HOLD 
 \end{DoxyPostcond}
-函数调用图\+:
-% FIG 7
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classwinter_1_1Fiber_a8586500f81bbfb1d95af07e4e01a514f_cgraph}
+\end{center}
+\end{figure}
 \mbox{\label{classwinter_1_1Fiber_a70785618d8396ae44c58144c888feee2}} 
 \index{winter::Fiber@{winter::Fiber}!YieldToReady@{YieldToReady}}
 \index{YieldToReady@{YieldToReady}!winter::Fiber@{winter::Fiber}}
@@ -255,8 +298,13 @@ class {\bfseries Scheduler}
 \begin{DoxyPostcond}{后置条件}
 \doxyref{get\+State()}{p.}{classwinter_1_1Fiber_acf32500670a0208aede72b652546a9ef} = READY 
 \end{DoxyPostcond}
-函数调用图\+:
-% FIG 8
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classwinter_1_1Fiber_a70785618d8396ae44c58144c888feee2_cgraph}
+\end{center}
+\end{figure}
 
 
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}

@@ -28,3 +28,7 @@ stamp-h1
 *.pc
 depcomp
 *.xcodeproj
+/winter/html
+/winter/latex
+/winter/http/html
+/winter/http/latex

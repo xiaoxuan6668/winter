@@ -5,10 +5,10 @@
 #ifndef __WINTER_HTTP_CONNECTION_H__
 #define __WINTER_HTTP_CONNECTION_H__
 
-#include "../socket_stream.h"
+#include "winter/socket_stream.h"
 #include "http.h"
-#include "../uri.h"
-#include "../thread.h"
+#include "winter/uri.h"
+#include "winter/thread.h"
 
 #include <list>
 

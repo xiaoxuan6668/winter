@@ -1,237 +1,277 @@
 [
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/address.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/address.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/address.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/address.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/address.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/address.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/address.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/bytearray.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/bytearray.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/bytearray.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/bytearray.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/bytearray.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/bytearray.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/bytearray.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/config.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/config.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/config.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/config.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/config.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/config.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/config.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/daemon.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/daemon.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/daemon.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/daemon.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/daemon.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/daemon.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/daemon.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/env.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/env.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/env.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/env.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/env.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/env.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/env.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/fd_manager.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/fd_manager.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/fd_manager.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/fd_manager.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/fd_manager.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/fd_manager.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/fd_manager.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/fiber.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/fiber.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/fiber.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/fiber.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/fiber.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/fiber.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/fiber.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/http.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_connection.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_connection.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_connection.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_connection.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_connection.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_connection.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/http_connection.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_parser.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_parser.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_parser.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_parser.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_parser.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_parser.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/http_parser.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_session.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_session.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_session.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_session.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_session.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_session.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/http_session.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_server.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_server.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/http_server.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/servlet.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/servlet.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/servlet.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/servlet.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/servlet.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/servlet.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/servlet.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/hook.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/hook.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/hook.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/ws_session.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/ws_session.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_session.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/http/ws_session.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/ws_servlet.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_servlet.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/http/ws_servlet.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/ws_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/ws_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_server.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/http/ws_server.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/ws_connection.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/ws_connection.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_connection.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/http/ws_connection.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/hook.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/hook.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/hook.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/hook.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/iomanager.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/iomanager.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/iomanager.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/iomanager.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/iomanager.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/iomanager.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/iomanager.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/log.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/log.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/log.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/log.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/log.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/log.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/log.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/scheduler.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/scheduler.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/scheduler.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/scheduler.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/scheduler.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/scheduler.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/scheduler.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/socket.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/socket.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/socket.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/socket.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/socket.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/socket.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/socket.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/socket_stream.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/socket_stream.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/socket_stream.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/socket_stream.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/socket_stream.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/socket_stream.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/socket_stream.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/stream.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/stream.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/stream.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/stream.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/stream.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/stream.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/stream.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/tcp_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/tcp_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/tcp_server.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/tcp_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/tcp_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/tcp_server.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/tcp_server.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/timer.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/timer.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/timer.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/timer.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/timer.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/timer.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/timer.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/thread.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/thread.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/thread.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/thread.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/thread.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/thread.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/thread.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/util.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/util.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/util.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/util.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/util.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/util.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/util.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http11_parser.rl.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http11_parser.rl.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/util/hash_util.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/util/hash_util.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/util/hash_util.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/util/hash_util.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/http11_parser.rl.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http11_parser.rl.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/http11_parser.rl.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/httpclient_parser.rl.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/httpclient_parser.rl.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/http/httpclient_parser.rl.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/httpclient_parser.rl.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/http/httpclient_parser.rl.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/uri.rl.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/uri.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/uri.rl.cc",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/uri.rl.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/uri.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/uri.rl.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/uri.rl.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test1.dir/tests/test.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test1.dir/tests/test.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_config.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_config.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_config.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_config.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_config.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_thread.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_thread.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_thread.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_thread.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_thread.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_util.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_util.dir/tests/test_util.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_util.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_util.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_util.dir/tests/test_util.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_util.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_util.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_fiber.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_fiber.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_fiber.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_scheduler.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_scheduler.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_scheduler.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_scheduler.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_scheduler.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_iomanager.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_iomanager.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_iomanager.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_iomanager.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_iomanager.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_hook.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_hook.dir/tests/test_hook.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_hook.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_hook.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_hook.dir/tests/test_hook.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_hook.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_hook.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_address.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_address.dir/tests/test_address.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_address.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_address.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_address.dir/tests/test_address.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_address.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_address.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_socket.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_socket.dir/tests/test_socket.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_socket.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_socket.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_socket.dir/tests/test_socket.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_socket.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_socket.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_bytearray.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_bytearray.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_bytearray.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_bytearray.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_bytearray.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http.dir/tests/test_http.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http.dir/tests/test_http.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_http.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_parser.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http_parser.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_parser.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http_parser.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_http_parser.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_tcp_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_tcp_server.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_tcp_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_tcp_server.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_tcp_server.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"examples/echo_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/echo_server.dir/examples/echo_server.cc.o -c /home/ghx/MyProjects/cpp/winter/examples/echo_server.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"examples/echo_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/echo_server.dir/examples/echo_server.cc.o -c /home/ghx/MyProjects/cpp/winter/examples/echo_server.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/examples/echo_server.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http_server.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http_server.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_http_server.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_connection.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http_connection.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_connection.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_http_connection.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_http_connection.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_uri.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_uri.dir/tests/test_uri.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_uri.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_uri.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_uri.dir/tests/test_uri.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_uri.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_uri.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_daemon.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_daemon.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"examples/my_http_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/my_http_server.dir/examples/my_http_server.cc.o -c /home/ghx/MyProjects/cpp/winter/examples/my_http_server.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/examples/my_http_server.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_daemon.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_daemon.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_daemon.cc"
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
-  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_env.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_env.dir/tests/test_env.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_env.cc",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_env.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_env.dir/tests/test_env.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_env.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_env.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_ws_server.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_ws_server.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/tests/test_ws_server.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_ws_client.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_ws_client.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/tests/test_ws_client.cc"
 }
 ]

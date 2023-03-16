@@ -1,8 +1,0 @@
-digraph "类继承关系图"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="winter::LexicalCast\l\< F, T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1LexicalCast.html",tooltip="类型转换模板类(F 源类型, T 目标类型)"];
-}

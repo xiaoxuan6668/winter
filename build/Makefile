@@ -367,6 +367,19 @@ test_uri/fast:
 .PHONY : test_uri/fast
 
 #=============================================================================
+# Target rules for targets named my_http_server
+
+# Build rule for target.
+my_http_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_http_server
+.PHONY : my_http_server
+
+# fast build rule for target.
+my_http_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/build
+.PHONY : my_http_server/fast
+
+#=============================================================================
 # Target rules for targets named test_daemon
 
 # Build rule for target.
@@ -392,6 +405,32 @@ test_env/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
 .PHONY : test_env/fast
 
+#=============================================================================
+# Target rules for targets named test_ws_server
+
+# Build rule for target.
+test_ws_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ws_server
+.PHONY : test_ws_server
+
+# fast build rule for target.
+test_ws_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/build
+.PHONY : test_ws_server/fast
+
+#=============================================================================
+# Target rules for targets named test_ws_client
+
+# Build rule for target.
+test_ws_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ws_client
+.PHONY : test_ws_client
+
+# fast build rule for target.
+test_ws_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/build
+.PHONY : test_ws_client/fast
+
 examples/echo_server.o: examples/echo_server.cc.o
 .PHONY : examples/echo_server.o
 
@@ -415,6 +454,30 @@ examples/echo_server.s: examples/echo_server.cc.s
 examples/echo_server.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cc.s
 .PHONY : examples/echo_server.cc.s
+
+examples/my_http_server.o: examples/my_http_server.cc.o
+.PHONY : examples/my_http_server.o
+
+# target to build an object file
+examples/my_http_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/examples/my_http_server.cc.o
+.PHONY : examples/my_http_server.cc.o
+
+examples/my_http_server.i: examples/my_http_server.cc.i
+.PHONY : examples/my_http_server.i
+
+# target to preprocess a source file
+examples/my_http_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/examples/my_http_server.cc.i
+.PHONY : examples/my_http_server.cc.i
+
+examples/my_http_server.s: examples/my_http_server.cc.s
+.PHONY : examples/my_http_server.s
+
+# target to generate assembly for a file
+examples/my_http_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/examples/my_http_server.cc.s
+.PHONY : examples/my_http_server.cc.s
 
 tests/test.o: tests/test.cc.o
 .PHONY : tests/test.o
@@ -872,6 +935,54 @@ tests/test_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cc.s
 .PHONY : tests/test_util.cc.s
 
+tests/test_ws_client.o: tests/test_ws_client.cc.o
+.PHONY : tests/test_ws_client.o
+
+# target to build an object file
+tests/test_ws_client.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o
+.PHONY : tests/test_ws_client.cc.o
+
+tests/test_ws_client.i: tests/test_ws_client.cc.i
+.PHONY : tests/test_ws_client.i
+
+# target to preprocess a source file
+tests/test_ws_client.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.i
+.PHONY : tests/test_ws_client.cc.i
+
+tests/test_ws_client.s: tests/test_ws_client.cc.s
+.PHONY : tests/test_ws_client.s
+
+# target to generate assembly for a file
+tests/test_ws_client.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.s
+.PHONY : tests/test_ws_client.cc.s
+
+tests/test_ws_server.o: tests/test_ws_server.cc.o
+.PHONY : tests/test_ws_server.o
+
+# target to build an object file
+tests/test_ws_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.o
+.PHONY : tests/test_ws_server.cc.o
+
+tests/test_ws_server.i: tests/test_ws_server.cc.i
+.PHONY : tests/test_ws_server.i
+
+# target to preprocess a source file
+tests/test_ws_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.i
+.PHONY : tests/test_ws_server.cc.i
+
+tests/test_ws_server.s: tests/test_ws_server.cc.s
+.PHONY : tests/test_ws_server.s
+
+# target to generate assembly for a file
+tests/test_ws_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.s
+.PHONY : tests/test_ws_server.cc.s
+
 winter/address.o: winter/address.cc.o
 .PHONY : winter/address.o
 
@@ -1256,6 +1367,102 @@ winter/http/servlet.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/servlet.cc.s
 .PHONY : winter/http/servlet.cc.s
 
+winter/http/ws_connection.o: winter/http/ws_connection.cc.o
+.PHONY : winter/http/ws_connection.o
+
+# target to build an object file
+winter/http/ws_connection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_connection.cc.o
+.PHONY : winter/http/ws_connection.cc.o
+
+winter/http/ws_connection.i: winter/http/ws_connection.cc.i
+.PHONY : winter/http/ws_connection.i
+
+# target to preprocess a source file
+winter/http/ws_connection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_connection.cc.i
+.PHONY : winter/http/ws_connection.cc.i
+
+winter/http/ws_connection.s: winter/http/ws_connection.cc.s
+.PHONY : winter/http/ws_connection.s
+
+# target to generate assembly for a file
+winter/http/ws_connection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_connection.cc.s
+.PHONY : winter/http/ws_connection.cc.s
+
+winter/http/ws_server.o: winter/http/ws_server.cc.o
+.PHONY : winter/http/ws_server.o
+
+# target to build an object file
+winter/http/ws_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_server.cc.o
+.PHONY : winter/http/ws_server.cc.o
+
+winter/http/ws_server.i: winter/http/ws_server.cc.i
+.PHONY : winter/http/ws_server.i
+
+# target to preprocess a source file
+winter/http/ws_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_server.cc.i
+.PHONY : winter/http/ws_server.cc.i
+
+winter/http/ws_server.s: winter/http/ws_server.cc.s
+.PHONY : winter/http/ws_server.s
+
+# target to generate assembly for a file
+winter/http/ws_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_server.cc.s
+.PHONY : winter/http/ws_server.cc.s
+
+winter/http/ws_servlet.o: winter/http/ws_servlet.cc.o
+.PHONY : winter/http/ws_servlet.o
+
+# target to build an object file
+winter/http/ws_servlet.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o
+.PHONY : winter/http/ws_servlet.cc.o
+
+winter/http/ws_servlet.i: winter/http/ws_servlet.cc.i
+.PHONY : winter/http/ws_servlet.i
+
+# target to preprocess a source file
+winter/http/ws_servlet.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_servlet.cc.i
+.PHONY : winter/http/ws_servlet.cc.i
+
+winter/http/ws_servlet.s: winter/http/ws_servlet.cc.s
+.PHONY : winter/http/ws_servlet.s
+
+# target to generate assembly for a file
+winter/http/ws_servlet.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_servlet.cc.s
+.PHONY : winter/http/ws_servlet.cc.s
+
+winter/http/ws_session.o: winter/http/ws_session.cc.o
+.PHONY : winter/http/ws_session.o
+
+# target to build an object file
+winter/http/ws_session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_session.cc.o
+.PHONY : winter/http/ws_session.cc.o
+
+winter/http/ws_session.i: winter/http/ws_session.cc.i
+.PHONY : winter/http/ws_session.i
+
+# target to preprocess a source file
+winter/http/ws_session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_session.cc.i
+.PHONY : winter/http/ws_session.cc.i
+
+winter/http/ws_session.s: winter/http/ws_session.cc.s
+.PHONY : winter/http/ws_session.s
+
+# target to generate assembly for a file
+winter/http/ws_session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/http/ws_session.cc.s
+.PHONY : winter/http/ws_session.cc.s
+
 winter/iomanager.o: winter/iomanager.cc.o
 .PHONY : winter/iomanager.o
 
@@ -1520,6 +1727,30 @@ winter/util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/util.cc.s
 .PHONY : winter/util.cc.s
 
+winter/util/hash_util.o: winter/util/hash_util.cc.o
+.PHONY : winter/util/hash_util.o
+
+# target to build an object file
+winter/util/hash_util.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/util/hash_util.cc.o
+.PHONY : winter/util/hash_util.cc.o
+
+winter/util/hash_util.i: winter/util/hash_util.cc.i
+.PHONY : winter/util/hash_util.i
+
+# target to preprocess a source file
+winter/util/hash_util.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/util/hash_util.cc.i
+.PHONY : winter/util/hash_util.cc.i
+
+winter/util/hash_util.s: winter/util/hash_util.cc.s
+.PHONY : winter/util/hash_util.s
+
+# target to generate assembly for a file
+winter/util/hash_util.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/util/hash_util.cc.s
+.PHONY : winter/util/hash_util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1529,6 +1760,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... echo_server"
+	@echo "... my_http_server"
 	@echo "... test1"
 	@echo "... test_address"
 	@echo "... test_bytearray"
@@ -1548,10 +1780,15 @@ help:
 	@echo "... test_thread"
 	@echo "... test_uri"
 	@echo "... test_util"
+	@echo "... test_ws_client"
+	@echo "... test_ws_server"
 	@echo "... winter"
 	@echo "... examples/echo_server.o"
 	@echo "... examples/echo_server.i"
 	@echo "... examples/echo_server.s"
+	@echo "... examples/my_http_server.o"
+	@echo "... examples/my_http_server.i"
+	@echo "... examples/my_http_server.s"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"
@@ -1609,6 +1846,12 @@ help:
 	@echo "... tests/test_util.o"
 	@echo "... tests/test_util.i"
 	@echo "... tests/test_util.s"
+	@echo "... tests/test_ws_client.o"
+	@echo "... tests/test_ws_client.i"
+	@echo "... tests/test_ws_client.s"
+	@echo "... tests/test_ws_server.o"
+	@echo "... tests/test_ws_server.i"
+	@echo "... tests/test_ws_server.s"
 	@echo "... winter/address.o"
 	@echo "... winter/address.i"
 	@echo "... winter/address.s"
@@ -1657,6 +1900,18 @@ help:
 	@echo "... winter/http/servlet.o"
 	@echo "... winter/http/servlet.i"
 	@echo "... winter/http/servlet.s"
+	@echo "... winter/http/ws_connection.o"
+	@echo "... winter/http/ws_connection.i"
+	@echo "... winter/http/ws_connection.s"
+	@echo "... winter/http/ws_server.o"
+	@echo "... winter/http/ws_server.i"
+	@echo "... winter/http/ws_server.s"
+	@echo "... winter/http/ws_servlet.o"
+	@echo "... winter/http/ws_servlet.i"
+	@echo "... winter/http/ws_servlet.s"
+	@echo "... winter/http/ws_session.o"
+	@echo "... winter/http/ws_session.i"
+	@echo "... winter/http/ws_session.s"
 	@echo "... winter/iomanager.o"
 	@echo "... winter/iomanager.i"
 	@echo "... winter/iomanager.s"
@@ -1690,6 +1945,9 @@ help:
 	@echo "... winter/util.o"
 	@echo "... winter/util.i"
 	@echo "... winter/util.s"
+	@echo "... winter/util/hash_util.o"
+	@echo "... winter/util/hash_util.i"
+	@echo "... winter/util/hash_util.s"
 .PHONY : help
 
 

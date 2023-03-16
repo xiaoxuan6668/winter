@@ -2,8 +2,8 @@ CMakeFiles/winter.dir/winter/http/http_session.cc.o: \
  /home/ghx/MyProjects/cpp/winter/winter/http/http_session.cc \
  /usr/include/stdc-predef.h \
  /home/ghx/MyProjects/cpp/winter/winter/http/http_session.h \
- /home/ghx/MyProjects/cpp/winter/winter/http/../socket_stream.h \
- /home/ghx/MyProjects/cpp/winter/winter/http/../stream.h \
+ /home/ghx/MyProjects/cpp/winter/./winter/socket_stream.h \
+ /home/ghx/MyProjects/cpp/winter/./winter/stream.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -117,7 +117,7 @@ CMakeFiles/winter.dir/winter/http/http_session.cc.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /home/ghx/MyProjects/cpp/winter/winter/http/../bytearray.h \
+ /home/ghx/MyProjects/cpp/winter/./winter/bytearray.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
@@ -173,16 +173,60 @@ CMakeFiles/winter.dir/winter/http/http_session.cc.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/ghx/MyProjects/cpp/winter/winter/http/../socket.h \
- /usr/include/netinet/tcp.h \
- /home/ghx/MyProjects/cpp/winter/winter/http/../address.h \
- /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/string.h \
- /usr/include/strings.h \
+ /home/ghx/MyProjects/cpp/winter/./winter/socket.h \
+ /usr/include/netinet/tcp.h /usr/include/openssl/err.h \
+ /usr/include/openssl/macros.h \
+ /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
+ /usr/include/x86_64-linux-gnu/openssl/configuration.h \
+ /usr/include/openssl/opensslv.h /usr/include/openssl/e_os2.h \
+ /usr/include/c++/11/stdlib.h /usr/include/openssl/types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/include/openssl/safestack.h /usr/include/openssl/stack.h \
+ /usr/include/openssl/bio.h /usr/include/openssl/crypto.h \
+ /usr/include/openssl/cryptoerr.h /usr/include/openssl/symhacks.h \
+ /usr/include/openssl/cryptoerr_legacy.h /usr/include/openssl/core.h \
+ /usr/include/openssl/bioerr.h /usr/include/openssl/lhash.h \
+ /usr/include/openssl/ssl.h /usr/include/openssl/comp.h \
+ /usr/include/openssl/comperr.h /usr/include/openssl/x509.h \
+ /usr/include/openssl/buffer.h /usr/include/openssl/buffererr.h \
+ /usr/include/openssl/evp.h /usr/include/openssl/core_dispatch.h \
+ /usr/include/openssl/evperr.h /usr/include/openssl/params.h \
+ /usr/include/openssl/bn.h /usr/include/openssl/bnerr.h \
+ /usr/include/openssl/objects.h /usr/include/openssl/obj_mac.h \
+ /usr/include/openssl/asn1.h /usr/include/openssl/asn1err.h \
+ /usr/include/openssl/objectserr.h /usr/include/openssl/ec.h \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/arpa/inet.h /usr/include/netinet/in.h \
- /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/openssl/ecerr.h /usr/include/openssl/rsa.h \
+ /usr/include/openssl/rsaerr.h /usr/include/openssl/dsa.h \
+ /usr/include/openssl/dh.h /usr/include/openssl/dherr.h \
+ /usr/include/openssl/dsaerr.h /usr/include/openssl/sha.h \
+ /usr/include/openssl/x509err.h /usr/include/openssl/x509_vfy.h \
+ /usr/include/openssl/pkcs7.h /usr/include/openssl/pkcs7err.h \
+ /usr/include/openssl/ocsp.h /usr/include/openssl/http.h \
+ /usr/include/openssl/conf.h /usr/include/openssl/conferr.h \
+ /usr/include/openssl/conftypes.h /usr/include/openssl/x509v3.h \
+ /usr/include/openssl/x509v3err.h /usr/include/openssl/ocsperr.h \
+ /usr/include/openssl/pem.h /usr/include/openssl/pemerr.h \
+ /usr/include/openssl/hmac.h /usr/include/openssl/async.h \
+ /usr/include/openssl/asyncerr.h /usr/include/openssl/ct.h \
+ /usr/include/openssl/cterr.h /usr/include/openssl/sslerr.h \
+ /usr/include/openssl/sslerr_legacy.h /usr/include/openssl/prov_ssl.h \
+ /usr/include/openssl/ssl2.h /usr/include/openssl/ssl3.h \
+ /usr/include/openssl/tls1.h /usr/include/openssl/dtls1.h \
+ /usr/include/openssl/srtp.h \
+ /home/ghx/MyProjects/cpp/winter/./winter/address.h \
+ /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/arpa/inet.h \
+ /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
@@ -211,7 +255,7 @@ CMakeFiles/winter.dir/winter/http/http_session.cc.o: \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/ghx/MyProjects/cpp/winter/winter/http/../noncopyable.h \
+ /home/ghx/MyProjects/cpp/winter/./winter/noncopyable.h \
  /home/ghx/MyProjects/cpp/winter/winter/http/http.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
  /usr/include/boost/lexical_cast.hpp /usr/include/boost/config.hpp \
@@ -464,14 +508,6 @@ CMakeFiles/winter.dir/winter/http/http_session.cc.o: \
  /usr/include/boost/range/detail/misc_concept.hpp \
  /usr/include/boost/type_traits/make_unsigned.hpp \
  /usr/include/boost/type_traits/is_signed.hpp /usr/include/c++/11/climits \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/boost/type_traits/is_unsigned.hpp \
  /usr/include/boost/type_traits/add_volatile.hpp \
  /usr/include/boost/range/detail/has_member_size.hpp \
@@ -733,8 +769,8 @@ CMakeFiles/winter.dir/winter/http/http_session.cc.o: \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp \
  /usr/include/boost/mpl/greater_equal.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp \
- /usr/include/c++/11/stdlib.h /usr/include/c++/11/math.h \
- /usr/include/boost/config/no_tr1/complex.hpp /usr/include/c++/11/complex \
+ /usr/include/c++/11/math.h /usr/include/boost/config/no_tr1/complex.hpp \
+ /usr/include/c++/11/complex \
  /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
  /usr/include/boost/predef/other/endian.h \
  /usr/include/boost/predef/library/c/gnu.h \

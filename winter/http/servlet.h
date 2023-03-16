@@ -12,7 +12,7 @@
 #include <unordered_map>
 #include "http.h"
 #include "http_session.h"
-#include "../thread.h"
+#include "winter/thread.h"
 
 namespace winter {
 namespace http {

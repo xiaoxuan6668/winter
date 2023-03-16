@@ -17,7 +17,10 @@
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_http_server.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_http_connection.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_uri.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/my_http_server.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_daemon.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_env.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_ws_server.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_ws_client.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/edit_cache.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/rebuild_cache.dir

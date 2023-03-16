@@ -1,9 +1,0 @@
-digraph "winter::Scheduler"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{winter::Scheduler\n|# m_threadIds\l# m_threadCount\l# m_activeThreadCount\l# m_idleThreadCount\l# m_stopping\l# m_autoStop\l# m_rootThread\l|+ Scheduler()\l+ ~Scheduler()\l+ getName()\l+ start()\l+ stop()\l+ schedule()\l+ schedule()\l+ GetThis()\l+ GetMainFiber()\l# tickle()\l# run()\l# stopping()\l# idle()\l# setThis()\l# hasIdleThreads()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="协程调度器"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
-  Node2 [label="{winter::IOManager\n||+ IOManager()\l+ ~IOManager()\l+ addEvent()\l+ delEvent()\l+ cancelEvent()\l+ cancelAll()\l+ GetThis()\l# tickle()\l# stopping()\l# idle()\l# onTimerInsertedAtFront()\l# contextResize()\l# stopping()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwinter_1_1IOManager.html",tooltip="基于Epoll的IO协程调度器"];
-}

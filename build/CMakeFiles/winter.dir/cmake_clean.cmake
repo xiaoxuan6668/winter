@@ -36,6 +36,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o.d"
   "CMakeFiles/winter.dir/winter/http/servlet.cc.o"
   "CMakeFiles/winter.dir/winter/http/servlet.cc.o.d"
+  "CMakeFiles/winter.dir/winter/http/ws_connection.cc.o"
+  "CMakeFiles/winter.dir/winter/http/ws_connection.cc.o.d"
+  "CMakeFiles/winter.dir/winter/http/ws_server.cc.o"
+  "CMakeFiles/winter.dir/winter/http/ws_server.cc.o.d"
+  "CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o"
+  "CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o.d"
+  "CMakeFiles/winter.dir/winter/http/ws_session.cc.o"
+  "CMakeFiles/winter.dir/winter/http/ws_session.cc.o.d"
   "CMakeFiles/winter.dir/winter/iomanager.cc.o"
   "CMakeFiles/winter.dir/winter/iomanager.cc.o.d"
   "CMakeFiles/winter.dir/winter/log.cc.o"
@@ -58,6 +66,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/winter.dir/winter/uri.rl.cc.o.d"
   "CMakeFiles/winter.dir/winter/util.cc.o"
   "CMakeFiles/winter.dir/winter/util.cc.o.d"
+  "CMakeFiles/winter.dir/winter/util/hash_util.cc.o"
+  "CMakeFiles/winter.dir/winter/util/hash_util.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -13,6 +13,7 @@
 #include <stdint.h>
 #include <vector>
 #include <string>
+#include "winter/util/hash_util.h"
 
 namespace winter {
 

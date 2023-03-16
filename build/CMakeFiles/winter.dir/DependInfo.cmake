@@ -24,6 +24,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ghx/MyProjects/cpp/winter/winter/http/http_session.cc" "CMakeFiles/winter.dir/winter/http/http_session.cc.o" "gcc" "CMakeFiles/winter.dir/winter/http/http_session.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/http/httpclient_parser.rl.cc" "CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o" "gcc" "CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/http/servlet.cc" "CMakeFiles/winter.dir/winter/http/servlet.cc.o" "gcc" "CMakeFiles/winter.dir/winter/http/servlet.cc.o.d"
+  "/home/ghx/MyProjects/cpp/winter/winter/http/ws_connection.cc" "CMakeFiles/winter.dir/winter/http/ws_connection.cc.o" "gcc" "CMakeFiles/winter.dir/winter/http/ws_connection.cc.o.d"
+  "/home/ghx/MyProjects/cpp/winter/winter/http/ws_server.cc" "CMakeFiles/winter.dir/winter/http/ws_server.cc.o" "gcc" "CMakeFiles/winter.dir/winter/http/ws_server.cc.o.d"
+  "/home/ghx/MyProjects/cpp/winter/winter/http/ws_servlet.cc" "CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o" "gcc" "CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o.d"
+  "/home/ghx/MyProjects/cpp/winter/winter/http/ws_session.cc" "CMakeFiles/winter.dir/winter/http/ws_session.cc.o" "gcc" "CMakeFiles/winter.dir/winter/http/ws_session.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/iomanager.cc" "CMakeFiles/winter.dir/winter/iomanager.cc.o" "gcc" "CMakeFiles/winter.dir/winter/iomanager.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/log.cc" "CMakeFiles/winter.dir/winter/log.cc.o" "gcc" "CMakeFiles/winter.dir/winter/log.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/scheduler.cc" "CMakeFiles/winter.dir/winter/scheduler.cc.o" "gcc" "CMakeFiles/winter.dir/winter/scheduler.cc.o.d"
@@ -35,6 +39,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ghx/MyProjects/cpp/winter/winter/timer.cc" "CMakeFiles/winter.dir/winter/timer.cc.o" "gcc" "CMakeFiles/winter.dir/winter/timer.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/uri.rl.cc" "CMakeFiles/winter.dir/winter/uri.rl.cc.o" "gcc" "CMakeFiles/winter.dir/winter/uri.rl.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/util.cc" "CMakeFiles/winter.dir/winter/util.cc.o" "gcc" "CMakeFiles/winter.dir/winter/util.cc.o.d"
+  "/home/ghx/MyProjects/cpp/winter/winter/util/hash_util.cc" "CMakeFiles/winter.dir/winter/util/hash_util.cc.o" "gcc" "CMakeFiles/winter.dir/winter/util/hash_util.cc.o.d"
   )
 
 # Targets to which this target links.

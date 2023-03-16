@@ -1,7 +1,0 @@
-digraph "winter::Address"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{winter::Address\n||+ ~Address()\l+ getFamily()\l+ getAddr()\l+ getAddr()\l+ getAddrLen()\l+ insert()\l+ toString()\l+ operator\<()\l+ operator==()\l+ operator!=()\l+ Create()\l+ Lookup()\l+ LookupAny()\l+ LookupAnyIPAddress()\l+ GetInterfaceAddresses()\l+ GetInterfaceAddresses()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="网络地址的基类,抽象类"];
-}

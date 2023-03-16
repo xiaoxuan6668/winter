@@ -96,6 +96,8 @@ echo_server_EXTERNAL_OBJECTS =
 ../bin/echo_server: CMakeFiles/echo_server.dir/examples/echo_server.cc.o
 ../bin/echo_server: CMakeFiles/echo_server.dir/build.make
 ../bin/echo_server: ../lib/libwinter.so
+../bin/echo_server: /usr/lib/x86_64-linux-gnu/libssl.so
+../bin/echo_server: /usr/lib/x86_64-linux-gnu/libcrypto.so
 ../bin/echo_server: CMakeFiles/echo_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/echo_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/echo_server.dir/link.txt --verbose=$(VERBOSE)
