@@ -840,6 +840,7 @@ CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: ../tests/test_http_
   ../winter/util/hash_util.h \
   ../winter/singleton.h \
   ../winter/thread.h \
+  ../winter/mutex.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -849,8 +850,21 @@ CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: ../tests/test_http_
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/c++/11/atomic \
-  ../winter/noncopyable.h
+  ../winter/noncopyable.h \
+  ../winter/fiber.h \
+  /usr/include/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h
 
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/ucontext.h:
+
+../winter/fiber.h:
 
 ../winter/noncopyable.h:
 
@@ -863,6 +877,8 @@ CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: ../tests/test_http_
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
+
+../winter/mutex.h:
 
 ../winter/singleton.h:
 
@@ -1985,6 +2001,8 @@ CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: ../tests/test_http_
 /usr/include/boost/mpl/list/aux_/front.hpp:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/indirect-return.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 

@@ -267,6 +267,7 @@ CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.o: ../tests/test_ws_server
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../winter/thread.h \
+  ../winter/mutex.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -1731,6 +1732,10 @@ CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.o: ../tests/test_ws_server
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
+/usr/include/boost/iterator/detail/enable_if.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/boost/type_traits/is_reference.hpp:
@@ -1866,6 +1871,8 @@ CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.o: ../tests/test_ws_server
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/ctype.h:
+
+../winter/mutex.h:
 
 /usr/include/boost/range/algorithm/equal.hpp:
 
@@ -3028,7 +3035,3 @@ CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.o: ../tests/test_ws_server
 /usr/include/stdlib.h:
 
 /usr/include/boost/type_traits/remove_pointer.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/boost/iterator/detail/enable_if.hpp:

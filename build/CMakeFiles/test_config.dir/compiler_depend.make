@@ -887,6 +887,7 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   ../winter/util/hash_util.h \
   ../winter/singleton.h \
   ../winter/thread.h \
+  ../winter/mutex.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -896,12 +897,25 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   ../winter/noncopyable.h \
+  ../winter/fiber.h \
+  /usr/include/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../winter/log.h \
   ../winter/env.h \
   ../winter/singleton.h \
   ../winter/thread.h \
   /usr/include/c++/11/iostream
 
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/ucontext.h:
+
+../winter/fiber.h:
 
 ../winter/noncopyable.h:
 
@@ -912,6 +926,8 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
+
+../winter/mutex.h:
 
 ../winter/singleton.h:
 
@@ -2104,6 +2120,8 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
 /usr/include/boost/mpl/list/aux_/front.hpp:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/indirect-return.h:
 
 /usr/include/c++/11/set:
 

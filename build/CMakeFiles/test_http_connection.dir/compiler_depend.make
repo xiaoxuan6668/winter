@@ -921,6 +921,7 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
   /usr/include/boost/detail/basic_pointerbuf.hpp \
   ../winter/uri.h \
   ../winter/thread.h \
+  ../winter/mutex.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -933,6 +934,11 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../winter/fiber.h \
+  /usr/include/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../winter/log.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -950,10 +956,6 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
   ../winter/iomanager.h \
   ../winter/scheduler.h \
   ../winter/fiber.h \
-  /usr/include/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../winter/timer.h \
   /usr/include/c++/11/set \
   /usr/include/c++/11/bits/stl_set.h \
@@ -963,14 +965,6 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
 /usr/include/c++/11/bits/stl_set.h:
 
 ../winter/timer.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
-../winter/fiber.h:
-
-/usr/include/ucontext.h:
-
-../winter/scheduler.h:
 
 ../winter/singleton.h:
 
@@ -990,6 +984,14 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
 
 ../winter/log.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+../winter/scheduler.h:
+
+/usr/include/ucontext.h:
+
+../winter/fiber.h:
+
 /usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/parse_numbers.h:
@@ -997,6 +999,8 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
+
+../winter/mutex.h:
 
 /usr/include/boost/integer.hpp:
 
@@ -2318,9 +2322,9 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
 
 /usr/include/c++/11/set:
 
-/usr/include/x86_64-linux-gnu/bits/indirect-return.h:
-
 ../winter/iomanager.h:
+
+/usr/include/x86_64-linux-gnu/bits/indirect-return.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 

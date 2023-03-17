@@ -922,6 +922,7 @@ CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o: ../tests/test_ws_client
   /usr/include/boost/detail/basic_pointerbuf.hpp \
   ../winter/uri.h \
   ../winter/thread.h \
+  ../winter/mutex.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -934,6 +935,11 @@ CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o: ../tests/test_ws_client
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../winter/fiber.h \
+  /usr/include/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../winter/http/ws_session.h \
   ../winter/config.h \
   /usr/local/include/yaml-cpp/yaml.h \
@@ -1004,24 +1010,11 @@ CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o: ../tests/test_ws_client
   ../winter/http/http_session.h \
   ../winter/iomanager.h \
   ../winter/scheduler.h \
-  ../winter/fiber.h \
-  /usr/include/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../winter/timer.h \
   ../winter/util.h
 
 
 ../winter/timer.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
-../winter/fiber.h:
-
-/usr/include/ucontext.h:
-
-../winter/scheduler.h:
 
 ../winter/singleton.h:
 
@@ -1087,6 +1080,14 @@ CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o: ../tests/test_ws_client
 
 ../winter/http/ws_session.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+../winter/scheduler.h:
+
+/usr/include/ucontext.h:
+
+../winter/fiber.h:
+
 /usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/parse_numbers.h:
@@ -1094,6 +1095,8 @@ CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o: ../tests/test_ws_client
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
+
+../winter/mutex.h:
 
 /usr/include/boost/integer.hpp:
 
@@ -2427,11 +2430,11 @@ CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o: ../tests/test_ws_client
 
 /usr/include/boost/config/user.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/indirect-return.h:
-
 ../winter/iomanager.h:
 
 /usr/include/c++/11/set:
+
+/usr/include/x86_64-linux-gnu/bits/indirect-return.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 

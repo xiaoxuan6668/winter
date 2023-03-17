@@ -888,6 +888,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: ../tests/test_fiber.cc \
   ../winter/util/hash_util.h \
   ../winter/singleton.h \
   ../winter/thread.h \
+  ../winter/mutex.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -903,7 +904,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: ../tests/test_fiber.cc \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../winter/macro.h \
-  ../winter/scheduler.h
+  ../winter/scheduler.h \
+  /usr/include/c++/11/iostream
 
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
@@ -925,6 +927,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: ../tests/test_fiber.cc \
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
+
+../winter/mutex.h:
 
 ../winter/singleton.h:
 
@@ -1589,6 +1593,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: ../tests/test_fiber.cc \
 /usr/include/boost/range/concepts.hpp:
 
 /usr/include/boost/mpl/arg_fwd.hpp:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 

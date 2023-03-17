@@ -985,6 +985,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: ../tests/test_socket.cc \
   ../winter/util/hash_util.h \
   ../winter/singleton.h \
   ../winter/thread.h \
+  ../winter/mutex.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -1019,6 +1020,8 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: ../tests/test_socket.cc \
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
+
+../winter/mutex.h:
 
 ../winter/singleton.h:
 

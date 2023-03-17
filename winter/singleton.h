@@ -9,6 +9,23 @@
 
 namespace winter {
 
+namespace {
+
+template<class T, class X, int N>
+T& GetInstanceX() {
+    static T v;
+    return v;
+}
+
+template<class T, class X, int N>
+std::shared_ptr<T> GetInstancePtr() {
+    static std::shared_ptr<T> v(new T);
+    return v;
+}
+
+
+}
+
 /**
  * @brief 单例模式封装类
  * @details T 类型
