@@ -101,10 +101,24 @@ CMakeFiles/winter.dir/winter/address.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/winter.dir/winter/address.cc.s"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/address.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghx/MyProjects/cpp/winter/winter/address.cc -o CMakeFiles/winter.dir/winter/address.cc.s
 
+CMakeFiles/winter.dir/winter/application.cc.o: CMakeFiles/winter.dir/flags.make
+CMakeFiles/winter.dir/winter/application.cc.o: ../winter/application.cc
+CMakeFiles/winter.dir/winter/application.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/winter.dir/winter/application.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/application.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/application.cc.o -MF CMakeFiles/winter.dir/winter/application.cc.o.d -o CMakeFiles/winter.dir/winter/application.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/application.cc
+
+CMakeFiles/winter.dir/winter/application.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/winter.dir/winter/application.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/application.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghx/MyProjects/cpp/winter/winter/application.cc > CMakeFiles/winter.dir/winter/application.cc.i
+
+CMakeFiles/winter.dir/winter/application.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/winter.dir/winter/application.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/application.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghx/MyProjects/cpp/winter/winter/application.cc -o CMakeFiles/winter.dir/winter/application.cc.s
+
 CMakeFiles/winter.dir/winter/bytearray.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/bytearray.cc.o: ../winter/bytearray.cc
 CMakeFiles/winter.dir/winter/bytearray.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/winter.dir/winter/bytearray.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/winter.dir/winter/bytearray.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/bytearray.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/bytearray.cc.o -MF CMakeFiles/winter.dir/winter/bytearray.cc.o.d -o CMakeFiles/winter.dir/winter/bytearray.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/bytearray.cc
 
 CMakeFiles/winter.dir/winter/bytearray.cc.i: cmake_force
@@ -118,7 +132,7 @@ CMakeFiles/winter.dir/winter/bytearray.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/config.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/config.cc.o: ../winter/config.cc
 CMakeFiles/winter.dir/winter/config.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/winter.dir/winter/config.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/winter.dir/winter/config.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/config.cc.o -MF CMakeFiles/winter.dir/winter/config.cc.o.d -o CMakeFiles/winter.dir/winter/config.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/config.cc
 
 CMakeFiles/winter.dir/winter/config.cc.i: cmake_force
@@ -132,7 +146,7 @@ CMakeFiles/winter.dir/winter/config.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/daemon.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/daemon.cc.o: ../winter/daemon.cc
 CMakeFiles/winter.dir/winter/daemon.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/winter.dir/winter/daemon.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/winter.dir/winter/daemon.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/daemon.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/daemon.cc.o -MF CMakeFiles/winter.dir/winter/daemon.cc.o.d -o CMakeFiles/winter.dir/winter/daemon.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/daemon.cc
 
 CMakeFiles/winter.dir/winter/daemon.cc.i: cmake_force
@@ -146,7 +160,7 @@ CMakeFiles/winter.dir/winter/daemon.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/env.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/env.cc.o: ../winter/env.cc
 CMakeFiles/winter.dir/winter/env.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/winter.dir/winter/env.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/winter.dir/winter/env.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/env.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/env.cc.o -MF CMakeFiles/winter.dir/winter/env.cc.o.d -o CMakeFiles/winter.dir/winter/env.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/env.cc
 
 CMakeFiles/winter.dir/winter/env.cc.i: cmake_force
@@ -160,7 +174,7 @@ CMakeFiles/winter.dir/winter/env.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/fd_manager.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/fd_manager.cc.o: ../winter/fd_manager.cc
 CMakeFiles/winter.dir/winter/fd_manager.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/winter.dir/winter/fd_manager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/winter.dir/winter/fd_manager.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/fd_manager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/fd_manager.cc.o -MF CMakeFiles/winter.dir/winter/fd_manager.cc.o.d -o CMakeFiles/winter.dir/winter/fd_manager.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/fd_manager.cc
 
 CMakeFiles/winter.dir/winter/fd_manager.cc.i: cmake_force
@@ -174,7 +188,7 @@ CMakeFiles/winter.dir/winter/fd_manager.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/fiber.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/fiber.cc.o: ../winter/fiber.cc
 CMakeFiles/winter.dir/winter/fiber.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/winter.dir/winter/fiber.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/winter.dir/winter/fiber.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/fiber.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/fiber.cc.o -MF CMakeFiles/winter.dir/winter/fiber.cc.o.d -o CMakeFiles/winter.dir/winter/fiber.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/fiber.cc
 
 CMakeFiles/winter.dir/winter/fiber.cc.i: cmake_force
@@ -188,7 +202,7 @@ CMakeFiles/winter.dir/winter/fiber.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/http.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/http.cc.o: ../winter/http/http.cc
 CMakeFiles/winter.dir/winter/http/http.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/winter.dir/winter/http/http.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/winter.dir/winter/http/http.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/http.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/http.cc.o -MF CMakeFiles/winter.dir/winter/http/http.cc.o.d -o CMakeFiles/winter.dir/winter/http/http.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http.cc
 
 CMakeFiles/winter.dir/winter/http/http.cc.i: cmake_force
@@ -202,7 +216,7 @@ CMakeFiles/winter.dir/winter/http/http.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/http_connection.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/http_connection.cc.o: ../winter/http/http_connection.cc
 CMakeFiles/winter.dir/winter/http/http_connection.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/winter.dir/winter/http/http_connection.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/winter.dir/winter/http/http_connection.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/http_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/http_connection.cc.o -MF CMakeFiles/winter.dir/winter/http/http_connection.cc.o.d -o CMakeFiles/winter.dir/winter/http/http_connection.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_connection.cc
 
 CMakeFiles/winter.dir/winter/http/http_connection.cc.i: cmake_force
@@ -216,7 +230,7 @@ CMakeFiles/winter.dir/winter/http/http_connection.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/http_parser.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/http_parser.cc.o: ../winter/http/http_parser.cc
 CMakeFiles/winter.dir/winter/http/http_parser.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/winter.dir/winter/http/http_parser.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/winter.dir/winter/http/http_parser.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/http_parser.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/http_parser.cc.o -MF CMakeFiles/winter.dir/winter/http/http_parser.cc.o.d -o CMakeFiles/winter.dir/winter/http/http_parser.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_parser.cc
 
 CMakeFiles/winter.dir/winter/http/http_parser.cc.i: cmake_force
@@ -230,7 +244,7 @@ CMakeFiles/winter.dir/winter/http/http_parser.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/http_session.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/http_session.cc.o: ../winter/http/http_session.cc
 CMakeFiles/winter.dir/winter/http/http_session.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/winter.dir/winter/http/http_session.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/winter.dir/winter/http/http_session.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/http_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/http_session.cc.o -MF CMakeFiles/winter.dir/winter/http/http_session.cc.o.d -o CMakeFiles/winter.dir/winter/http/http_session.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_session.cc
 
 CMakeFiles/winter.dir/winter/http/http_session.cc.i: cmake_force
@@ -244,7 +258,7 @@ CMakeFiles/winter.dir/winter/http/http_session.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/http_server.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/http_server.cc.o: ../winter/http/http_server.cc
 CMakeFiles/winter.dir/winter/http/http_server.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/winter.dir/winter/http/http_server.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/winter.dir/winter/http/http_server.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/http_server.cc.o -MF CMakeFiles/winter.dir/winter/http/http_server.cc.o.d -o CMakeFiles/winter.dir/winter/http/http_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http_server.cc
 
 CMakeFiles/winter.dir/winter/http/http_server.cc.i: cmake_force
@@ -258,7 +272,7 @@ CMakeFiles/winter.dir/winter/http/http_server.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/servlet.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/servlet.cc.o: ../winter/http/servlet.cc
 CMakeFiles/winter.dir/winter/http/servlet.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/winter.dir/winter/http/servlet.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/winter.dir/winter/http/servlet.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/servlet.cc.o -MF CMakeFiles/winter.dir/winter/http/servlet.cc.o.d -o CMakeFiles/winter.dir/winter/http/servlet.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/servlet.cc
 
 CMakeFiles/winter.dir/winter/http/servlet.cc.i: cmake_force
@@ -272,7 +286,7 @@ CMakeFiles/winter.dir/winter/http/servlet.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/ws_session.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/ws_session.cc.o: ../winter/http/ws_session.cc
 CMakeFiles/winter.dir/winter/http/ws_session.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_session.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_session.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/ws_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/ws_session.cc.o -MF CMakeFiles/winter.dir/winter/http/ws_session.cc.o.d -o CMakeFiles/winter.dir/winter/http/ws_session.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_session.cc
 
 CMakeFiles/winter.dir/winter/http/ws_session.cc.i: cmake_force
@@ -286,7 +300,7 @@ CMakeFiles/winter.dir/winter/http/ws_session.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o: ../winter/http/ws_servlet.cc
 CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/ws_servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o -MF CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o.d -o CMakeFiles/winter.dir/winter/http/ws_servlet.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_servlet.cc
 
 CMakeFiles/winter.dir/winter/http/ws_servlet.cc.i: cmake_force
@@ -300,7 +314,7 @@ CMakeFiles/winter.dir/winter/http/ws_servlet.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/ws_server.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/ws_server.cc.o: ../winter/http/ws_server.cc
 CMakeFiles/winter.dir/winter/http/ws_server.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_server.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_server.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/ws_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/ws_server.cc.o -MF CMakeFiles/winter.dir/winter/http/ws_server.cc.o.d -o CMakeFiles/winter.dir/winter/http/ws_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_server.cc
 
 CMakeFiles/winter.dir/winter/http/ws_server.cc.i: cmake_force
@@ -314,7 +328,7 @@ CMakeFiles/winter.dir/winter/http/ws_server.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/ws_connection.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/ws_connection.cc.o: ../winter/http/ws_connection.cc
 CMakeFiles/winter.dir/winter/http/ws_connection.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_connection.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/winter.dir/winter/http/ws_connection.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/ws_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/ws_connection.cc.o -MF CMakeFiles/winter.dir/winter/http/ws_connection.cc.o.d -o CMakeFiles/winter.dir/winter/http/ws_connection.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/ws_connection.cc
 
 CMakeFiles/winter.dir/winter/http/ws_connection.cc.i: cmake_force
@@ -328,7 +342,7 @@ CMakeFiles/winter.dir/winter/http/ws_connection.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/hook.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/hook.cc.o: ../winter/hook.cc
 CMakeFiles/winter.dir/winter/hook.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/winter.dir/winter/hook.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/winter.dir/winter/hook.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/hook.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/hook.cc.o -MF CMakeFiles/winter.dir/winter/hook.cc.o.d -o CMakeFiles/winter.dir/winter/hook.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/hook.cc
 
 CMakeFiles/winter.dir/winter/hook.cc.i: cmake_force
@@ -342,7 +356,7 @@ CMakeFiles/winter.dir/winter/hook.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/iomanager.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/iomanager.cc.o: ../winter/iomanager.cc
 CMakeFiles/winter.dir/winter/iomanager.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/winter.dir/winter/iomanager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/winter.dir/winter/iomanager.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/iomanager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/iomanager.cc.o -MF CMakeFiles/winter.dir/winter/iomanager.cc.o.d -o CMakeFiles/winter.dir/winter/iomanager.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/iomanager.cc
 
 CMakeFiles/winter.dir/winter/iomanager.cc.i: cmake_force
@@ -356,7 +370,7 @@ CMakeFiles/winter.dir/winter/iomanager.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/log.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/log.cc.o: ../winter/log.cc
 CMakeFiles/winter.dir/winter/log.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/winter.dir/winter/log.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/winter.dir/winter/log.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/log.cc.o -MF CMakeFiles/winter.dir/winter/log.cc.o.d -o CMakeFiles/winter.dir/winter/log.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/log.cc
 
 CMakeFiles/winter.dir/winter/log.cc.i: cmake_force
@@ -370,7 +384,7 @@ CMakeFiles/winter.dir/winter/log.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/scheduler.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/scheduler.cc.o: ../winter/scheduler.cc
 CMakeFiles/winter.dir/winter/scheduler.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/winter.dir/winter/scheduler.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/winter.dir/winter/scheduler.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/scheduler.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/scheduler.cc.o -MF CMakeFiles/winter.dir/winter/scheduler.cc.o.d -o CMakeFiles/winter.dir/winter/scheduler.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/scheduler.cc
 
 CMakeFiles/winter.dir/winter/scheduler.cc.i: cmake_force
@@ -384,7 +398,7 @@ CMakeFiles/winter.dir/winter/scheduler.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/socket.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/socket.cc.o: ../winter/socket.cc
 CMakeFiles/winter.dir/winter/socket.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/winter.dir/winter/socket.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/winter.dir/winter/socket.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/socket.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/socket.cc.o -MF CMakeFiles/winter.dir/winter/socket.cc.o.d -o CMakeFiles/winter.dir/winter/socket.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/socket.cc
 
 CMakeFiles/winter.dir/winter/socket.cc.i: cmake_force
@@ -398,7 +412,7 @@ CMakeFiles/winter.dir/winter/socket.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/socket_stream.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/socket_stream.cc.o: ../winter/socket_stream.cc
 CMakeFiles/winter.dir/winter/socket_stream.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/winter.dir/winter/socket_stream.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/winter.dir/winter/socket_stream.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/socket_stream.cc.o -MF CMakeFiles/winter.dir/winter/socket_stream.cc.o.d -o CMakeFiles/winter.dir/winter/socket_stream.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/socket_stream.cc
 
 CMakeFiles/winter.dir/winter/socket_stream.cc.i: cmake_force
@@ -412,7 +426,7 @@ CMakeFiles/winter.dir/winter/socket_stream.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/stream.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/stream.cc.o: ../winter/stream.cc
 CMakeFiles/winter.dir/winter/stream.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/winter.dir/winter/stream.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/winter.dir/winter/stream.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/stream.cc.o -MF CMakeFiles/winter.dir/winter/stream.cc.o.d -o CMakeFiles/winter.dir/winter/stream.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/stream.cc
 
 CMakeFiles/winter.dir/winter/stream.cc.i: cmake_force
@@ -426,7 +440,7 @@ CMakeFiles/winter.dir/winter/stream.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/tcp_server.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/tcp_server.cc.o: ../winter/tcp_server.cc
 CMakeFiles/winter.dir/winter/tcp_server.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/winter.dir/winter/tcp_server.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/winter.dir/winter/tcp_server.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/tcp_server.cc.o -MF CMakeFiles/winter.dir/winter/tcp_server.cc.o.d -o CMakeFiles/winter.dir/winter/tcp_server.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/tcp_server.cc
 
 CMakeFiles/winter.dir/winter/tcp_server.cc.i: cmake_force
@@ -440,7 +454,7 @@ CMakeFiles/winter.dir/winter/tcp_server.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/timer.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/timer.cc.o: ../winter/timer.cc
 CMakeFiles/winter.dir/winter/timer.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/winter.dir/winter/timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/winter.dir/winter/timer.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/timer.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/timer.cc.o -MF CMakeFiles/winter.dir/winter/timer.cc.o.d -o CMakeFiles/winter.dir/winter/timer.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/timer.cc
 
 CMakeFiles/winter.dir/winter/timer.cc.i: cmake_force
@@ -454,7 +468,7 @@ CMakeFiles/winter.dir/winter/timer.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/thread.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/thread.cc.o: ../winter/thread.cc
 CMakeFiles/winter.dir/winter/thread.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/winter.dir/winter/thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/winter.dir/winter/thread.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/thread.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/thread.cc.o -MF CMakeFiles/winter.dir/winter/thread.cc.o.d -o CMakeFiles/winter.dir/winter/thread.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/thread.cc
 
 CMakeFiles/winter.dir/winter/thread.cc.i: cmake_force
@@ -468,7 +482,7 @@ CMakeFiles/winter.dir/winter/thread.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/util.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/util.cc.o: ../winter/util.cc
 CMakeFiles/winter.dir/winter/util.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/winter.dir/winter/util.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/winter.dir/winter/util.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/util.cc.o -MF CMakeFiles/winter.dir/winter/util.cc.o.d -o CMakeFiles/winter.dir/winter/util.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/util.cc
 
 CMakeFiles/winter.dir/winter/util.cc.i: cmake_force
@@ -482,7 +496,7 @@ CMakeFiles/winter.dir/winter/util.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/util/hash_util.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/util/hash_util.cc.o: ../winter/util/hash_util.cc
 CMakeFiles/winter.dir/winter/util/hash_util.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/winter.dir/winter/util/hash_util.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/winter.dir/winter/util/hash_util.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/util/hash_util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/util/hash_util.cc.o -MF CMakeFiles/winter.dir/winter/util/hash_util.cc.o.d -o CMakeFiles/winter.dir/winter/util/hash_util.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/util/hash_util.cc
 
 CMakeFiles/winter.dir/winter/util/hash_util.cc.i: cmake_force
@@ -496,7 +510,7 @@ CMakeFiles/winter.dir/winter/util/hash_util.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o: ../winter/http/http11_parser.rl.cc
 CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/http11_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o -MF CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o.d -o CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/http11_parser.rl.cc
 
 CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.i: cmake_force
@@ -510,7 +524,7 @@ CMakeFiles/winter.dir/winter/http/http11_parser.rl.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o: ../winter/http/httpclient_parser.rl.cc
 CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o -MF CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o.d -o CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/http/httpclient_parser.rl.cc
 
 CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.i: cmake_force
@@ -524,7 +538,7 @@ CMakeFiles/winter.dir/winter/http/httpclient_parser.rl.cc.s: cmake_force
 CMakeFiles/winter.dir/winter/uri.rl.cc.o: CMakeFiles/winter.dir/flags.make
 CMakeFiles/winter.dir/winter/uri.rl.cc.o: ../winter/uri.rl.cc
 CMakeFiles/winter.dir/winter/uri.rl.cc.o: CMakeFiles/winter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/winter.dir/winter/uri.rl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/winter.dir/winter/uri.rl.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"winter/uri.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winter.dir/winter/uri.rl.cc.o -MF CMakeFiles/winter.dir/winter/uri.rl.cc.o.d -o CMakeFiles/winter.dir/winter/uri.rl.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/uri.rl.cc
 
 CMakeFiles/winter.dir/winter/uri.rl.cc.i: cmake_force
@@ -538,6 +552,7 @@ CMakeFiles/winter.dir/winter/uri.rl.cc.s: cmake_force
 # Object files for target winter
 winter_OBJECTS = \
 "CMakeFiles/winter.dir/winter/address.cc.o" \
+"CMakeFiles/winter.dir/winter/application.cc.o" \
 "CMakeFiles/winter.dir/winter/bytearray.cc.o" \
 "CMakeFiles/winter.dir/winter/config.cc.o" \
 "CMakeFiles/winter.dir/winter/daemon.cc.o" \
@@ -574,6 +589,7 @@ winter_OBJECTS = \
 winter_EXTERNAL_OBJECTS =
 
 ../lib/libwinter.so: CMakeFiles/winter.dir/winter/address.cc.o
+../lib/libwinter.so: CMakeFiles/winter.dir/winter/application.cc.o
 ../lib/libwinter.so: CMakeFiles/winter.dir/winter/bytearray.cc.o
 ../lib/libwinter.so: CMakeFiles/winter.dir/winter/config.cc.o
 ../lib/libwinter.so: CMakeFiles/winter.dir/winter/daemon.cc.o
@@ -607,7 +623,7 @@ winter_EXTERNAL_OBJECTS =
 ../lib/libwinter.so: CMakeFiles/winter.dir/winter/uri.rl.cc.o
 ../lib/libwinter.so: CMakeFiles/winter.dir/build.make
 ../lib/libwinter.so: CMakeFiles/winter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX shared library ../lib/libwinter.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX shared library ../lib/libwinter.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/winter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -28,6 +28,7 @@ endif()
 
 set(LIB_SRC
     winter/address.cc
+    winter/application.cc
     winter/bytearray.cc
     winter/config.cc
     winter/daemon.cc
@@ -103,6 +104,8 @@ winter_add_executable(test_daemon "tests/test_daemon.cc" winter "${LIBS}")
 winter_add_executable(test_env "tests/test_env.cc" winter "${LIBS}")
 winter_add_executable(test_ws_server "tests/test_ws_server.cc" winter "${LIBS}")
 winter_add_executable(test_ws_client "tests/test_ws_client.cc" winter "${LIBS}")
+
+winter_add_executable(test_application "tests/test_application.cc" winter "${LIBS}")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

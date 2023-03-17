@@ -378,6 +378,14 @@ CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o: ../tests/test_tcp_ser
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
   ../winter/util/hash_util.h \
   ../winter/singleton.h
 
@@ -385,6 +393,14 @@ CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o: ../tests/test_tcp_ser
 ../winter/singleton.h:
 
 ../winter/util/hash_util.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/libintl.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
@@ -513,6 +529,8 @@ CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o: ../tests/test_tcp_ser
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/include/c++/11/set:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 ../winter/timer.h:
 
@@ -932,9 +950,13 @@ CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o: ../tests/test_tcp_ser
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/include/c++/11/iomanip:
+
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
 
 /usr/include/c++/11/cctype:
+
+/usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
 
@@ -1015,6 +1037,8 @@ CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o: ../tests/test_tcp_ser
 /usr/include/c++/11/bits/charconv.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
 
 /usr/include/openssl/prov_ssl.h:
 

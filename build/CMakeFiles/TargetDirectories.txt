@@ -22,5 +22,6 @@
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_env.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_ws_server.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_ws_client.dir
+/home/ghx/MyProjects/cpp/winter/build/CMakeFiles/test_application.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/edit_cache.dir
 /home/ghx/MyProjects/cpp/winter/build/CMakeFiles/rebuild_cache.dir

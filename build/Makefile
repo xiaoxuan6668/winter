@@ -431,6 +431,19 @@ test_ws_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/build
 .PHONY : test_ws_client/fast
 
+#=============================================================================
+# Target rules for targets named test_application
+
+# Build rule for target.
+test_application: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_application
+.PHONY : test_application
+
+# fast build rule for target.
+test_application/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
+.PHONY : test_application/fast
+
 examples/echo_server.o: examples/echo_server.cc.o
 .PHONY : examples/echo_server.o
 
@@ -526,6 +539,30 @@ tests/test_address.s: tests/test_address.cc.s
 tests/test_address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.s
 .PHONY : tests/test_address.cc.s
+
+tests/test_application.o: tests/test_application.cc.o
+.PHONY : tests/test_application.o
+
+# target to build an object file
+tests/test_application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.o
+.PHONY : tests/test_application.cc.o
+
+tests/test_application.i: tests/test_application.cc.i
+.PHONY : tests/test_application.i
+
+# target to preprocess a source file
+tests/test_application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.i
+.PHONY : tests/test_application.cc.i
+
+tests/test_application.s: tests/test_application.cc.s
+.PHONY : tests/test_application.s
+
+# target to generate assembly for a file
+tests/test_application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.s
+.PHONY : tests/test_application.cc.s
 
 tests/test_bytearray.o: tests/test_bytearray.cc.o
 .PHONY : tests/test_bytearray.o
@@ -1006,6 +1043,30 @@ winter/address.s: winter/address.cc.s
 winter/address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/address.cc.s
 .PHONY : winter/address.cc.s
+
+winter/application.o: winter/application.cc.o
+.PHONY : winter/application.o
+
+# target to build an object file
+winter/application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/application.cc.o
+.PHONY : winter/application.cc.o
+
+winter/application.i: winter/application.cc.i
+.PHONY : winter/application.i
+
+# target to preprocess a source file
+winter/application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/application.cc.i
+.PHONY : winter/application.cc.i
+
+winter/application.s: winter/application.cc.s
+.PHONY : winter/application.s
+
+# target to generate assembly for a file
+winter/application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/application.cc.s
+.PHONY : winter/application.cc.s
 
 winter/bytearray.o: winter/bytearray.cc.o
 .PHONY : winter/bytearray.o
@@ -1763,6 +1824,7 @@ help:
 	@echo "... my_http_server"
 	@echo "... test1"
 	@echo "... test_address"
+	@echo "... test_application"
 	@echo "... test_bytearray"
 	@echo "... test_config"
 	@echo "... test_daemon"
@@ -1795,6 +1857,9 @@ help:
 	@echo "... tests/test_address.o"
 	@echo "... tests/test_address.i"
 	@echo "... tests/test_address.s"
+	@echo "... tests/test_application.o"
+	@echo "... tests/test_application.i"
+	@echo "... tests/test_application.s"
 	@echo "... tests/test_bytearray.o"
 	@echo "... tests/test_bytearray.i"
 	@echo "... tests/test_bytearray.s"
@@ -1855,6 +1920,9 @@ help:
 	@echo "... winter/address.o"
 	@echo "... winter/address.i"
 	@echo "... winter/address.s"
+	@echo "... winter/application.o"
+	@echo "... winter/application.i"
+	@echo "... winter/application.s"
 	@echo "... winter/bytearray.o"
 	@echo "... winter/bytearray.i"
 	@echo "... winter/bytearray.s"

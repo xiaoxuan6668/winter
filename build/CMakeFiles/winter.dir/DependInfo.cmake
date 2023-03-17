@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ghx/MyProjects/cpp/winter/winter/address.cc" "CMakeFiles/winter.dir/winter/address.cc.o" "gcc" "CMakeFiles/winter.dir/winter/address.cc.o.d"
+  "/home/ghx/MyProjects/cpp/winter/winter/application.cc" "CMakeFiles/winter.dir/winter/application.cc.o" "gcc" "CMakeFiles/winter.dir/winter/application.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/bytearray.cc" "CMakeFiles/winter.dir/winter/bytearray.cc.o" "gcc" "CMakeFiles/winter.dir/winter/bytearray.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/config.cc" "CMakeFiles/winter.dir/winter/config.cc.o" "gcc" "CMakeFiles/winter.dir/winter/config.cc.o.d"
   "/home/ghx/MyProjects/cpp/winter/winter/daemon.cc" "CMakeFiles/winter.dir/winter/daemon.cc.o" "gcc" "CMakeFiles/winter.dir/winter/daemon.cc.o.d"

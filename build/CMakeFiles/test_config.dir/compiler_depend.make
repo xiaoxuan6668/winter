@@ -883,6 +883,7 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/iomanip \
   ../winter/util/hash_util.h \
   ../winter/singleton.h \
   ../winter/thread.h \
@@ -896,6 +897,9 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   ../winter/noncopyable.h \
   ../winter/log.h \
+  ../winter/env.h \
+  ../winter/singleton.h \
+  ../winter/thread.h \
   /usr/include/c++/11/iostream
 
 
@@ -912,6 +916,8 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
 ../winter/singleton.h:
 
 ../winter/util/hash_util.h:
+
+/usr/include/c++/11/iomanip:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
@@ -2154,6 +2160,8 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/boost/core/checked_delete.hpp:
+
+../winter/env.h:
 
 /usr/include/c++/11/exception:
 

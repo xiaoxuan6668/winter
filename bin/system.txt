@@ -1,0 +1,87 @@
+2023-03-17 02:14:43	116382	UNKNOW	0	[INFO]	[system]	winter/config.cc:90	LoadConfFile file=/home/ghx/MyProjects/cpp/winter/bin/conf/log.yml ok
+2023-03-17 02:14:43	116382	UNKNOW	0	[INFO]	[system]	winter/config.cc:90	LoadConfFile file=/home/ghx/MyProjects/cpp/winter/bin/conf/server.yml ok
+2023-03-17 15:16:03	143815	UNKNOW	0	[INFO]	[system]	winter/config.cc:90	LoadConfFile file=/home/ghx/MyProjects/cpp/winter/bin/conf/log.yml ok
+2023-03-17 15:16:03	143815	UNKNOW	0	[INFO]	[system]	winter/config.cc:90	LoadConfFile file=/home/ghx/MyProjects/cpp/winter/bin/conf/server.yml ok
+2023-03-17 15:16:03	143815	UNKNOW	0	[INFO]	[system]	winter/application.cc:145	main
+2023-03-17 15:16:03	143815	UNKNOW	0	[DEBUG]	[system]	winter/fiber.cc:51	Fiber::Fiber
+2023-03-17 15:16:03	143815	UNKNOW	0	[DEBUG]	[system]	winter/fiber.cc:74	Fiber::Fiber id=1
+2023-03-17 15:16:03	143815	UNKNOW	0	[INFO]	[system]	winter/scheduler.cc:80	0x7ffed5119160 stopped
+2023-03-17 15:16:03	143815	UNKNOW	1	[ERROR]	[system]	winter/fiber.cc:120	1
+2023-03-17 15:16:03	143815	UNKNOW	1	[INFO]	[system]	winter/scheduler.cc:138	run
+2023-03-17 15:16:03	143815	UNKNOW	1	[DEBUG]	[system]	winter/fiber.cc:74	Fiber::Fiber id=2
+2023-03-17 15:16:03	143815	UNKNOW	1	[DEBUG]	[system]	winter/fiber.cc:74	Fiber::Fiber id=3
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:166	name: winter/1.1
+keepalive: 1
+timeout: 1000
+address:
+  - 0.0.0.0:8080
+  - 127.0.0.1:8081
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/tcp_server.cc:64	server bind success: [Socket sock=8 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8080]
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/tcp_server.cc:64	server bind success: [Socket sock=9 is_connected=0 family=2 type=1 protocol=0 local_address=127.0.0.1:8081]
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:166	name: winter/2.1
+keepalive: 1
+timeout: 1000
+address:
+  - 0.0.0.0:8070
+  - enp0s3:8071
+2023-03-17 15:16:03	143815	UNKNOW	3	[DEBUG]	[system]	winter/address.cc:255	IPAddress::Create(enp0s3, 8071) error=-2 errno=2 errstr=No such file or directory
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/tcp_server.cc:64	server bind success: [Socket sock=10 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8070]
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:03	143815	UNKNOW	1	[DEBUG]	[system]	winter/fiber.cc:74	Fiber::Fiber id=4
+2023-03-17 15:16:03	143815	UNKNOW	1	[DEBUG]	[system]	winter/fiber.cc:74	Fiber::Fiber id=5
+2023-03-17 15:16:03	143815	UNKNOW	1	[DEBUG]	[system]	winter/fiber.cc:74	Fiber::Fiber id=6
+2023-03-17 15:16:03	143815	UNKNOW	2	[DEBUG]	[system]	winter/iomanager.cc:282	idle
+2023-03-17 15:16:03	143815	UNKNOW	1	[DEBUG]	[system]	winter/fiber.cc:74	Fiber::Fiber id=7
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:03	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:04	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:05	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:06	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:07	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:08	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:09	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world
+2023-03-17 15:16:09	143815	UNKNOW	3	[INFO]	[system]	winter/application.cc:215	hello world

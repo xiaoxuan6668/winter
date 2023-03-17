@@ -268,10 +268,26 @@ CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: ../tests/test_daemon.cc \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
   ../winter/util/hash_util.h
 
 
 ../winter/util/hash_util.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/libintl.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
@@ -440,6 +456,8 @@ CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: ../tests/test_daemon.cc \
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 ../winter/timer.h:
 
@@ -639,6 +657,8 @@ CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: ../tests/test_daemon.cc \
 
 ../winter/fiber.h:
 
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
 ../winter/iomanager.h:
 
 /usr/include/x86_64-linux-gnu/bits/indirect-return.h:
@@ -703,9 +723,13 @@ CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: ../tests/test_daemon.cc \
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/include/c++/11/iomanip:
+
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
 
 /usr/include/c++/11/cctype:
+
+/usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
 

@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/application.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/application.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/application.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/application.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
   "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/bytearray.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/bytearray.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/bytearray.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/bytearray.cc"
 },
@@ -273,5 +278,10 @@
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
   "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_ws_client.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_ws_client.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_ws_client.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_application.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_application.dir/tests/test_application.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_application.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/tests/test_application.cc"
 }
 ]

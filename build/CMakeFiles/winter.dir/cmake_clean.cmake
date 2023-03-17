@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "../winter/uri.rl.cc"
   "CMakeFiles/winter.dir/winter/address.cc.o"
   "CMakeFiles/winter.dir/winter/address.cc.o.d"
+  "CMakeFiles/winter.dir/winter/application.cc.o"
+  "CMakeFiles/winter.dir/winter/application.cc.o.d"
   "CMakeFiles/winter.dir/winter/bytearray.cc.o"
   "CMakeFiles/winter.dir/winter/bytearray.cc.o.d"
   "CMakeFiles/winter.dir/winter/config.cc.o"

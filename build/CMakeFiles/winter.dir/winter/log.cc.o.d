@@ -193,16 +193,22 @@ CMakeFiles/winter.dir/winter/log.cc.o: \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
  /home/ghx/MyProjects/cpp/winter/./winter/util/hash_util.h \
  /home/ghx/MyProjects/cpp/winter/winter/singleton.h \
  /home/ghx/MyProjects/cpp/winter/winter/thread.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/limits \
- /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/bits/parse_numbers.h /usr/include/c++/11/functional \
+ /usr/include/c++/11/bits/std_function.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/c++/11/atomic \
  /home/ghx/MyProjects/cpp/winter/winter/noncopyable.h \
  /usr/include/c++/11/iostream \
@@ -578,12 +584,7 @@ CMakeFiles/winter.dir/winter/log.cc.o: \
  /usr/include/boost/move/detail/std_ns_begin.hpp \
  /usr/include/boost/move/detail/std_ns_end.hpp \
  /usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
- /usr/include/c++/11/cstring /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/cstring \
  /usr/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
  /usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
  /usr/include/boost/noncopyable.hpp \
@@ -791,4 +792,6 @@ CMakeFiles/winter.dir/winter/log.cc.o: \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
  /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/unordered_set.h
+ /usr/include/c++/11/bits/unordered_set.h \
+ /home/ghx/MyProjects/cpp/winter/winter/macro.h \
+ /home/ghx/MyProjects/cpp/winter/winter/env.h

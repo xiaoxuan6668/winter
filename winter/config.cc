@@ -1,8 +1,14 @@
 #include "config.h"
+#include "winter/env.h"
+#include "winter/util.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 #include <iostream>
 
 namespace winter{
 
+static winter::Logger::ptr g_logger = WINTER_LOG_NAME("system");
 // Config::ConfigVarMap Config::s_datas;
 
 ConfigVarBase::ptr Config::LookupBase(const std::string& name) {
@@ -20,7 +26,7 @@ static void ListAllMember(const std::string& prefix,
                           std::list<std::pair<std::string, const YAML::Node> >& output) {
     if(prefix.find_first_not_of("abcdefghikjlmnopqrstuvwxyz._012345678")
             != std::string::npos) {
-        WINTER_LOG_ERROR(WINTER_LOG_ROOT()) << "Config invalid name: " << prefix << " : " << node;
+        WINTER_LOG_ERROR(g_logger) << "Config invalid name: " << prefix << " : " << node;
         return;
     }
 
@@ -56,6 +62,34 @@ void Config::LoadFromYaml(const YAML::Node& root) {
                 ss << i.second;
                 var->fromString(ss.str());
             }
+        }
+    }
+}
+
+static std::map<std::string, uint64_t> s_file2modifytime;
+static winter::Mutex s_mutex;
+
+void Config::LoadFromConfDir(const std::string& path) {
+    std::string absoulte_path = winter::EnvMgr::GetInstance()->getAbsolutePath(path);
+    std::vector<std::string> files;
+    FSUtil::ListAllFile(files, absoulte_path, ".yml");
+
+    for(auto& i : files) {
+        {
+            struct stat st;
+            lstat(i.c_str(), &st);
+            winter::Mutex::Lock lock(s_mutex);
+            if(s_file2modifytime[i] == (uint64_t)st.st_mtime) {
+                continue;
+            }
+            s_file2modifytime[i] = st.st_mtime;
+        }
+        try {
+            YAML::Node root = YAML::LoadFile(i);
+            LoadFromYaml(root);
+            WINTER_LOG_INFO(g_logger) << "LoadConfFile file=" << i << " ok";
+        } catch (...) {
+            WINTER_LOG_ERROR(g_logger) << "LoadConfFile file=" << i << " failed";
         }
     }
 }

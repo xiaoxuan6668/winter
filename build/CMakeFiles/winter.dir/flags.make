@@ -10,6 +10,8 @@ CXX_FLAGS =  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-u
 
 # Custom defines: CMakeFiles/winter.dir/winter/address.cc.o_DEFINES = __FILE__="winter/address.cc"
 
+# Custom defines: CMakeFiles/winter.dir/winter/application.cc.o_DEFINES = __FILE__="winter/application.cc"
+
 # Custom defines: CMakeFiles/winter.dir/winter/bytearray.cc.o_DEFINES = __FILE__="winter/bytearray.cc"
 
 # Custom defines: CMakeFiles/winter.dir/winter/config.cc.o_DEFINES = __FILE__="winter/config.cc"

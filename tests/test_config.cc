@@ -1,6 +1,7 @@
 #include "../winter/config.h"
 #include "../winter/log.h"
 #include <yaml-cpp/yaml.h>
+#include "winter/env.h"
 #include <iostream>
 
 #if 0
@@ -218,18 +219,28 @@ void test_log() {
     WINTER_LOG_INFO(system_log) << "hello system" << std::endl;
 }
 
+void test_loadconf() {
+    winter::Config::LoadFromConfDir("conf");
+}
+
 int main(int argc, char** argv) {
     // test_yaml();
     // test_config();
     // test_class();
-    test_log();
-
-    winter::Config::Visit([](winter::ConfigVarBase::ptr var) {
-        WINTER_LOG_INFO(WINTER_LOG_ROOT()) << "name=" << var->getName()
-                    << " description=" << var->getDescription()
-                    << " typename=" << var->getTypeName()
-                    << " value=" << var->toString();
-    });
-
+    //test_log();
+    winter::EnvMgr::GetInstance()->init(argc, argv);
+    test_loadconf();
+    std::cout << " ==== " << std::endl;
+    // sleep(5);
+    // test_loadconf();
     return 0;
+
+    // winter::Config::Visit([](winter::ConfigVarBase::ptr var) {
+    //     WINTER_LOG_INFO(WINTER_LOG_ROOT()) << "name=" << var->getName()
+    //                 << " description=" << var->getDescription()
+    //                 << " typename=" << var->getTypeName()
+    //                 << " value=" << var->toString();
+    // });
+
+    // return 0;
 }
