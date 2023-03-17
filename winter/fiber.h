@@ -8,7 +8,6 @@
 #include <memory>
 #include <functional>
 #include <ucontext.h>
-#include "thread.h"
 
 namespace winter {
 

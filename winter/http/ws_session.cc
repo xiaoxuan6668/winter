@@ -44,6 +44,7 @@ HttpRequest::ptr WSSession::handleShake() {
 
         std::string v = key + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
         v = winter::base64encode(winter::sha1sum(v));
+        req->setWebsocket(true);
 
         auto rsp = req->createResponse();
         rsp->setStatus(HttpStatus::SWITCHING_PROTOCOLS);
@@ -54,8 +55,8 @@ HttpRequest::ptr WSSession::handleShake() {
         rsp->setHeader("Sec-WebSocket-Accept", v);
 
         sendResponse(rsp);
-        WINTER_LOG_INFO(g_logger) << *req;
-        WINTER_LOG_INFO(g_logger) << *rsp;
+        WINTER_LOG_DEBUG(g_logger) << *req;
+        WINTER_LOG_DEBUG(g_logger) << *rsp;
         return req;
     } while(false);
     if(req) {

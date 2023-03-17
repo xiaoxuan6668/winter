@@ -8,6 +8,7 @@
 #include <string.h>
 #include <assert.h>
 #include "util.h"
+#include "log.h"
 
 #if defined __GNUC__ || defined __llvm__
 // LIKCLY 宏的封装, 告诉编译器优化,条件大概率成立

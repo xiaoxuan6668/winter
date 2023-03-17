@@ -790,12 +790,17 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: \
  /usr/include/boost/detail/basic_pointerbuf.hpp \
  /home/ghx/MyProjects/cpp/winter/./winter/uri.h \
  /home/ghx/MyProjects/cpp/winter/./winter/thread.h \
+ /home/ghx/MyProjects/cpp/winter/./winter/mutex.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
+ /home/ghx/MyProjects/cpp/winter/./winter/fiber.h /usr/include/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/log.h \
  /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -812,10 +817,6 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/iomanager.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/scheduler.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/fiber.h \
- /usr/include/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/timer.h \
  /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h

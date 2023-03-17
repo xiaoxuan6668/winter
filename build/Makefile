@@ -1572,6 +1572,30 @@ winter/log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/log.cc.s
 .PHONY : winter/log.cc.s
 
+winter/mutex.o: winter/mutex.cc.o
+.PHONY : winter/mutex.o
+
+# target to build an object file
+winter/mutex.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/mutex.cc.o
+.PHONY : winter/mutex.cc.o
+
+winter/mutex.i: winter/mutex.cc.i
+.PHONY : winter/mutex.i
+
+# target to preprocess a source file
+winter/mutex.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/mutex.cc.i
+.PHONY : winter/mutex.cc.i
+
+winter/mutex.s: winter/mutex.cc.s
+.PHONY : winter/mutex.s
+
+# target to generate assembly for a file
+winter/mutex.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/mutex.cc.s
+.PHONY : winter/mutex.cc.s
+
 winter/scheduler.o: winter/scheduler.cc.o
 .PHONY : winter/scheduler.o
 
@@ -1812,6 +1836,30 @@ winter/util/hash_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/util/hash_util.cc.s
 .PHONY : winter/util/hash_util.cc.s
 
+winter/worker.o: winter/worker.cc.o
+.PHONY : winter/worker.o
+
+# target to build an object file
+winter/worker.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/worker.cc.o
+.PHONY : winter/worker.cc.o
+
+winter/worker.i: winter/worker.cc.i
+.PHONY : winter/worker.i
+
+# target to preprocess a source file
+winter/worker.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/worker.cc.i
+.PHONY : winter/worker.cc.i
+
+winter/worker.s: winter/worker.cc.s
+.PHONY : winter/worker.s
+
+# target to generate assembly for a file
+winter/worker.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/worker.cc.s
+.PHONY : winter/worker.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1986,6 +2034,9 @@ help:
 	@echo "... winter/log.o"
 	@echo "... winter/log.i"
 	@echo "... winter/log.s"
+	@echo "... winter/mutex.o"
+	@echo "... winter/mutex.i"
+	@echo "... winter/mutex.s"
 	@echo "... winter/scheduler.o"
 	@echo "... winter/scheduler.i"
 	@echo "... winter/scheduler.s"
@@ -2016,6 +2067,9 @@ help:
 	@echo "... winter/util/hash_util.o"
 	@echo "... winter/util/hash_util.i"
 	@echo "... winter/util/hash_util.s"
+	@echo "... winter/worker.o"
+	@echo "... winter/worker.i"
+	@echo "... winter/worker.s"
 .PHONY : help
 
 

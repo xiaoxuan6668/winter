@@ -353,7 +353,8 @@ public:
             return ToStr()(m_val);
         } catch (std::exception& e) {
             WINTER_LOG_ERROR(WINTER_LOG_ROOT()) << "ConfigVar::toString exception"
-                << e.what() << " convert: " << typeid(m_val).name() << " to string";
+                << e.what() << " convert: " << typeid(m_val).name() << " to string"
+                << " name=" << m_name;
         }
         return "";
     }
@@ -369,6 +370,7 @@ public:
         } catch (std::exception& e) {
             WINTER_LOG_ERROR(WINTER_LOG_ROOT()) << "ConfigVar::toString exception"
                 << e.what() << " convert: string to " << typeid(m_val).name()
+                << " name=" << m_name
                 << " - " << val;
         }
         return false;

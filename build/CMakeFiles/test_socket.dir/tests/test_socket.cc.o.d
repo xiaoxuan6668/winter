@@ -844,6 +844,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /home/ghx/MyProjects/cpp/winter/./winter/util/hash_util.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/singleton.h \
  /home/ghx/MyProjects/cpp/winter/tests/../winter/thread.h \
+ /home/ghx/MyProjects/cpp/winter/tests/../winter/mutex.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \

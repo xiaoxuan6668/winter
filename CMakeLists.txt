@@ -48,6 +48,7 @@ set(LIB_SRC
     winter/hook.cc
     winter/iomanager.cc
     winter/log.cc
+    winter/mutex.cc
     winter/scheduler.cc
     winter/socket.cc
     winter/socket_stream.cc
@@ -57,6 +58,7 @@ set(LIB_SRC
     winter/thread.cc
     winter/util.cc
     winter/util/hash_util.cc
+    winter/worker.cc
     )
 
 ragelmaker(winter/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/winter/http)

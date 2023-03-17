@@ -39,6 +39,8 @@ public:
      * @brief 设置ServletDispatch
      */
     void setServletDispatch(ServletDispatch::ptr v) { m_dispatch = v;}
+    
+    virtual void setName(const std::string& v) override;
 protected:
     virtual void handleClient(Socket::ptr client) override;
 private:

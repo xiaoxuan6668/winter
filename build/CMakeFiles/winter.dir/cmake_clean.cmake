@@ -50,6 +50,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/winter.dir/winter/iomanager.cc.o.d"
   "CMakeFiles/winter.dir/winter/log.cc.o"
   "CMakeFiles/winter.dir/winter/log.cc.o.d"
+  "CMakeFiles/winter.dir/winter/mutex.cc.o"
+  "CMakeFiles/winter.dir/winter/mutex.cc.o.d"
   "CMakeFiles/winter.dir/winter/scheduler.cc.o"
   "CMakeFiles/winter.dir/winter/scheduler.cc.o.d"
   "CMakeFiles/winter.dir/winter/socket.cc.o"
@@ -70,6 +72,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/winter.dir/winter/util.cc.o.d"
   "CMakeFiles/winter.dir/winter/util/hash_util.cc.o"
   "CMakeFiles/winter.dir/winter/util/hash_util.cc.o.d"
+  "CMakeFiles/winter.dir/winter/worker.cc.o"
+  "CMakeFiles/winter.dir/winter/worker.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

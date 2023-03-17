@@ -13,9 +13,12 @@ void run() {
 
     winter::http::HttpServer::ptr http_server(new winter::http::HttpServer(true, worker.get()));
     //winter::http::HttpServer::ptr http_server(new winter::http::HttpServer(true));
-    while(!http_server->bind(addr)) {
+    bool ssl = false;
+    while(!http_server->bind(addr, ssl)) {
         WINTER_LOG_ERROR(g_logger) << "bind " << *addr << " fail";
         sleep(1);
+    }
+    if(ssl) {
     }
 
     http_server->start();

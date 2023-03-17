@@ -132,12 +132,12 @@ clean: CMakeFiles/test_application.dir/clean
 CMakeFiles/winter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target winter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghx/MyProjects/cpp/winter/build/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Built target winter"
 .PHONY : CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/winter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/winter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/winter.dir/rule
@@ -163,7 +163,7 @@ CMakeFiles/test1.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test1.dir/rule
@@ -189,7 +189,7 @@ CMakeFiles/test_config.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_config.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_config.dir/rule
@@ -215,7 +215,7 @@ CMakeFiles/test_thread.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_thread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_thread.dir/rule
@@ -241,7 +241,7 @@ CMakeFiles/test_util.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_util.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_util.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_util.dir/rule
@@ -267,7 +267,7 @@ CMakeFiles/test_fiber.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_fiber.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_fiber.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_fiber.dir/rule
@@ -293,7 +293,7 @@ CMakeFiles/test_scheduler.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_scheduler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_scheduler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_scheduler.dir/rule
@@ -319,7 +319,7 @@ CMakeFiles/test_iomanager.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_iomanager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_iomanager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_iomanager.dir/rule
@@ -345,7 +345,7 @@ CMakeFiles/test_hook.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_hook.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_hook.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_hook.dir/rule
@@ -371,7 +371,7 @@ CMakeFiles/test_address.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_address.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_address.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_address.dir/rule
@@ -397,7 +397,7 @@ CMakeFiles/test_socket.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_socket.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_socket.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_socket.dir/rule
@@ -423,7 +423,7 @@ CMakeFiles/test_bytearray.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_bytearray.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_bytearray.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_bytearray.dir/rule
@@ -449,7 +449,7 @@ CMakeFiles/test_http.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_http.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_http.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_http.dir/rule
@@ -475,7 +475,7 @@ CMakeFiles/test_http_parser.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_http_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_http_parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_http_parser.dir/rule
@@ -501,7 +501,7 @@ CMakeFiles/test_tcp_server.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_tcp_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_tcp_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_tcp_server.dir/rule
@@ -527,7 +527,7 @@ CMakeFiles/echo_server.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/echo_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/echo_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/echo_server.dir/rule
@@ -553,7 +553,7 @@ CMakeFiles/test_http_server.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_http_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_http_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_http_server.dir/rule
@@ -579,7 +579,7 @@ CMakeFiles/test_http_connection.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_http_connection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_http_connection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_http_connection.dir/rule
@@ -605,7 +605,7 @@ CMakeFiles/test_uri.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_uri.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_uri.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_uri.dir/rule
@@ -631,7 +631,7 @@ CMakeFiles/my_http_server.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/my_http_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_http_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/my_http_server.dir/rule
@@ -657,7 +657,7 @@ CMakeFiles/test_daemon.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_daemon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_daemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_daemon.dir/rule
@@ -683,7 +683,7 @@ CMakeFiles/test_env.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_env.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_env.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_env.dir/rule
@@ -709,7 +709,7 @@ CMakeFiles/test_ws_server.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_ws_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ws_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_ws_server.dir/rule
@@ -735,7 +735,7 @@ CMakeFiles/test_ws_client.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_ws_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ws_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_ws_client.dir/rule
@@ -761,7 +761,7 @@ CMakeFiles/test_application.dir/all: CMakeFiles/winter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_application.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_application.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghx/MyProjects/cpp/winter/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_application.dir/rule

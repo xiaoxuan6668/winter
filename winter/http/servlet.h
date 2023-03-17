@@ -196,11 +196,13 @@ public:
     /**
      * @brief 构造函数
      */
-    NotFoundServlet();
+    NotFoundServlet(const std::string& name);
     virtual int32_t handle(winter::http::HttpRequest::ptr request
                    , winter::http::HttpResponse::ptr response
                    , winter::http::HttpSession::ptr session) override;
-
+private:
+    std::string m_name;
+    std::string m_content;
 };
 
 }

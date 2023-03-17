@@ -49,6 +49,8 @@ public:
     virtual bool bind(const std::vector<Address::ptr>& addrs
                         ,std::vector<Address::ptr>& fails
                         ,bool ssl = false);
+    
+    bool loadCertificates(const std::string& cert_file, const std::string& key_file);
 
     /**
      * @brief 启动服务
@@ -79,7 +81,7 @@ public:
     /**
      * @brief 设置服务器名称
      */
-    void setName(const std::string& v) { m_name = v;}
+    virtual void setName(const std::string& v) { m_name = v;}
 
     /**
      * @brief 是否停止
