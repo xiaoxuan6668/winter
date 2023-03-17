@@ -444,6 +444,19 @@ test_application/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
 .PHONY : test_application/fast
 
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
 examples/echo_server.o: examples/echo_server.cc.o
 .PHONY : examples/echo_server.o
 
@@ -827,6 +840,30 @@ tests/test_iomanager.s: tests/test_iomanager.cc.s
 tests/test_iomanager.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.s
 .PHONY : tests/test_iomanager.cc.s
+
+tests/test_module.o: tests/test_module.cc.o
+.PHONY : tests/test_module.o
+
+# target to build an object file
+tests/test_module.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_module.cc.o
+.PHONY : tests/test_module.cc.o
+
+tests/test_module.i: tests/test_module.cc.i
+.PHONY : tests/test_module.i
+
+# target to preprocess a source file
+tests/test_module.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_module.cc.i
+.PHONY : tests/test_module.cc.i
+
+tests/test_module.s: tests/test_module.cc.s
+.PHONY : tests/test_module.s
+
+# target to generate assembly for a file
+tests/test_module.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_module.cc.s
+.PHONY : tests/test_module.cc.s
 
 tests/test_scheduler.o: tests/test_scheduler.cc.o
 .PHONY : tests/test_scheduler.o
@@ -1548,6 +1585,30 @@ winter/iomanager.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/iomanager.cc.s
 .PHONY : winter/iomanager.cc.s
 
+winter/library.o: winter/library.cc.o
+.PHONY : winter/library.o
+
+# target to build an object file
+winter/library.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/library.cc.o
+.PHONY : winter/library.cc.o
+
+winter/library.i: winter/library.cc.i
+.PHONY : winter/library.i
+
+# target to preprocess a source file
+winter/library.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/library.cc.i
+.PHONY : winter/library.cc.i
+
+winter/library.s: winter/library.cc.s
+.PHONY : winter/library.s
+
+# target to generate assembly for a file
+winter/library.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/library.cc.s
+.PHONY : winter/library.cc.s
+
 winter/log.o: winter/log.cc.o
 .PHONY : winter/log.o
 
@@ -1571,6 +1632,30 @@ winter/log.s: winter/log.cc.s
 winter/log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/log.cc.s
 .PHONY : winter/log.cc.s
+
+winter/module.o: winter/module.cc.o
+.PHONY : winter/module.o
+
+# target to build an object file
+winter/module.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/module.cc.o
+.PHONY : winter/module.cc.o
+
+winter/module.i: winter/module.cc.i
+.PHONY : winter/module.i
+
+# target to preprocess a source file
+winter/module.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/module.cc.i
+.PHONY : winter/module.cc.i
+
+winter/module.s: winter/module.cc.s
+.PHONY : winter/module.s
+
+# target to generate assembly for a file
+winter/module.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winter.dir/build.make CMakeFiles/winter.dir/winter/module.cc.s
+.PHONY : winter/module.cc.s
 
 winter/mutex.o: winter/mutex.cc.o
 .PHONY : winter/mutex.o
@@ -1870,6 +1955,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... echo_server"
 	@echo "... my_http_server"
+	@echo "... test"
 	@echo "... test1"
 	@echo "... test_address"
 	@echo "... test_application"
@@ -1941,6 +2027,9 @@ help:
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"
+	@echo "... tests/test_module.o"
+	@echo "... tests/test_module.i"
+	@echo "... tests/test_module.s"
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"
@@ -2031,9 +2120,15 @@ help:
 	@echo "... winter/iomanager.o"
 	@echo "... winter/iomanager.i"
 	@echo "... winter/iomanager.s"
+	@echo "... winter/library.o"
+	@echo "... winter/library.i"
+	@echo "... winter/library.s"
 	@echo "... winter/log.o"
 	@echo "... winter/log.i"
 	@echo "... winter/log.s"
+	@echo "... winter/module.o"
+	@echo "... winter/module.i"
+	@echo "... winter/module.s"
 	@echo "... winter/mutex.o"
 	@echo "... winter/mutex.i"
 	@echo "... winter/mutex.s"

@@ -78,4 +78,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_ws_server.dir/DependInfo.cmake"
   "CMakeFiles/test_ws_client.dir/DependInfo.cmake"
   "CMakeFiles/test_application.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   )

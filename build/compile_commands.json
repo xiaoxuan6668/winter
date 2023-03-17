@@ -106,6 +106,16 @@
 },
 {
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/library.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/library.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/library.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/library.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/module.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/module.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/module.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/winter/module.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
   "command": "/usr/bin/g++ -Dwinter_EXPORTS -D__FILE__=\\\"winter/mutex.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/winter.dir/winter/mutex.cc.o -c /home/ghx/MyProjects/cpp/winter/winter/mutex.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/winter/mutex.cc"
 },
@@ -293,5 +303,10 @@
   "directory": "/home/ghx/MyProjects/cpp/winter/build",
   "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_application.cc\\\" -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_application.dir/tests/test_application.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_application.cc",
   "file": "/home/ghx/MyProjects/cpp/winter/tests/test_application.cc"
+},
+{
+  "directory": "/home/ghx/MyProjects/cpp/winter/build",
+  "command": "/usr/bin/g++ -Dtest_EXPORTS -I/home/ghx/MyProjects/cpp/winter/.  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/test.dir/tests/test_module.cc.o -c /home/ghx/MyProjects/cpp/winter/tests/test_module.cc",
+  "file": "/home/ghx/MyProjects/cpp/winter/tests/test_module.cc"
 }
 ]

@@ -50,6 +50,10 @@ CXX_FLAGS =  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-u
 
 # Custom defines: CMakeFiles/winter.dir/winter/log.cc.o_DEFINES = __FILE__="winter/log.cc"
 
+# Custom defines: CMakeFiles/winter.dir/winter/library.cc.o_DEFINES = __FILE__="winter/library.cc"
+
+# Custom defines: CMakeFiles/winter.dir/winter/module.cc.o_DEFINES = __FILE__="winter/module.cc"
+
 # Custom defines: CMakeFiles/winter.dir/winter/mutex.cc.o_DEFINES = __FILE__="winter/mutex.cc"
 
 # Custom defines: CMakeFiles/winter.dir/winter/scheduler.cc.o_DEFINES = __FILE__="winter/scheduler.cc"

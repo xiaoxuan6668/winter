@@ -7,7 +7,7 @@ logs:
             file: /home/ghx/MyProjects/cpp/winter/bin/root.txt
           - type: StdoutLogAppender
     - name: system
-      level: debug
+      level: info
       appenders:
           - type: FileLogAppender
             # file: /apps/logs/winter/system.txt

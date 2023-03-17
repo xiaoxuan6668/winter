@@ -33,4 +33,4 @@ depcomp
 /winter/http/html
 /winter/http/latex
 /build
-/build/work
+/bin/work

@@ -48,6 +48,8 @@ set(LIB_SRC
     winter/hook.cc
     winter/iomanager.cc
     winter/log.cc
+    winter/library.cc
+    winter/module.cc
     winter/mutex.cc
     winter/scheduler.cc
     winter/socket.cc
@@ -108,6 +110,8 @@ winter_add_executable(test_ws_server "tests/test_ws_server.cc" winter "${LIBS}")
 winter_add_executable(test_ws_client "tests/test_ws_client.cc" winter "${LIBS}")
 
 winter_add_executable(test_application "tests/test_application.cc" winter "${LIBS}")
+
+add_library(test SHARED tests/test_module.cc)
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

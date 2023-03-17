@@ -4,6 +4,7 @@
 #include "winter/log.h"
 #include "winter/daemon.h"
 #include "winter/worker.h"
+#include "winter/module.h"
 #include <unistd.h>
 
 namespace winter {
@@ -111,15 +112,36 @@ bool Application::init(int argc, char** argv) {
     winter::EnvMgr::GetInstance()->addHelp("c", "conf path default: ./conf");
     winter::EnvMgr::GetInstance()->addHelp("p", "print help");
 
+    bool is_print_help = false;
     if(!winter::EnvMgr::GetInstance()->init(argc, argv)) {
+        is_print_help = true;
+    }
+
+    if(winter::EnvMgr::GetInstance()->has("p")) {
+        is_print_help = true;
+    }
+
+    std::string conf_path = winter::EnvMgr::GetInstance()->getConfigPath();
+    WINTER_LOG_INFO(g_logger) << "load conf path:" << conf_path;
+    winter::Config::LoadFromConfDir(conf_path);
+
+    ModuleMgr::GetInstance()->init();
+    std::vector<Module::ptr> modules;
+    ModuleMgr::GetInstance()->listAll(modules);
+
+    for(auto i : modules) {
+        i->onBeforeArgsParse(argc, argv);
+    }
+
+    if(is_print_help) {
         winter::EnvMgr::GetInstance()->printHelp();
         return false;
     }
 
-    if(winter::EnvMgr::GetInstance()->has("p")) {
-        winter::EnvMgr::GetInstance()->printHelp();
-        return false;
+    for(auto i : modules) {
+        i->onAfterArgsParse(argc, argv);
     }
+    modules.clear();
 
     int run_type = 0;
     if(winter::EnvMgr::GetInstance()->has("s")) {
