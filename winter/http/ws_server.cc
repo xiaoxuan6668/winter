@@ -9,6 +9,7 @@ static winter::Logger::ptr g_logger = WINTER_LOG_NAME("system");
 WSServer::WSServer(winter::IOManager* worker, winter::IOManager* accept_worker)
     :TcpServer(worker, accept_worker) {
     m_dispatch.reset(new WSServletDispatch);
+    m_type = "websocket_server";
 }
 
 void WSServer::handleClient(Socket::ptr client) {

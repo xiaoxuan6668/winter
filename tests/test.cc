@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../winter/log.h"
-#include "../winter/util.h"
+#include "winter/log.h"
+#include "winter/util.h"
 
 int main(int argc, char** argv){
     winter::Logger::ptr logger(new winter::Logger);

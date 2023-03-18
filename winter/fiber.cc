@@ -117,7 +117,7 @@ void Fiber::reset(std::function<void()> cb) {
 void Fiber::call() {
     SetThis(this);
     m_state = EXEC;
-    WINTER_LOG_ERROR(g_logger) << getId();
+    // WINTER_LOG_ERROR(g_logger) << getId();
     if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)) {
         WINTER_ASSERT2(false, "swapcontext");
     }

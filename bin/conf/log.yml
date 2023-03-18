@@ -4,12 +4,12 @@ logs:
       appenders:
           - type: FileLogAppender
             # file: /apps/logs/winter/root.txt
-            file: /home/ghx/MyProjects/cpp/winter/bin/root.txt
+            file: /home/ghx/MyProjects/apps/logs/chat_room/root.txt
           - type: StdoutLogAppender
     - name: system
       level: info
       appenders:
           - type: FileLogAppender
             # file: /apps/logs/winter/system.txt
-            file: /home/ghx/MyProjects/cpp/winter/bin/system.txt
+            file: /home/ghx/MyProjects/apps/logs/chat_room/system.txt
           - type: StdoutLogAppender

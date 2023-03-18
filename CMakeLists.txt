@@ -9,9 +9,12 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-de
 # -Wno-builtin-macro-redefined
 
 include_directories(.)
+include_directories(/usr/include)
+include_directories(/usr/include/jsoncpp)
 # include_directories(/usr/local/include)
 # link_directories(/usr/local/lib)
 
+option(TEST "ON for complile test" OFF)
 # find_library(YAMLCPP yaml-cpp)
 # message("***", ${YAMLCPP})
 
@@ -25,6 +28,9 @@ if(OPENSSL_FOUND)
     include_directories(${OPENSSL_INCLUDE_DIR})
     link_directories(/usr/lib/x86_64-linux-gnu)
 endif()
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(JSONCPP jsoncpp)
 
 set(LIB_SRC
     winter/address.cc
@@ -60,6 +66,7 @@ set(LIB_SRC
     winter/thread.cc
     winter/util.cc
     winter/util/hash_util.cc
+    winter/util/json_util.cc
     winter/worker.cc
     )
 
@@ -77,6 +84,7 @@ set(LIBS
     pthread
     dl
     yaml-cpp
+    ${JSONCPP_LIBRARIES}
     ${OPENSSL_LIBRARIES})
 
 # add_executable(test tests/test.cc)
@@ -84,6 +92,7 @@ set(LIBS
 # force_redefine_file_macro_for_sources(test) #__FILE__
 # target_link_libraries(test ${LIBS})
 
+if(TEST)
 winter_add_executable(test1 "tests/test.cc" winter "${LIBS}")
 winter_add_executable(test_config "tests/test_config.cc" winter "${LIBS}")
 winter_add_executable(test_thread "tests/test_thread.cc" winter "${LIBS}")
@@ -112,6 +121,10 @@ winter_add_executable(test_ws_client "tests/test_ws_client.cc" winter "${LIBS}")
 winter_add_executable(test_application "tests/test_application.cc" winter "${LIBS}")
 
 add_library(test SHARED tests/test_module.cc)
+endif()
+
+winter_add_executable(bin_winter "winter/main.cc" winter "${LIBS}")
+set_target_properties(bin_winter PROPERTIES OUTPUT_NAME "winter")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
