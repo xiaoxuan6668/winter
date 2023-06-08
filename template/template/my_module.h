@@ -2,7 +2,7 @@
 
 namespace name_space {
 
-class MyModule : public sylar::Module {
+class MyModule : public winter::Module {
 public:
     typedef std::shared_ptr<MyModule> ptr;
     MyModule();

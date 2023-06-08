@@ -31,12 +31,12 @@ public:
     };
 private:
     /**
-     * @brief Socket事件上线文类
+     * @brief Socket事件上下文类
      */
     struct FdContext {
         typedef Mutex MutexType;
         /**
-         * @brief 事件上线文类
+         * @brief 事件上下文类
          */
         struct EventContext {
             /// 事件执行的调度器
@@ -50,7 +50,7 @@ private:
         /**
          * @brief 获取事件上下文类
          * @param[in] event 事件类型
-         * @return 返回对应事件的上线文
+         * @return 返回对应事件的上下文
          */
         EventContext& getContext(Event event);
 
