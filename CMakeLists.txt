@@ -11,6 +11,8 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-de
 include_directories(.)
 include_directories(/usr/include)
 include_directories(/usr/include/jsoncpp)
+include_directories(/usr/local/openssl/include)
+link_directories(/usr/local/openssl/lib)
 # include_directories(/usr/local/include)
 # link_directories(/usr/local/lib)
 
@@ -23,11 +25,11 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
 
-find_package(OpenSSL REQUIRED)
-if(OPENSSL_FOUND)
-    include_directories(${OPENSSL_INCLUDE_DIR})
-    link_directories(/usr/lib/x86_64-linux-gnu)
-endif()
+# find_package(OpenSSL REQUIRED)
+# if(OPENSSL_FOUND)
+#     include_directories(${OPENSSL_INCLUDE_DIR})
+#     link_directories(/usr/lib/x86_64-linux-gnu)
+# endif()
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(JSONCPP jsoncpp)
@@ -78,6 +80,12 @@ add_library(winter SHARED ${LIB_SRC})
 force_redefine_file_macro_for_sources(winter) #__FILE__
 #add_library(winter_static STATIC ${LIB_SRC})
 #SET_TARGET_PROPERTIES(winter_static PROPERTIES OUTPUT_NAME "winter")
+add_library(lib-crypto SHARED IMPORTED)
+set_target_properties(lib-crypto PROPERTIES IMPORTED_LOCATION
+                        /usr/local/openssl/lib/libcrypto.so)
+add_library(lib-openssl SHARED IMPORTED)
+set_target_properties(lib-openssl PROPERTIES IMPORTED_LOCATION
+                        /usr/local/openssl/lib/libssl.so)
 
 set(LIBS
     winter
@@ -85,7 +93,9 @@ set(LIBS
     dl
     yaml-cpp
     ${JSONCPP_LIBRARIES}
-    ${OPENSSL_LIBRARIES})
+    # ${OPENSSL_LIBRARIES})
+    lib-crypto
+    lib-openssl)
 
 # add_executable(test tests/test.cc)
 # add_dependencies(test winter)
@@ -122,6 +132,10 @@ winter_add_executable(test_application "tests/test_application.cc" winter "${LIB
 
 add_library(test SHARED tests/test_module.cc)
 endif()
+
+winter_add_executable(test_lru "tests/test_lru.cc" winter "${LIBS}")
+winter_add_executable(test_timed_cache "tests/test_timed_cache.cc" winter "${LIBS}")
+winter_add_executable(test_timed_lru_cache "tests/test_timed_lru_cache.cc" winter "${LIBS}")
 
 winter_add_executable(bin_winter "winter/main.cc" winter "${LIBS}")
 set_target_properties(bin_winter PROPERTIES OUTPUT_NAME "winter")
