@@ -17,6 +17,7 @@
 #include <boost/lexical_cast.hpp>
 #include "winter/util/hash_util.h"
 #include "winter/util/json_util.h"
+#include "winter/util/crypto_util.h"
 
 namespace winter {
 

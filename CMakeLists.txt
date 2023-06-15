@@ -69,6 +69,7 @@ set(LIB_SRC
     winter/timer.cc
     winter/thread.cc
     winter/util.cc
+    winter/util/crypto_util.cc
     winter/util/hash_util.cc
     winter/util/json_util.cc
     winter/worker.cc
@@ -142,6 +143,8 @@ winter_add_executable(test_timed_lru_cache "tests/test_timed_lru_cache.cc" winte
 winter_add_executable(test_zlib_stream "tests/test_zlib_stream.cc" winter "${LIBS}")
 
 endif()
+
+winter_add_executable(test_crypto "tests/test_crypto.cc" winter "${LIBS}")
 
 winter_add_executable(bin_winter "winter/main.cc" winter "${LIBS}")
 set_target_properties(bin_winter PROPERTIES OUTPUT_NAME "winter")

@@ -1,4 +1,5 @@
 #include "winter/protocol.h"
+#include "winter/util.h"
 
 namespace winter {
 
