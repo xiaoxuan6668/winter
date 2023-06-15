@@ -24,6 +24,11 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
 
+find_package(Protobuf REQUIRED)
+if(Protobuf_FOUND)
+    include_directories(${Protobuf_INCLUDE_DIRS})
+endif()
+
 # find_package(OpenSSL REQUIRED)
 # if(OPENSSL_FOUND)
 #     include_directories(${OPENSSL_INCLUDE_DIR})
@@ -56,9 +61,11 @@ set(LIB_SRC
     winter/iomanager.cc
     winter/log.cc
     winter/library.cc
-    winter/protocol.cc
     winter/module.cc
     winter/mutex.cc
+    winter/protocol.cc
+    winter/rock/rock_protocol.cc
+    winter/rock/rock_stream.cc
     winter/scheduler.cc
     winter/socket.cc
     winter/stream.cc
@@ -99,7 +106,8 @@ set(LIBS
     ${JSONCPP_LIBRARIES}
     # ${OPENSSL_LIBRARIES})
     lib-crypto
-    lib-openssl)
+    lib-openssl
+    ${PROTOBUF_LIBRARIES})
 
 # add_executable(test tests/test.cc)
 # add_dependencies(test winter)
@@ -141,10 +149,9 @@ winter_add_executable(test_lru "tests/test_lru.cc" winter "${LIBS}")
 winter_add_executable(test_timed_cache "tests/test_timed_cache.cc" winter "${LIBS}")
 winter_add_executable(test_timed_lru_cache "tests/test_timed_lru_cache.cc" winter "${LIBS}")
 winter_add_executable(test_zlib_stream "tests/test_zlib_stream.cc" winter "${LIBS}")
+winter_add_executable(test_crypto "tests/test_crypto.cc" winter "${LIBS}")
 
 endif()
-
-winter_add_executable(test_crypto "tests/test_crypto.cc" winter "${LIBS}")
 
 winter_add_executable(bin_winter "winter/main.cc" winter "${LIBS}")
 set_target_properties(bin_winter PROPERTIES OUTPUT_NAME "winter")
