@@ -1,4 +1,5 @@
 #include "socket_stream.h"
+#include "winter/util.h"
 
 namespace winter {
 

@@ -7,6 +7,8 @@
 
 #include "winter/stream.h"
 #include "winter/socket.h"
+#include "winter/mutex.h"
+#include "winter/iomanager.h"
 
 namespace winter {
 

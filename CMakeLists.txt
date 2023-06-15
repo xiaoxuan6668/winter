@@ -56,11 +56,13 @@ set(LIB_SRC
     winter/iomanager.cc
     winter/log.cc
     winter/library.cc
+    winter/protocol.cc
     winter/module.cc
     winter/mutex.cc
     winter/scheduler.cc
     winter/socket.cc
     winter/stream.cc
+    winter/streams/async_socket_stream.cc
     winter/streams/socket_stream.cc
     winter/streams/zlib_stream.cc
     winter/tcp_server.cc
@@ -131,13 +133,15 @@ winter_add_executable(test_ws_client "tests/test_ws_client.cc" winter "${LIBS}")
 winter_add_executable(test_application "tests/test_application.cc" winter "${LIBS}")
 
 add_library(test SHARED tests/test_module.cc)
-endif()
+# endif()
 
 winter_add_executable(test_http_connection "tests/test_http_connection.cc" winter "${LIBS}")
 winter_add_executable(test_lru "tests/test_lru.cc" winter "${LIBS}")
 winter_add_executable(test_timed_cache "tests/test_timed_cache.cc" winter "${LIBS}")
 winter_add_executable(test_timed_lru_cache "tests/test_timed_lru_cache.cc" winter "${LIBS}")
 winter_add_executable(test_zlib_stream "tests/test_zlib_stream.cc" winter "${LIBS}")
+
+endif()
 
 winter_add_executable(bin_winter "winter/main.cc" winter "${LIBS}")
 set_target_properties(bin_winter PROPERTIES OUTPUT_NAME "winter")
