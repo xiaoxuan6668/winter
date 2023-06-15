@@ -5,7 +5,7 @@
 #ifndef __WINTER_HTTP_CONNECTION_H__
 #define __WINTER_HTTP_CONNECTION_H__
 
-#include "winter/socket_stream.h"
+#include "winter/streams/socket_stream.h"
 #include "http.h"
 #include "winter/uri.h"
 #include "winter/thread.h"

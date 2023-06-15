@@ -13,8 +13,7 @@ include_directories(/usr/include)
 include_directories(/usr/include/jsoncpp)
 include_directories(/usr/local/openssl/include)
 link_directories(/usr/local/openssl/lib)
-# include_directories(/usr/local/include)
-# link_directories(/usr/local/lib)
+link_directories(/usr/lib/x86_64-linux-gnu)
 
 option(TEST "ON for complile test" OFF)
 # find_library(YAMLCPP yaml-cpp)
@@ -61,8 +60,9 @@ set(LIB_SRC
     winter/mutex.cc
     winter/scheduler.cc
     winter/socket.cc
-    winter/socket_stream.cc
     winter/stream.cc
+    winter/streams/socket_stream.cc
+    winter/streams/zlib_stream.cc
     winter/tcp_server.cc
     winter/timer.cc
     winter/thread.cc
@@ -89,8 +89,9 @@ set_target_properties(lib-openssl PROPERTIES IMPORTED_LOCATION
 
 set(LIBS
     winter
-    pthread
     dl
+    pthread
+    z
     yaml-cpp
     ${JSONCPP_LIBRARIES}
     # ${OPENSSL_LIBRARIES})
@@ -119,7 +120,6 @@ winter_add_executable(test_http_parser "tests/test_http_parser.cc" winter "${LIB
 winter_add_executable(test_tcp_server "tests/test_tcp_server.cc" winter "${LIBS}")
 winter_add_executable(echo_server "examples/echo_server.cc" winter "${LIBS}")
 winter_add_executable(test_http_server "tests/test_http_server.cc" winter "${LIBS}")
-winter_add_executable(test_http_connection "tests/test_http_connection.cc" winter "${LIBS}")
 winter_add_executable(test_uri "tests/test_uri.cc" winter "${LIBS}")
 winter_add_executable(my_http_server "examples/my_http_server.cc" winter "${LIBS}")
 
@@ -133,9 +133,11 @@ winter_add_executable(test_application "tests/test_application.cc" winter "${LIB
 add_library(test SHARED tests/test_module.cc)
 endif()
 
+winter_add_executable(test_http_connection "tests/test_http_connection.cc" winter "${LIBS}")
 winter_add_executable(test_lru "tests/test_lru.cc" winter "${LIBS}")
 winter_add_executable(test_timed_cache "tests/test_timed_cache.cc" winter "${LIBS}")
 winter_add_executable(test_timed_lru_cache "tests/test_timed_lru_cache.cc" winter "${LIBS}")
+winter_add_executable(test_zlib_stream "tests/test_zlib_stream.cc" winter "${LIBS}")
 
 winter_add_executable(bin_winter "winter/main.cc" winter "${LIBS}")
 set_target_properties(bin_winter PROPERTIES OUTPUT_NAME "winter")
