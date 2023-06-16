@@ -10,10 +10,10 @@ static winter::ConfigVar<uint64_t>::ptr g_tcp_server_read_timeout =
 
 static winter::Logger::ptr g_logger = WINTER_LOG_NAME("system");
 
-TcpServer::TcpServer(winter::IOManager* woker,
-                    winter::IOManager* accept_woker)
-    :m_worker(woker)
-    ,m_acceptWorker(accept_woker)
+TcpServer::TcpServer(winter::IOManager* worker,
+                    winter::IOManager* accept_worker)
+    :m_worker(worker)
+    ,m_acceptWorker(accept_worker)
     ,m_recvTimeout(g_tcp_server_read_timeout->getValue())
     ,m_name("winter/1.0.0")
     ,m_isStop(true) {

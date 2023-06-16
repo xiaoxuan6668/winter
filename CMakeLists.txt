@@ -66,6 +66,7 @@ set(LIB_SRC
     winter/protocol.cc
     winter/rock/rock_protocol.cc
     winter/rock/rock_stream.cc
+    winter/rock/rock_server.cc
     winter/scheduler.cc
     winter/socket.cc
     winter/stream.cc

@@ -5,7 +5,7 @@
 namespace winter {
 
 static winter::ConfigVar<std::map<std::string, std::map<std::string, std::string> > >::ptr g_worker_config
-    = winter::Config::Lookup("workers", std::map<std::string, std::map<std::string, std::string> >(), "woker config");
+    = winter::Config::Lookup("workers", std::map<std::string, std::map<std::string, std::string> >(), "worker config");
 
 WorkerGroup::WorkerGroup(uint32_t batch_size, winter::Scheduler* s)
     :m_batchSize(batch_size)

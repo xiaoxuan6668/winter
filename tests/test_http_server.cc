@@ -5,10 +5,10 @@ static winter::Logger::ptr g_logger = WINTER_LOG_ROOT();
 
 #define XX(...) #__VA_ARGS__
 
-winter::IOManager::ptr woker;
+winter::IOManager::ptr worker;
 void run() {
     g_logger->setLevel(winter::LogLevel::INFO);
-    //winter::http::HttpServer::ptr server(new winter::http::HttpServer(true, woker.get(), winter::IOManager::GetThis()));
+    //winter::http::HttpServer::ptr server(new winter::http::HttpServer(true, worker.get(), winter::IOManager::GetThis()));
     winter::http::HttpServer::ptr server(new winter::http::HttpServer(true));
     winter::Address::ptr addr = winter::Address::LookupAnyIPAddress("0.0.0.0:8020");
     while(!server->bind(addr)) {
@@ -54,7 +54,7 @@ void run() {
 
 int main(int argc, char** argv) {
     winter::IOManager iom(1, true, "main");
-    woker.reset(new winter::IOManager(3, false, "worker"));
+    worker.reset(new winter::IOManager(3, false, "worker"));
     iom.schedule(run);
     return 0;
 }
