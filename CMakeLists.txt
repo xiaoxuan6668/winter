@@ -43,6 +43,7 @@ set(LIB_SRC
     winter/application.cc
     winter/bytearray.cc
     winter/config.cc
+    winter/db/sqlite3.cc
     winter/daemon.cc
     winter/env.cc
     winter/fd_manager.cc
@@ -108,7 +109,8 @@ set(LIBS
     # ${OPENSSL_LIBRARIES})
     lib-crypto
     lib-openssl
-    ${PROTOBUF_LIBRARIES})
+    ${PROTOBUF_LIBRARIES}
+    sqlite3)
 
 # add_executable(test tests/test.cc)
 # add_dependencies(test winter)
@@ -153,6 +155,8 @@ winter_add_executable(test_zlib_stream "tests/test_zlib_stream.cc" winter "${LIB
 winter_add_executable(test_crypto "tests/test_crypto.cc" winter "${LIBS}")
 
 endif()
+
+winter_add_executable(test_sqlite3 "tests/test_sqlite3.cc" winter "${LIBS}")
 
 winter_add_executable(bin_winter "winter/main.cc" winter "${LIBS}")
 set_target_properties(bin_winter PROPERTIES OUTPUT_NAME "winter")
